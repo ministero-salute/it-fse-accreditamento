@@ -21,6 +21,6 @@ Il fornitore che deve accreditare il software dovrà quindi:
 * Selezionare i test rilevanti nel file `accreditamento-checklist.xlsx` (fare riferimento al foglio `summary`)
 * Eseguire i test appropiati seguendo anche quanto definito nella directory specifica del tipo di documento
 * Collezionare i risultati nel file `report-checklist.xlsx`
-* Seguire le [indicazioni](../) per il caricamento dei risultati nel repoistory
+* Seguire le [indicazioni](https://github.com/ministero-salute/it-fse-accreditamento/) per il caricamento dei risultati nel repoistory
 
 **NB** Per i test "KO" è possibile autocertificare la *non applicabilità* dei casi che non possono darsi nell'utilizzo del software specifico.
