@@ -13,6 +13,14 @@ Ogni directory contiene:
 * foglio contenente i test "OK" con la descrizione dei campi richiesti nei documenti per le diverse tipologie di test.
 * foglio contenente i test "KO" con una guida dei campi da valorizzare per le diverse tipologie di test.
 
+## Svolgimento dei test
 
+Il fornitore che deve accreditare il software dovrà quindi:
+
+* Compilare il [modulo di richiesta accreditamento](https://ec.europa.eu/eusurvey/runner/FSE-raccolta-id-applicativo) indicando la tipologia di documento e servizi desiderati
+* Selezionare i test rilevanti nel file `accreditamento-checklist.xlsx` (fare riferimento al foglio `summary`)
+* Eseguire i test appropiati seguendo anche quanto definito nella directory specifica del tipo di documento
+* Collezionare i risultati nel file `report-checklist.xlsx`
+* Seguire le [indicazioni](../) per il caricamento dei risultati nel repoistory
 
 **NB** Per i test "KO" è possibile autocertificare la *non applicabilità* dei casi che non possono darsi nell'utilizzo del software specifico.
