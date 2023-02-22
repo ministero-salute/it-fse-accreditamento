@@ -34,12 +34,17 @@ I risultati delle verifiche verranno mandate per mail all'indirizzo immesso nel 
 
 ### Struttura dei risultati (data.json)
 All'interno della directory bisognerà creare un file `data.json` con il seguente schema:
+
+|ATTENZIONE|
+|---|
+|È stato rimosso il campo `email` dalla struttura dati|
+
+
 ```json
 {
 	"appVendor": "vendor",
 	"appID": "id",
-	"appVersion": "version",
-	"email": "example@example.com",
+	"appVersion": "version"
 	"results": [
 		{
 			"id": 1,
@@ -61,7 +66,6 @@ le chiavi contrassegnate da `*` sono obbligatori
 |*appVendor|subject_application_vendor|
 |*appID|subject_application_id|
 |*appVersion|subject_application_version|
-|*email|indirizzo mail al quale verranno mandati gli esiti dei test|
 |*results|vedi [Results](#results)|
 
 **Results** <a id="results"></a>
