@@ -44,7 +44,7 @@ All'interno della directory bisognerà creare un file `data.json` con il seguent
 {
 	"appVendor": "vendor",
 	"appID": "id",
-	"appVersion": "version"
+	"appVersion": "version",
 	"results": [
 		{
 			"id": 1,
