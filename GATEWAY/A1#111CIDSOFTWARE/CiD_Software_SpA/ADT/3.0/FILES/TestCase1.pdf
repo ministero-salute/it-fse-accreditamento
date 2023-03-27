@@ -67,7 +67,7 @@ endobj
 endobj
 9 0 obj
 <<
-/Length 8141
+/Length 26045
 /Type /EmbeddedFile
 /Subtype /application#2Fxml
 /Params 10 0 R
@@ -77,13 +77,13 @@ stream
    <realmCode code="IT"/>
    <typeId extension="POCD_MT000040UV02" root="2.16.840.1.113883.1.3"/>
    <templateId root="2.16.840.1.113883.2.9.10.1.5" extension="1.2"/>
-   <id extension="ADT.475.20230130152951" root="2.16.840.1.113883.2.9.2.99.4.4" assigningAuthorityName="NA2N"/>
+   <id extension="NA2-CID.ADT.475" root="2.16.840.1.113883.2.9.2.99.4.4" assigningAuthorityName="NA2N"/>
    <code code="34105-7" displayName="Lettera di dimissione ospedaliera" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
    <title>LETTERA DI DIMISSIONE OSPEDALIERA</title>
-   <effectiveTime value="20230130152951+0100"/>
+   <effectiveTime value="20230321110956+0100"/>
    <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" codeSystemName="Confidentiality"/>
    <languageCode code="it-IT"/>
-   <setId extension="ADT.475.20230130152951" root="2.16.840.1.113883.2.9.2.99.4.4" assigningAuthorityName="NA2N"/>
+   <setId extension="NA2-CID.ADT.475" root="2.16.840.1.113883.2.9.2.99.4.4" assigningAuthorityName="NA2N"/>
    <versionNumber value="1"/>
    <recordTarget>
        <patientRole>
@@ -91,9 +91,9 @@ stream
            <addr use="H">
                <country>100</country>
                <city>NAPOLI</city>
-               <streetAddressLine>VIA DI NAPOLI 5</streetAddressLine>           
-			</addr>
-		   <patient>
+               <streetAddressLine>VIA DI NAPOLI 5</streetAddressLine>
+           </addr>
+           <patient>
                <name>
                    <family>ESPOSITO</family>
                    <given>GIOVANNI</given>
@@ -112,12 +112,12 @@ stream
        </patientRole>
    </recordTarget>
    <author>
-       <time value="20230130152951+0100"/>
+       <time value="20230321110956+0100"/>
        <assignedAuthor>
            <id extension="MDCPRV80A01F839I" root="2.16.840.1.113883.2.9.4.3.2" assigningAuthorityName="MEF" />
            <telecom use="HP" value="mailto:pippo@pluto.it"/>
            <telecom use="WP" value="mailto:pippo@pluto.it"/>
-           <telecom use="MC" value="tel:null"/>
+           <telecom use="MC" value=""/>
            <assignedPerson>
                <name>
                    <prefix>Dr</prefix>
@@ -136,7 +136,7 @@ stream
        </assignedCustodian>
    </custodian>
    <legalAuthenticator>
-       <time value="20230130152951+0100"/>
+       <time value="20230321110956+0100"/>
        <signatureCode code="S"/>
        <assignedEntity>
            <id extension="MDCPRV80A01F839I" root="2.16.840.1.113883.2.9.4.3.2" assigningAuthorityName="MEF"/>
@@ -154,7 +154,7 @@ stream
            <id extension="000SDO/23000200" root="2.16.840.1.113883.2.9.2.150205.4.6" assigningAuthorityName="Asl Napoli 2 Nord"/>
            <effectiveTime>
                <low value="20230130152400+0100" />
-               <high value="20230130152900+0100" />
+               <high value="20230321110700+0100" />
            </effectiveTime>
            <location>
                <healthCareFacility>
@@ -176,66 +176,486 @@ stream
    <component>
        <structuredBody moodCode="EVN" classCode="DOCBODY">
            <component typeCode="COMP">
-               <section classCode="DOCSECT" moodCode="EVN">
+               <section ID="Motivo_Ricovero" classCode="DOCSECT" moodCode="EVN">
                    <code code="46241-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"  displayName="Diagnosi di Accettazione"/>
                    <title>Motivo del ricovero</title>
                    <text>
                        <list>
                            <item>
-                           <content ID="DIAG-1"> BRONCHIECTASIE CON RIACUTIZZAZIONE</content>
+                           <content ID="DIAG-1"> INFARTO MIOCARDICO ACUTO A SEDE NON SPECIFICATA,EPISODIO DI ASSISTENZA NON SPECIFICATO</content>
                            </item>
                        </list>
                    </text>
                    <entry>
                        <observation classCode="OBS" moodCode="EVN">
                            <code code="8646-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnosi di Accettazione Ospedaliera"/>
-                           <value xsi:type="CD" code="494.1" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9CM" displayName="BRONCHIECTASIE CON RIACUTIZZAZIONE"/>
+                           <value xsi:type="CD" code="410.90" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9CM" displayName="INFARTO MIOCARDICO ACUTO A SEDE NON SPECIFICATA,EPISODIO DI ASSISTENZA NON SPECIFICATO"/>
                        </observation>
                    </entry>
                </section>
            </component>
            <component typeCode="COMP">
-               <section classCode="DOCSECT" moodCode="EVN">
+               <section ID="Inquadramento_Clinico_iniziale" classCode="DOCSECT" moodCode="EVN">
                    <code code="47039-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"  displayName="Ricovero Ospedaliero, anamnesi ed esame obiettivo"/>
                    <title>Inquadramento Clinico Iniziale</title>
                    <text>Da Pronto Soccorso</text>
                </section>
            </component>
            <component typeCode="COMP">
-               <section classCode="DOCSECT" moodCode="EVN">
+               <section ID="Decorso_ospedaliero" classCode="DOCSECT" moodCode="EVN">
                    <code code="8648-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"  displayName="Decorso ospedaliero"/>
                    <title>Decorso ospedaliero</title>
-                   <text></text>
+                   <text>Il paziente è stato visitato ed ha seguito un prcesso terapeutico ideoneo alla diagnosi.</text>
                </section>
            </component>
            <component typeCode="COMP">
-               <section classCode="DOCSECT" moodCode="EVN">
+               <section ID="PROCEDURE_ESEGUITE_DURANTE_RICOVERO" classCode="DOCSECT" moodCode="EVN">
                    <code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"  displayName="Procedure"/>
                    <title>Procedure eseguite durante il ricovero</title>
                    <text>Le procedure eseguite sono: (897) Visita generale.</text>
+                       <entry>
+                           <procedure classCode="PROC" moodCode="EVN" >
+                               <code code="897" displayName="Visita generale" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9-CM" />
+                               <effectiveTime value="20230130152500+0100" /> 
+                           </procedure>
+                       </entry>
                </section>
            </component>
            <component typeCode="COMP">
-               <section classCode="DOCSECT" moodCode="EVN">
+               <section ID="Condizioni_paziente_diagnosi_dimissione" classCode="DOCSECT" moodCode="EVN">
                    <code code="11535-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"  displayName="Diagnosi di Dimissione"/>
                    <title>Condizioni del paziente e diagnosi alla dimissione</title>
-                   <text>Dimissione Test Case 1</text>
+                   <text>diagnosi di dimissione</text>
                    <entry >
                        <observation classCode="OBS" moodCode="EVN">
                            <code code="8651-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"  displayName="Diagnosi di Dimissione Ospedaliera"/>
-                           <value xsi:type="CD" code="494.1" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9CM" displayName="BRONCHIECTASIE CON RIACUTIZZAZIONE"/>
+                           <value xsi:type="CD" code="410.00" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9CM" displayName="INFARTO MIOCARDICO ACUTO DELLA PARETE ANTEROLATERALE CON TRATTO ST ELEVATO (STEM)"/>
                        </observation>
                    </entry>
                </section>
            </component>
-       </structuredBody>
+<component typeCode="COMP">
+				<section ID="ALLERGIE">
+					<code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergie e/o reazioni avverse"/>
+					<title>Allergie e/o reazioni avverse</title>
+					<text>
+						Allergico a Cefalosporine
+						Allergia a contatto per lattice
+						Allergia a contatto ed inalazione per polvere comune
+						Allergia alimentare ai flavonoidi
+					</text>
+					<entry>
+						<act classCode ="ACT" moodCode="EVN">
+							<code nullFlavor="NA"/>
+							<statusCode code="completed"/>
+							<effectiveTime>
+								<low value="20230301121122+0100"/>
+								<high value="20230302121122+0100"/>
+							</effectiveTime>
+							<entryRelationship typeCode="SUBJ">
+								<observation classCode="OBS" moodCode="EVN">
+									<code code="52473-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergia o causa della reazione"/>
+									<text>
+										<reference value="#[REF_NOTA1]"/>
+									</text>
+									<statusCode code="completed"/>
+									<effectiveTime>
+										<low value="20230319121122+0200"/>
+										<high value="20230320121122+0200"/>
+									</effectiveTime>
+									<value xsi:type="CD" code="OINT" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ObservationIntoleranceType" displayName="intolerance"/>
+									<participant typeCode="CSM">  
+										<participantRole classCode="MANU">
+											<playingEntity classCode="MMAT">
+												<code code="260152009" codeSystem="2.16.840.1.113883.2.9.77.22.11.2" codeSystemName="Allergeni (No Farmaci)" displayName="Peli di gatto">
+												</code>
+											</playingEntity>
+										</participantRole>
+									</participant>
+									<entryRelationship typeCode="MFST">
+										<observation classCode="OBS" moodCode="EVN">
+											<code code="75321-0" displayName="Obiettività Clinica" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+											<text>
+												<reference value="#[REF_TXT_OBS]"/>
+											</text>
+											<statusCode code="completed"/>
+											<effectiveTime>
+												<low value="20230319121122+0200"/> 
+											</effectiveTime>
+											<value xsi:type="CD" code="477.2" codeSystem="2.16.840.1.113883.6.103" displayName="RINITE ALLERGICA DA PELI O FORFORA ANIMALE (GATTO)(CANE)" codeSystemName="ICD-9CM">
+											</value>
+										</observation>
+									</entryRelationship>
+									<entryRelationship typeCode="SUBJ"> 
+										<observation classCode="OBS" moodCode="EVN">
+											<code code="SEV" displayName="Criticality" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
+											<text>
+												<reference value="#[REF_TXT_CRIT]"/>
+											</text>
+											<statusCode code="completed"/>
+											<value xsi:type="CD" code="M" codeSystem="2.16.840.1.113883.5.1063" codeSystemName="CriticalityObservation" displayName="Moderate"/>
+										</observation>
+									</entryRelationship>								
+									<entryRelationship typeCode="REFR"> 
+										<observation classCode="OBS" moodCode="EVN">
+											<code code="33999-4" displayName="Stato" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+											<text>
+												<reference value="#[REF_STATO]"/>
+											</text>
+											<statusCode code="completed"/>
+											<value xsi:type="CD" code="LA16666-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Active"/>
+										</observation>
+									</entryRelationship>				
+									<entryRelationship typeCode="SUBJ"> 
+										<act classCode="ACT" moodCode="EVN">
+											<code code="48767-8" displayName="Annotation Comment" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+											<text>
+												<reference value="#[REF_COMMENTI]"/>
+											</text>
+											<statusCode code="completed"/>
+										</act>
+									</entryRelationship>
+								</observation>
+							</entryRelationship>															
+						</act>
+					</entry>
+				</section>
+			</component><component typeCode="COMP">
+				<section ID="Complicanze">
+					<code code="55109-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Complicazioni"/>
+					<title>Complicanze</title>
+					<text>
+						<paragraph>
+							Il paziente ha manifestato una evidente reazione allergica.
+						</paragraph>
+					</text>
+					<entry>
+						<observation classCode="OBS" moodCode="EVN"> 
+							<code code="75326-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem"/> 
+							<effectiveTime>
+								<low value="20230319100000+0100"/> 
+								<high value="20230320030000+0100"/> 
+							</effectiveTime>
+							<value xsi:type="CD" code="97835-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Medical complication"/>
+						</observation>
+					</entry>
+				</section>
+			</component><component typeCode="COMP">
+				<section ID="Consulenza">
+					<code code="34104-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Hospital Consult note"/>
+					<title>Consulenza</title>
+					<text>
+						<table>
+							<thead>
+								<tr>
+									<th>Consulenza</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>[DESC_CONSULENZA]</td>
+								</tr>
+							</tbody>
+						</table>
+					</text>
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<code code="34820-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Pharmacology Consult"/>
+							<effectiveTime value="20230307170000+0100"/>
+							<value xsi:type="ST">[ESITO_CONSULENZA]</value>
+							<performer>
+								<time value="20230307170000+0100"/>
+								<assignedEntity>
+									<id root="2.16.840.1.113883.2.9.4.3.2" extension="PROVAX00X00X000Y" assigningAuthorityName="MEF"/>
+									<assignedPerson>
+										<name>
+											<family>Esempio</family>
+											<given>Test</given>
+										</name>
+									</assignedPerson>
+								</assignedEntity>
+							</performer>
+							<participant typeCode="IND">
+								<time value="20230307100000+0100"/>
+								<participantRole>
+									<id root="2.16.840.1.113883.2.9.4.3.2" extension="PROVAX00X00X000Y" assigningAuthorityName="MEF"/>
+									<playingEntity>
+										<name>
+											<family>Esempio</family>
+											<given>Test</given>
+										</name>
+									</playingEntity>
+								</participantRole>
+							</participant>
+						</observation>
+					</entry>
+				</section>
+			</component><component typeCode="COMP">
+				<section ID="Esami_Eseguiti_Durante_il_Ricovero">
+					<code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Esami diagnostici e/o di laboratorio significativi."/>
+					<title>Esami eseguiti durante il ricovero</title>
+					<text>
+						<table>
+							<thead>
+								<tr>
+									<th>Esame</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>[DESC_ESAME]</td>
+								</tr>
+							</tbody>
+						</table>
+					</text>
+					<entry>
+						<observation classCode="OBS" moodCode="EVN"> 
+							<code code="24660-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="MRA Thoracic Aorta"/> 
+							<effectiveTime value="20230310150000+0100"/>
+							<value xsi:type="ST">[ESITO_ESAME]</value>
+							<performer>
+								<time value="20230310150000+0100"/>
+								<assignedEntity>
+									<id root="2.16.840.1.113883.2.9.4.3.2" extension="PROVAX00X00X000Y" assigningAuthorityName="MEF"/>
+									<assignedPerson>
+										<name>
+											<family>Esempio</family>
+											<given>Test</given>
+										</name>
+									</assignedPerson>
+								</assignedEntity>
+							</performer>
+							<participant typeCode="IND">
+								<time value="20230310090000+0100"/>
+								<participantRole>
+									<id root="2.16.840.1.113883.2.9.4.3.2" extension="PROVAX00X00X000Y" assigningAuthorityName="MEF"/>
+									<playingEntity>
+										<name>
+											<family>Esempio</family>
+											<given>Test</given>
+										</name>
+									</playingEntity>
+								</participantRole>
+							</participant>
+						</observation>
+					</entry>
+				</section>
+			</component><component typeCode="COMP">
+				<section ID="ISTRUZIONI_FOLLOWUP">
+					<code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Piano di cura"/>
+					<title>Istruzioni di follow-up</title>
+					<text> 
+						<paragraph>
+							Viene data indicazione a correzione della respirazione mediante 
+							farmaci che permettone una migliore respirazione, alleviando l'infiammazione e la tosse.
+						</paragraph>
+					</text>
+				</section>
+			</component><component typeCode="COMP">
+				<section ID="RISCONTRI_ACCERTAMENTI_SIGNIFICATIVI">
+					<code code="11493-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Hospital discharge studies summary"/>
+					<title>Riscontri ed accertamenti significativi</title>
+					<text>
+						<paragraph>
+							In data 18/03 u.s eseguita valutazione dell'infiammazione
+						</paragraph>
+					</text>
+				</section>
+			</component><component typeCode="COMP">
+				<section ID="TERAPIA_FARMACOLOGICA_DIMISSIONE">
+					<code code="10183-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Terapia Farmacologica alla dimissione"/>
+					<title>Terapia farmacologica alla dimissione</title>
+					<text>
+						<list>
+							<item>Acido acetilsalicilico</item>
+							<item>Paracetamolo</item>
+							<item>Beclometasone</item>
+						</list>
+					</text>
+					<entry>
+						<substanceAdministration classCode="SBADM" moodCode="INT">
+							<text> 
+								<reference value="#[REF_MED]"/>
+							</text>
+							<statusCode code="active"/>
+							<effectiveTime xsi:type="IVL_TS">
+								<low value="20230320000000+0100"/>
+								<!--high value="20210707221122+0100"/-->
+							</effectiveTime>
+							<!-- Posologia -->
+							<effectiveTime operator="A" xsi:type="PIVL_TS" institutionSpecified="true">
+								<period value="12" unit="h" />
+							</effectiveTime>
+							<!-- Via di somministrazione -->
+							<routeCode code="PO" codeSystem="2.16.840.1.113883.5.112" codeSystemName="HL7 RouteOfAdministration" displayName="Swallow,oral"/>
+							<!-- Sito di somministrazione-->
+							<!--approachSiteCode code="LA" codeSystem="2.16.840.1.113883.5.1052" codeSystemName="ActSite" displayName="left arm"/-->
+							<!--  Dose-->
+							<doseQuantity>
+								<low value="5" unit="mg"/>
+								<high value="10" unit="mg"/> 
+							</doseQuantity>
+							<!-- Frequenza di erogazione -->
+							<rateQuantity>
+								<low value="0.5" unit="mg/h"/>
+								<high value="1" unit="mg/h"/> 
+							</rateQuantity>
+							<!-- Forma Farmaceutica -->
+							<administrationUnitCode code="46992007" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED" displayName="Pill"/>
+							<!-- ATC / AIC -->
+							<consumable>
+								<manufacturedProduct classCode="MANU">
+									<manufacturedMaterial>
+										<code code="043348022" codeSystem="2.16.840.1.113883.2.9.6.1.5" codeSystemName="AIC" displayName="NORVASC*5MG 28 CPR">
+											<translation code="C08CA01" codeSystem="2.16.840.1.113883.6.73" codeSystemName="WHO ATC" displayName="AMLODIPINA"/>
+										</code>
+									</manufacturedMaterial>
+								</manufacturedProduct>
+							</consumable>
+							<participant typeCode="IND">
+								<time value="20230320221122+0100"/>
+								<participantRole>
+									<id root="2.16.840.1.113883.2.9.4.3.2" extension="PROVAX00X00X000Y" assigningAuthorityName="MEF"/>
+									<playingEntity>
+										<name>
+											<family>Esempio</family>
+											<given>Test</given>
+										</name>
+									</playingEntity >
+								</participantRole >
+							</participant>
+	
+							<!-- GRAMMATURA -->
+							<entryRelationship typeCode="COMP">
+								<observation classCode="OBS" moodCode="EVN">
+									<code 	code="029480086" codeSystem="2.16.840.1.113883.2.9.6.1.5" codeSystemName="AIC" displayName="Grammatura"/>
+									<value xsi:type="REAL" value="2.5"/>
+								</observation>
+							</entryRelationship>
+							<!-- QUANTITÀ NELLA CONFEZIONE -->
+							<entryRelationship typeCode="COMP">
+								<observation classCode="OBS" moodCode="EVN">
+									<code code="029480086" codeSystem="2.16.840.1.113883.2.9.6.1.5" codeSystemName="AIC" displayName="Quantità nella Confezione"/>
+									<value xsi:type="REAL" value="50"/>
+								</observation>
+							</entryRelationship>	
+							<!-- NUMERO DI CONFEZIONI -->
+							<entryRelationship typeCode="COMP">
+								<supply classCode="SPLY" moodCode="RQO">
+									<quantity value="1"/>
+								</supply>
+							</entryRelationship>								
+						</substanceAdministration>
+					</entry>
+				</section>
+			</component><component typeCode="COMP">
+				<section ID="TERAPIA_FARMACOLOGICA_EFFETTUATA_DURANTE_RICOVERO">
+					<code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Terapie Farmacologiche"/>
+					<title>Terapia farmacologica effettuata durante il ricovero</title>
+					<text>
+						Dal 21/03 al 17/04: Losaprex 50 mg 1 cpr ore 8
+						Dal 21/03 al 17/04: Cardicor 5 mg 1 cpr ore 8
+						Dal 21/03 al 17/04: Lasix 25 mg 2 cpr ore 8
+						Dal 21/03 al 17/04: Peptazol 40 mg 1 cpr ore 20
+						Dal 21/03 al 17/04: Arixtra 2.5 mg 1 fl s.c. ore 20
+						Dal 21/03 al 17/04: Coumadin sec INR (range terapeutico 2-3)
+					</text>
+					<entry>
+						<substanceAdministration classCode="SBADM" moodCode="EVN">
+							<text> 
+								<reference value="#[REF_MED]"/>
+							</text>
+							<statusCode code="completed"/>
+							<effectiveTime xsi:type="IVL_TS">
+								<low value="20230319000000+0100"/>
+								<high value="20230320100000+0100"/>
+							</effectiveTime>
+							<!-- Posologia -->
+							<effectiveTime operator="A" xsi:type="PIVL_TS" institutionSpecified="true">
+								<period value="12" unit="h" />
+							</effectiveTime>
+							<!-- Via di somministrazione -->
+							<routeCode code="IABDINJ" codeSystem="2.16.840.1.113883.5.112" codeSystemName="HL7 RouteOfAdministration" displayName="Injection, intra-abdominal"/>
+							<!-- Sito di somministrazione-->
+							<approachSiteCode code="LA" codeSystem="2.16.840.1.113883.5.1052" codeSystemName="ActSite" displayName="left arm"/>
+							<!--  Dose-->
+							<doseQuantity>
+								<low value="20" unit="mL"/>
+								<high value="30" unit="mL"/> 
+							</doseQuantity>
+							<!-- Frequenza di erogazione -->
+							<rateQuantity>
+								<low value="10" unit="mL/h"/>
+								<high value="15" unit="mL/h"/> 
+							</rateQuantity>
+							<!-- Forma Farmaceutica -->
+							<administrationUnitCode code="385219001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED" displayName="Injection solution"/>
+							<!-- ATC / AIC -->
+							<consumable>
+								<manufacturedProduct classCode="MANU">
+									<manufacturedMaterial>
+										<code code="035606033" codeSystem="2.16.840.1.113883.2.9.6.1.5" codeSystemName="AIC" displayName="ARIXTRA*2,5MG/0,5MLSC 10SIR.">
+											<translation code="B01AX05" codeSystem="2.16.840.1.113883.6.73" codeSystemName="WHO ATC" displayName="FONDAPARINUX"/>
+										</code>
+									</manufacturedMaterial>
+								</manufacturedProduct>
+							</consumable>
+							<performer>
+								<time value="20230302221122+0100"/>
+								<assignedEntity>
+									<id root="2.16.840.1.113883.2.9.4.3.2" extension="PROVAX00X00X000Y" assigningAuthorityName="MEF"/>
+									<assignedPerson>
+										<name>
+											<family>Esempio</family>
+											<given>Test</given>
+										</name>
+									</assignedPerson>
+								</assignedEntity>
+							</performer>
+							<participant typeCode="DIR">
+								<time value="20230301221122+0100"/>
+								<participantRole>
+									<id root="2.16.840.1.113883.2.9.4.3.2" extension="PROVAX00X00X000Y" assigningAuthorityName="MEF"/>
+									<playingEntity>
+										<name>
+											<family>Esempio</family>
+											<given>Test</given>
+										</name>
+									</playingEntity >
+								</participantRole >
+							</participant>
+	
+							<!-- GRAMMATURA -->
+							<entryRelationship typeCode="COMP">
+								<observation classCode="OBS" moodCode="EVN">
+									<code 	code="037485075" codeSystem="2.16.840.1.113883.2.9.6.1.5" codeSystemName="AIC" displayName="Grammatura"/>
+									<value xsi:type="REAL" value="2.5"/>
+								</observation>
+							</entryRelationship>
+							<!-- QUANTITÀ NELLA CONFEZIONE -->
+							<!--entryRelationship typeCode="COMP">
+								<observation classCode="OBS" moodCode="EVN">
+									<code code="[COD_QUANTITÀ]" codeSystem="[OID_CODESYSTEM_QUANT]" codeSystemName="[DESC_CODESYSTEM_QUANT]" displayName="Quantità nella Confezione"/>
+									<value xsi:type="REAL" value="[QUANTITA’]"/>
+								</observation>
+							</entryRelationship-->	
+							<!-- NUMERO DI CONFEZIONI -->
+							<!--entryRelationship typeCode="COMP">
+								<supply classCode="SPLY" moodCode="RQO">
+									<quantity value="[NUMERO]"/>
+								</supply>
+							</entryRelationship-->								
+						</substanceAdministration>
+					</entry>
+				</section>
+			</component>       </structuredBody>
    </component>
 </ClinicalDocument>
 endstream
 endobj
 10 0 obj
 <<
-/Size 8141
+/Size 26045
 >>
 endobj
 xref
@@ -250,13 +670,13 @@ xref
 0000000506 00000 n
 0000000566 00000 n
 0000000596 00000 n
-0000008854 00000 n
+0000026759 00000 n
 trailer
 <<
 /Root 1 0 R
 /Size 11
-/ID [<FADB92A1461F994F86C9B6576C0EEA26> <FADB92A1461F994F86C9B6576C0EEA26>]
+/ID [<1405A9644C3D4DB1D3035FEA3CF3F11D> <1405A9644C3D4DB1D3035FEA3CF3F11D>]
 >>
 startxref
-8887
+26793
 %%EOF
