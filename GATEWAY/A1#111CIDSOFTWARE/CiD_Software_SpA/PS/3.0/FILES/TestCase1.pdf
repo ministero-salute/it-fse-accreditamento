@@ -67,7 +67,7 @@ endobj
 endobj
 9 0 obj
 <<
-/Length 21967
+/Length 25972
 /Type /EmbeddedFile
 /Subtype /application#2Fxml
 /Params 10 0 R
@@ -178,7 +178,7 @@ stream
    <component>
        <structuredBody>
 <component>
-           <section ID="MODALITA_DI_TRASPORTO" classCode="DOCSECT"  moodCode="EVN">
+           <section ID="Modalità_di_Trasporto" classCode="DOCSECT"  moodCode="EVN">
                <templateId root="2.16.840.1.113883.2.9.10.1.6.20" />
                <code code="11459-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Modalità di Trasporto"/>
                <title>Modalità di trasporto</title>
@@ -198,7 +198,7 @@ stream
            </section>
 </component>
 <component>
-           <section ID="MOTIVO_DELLA_VISITA" classCode="DOCSECT"  moodCode="EVN">
+           <section ID="Motivo_Visita" classCode="DOCSECT"  moodCode="EVN">
                <templateId root="2.16.840.1.113883.2.9.10.1.6.42" />
                <code code="46239-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Motivo della visita"/>
                <title>Motivo della visita</title>
@@ -208,9 +208,19 @@ stream
                        <templateId root="2.16.840.1.113883.2.9.10.1.6.37" />
                        <code code="56817-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problema all'accesso"/>
                        <statusCode code="completed"/>
-                       <value xsi:type="CD" codeSystem="2.16.840.1.113883.2.9.6.1.54.2" code="04" />
+                       <value xsi:type="CD" codeSystem="2.16.840.1.113883.2.9.6.1.54.2" code="04" codeSystemName="ProblemaPrincipale_VPS"/>
                    </observation>
                </entry>
+			   <!--inizio aggiunta HardCoded-->
+			   <entry> 
+					<observation classCode="OBS" moodCode="EVN"> 
+						<templateId root="2.16.840.1.113883.2.9.10.1.6.87"/>
+						<code code="29298-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Ragione della visita"/>
+						<statusCode code="completed"/>
+						<value xsi:type="ST">XXX</value>
+					</observation> 
+				</entry>
+				<!--fine aggiunta HardCoded-->
            </section>
 </component>
 <component>
@@ -267,6 +277,71 @@ stream
                                </assignedPerson>
                            </assignedEntity>
                        </performer>
+					   <!--inizio aggiunta HardCoded-->
+							<!--Encounter Post Dimissione-->
+							<entryRelationship typeCode="COMP">
+								<encounter classCode="ENC" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.2.9.10.1.6.67"/>
+									<id root="2.16.840.1.113883.2.9.2.120101.4.6" extension="999999"/>
+									<code code="IMP" codeSystem="2.16.840.1.113883.2.9.1.11.1.2.9" codeSystemName="TipoEncounterPostDimissione_VPS" displayName="inpatient"/>
+									<text><reference value="#[REF_1]"/></text>
+									<effectiveTime value="20220222101010+0100"/>									
+									<!--Collocazione paziente Post Dimissione-->
+									<participant typeCode="LOC">
+										<time>
+											<low value="20220222101010+0100"/>
+											<high value ="20220222101010+0100"/>
+										</time>
+										<participantRole classCode="SDLOC">
+											<templateId root="2.16.840.1.113883.2.9.10.1.6.64"/>
+											<id root="2.16.840.1.113883.2.9.4.1.1" extension="111" assigningAuthorityName="[NOME_ORGANIZZAZIONE]"/>
+											<code code="8" codeSystem="2.16.840.1.113883.2.9.1.11.1.2.11" codeSystemName="TipoLuogoPostDimissione_VPS" displayName="dimissione a strutture ambulatoriali"/>
+										</participantRole>
+									</participant>							
+									<!--Ragione Collocazione-->
+									<entryRelationship typeCode="RSON">
+										<observation classCode="OBS" moodCode="EVN">
+											<templateId root="2.16.840.1.113883.2.9.10.1.6.68"/>
+											<code code="2" codeSystem="2.16.840.1.113883.2.9.1.11.1.2.13" codeSystemName="ProblemType_VPS" displayName="per mancanza di posto letto"/>
+											<statusCode code="completed"/>
+											<effectiveTime value="20220222101010+0100"/>
+											<value xsi:type="ST">[DETTAGLIO_CAUSA_TRASFERIMENTO]</value>
+										</observation>
+									</entryRelationship>
+								</encounter>
+							</entryRelationship>							
+							<!--Trasferimento Post Dimissione-->
+							<entryRelationship typeCode="COMP">
+								<act classCode="TRNS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.2.9.10.1.6.92"/>
+									<code nullFlavor="NA"/>
+									<text><reference value="#[REF_1]"/></text>
+									<effectiveTime value="20220222101010+0100"/>
+									<!--Collocazione paziente Post Dimissione-->
+									<participant typeCode="LOC">
+										<time>
+											<low value="20220222101010+0100"/>
+											<high value ="20220224101010+0100"/>
+										</time>
+										<participantRole classCode="SDLOC">
+											<templateId root="2.16.840.1.113883.2.9.10.1.6.64"/>
+											<id root="2.16.840.1.113883.2.9.4.1.1" extension="111" assigningAuthorityName="[NOME_ORGANIZZAZIONE]"/>
+											<code code="3" codeSystem="2.16.840.1.113883.2.9.1.11.1.2.11" codeSystemName="TipoLuogoPostDimissione_VPS" displayName="Trasferimento in un altro istituto"/>
+										</participantRole>
+									</participant>
+									<!--Ragione del Trasferimento-->
+									<entryRelationship typeCode="RSON">
+										<observation classCode="OBS" moodCode="EVN">
+												<templateId root="2.16.840.1.113883.2.9.10.1.6.68"/>
+												<code code="2" codeSystem="2.16.840.1.113883.2.9.1.11.1.2.13" codeSystemName="ProblemType_VPS" displayName="per mancanza di posto letto"/>
+												<statusCode code="completed"/>
+												<effectiveTime value="20220222101010+0100"/>
+												<value xsi:type="ST">[DETTAGLIO_CAUSA_TRASFERIMENTO]</value>
+										</observation>
+									</entryRelationship>
+								</act>
+							</entryRelationship>	
+					<!--fine aggiunta HardCoded-->
                    <entryRelationship typeCode="COMP">
                        <observation classCode="OBS" moodCode="EVN">
                            <templateId root="2.16.840.1.113883.2.9.10.1.6.70"/>
@@ -307,7 +382,7 @@ stream
            </section>
 </component>
 <component>
-           <section ID="INQUADRAMENTO_CLINICO_INIZIALE" classCode="DOCSECT"  moodCode="EVN">
+           <section ID="Inquadramento_Clinico" classCode="DOCSECT"  moodCode="EVN">
                <templateId root="2.16.840.1.113883.2.9.10.1.6.56" />
                <code code="78337-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Inquadramento clinico iniziale"/>
                <title>Inquadramento clinico iniziale</title>
@@ -355,7 +430,7 @@ esame obiettivo di test
            </section>
 </component>
 <component>
-           <section ID="INTERVENTI_PRESTAZIONI_CONSULENZE_E_RICHIESTE" classCode="DOCSECT"  moodCode="EVN">
+           <section ID="INTERVENTI_PRESTAZIONI_CONSULENZE_RICHIESTE" classCode="DOCSECT"  moodCode="EVN">
                <templateId root="2.16.840.1.113883.2.9.10.1.6.26" />
                <code code="62387-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Procedure ed Interventi"/>
                <title>Interventi Prestazioni Consulenze</title>
@@ -475,7 +550,7 @@ endstream
 endobj
 10 0 obj
 <<
-/Size 21967
+/Size 25972
 >>
 endobj
 xref
@@ -490,13 +565,13 @@ xref
 0000000506 00000 n
 0000000566 00000 n
 0000000596 00000 n
-0000022681 00000 n
+0000026686 00000 n
 trailer
 <<
 /Root 1 0 R
 /Size 11
-/ID [<2A4A15492CD0B9DB31EB0C7D67F4D678> <2A4A15492CD0B9DB31EB0C7D67F4D678>]
+/ID [<1C41BE4E1BE967B6194BE54B1FD79B3C> <1C41BE4E1BE967B6194BE54B1FD79B3C>]
 >>
 startxref
-22715
+26720
 %%EOF
