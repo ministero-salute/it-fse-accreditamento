@@ -67,7 +67,7 @@ endobj
 endobj
 9 0 obj
 <<
-/Length 25897
+/Length 31820
 /Type /EmbeddedFile
 /Subtype /application#2Fxml
 /Params 10 0 R
@@ -182,14 +182,14 @@ stream
                    <text>
                        <list>
                            <item>
-                           <content ID="DIAG-1"> ALTRE FORME DI IPOTIROIDISMI CONSEGUENTI AD ABLAZIONE DELLA TIROIDE</content>
+                           <content ID="DIAG-1"> DISTURBO DI PANICO SENZA AGORAFOBIA</content>
                            </item>
                        </list>
                    </text>
                    <entry>
                        <observation classCode="OBS" moodCode="EVN">
                            <code code="8646-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnosi di Accettazione Ospedaliera"/>
-                           <value xsi:type="CD" code="244.1" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9CM" displayName="ALTRE FORME DI IPOTIROIDISMI CONSEGUENTI AD ABLAZIONE DELLA TIROIDE"/>
+                           <value xsi:type="CD" code="300.01" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9CM" displayName="DISTURBO DI PANICO SENZA AGORAFOBIA"/>
                        </observation>
                    </entry>
                </section>
@@ -199,24 +199,146 @@ stream
                    <code code="47039-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"  displayName="Ricovero Ospedaliero, anamnesi ed esame obiettivo"/>
                    <title>Inquadramento Clinico Iniziale</title>
                    <text>Da Pronto Soccorso</text>
+				   <!--Inizio Aggiunta HardCoded-->
+				   <component typeCode="COMP">
+						<section ID="Anamnesi">
+							<code code="11329-0" codeSystem="2.16.840.1.113883.6.1"  codeSystemName="LOINC" displayName="Anamnesi Generale"/>
+							<title>Anamnesi</title>
+							<text>
+								<paragraph>
+									<caption>Elenco degli interventi, data e commenti</caption>
+									<content ID="INTCHIR-1">
+										Appendicectomia nel ottobre 2021
+									</content>
+									<content ID="INTCHIR-2">
+										Cordotomia percutanea nel febbraio 2011
+									</content>
+								</paragraph>
+							</text>
+							<!--anamnesi patologica prossima-->
+							<entry>
+								<observation classCode="OBS" moodCode="EVN">
+									<code code="75326-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem"/>
+									<statusCode code="completed"/>
+									<effectiveTime>
+										<low value="20230217000000+0100"/>
+									</effectiveTime>
+									<value xsi:type="CD" code="153.5" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD-9-CM" displayName="Tumori dell'appendice"/>
+									<entryRelationship typeCode="REFR" inversionInd='false'>
+										<observation classCode="OBS" moodCode="EVN">
+											<code code="89261-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Decorso Clinico"/>
+											<text><reference value="#[REF_CRON]"/></text>
+											<statusCode code="completed"/>
+											<value xsi:type="CE" code="LA28752-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Chronic"/>
+										</observation>
+									</entryRelationship>
+									<entryRelationship typeCode="REFR" inversionInd='false'>
+										<observation classCode="OBS" moodCode="EVN">
+											<code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Stato"/>
+											<text><reference value="#[REF_STATO]"/></text>
+											<statusCode code="completed"/>
+											<value xsi:type="CE" code="LA16666-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Active"/>
+										</observation>
+									</entryRelationship>
+								</observation>
+							</entry>
+							<!--anamnesi patologica remota-->
+							<entry>
+								<observation classCode="OBS" moodCode="EVN">
+									<code code="75326-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem"/>
+									<statusCode code="completed"/>
+									<effectiveTime>
+										<low value="20230217000000+0100"/>
+										<high value="20230217000000+0100"/>
+									</effectiveTime>
+									<value xsi:type="CD" code="03.21" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD-9-CM" displayName="CORDOTOMIA PERCUTANEA"/>
+									<entryRelationship typeCode="REFR" inversionInd='false'>
+										<observation classCode="OBS" moodCode="EVN">
+											<code code="89261-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Decorso Clinico"/>
+											<text><reference value="#[REF_CRON]"/></text>
+											<statusCode code="completed"/>
+											<value xsi:type="CE" code="LA18821-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Acute"/>
+										</observation>
+									</entryRelationship>
+									<entryRelationship typeCode="REFR" inversionInd='false'>
+										<observation classCode="OBS" moodCode="EVN">
+											<code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Stato"/>
+											<text><reference value="#[REF_STATO]"/></text>
+											<statusCode code="completed"/>
+											<value xsi:type="CE" code="LA18632-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Inactive"/>
+										</observation>
+									</entryRelationship>
+								</observation>
+							</entry>
+						</section>
+					</component>
+					<component typeCode="COMP">
+						<section ID="Esame_Obiettivo">
+							<code code="29545-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Esame Obiettivo"/>
+							<title>Esame Obiettivo</title>
+							<text>
+								Condizioni generali: paziente vigile, orientato e collaborante. 
+								Apparato cardiocircolatorio: azione cardiaca ritmica normofrequente, toni 
+								puri e pause libere.
+								Soffi vascolari: assenti.
+								Polsi periferici: palpabili nelle comuni sedi di repere
+								Polsi periferici: palpabili nelle comuni sedi di repere
+								Apparato respiratorio: Murmure vescicolare presente su tutto l’ambito, non 
+								rumori patologici aggiunti
+								Addome: trattabile alla palpazione superficiale e profonda non dolente ne 
+								dolorabile; Murphy: negativo. Blumberg: negativo. Giordano: negativo
+								Fegato: nei limiti 
+								Milza: nei limiti
+								Turgore giugulare: assente
+								Edemi: assenti
+							</text>
+						</section>
+					</component>
+					<component typeCode="COMP">
+						<section ID="Terapia_Farmacologica_Ingresso">
+							<code code="42346-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Terapia Farmacologica all'ingresso"/>
+							<title>Terapia Farmacologica all'ingresso</title>
+							<text>
+								Losaprex 50 mg 1 cpr ore 8
+								Cardicor 5 mg 1 cpr ore 8
+								Lasix 25 mg 2 cpr ore 8
+								Peptazol 40 mg 1 cpr ore 8
+								Arixtra 2.5 mg 1 fl s.c. ore 8
+								Coumadin sec INR (range terapeutico 2-3)
+							</text>
+						</section>
+					</component>				   
+				   <!--Fine Aggiunta HardCoded-->
                </section>
            </component>
            <component typeCode="COMP">
                <section ID="Decorso_ospedaliero" classCode="DOCSECT" moodCode="EVN">
-                   <code code="8648-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"  displayName="Decorso ospedaliero"/>
+                   <code code="8648-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"  displayName="Decorso_ospedaliero"/>
                    <title>Decorso ospedaliero</title>
                    <text></text>
                </section>
            </component>
            <component typeCode="COMP">
                <section ID="PROCEDURE_ESEGUITE_DURANTE_RICOVERO" classCode="DOCSECT" moodCode="EVN">
-                   <code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"  displayName="Procedure"/>
+                   <code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"  displayName="History of Procedures Document"/>
                    <title>Procedure eseguite durante il ricovero</title>
                    <text>Le procedure eseguite sono: (897) Visita generale.</text>
                        <entry>
                            <procedure classCode="PROC" moodCode="EVN" >
                                <code code="897" displayName="Visita generale" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9-CM" />
-                               <effectiveTime value="20230314000000+0100" /> 
+                               <text>
+								testo libero
+							</text>
+							<statusCode code="active"/>
+							<effectiveTime>
+								<low value="20230220100000+0100"/> 
+								<high value="20230220160000+0100"/>
+							</effectiveTime>
+							<entryRelationship typeCode="RSON">
+								<observation classCode="OBS" moodCode="EVN">
+									<code code="396.0" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD-9CM" displayName="stenosi della valvola mitrale e della valvola aortica"/>
+								</observation>
+							</entryRelationship>
                            </procedure>
                        </entry>
                </section>
@@ -655,7 +777,7 @@ endstream
 endobj
 10 0 obj
 <<
-/Size 25897
+/Size 31820
 >>
 endobj
 xref
@@ -670,13 +792,13 @@ xref
 0000000506 00000 n
 0000000566 00000 n
 0000000596 00000 n
-0000026611 00000 n
+0000032534 00000 n
 trailer
 <<
 /Root 1 0 R
 /Size 11
-/ID [<D55B0674B68F1944186F3E7788D1CA40> <D55B0674B68F1944186F3E7788D1CA40>]
+/ID [<E9D793B8274F2B896B2D8B87456099A2> <E9D793B8274F2B896B2D8B87456099A2>]
 >>
 startxref
-26645
+32568
 %%EOF
