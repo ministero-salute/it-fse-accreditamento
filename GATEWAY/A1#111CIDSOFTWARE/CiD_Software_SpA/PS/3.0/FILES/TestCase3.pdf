@@ -67,7 +67,7 @@ endobj
 endobj
 9 0 obj
 <<
-/Length 29385
+/Length 49115
 /Type /EmbeddedFile
 /Subtype /application#2Fxml
 /Params 10 0 R
@@ -178,7 +178,7 @@ stream
    <component>
        <structuredBody>
 <component>
-           <section ID="MODALITA_DI_TRASPORTO" classCode="DOCSECT"  moodCode="EVN">
+           <section ID="Modalità_di_Trasporto" classCode="DOCSECT"  moodCode="EVN">
                <templateId root="2.16.840.1.113883.2.9.10.1.6.20" />
                <code code="11459-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Modalità di Trasporto"/>
                <title>Modalità di trasporto</title>
@@ -198,7 +198,7 @@ stream
            </section>
 </component>
 <component>
-           <section ID="MOTIVO_DELLA_VISITA" classCode="DOCSECT"  moodCode="EVN">
+           <section ID="Motivo_Visita" classCode="DOCSECT"  moodCode="EVN">
                <templateId root="2.16.840.1.113883.2.9.10.1.6.42" />
                <code code="46239-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Motivo della visita"/>
                <title>Motivo della visita</title>
@@ -208,9 +208,19 @@ stream
                        <templateId root="2.16.840.1.113883.2.9.10.1.6.37" />
                        <code code="56817-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problema all'accesso"/>
                        <statusCode code="completed"/>
-                       <value xsi:type="CD" codeSystem="2.16.840.1.113883.2.9.6.1.54.2" code="04" />
+                       <value xsi:type="CD" codeSystem="2.16.840.1.113883.2.9.6.1.54.2" code="04" codeSystemName="ProblemaPrincipale_VPS"/>
                    </observation>
                </entry>
+			   <!--inizio aggiunta HardCoded-->
+				<entry>
+                   <observation classCode="OBS" moodCode="EVN">
+                       <templateId root="2.16.840.1.113883.2.9.10.1.6.87" />
+                       <code code="29298-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Ragione della visita"/>
+                       <statusCode code="completed"/>
+                       <value xsi:type="ST">Incidente in strada</value>
+                   </observation>
+				</entry>
+				<!--fine aggiunta HardCoded-->
            </section>
 </component>
 <component>
@@ -267,6 +277,71 @@ stream
                                </assignedPerson>
                            </assignedEntity>
                        </performer>
+					   <!--inizio aggiunta HardCoded-->
+							<!--Encounter Post Dimissione-->
+							<entryRelationship typeCode="COMP">
+								<encounter classCode="ENC" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.2.9.10.1.6.67"/>
+									<id root="2.16.840.1.113883.2.9.2.120101.4.6" extension="999999"/>
+									<code code="IMP" codeSystem="2.16.840.1.113883.2.9.1.11.1.2.9" codeSystemName="TipoEncounterPostDimissione_VPS" displayName="inpatient"/>
+									<text><reference value="#[REF_1]"/></text>
+									<effectiveTime value="20220222101010+0100"/>									
+									<!--Collocazione paziente Post Dimissione-->
+									<participant typeCode="LOC">
+										<time>
+											<low value="20220222101010+0100"/>
+											<high value ="20220222101110+0100"/>
+										</time>
+										<participantRole classCode="SDLOC">
+											<templateId root="2.16.840.1.113883.2.9.10.1.6.64"/>
+											<id root="2.16.840.1.113883.2.9.4.1.1" extension="111" assigningAuthorityName="[NOME_ORGANIZZAZIONE]"/>
+											<code code="8" codeSystem="2.16.840.1.113883.2.9.1.11.1.2.11" codeSystemName="TipoLuogoPostDimissione_VPS" displayName="dimissione a strutture ambulatoriali"/>
+										</participantRole>
+									</participant>							
+									<!--Ragione Collocazione-->
+									<entryRelationship typeCode="RSON">
+										<observation classCode="OBS" moodCode="EVN">
+											<templateId root="2.16.840.1.113883.2.9.10.1.6.68"/>
+											<code code="2" codeSystem="2.16.840.1.113883.2.9.1.11.1.2.13" codeSystemName="ProblemType_VPS" displayName="per mancanza di posto letto"/>
+											<statusCode code="completed"/>
+											<effectiveTime value="20220222101010+0100"/>
+											<value xsi:type="ST">[DETTAGLIO_CAUSA_TRASFERIMENTO]</value>
+										</observation>
+									</entryRelationship>
+								</encounter>
+							</entryRelationship>							
+							<!--Trasferimento Post Dimissione-->
+							<entryRelationship typeCode="COMP">
+								<act classCode="TRNS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.2.9.10.1.6.92"/>
+									<code nullFlavor="NA"/>
+									<text><reference value="#[REF_1]"/></text>
+									<effectiveTime value="20220222101010+0100"/>
+									<!--Collocazione paziente Post Dimissione-->
+									<participant typeCode="LOC">
+										<time>
+											<low value="20220222101010+0100"/>
+											<high value ="20220224101010+0100"/>
+										</time>
+										<participantRole classCode="SDLOC">
+											<templateId root="2.16.840.1.113883.2.9.10.1.6.64"/>
+											<id root="2.16.840.1.113883.2.9.4.1.1" extension="111" assigningAuthorityName="[NOME_ORGANIZZAZIONE]"/>
+											<code code="3" codeSystem="2.16.840.1.113883.2.9.1.11.1.2.11" codeSystemName="TipoLuogoPostDimissione_VPS" displayName="Trasferimento in un altro istituto"/>
+										</participantRole>
+									</participant>
+									<!--Ragione del Trasferimento-->
+									<entryRelationship typeCode="RSON">
+										<observation classCode="OBS" moodCode="EVN">
+												<templateId root="2.16.840.1.113883.2.9.10.1.6.68"/>
+												<code code="2" codeSystem="2.16.840.1.113883.2.9.1.11.1.2.13" codeSystemName="ProblemType_VPS" displayName="per mancanza di posto letto"/>
+												<statusCode code="completed"/>
+												<effectiveTime value="20220222101010+0100"/>
+												<value xsi:type="ST">[DETTAGLIO_CAUSA_TRASFERIMENTO]</value>
+										</observation>
+									</entryRelationship>
+								</act>
+							</entryRelationship>	
+					<!--fine aggiunta HardCoded-->
                    <entryRelationship typeCode="COMP">
                        <observation classCode="OBS" moodCode="EVN">
                            <templateId root="2.16.840.1.113883.2.9.10.1.6.70"/>
@@ -281,7 +356,7 @@ stream
                            <templateId root="2.16.840.1.113883.2.9.10.1.6.69"/>
                            <code code="11302-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Esito"/>
                            <statusCode code="completed"/>
-                           <value xsi:type="CD" codeSystem="2.16.840.1.113883.2.9.6.1.54.5" code="3" />
+                           <value xsi:type="CD" codeSystem="2.16.840.1.113883.2.9.6.1.54.5" code="3" codeSystemName="EsitoTrattamento_VPS" />
                        </observation>
                    </entryRelationship>
                    <entryRelationship typeCode="COMP">
@@ -317,9 +392,56 @@ stream
                    </observation>
                </entry>
            </section>
-</component>
+		</component>
+		<component>
+		<section ID="PIANO_CURA_DIMISSIONE" classCode="DOCSECT"  moodCode="EVN"> 	   
+			<templateId root="2.16.840.1.113883.2.9.10.1.6.34"/> 	   
+			<code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Piano di cura"/> 	   
+			<title>Piano di cura</title> 	   
+			<text><![CDATA[prescrizioni in dimissione]]></text>
+			<!--inizio aggiunta HardCoded-->
+			<author>
+				<time value="20220222101010+0100"/>
+				<assignedAuthor>
+					<id root="2.16.840.1.113883.2.9.4.3.2" extension="PROVAX00X00X000Y" assigningAuthorityName="MEF"/>
+					<assignedPerson>
+						<name>
+							<family>Esempio</family>
+							<given>Test</given>
+						</name>
+					</assignedPerson>
+				</assignedAuthor>
+			</author>
+			<entry>
+				<act classCode="ACT" moodCode="INT">
+					<templateId root="2.16.840.1.113883.2.9.10.1.6.62"/>
+					<code code="27536-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Cardiac rehabilitation treatment plan"/>
+					<statusCode code="active"/>
+					<author>
+						<time value="20220222101010+0100"/>
+						<assignedAuthor>
+							<id root="2.16.840.1.113883.2.9.4.3.2" extension="PROVAX00X00X000Y" assigningAuthorityName="MEF"/>
+							<assignedPerson>
+								<name>
+									<family>Esempio</family>
+									<given>Test</given>
+								</name>
+							</assignedPerson>
+						</assignedAuthor>
+					</author>
+					<reference typeCode="REFR">
+						<externalAct classCode="ACT" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.2.9.10.1.6.89"/>
+							<id root="2.16.840.1.113883.2.9.4.3.9" extension="999999" assigningAuthorityName="MEF"/>
+						</externalAct>
+					</reference>
+				</act>
+			</entry>
+			<!--fine aggiunta HardCoded-->
+		</section>
+	</component>
 <component>
-           <section ID="INQUADRAMENTO_CLINICO_INIZIALE" classCode="DOCSECT"  moodCode="EVN">
+           <section ID="Inquadramento_Clinico" classCode="DOCSECT"  moodCode="EVN">
                <templateId root="2.16.840.1.113883.2.9.10.1.6.56" />
                <code code="78337-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Inquadramento clinico iniziale"/>
                <title>Inquadramento clinico iniziale</title>
@@ -333,8 +455,90 @@ riferisce ulcera gastrica
                        <templateId root="2.16.840.1.113883.2.9.10.1.6.55" />
                        <code code="11329-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Anamnesi Generale" />
                        <title>Anamnesi</title>
-                       <text><![CDATA[[2023-03-22 12:31:46.0] riferisce ulcera gastrica
-]]></text>
+                       <text><![CDATA[[2023-03-22 12:31:46.0] riferisce ulcera gastrica]]></text>
+					   <!--inizio aggiunta HardCoded-->
+						<author>
+							<time value="20220222202020+0100"/>
+							<assignedAuthor>
+								<id root="2.16.840.1.113883.2.9.4.3.2" extension="PROVAX00X00X000Y" assigningAuthorityName="MEF"/>
+								<assignedPerson>
+									<name>
+										<family>Esempio</family>
+										<given>Test</given>
+									</name>
+								</assignedPerson>
+							</assignedAuthor>
+						</author>
+						<entry> 
+							<observation moodCode="EVN" classCode="OBS">
+								<code code="75326-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem"/>
+								<statusCode code="completed"/>
+								<effectiveTime>
+									<low value="20220222101010+0100"/>
+									<high value="20220222101110+0100"/>
+								</effectiveTime>
+								<value xsi:type="CD" code="153.5" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9-CM" displayName="TUMORI MALIGNI DELL'APPENDICE"/>
+								<entryRelationship typeCode="REFR" inversionInd='false'> 
+									<observation classCode="OBS" moodCode="EVN">
+										<code code="89261-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Decorso Clinico" />
+										<text>
+											<reference value="#[REF_CRON]"/>
+										</text>
+										<statusCode code="completed"/>
+										<value xsi:type="CE" code="LA28752-6" codeSystem="2.16.840.1.113883.6.1" displayName="Chronic"/>
+									</observation>
+								</entryRelationship > 
+								<entryRelationship typeCode="REFR" inversionInd='false'>
+									<observation classCode="OBS" moodCode="EVN">
+										<code code="33999-4" displayName="Stato" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+										<text>
+											<reference value="#[REF_STATO]"/>
+										</text>
+										<statusCode code="completed"/>
+										<value xsi:type="CE" code="LA16666-2" codeSystem="2.16.840.1.113883.6.1" displayName="Active"/>
+									</observation>
+								</entryRelationship>
+							</observation>
+						</entry>
+						<entry>
+							<organizer classCode="CLUSTER" moodCode="EVN">
+								<code code="10157-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Storia di malattie di membri familiari"/>
+								<statusCode code="completed"/>
+								<effectiveTime value="20220222101010+0100"/>
+								<subject typeCode="SBJ">
+									<relatedSubject classCode="PRS">
+										<code code="MTH" codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" displayName="Mother"/>
+										<subject>
+											<administrativeGenderCode code="F" codeSystem="2.16.840.1.113883.5.1" codeSystemName="HL7 AdministrativeGender" displayName="Femmina"/>
+										</subject>
+									</relatedSubject>
+								</subject>
+								<component>
+									<observation classCode="OBS" moodCode="EVN">
+										<code code="52797-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnosi codice ICD"/> 
+										<text>
+											<reference value="#[REF_OBS]"/>
+										</text>
+										<statusCode code="completed"/>
+										<effectiveTime value="20220222101010+0100"/>
+										<value xsi:type="CD" code="575.6" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9-CM" displayName="COLESTEROLOSI DELLA COLECISTI"/>
+										<entryRelationship typeCode="SUBJ">
+											<observation classCode="OBS" moodCode="EVN">
+												<code code="35267-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Età diagnosi patologia"/>
+												<value xsi:type="PQ" value="40" unit="a"/> 
+											</observation>
+										</entryRelationship>
+										<entryRelationship typeCode="SUBJ">
+											<observation classCode="OBS" moodCode="EVN">
+												<code code="39016-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Età_decesso"/>
+												<value xsi:type="PQ" value="70" unit="a"/> 
+											</observation>
+										</entryRelationship>
+									</observation>
+								</component>
+							</organizer>
+						</entry>
+						<!--fine aggiunta HardCoded-->	
                    </section>
               </component>
                <component>
@@ -343,12 +547,195 @@ riferisce ulcera gastrica
                        <code code="29545-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Esame Obiettivo"/>
                        <title>Esame Obiettivo</title>
                        <text><![CDATA[riferisce ulcera gastrica]]></text>
+					   <!--inizio aggiunta HardCoded-->
+						<author>
+							<time value="20220222111111+0100"/>
+							<assignedAuthor>
+								<id root="2.16.840.1.113883.2.9.4.3.2" extension="PROVAX00X00X000Y" assigningAuthorityName="MEF"/>
+								<assignedPerson>
+									<name>
+										<family>Esempio</family>
+										<given>Test</given>
+									</name>
+								</assignedPerson>
+							</assignedAuthor>
+						</author>
+						<!--fine aggiunta HardCoded-->	
                    </section>
               </component>
+			  <!--inizio aggiunta HardCoded-->
+			<component>
+				<section ID="Terapia_Farmacologica_Ingresso" classCode="DOCSECT" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.2.9.10.1.6.57"/>
+					<code code="42346-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Medications on admission (narrative)"/>
+					<title>Terapia Farmacologica all’Ingresso </title>
+					<text>
+						Losaprex 50 mg 1 cpr ore 8
+						Cardicor 5 mg 1 cpr ore 8
+						Lasix 25 mg 2 cpr ore 8
+						Peptazol 40 mg 1 cpr ore 8
+						Arixtra 2.5 mg 1 fl s.c. ore 8
+						Coumadin sec INR (range terapeutico 2-3)
+					</text>
+					<author>
+						<time value="20220222111111+0100"/>
+						<assignedAuthor>
+							<id root="2.16.840.1.113883.2.9.4.3.2" extension="PROVAX00X00X000Y" assigningAuthorityName="MEF"/>
+							<assignedPerson>
+								<name>
+									<family>Esempio</family>
+									<given>Test</given>
+								</name>
+							</assignedPerson>
+						</assignedAuthor>
+					</author>
+				</section>
+			</component>
+			<component>
+				<section classCode="DOCSECT" moodCode="EVN" ID="ALLERGIE">
+					<templateId root="2.16.840.1.113883.2.9.10.1.6.33"/>
+					<code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergie e/o Reazioni Avverse"/>
+					<title>Allergie</title>
+					<text> 
+						<paragraph> 
+							Dopo la somministrazione del mezzo di contrasto, il paziente ha 
+							manifestato una evidente reazione allergica.
+						</paragraph> 
+					</text>
+					<author>
+						<time value="20220425111111+0100"/>
+						<assignedAuthor>
+							<id root="2.16.840.1.113883.2.9.4.3.2" extension="PROVAX00X00X000Y" assigningAuthorityName="MEF"/>
+							<assignedPerson>
+								<name>
+									<family>Esempio</family>
+									<given>Test</given>
+								</name>
+							</assignedPerson>
+						</assignedAuthor>
+					</author>
+					<entry> 
+						<act classCode="ACT" moodCode="EVN">
+							<code nullFlavor="NA"/> 
+							<statusCode code="active"/>
+							<effectiveTime>
+								<low value="20220222101010+0100"/>
+								<!--high value="20220425202020+0100"/-->
+							</effectiveTime>
+							<entryRelationship typeCode="SUBJ">
+								<observation classCode="OBS" moodCode="EVN"> 
+									<code code="52473-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergia o causa della reazione"/> 
+									<text>
+										<reference value="#[REF_NOTA1]"/>
+									</text>
+									<statusCode code="completed"/>
+									<effectiveTime>
+										<low value="20220222101010+0100"/>
+										<high value="20220223101010+0100"/>
+									</effectiveTime>
+									<value xsi:type="CD" code="ALG" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ObservationIntoleranceType" displayName="Allergy"/>
+									<participant typeCode="CSM">
+										<participantRole classCode="MANU">
+											<playingEntity classCode="MMAT">
+												<code code="260152009" codeSystem="2.16.840.1.113883.2.9.77.22.11.2" codeSystemName="Allergeni (No Farmaci)" displayName="Peli di gatto">
+													<originalText>
+														<reference value="#[REF_AGENT]"/>
+													</originalText>
+												</code>
+											</playingEntity>
+										</participantRole>
+									</participant>
+									<entryRelationship typeCode="MFST" >
+										<observation classCode="OBS" moodCode="EVN"> 
+											<code code="75321-0" displayName= "Obiettività Clinica" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+											<text>
+												<reference value='#[REF_TXT_OBS]'/>
+											</text>
+											<statusCode code="completed"/>
+											<effectiveTime>
+												<low value="20220222101010+0100"/>
+												<high value="20220223101010+0100"/>
+											</effectiveTime>
+											<value xsi:type="CD" code="477.2" codeSystem="2.16.840.1.113883.6.103" displayName="RINITE ALLERGICA DA PELI O FORFORA ANIMALE (GATTO)(CANE)" codeSystemName="ICD-9CM"> 
+												<originalText> 
+													<reference value="#[REF_REAZ]"/> 
+												</originalText>
+											</value>
+										</observation>
+									</entryRelationship>										
+									<entryRelationship typeCode="SUBJ">
+										<observation classCode="OBS" moodCode="EVN"> 
+											<code code="SEV" displayName="Criticality" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
+											<text>
+												<reference value="#[REF_TXT_CRIT]"/>
+											</text>
+											<statusCode code="completed"/>
+											<value xsi:type="CD" code="M" codeSystem="2.16.840.1.113883.5.1063" codeSystemName="CriticalityObservation" displayName="Moderate"/>
+										</observation>
+									</entryRelationship>
+									<entryRelationship typeCode="REFR">
+										<observation classCode="OBS" moodCode="EVN"> 
+											<code code="33999-4" displayName="Stato" codeSystem="2.16.840.1.113883.6.1"	codeSystemName="LOINC"/>
+											<text>
+												<reference value="#[REF_STATO]"/>
+											</text>
+											<statusCode code="completed"/>
+											<value xsi:type="CD" code="LA16666-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Active"/>
+										</observation>
+									</entryRelationship>
+									<entryRelationship typeCode="SUBJ" >
+										<act classCode="ACT" moodCode="EVN">
+											<code code="48767-8" displayName="Annotation Comment" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+											<text>
+												<reference value="#[REF_COMMENTI]"/>
+											</text>
+											<statusCode code="completed"/>
+										</act>
+									</entryRelationship>
+								</observation>
+							</entryRelationship>
+						</act>
+					</entry>
+				</section>
+			</component>
+			<component>
+				<section classCode="DOCSECT" moodCode="EVN" ID="PROBLEMI_APERTI">
+					<templateId root="2.16.840.1.113883.2.9.10.1.6.59"/>
+					<code code="11450-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem list Reported"/>
+					<title>Problemi aperti</title>
+					<text>
+						<table>
+							<thead>
+								<tr>
+									<th>Problemi aperti</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>[DESC_PROBLEMI_APERTI]</td>
+								</tr>
+							</tbody>
+						</table>
+					</text>
+					<author>
+						<time value="20220426090910+0100"/>
+						<assignedAuthor>
+							<id root="2.16.840.1.113883.2.9.4.3.2" extension="PROVAX00X00X000Y" assigningAuthorityName="MEF"/>
+							<assignedPerson>
+								<name>
+									<family>Esempio</family>
+									<given>Test</given>
+								</name>
+							</assignedPerson>
+						</assignedAuthor>
+					</author>
+				</section>
+			</component>
+			<!--fine aggiunta HardCoded-->
 
            </section>
-</component>
-<component>
+	</component>
+	<component>
            <section ID="DECORSO_OSPEDALIERO" classCode="DOCSECT"  moodCode="EVN">
                <templateId root="2.16.840.1.113883.2.9.10.1.6.23" />
                <code code="8648-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Decorso Ospedaliero"/>
@@ -357,18 +744,47 @@ riferisce ulcera gastrica
            </section>
 </component>
 <component>
-           <section ID="INTERVENTI_PRESTAZIONI_CONSULENZE_E_RICHIESTE" classCode="DOCSECT"  moodCode="EVN">
+           <section ID="INTERVENTI_PRESTAZIONI_CONSULENZE_RICHIESTE" classCode="DOCSECT"  moodCode="EVN">
                <templateId root="2.16.840.1.113883.2.9.10.1.6.26" />
                <code code="62387-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Procedure ed Interventi"/>
                <title>Interventi Prestazioni Consulenze</title>
                <text><![CDATA[Le procedure eseguite sono: (897) Visita generale.]]></text>
                <entry>
-       <act classCode="ACT" moodCode="EVN">
-               <templateId root="2.16.840.1.113883.2.9.10.1.6.62"/>
-               <code code="897" displayName="VISITA GENERALE" /> 
-               <text><![CDATA[VISITA GENERALE]]></text>
-                       <statusCode code="completed" />
-        </act>
+			   <act classCode="ACT" moodCode="EVN">
+					   <templateId root="2.16.840.1.113883.2.9.10.1.6.62"/>
+					   <code code="897" displayName="VISITA GENERALE" /> 
+					   <text><![CDATA[VISITA GENERALE]]></text>
+							   <statusCode code="completed" />
+				<!--inizio aggiunta HardCoded-->
+					<effectiveTime value="20220222101010+0100"/> 
+							<!--esecutore della prestazione-->
+							<performer>
+								<time value="20220222171717+0100"/>
+								<assignedEntity>
+									<id root="2.16.840.1.113883.2.9.4.3.2" extension="PROVAX00X00X000Y" assigningAuthorityName="MEF"/>
+									<assignedPerson>
+										<name>
+											<family>Esempio</family>
+											<given>Test</given>
+										</name>
+									</assignedPerson>
+								</assignedEntity>
+							</performer>
+							<!--richiedente della prestazione-->
+							<participant typeCode="REF">
+								<time value="20220222101010+0100"/>
+								<participantRole>
+									<id root="2.16.840.1.113883.2.9.4.3.2" extension="PROVAX00X00X000Y" assigningAuthorityName="MEF"/>
+									<playingEntity>
+										<name>
+											<family>Esempio</family>
+											<given>Test</given>
+										</name>
+									</playingEntity>
+								</participantRole>
+							</participant>
+				<!--fine aggiunta HardCoded-->
+				</act>
                </entry>
            </section>
 </component>
@@ -377,7 +793,49 @@ riferisce ulcera gastrica
                <templateId root="2.16.840.1.113883.2.9.10.1.6.27"/>
                <code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Relevant diagnostic tests/laboratory data"/>
                <title>Accertamenti</title>
-               <text><![CDATA[null]]></text>
+               <text><![CDATA[In data 07/07 u.s. eseguita valutazione dello stato di salute del paziente.]]></text>
+               <!--inizio aggiunta HardCoded-->
+					<entry>
+						<organizer classCode="BATTERY" moodCode="EVN"> 
+							<templateId root="2.16.840.1.113883.2.9.10.1.6.45"/>
+							<statusCode code="completed"/>
+							<performer>
+								<time value="20220222101010+0100"/>
+								<assignedEntity>
+									<id root="2.16.840.1.113883.2.9.4.3.2" extension="PROVAX00X00X000Y" assigningAuthorityName="MEF"/>
+									<assignedPerson>
+										<name>
+											<family>Esempio</family>
+											<given>Test</given>
+										</name>
+									</assignedPerson>
+								</assignedEntity>
+							</performer>
+							<participant typeCode="REF">
+								<time value="20220222101010+0100"/>
+								<participantRole>
+									<id root="2.16.840.1.113883.2.9.4.3.2" extension="PROVAX00X00X000Y" assigningAuthorityName="MEF"/>
+									<playingEntity>
+										<name>
+											<family>Esempio</family>
+											<given>Test</given>
+										</name>
+									</playingEntity>
+								</participantRole>
+							</participant>
+							<!--Dettaglio Accertamento-->
+							<component>
+								<observation classCode="OBS" moodCode="EVN"> 
+									<templateId root="2.16.840.1.113883.2.9.10.1.6.46"/>
+									<code code="86524-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Type of assessment"/>
+									<statusCode code="completed"/>
+									<effectiveTime value="20220222101010+0100"/>
+									<value xsi:type="ST">[ESITO_ACCERTAMENTO]</value>
+								</observation> 
+							</component>
+						</organizer>
+					</entry>
+			   <!--fine aggiunta HardCoded-->
            </section>
 </component>
 <component>
@@ -684,7 +1142,7 @@ endstream
 endobj
 10 0 obj
 <<
-/Size 29385
+/Size 49115
 >>
 endobj
 xref
@@ -699,13 +1157,13 @@ xref
 0000000506 00000 n
 0000000566 00000 n
 0000000596 00000 n
-0000030099 00000 n
+0000049829 00000 n
 trailer
 <<
 /Root 1 0 R
 /Size 11
-/ID [<B2C6332A00FD35FB82DE5DAE9E30AD6C> <B2C6332A00FD35FB82DE5DAE9E30AD6C>]
+/ID [<28A892E7A54C335D54CD7EB9F4E9E2FD> <28A892E7A54C335D54CD7EB9F4E9E2FD>]
 >>
 startxref
-30133
+49863
 %%EOF
