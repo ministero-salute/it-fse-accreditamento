@@ -21,6 +21,14 @@ Ogni directory contiene:
 
 ## Pubblicazione
 
+**N.B**
+
+**Il processo di accreditamento (convalida) dei software per il servizio di pubblicazione è posticipato, al momento la priorità è data al processo di accreditamento legato all’adeguamento dei CDA2 alle nuove specifiche.  
+Si ricorda che sono comunque disponibili i test case di pubblicazione ed è sempre possibile utilizzare i servizi dell’istanza del gateway in pre-produzione per test interni in ottica accreditamento.  
+L’avvio dell’accreditamento (convalida) dei software per il servizio di pubblicazione sarà comunicato in seguito.**
+
+
+
 All'interno della directory [Pubblicazione](Pubblicazione/) sono presenti i file di supporto per il servizio di **pubblicazione**.
 
 Se il fornitore non ha a disposizione un documento *validato* da usare nei test, può utilizzare i file (già firmati) presenti nella directory 
