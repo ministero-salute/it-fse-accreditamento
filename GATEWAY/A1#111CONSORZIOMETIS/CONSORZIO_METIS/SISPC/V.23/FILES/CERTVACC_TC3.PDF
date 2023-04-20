@@ -36,12 +36,12 @@ endobj
 endobj
 6 0 obj
 <<
-/Length 179
+/Length 181
 /Filter /FlateDecode
 >>
 stream
-xú-é±
-¬0Ñ˜<≈·TE4M-Çõ∂¡ppIÕ_[µii“¡∑∑àp|√}‹éƒR«à®ÒjëÇéB•XK	≤"¢™ˆ¶Èﬁå≤kƒ;ÓM`ã‚Éâæ(úsçìyqè[TvÕm:AÎ6–}ÕdÇXn∆$)≤=AIïLAOA3úÔ¯*Ü	¡‹´Ü]s|⁄æjá∑EŸŒ¬ À∑∏ûéˇ'Ó9Óÿ.~™=â/¿C;`
+xú-é¡
+Ç@ÑÔ˚C'ã(›≤¿[iBPÙ:xŸ⁄ﬂ6”U‹ı–€'—e`>òèŸìXÊ"	*E¥^ƒ†ìê1∂a“" Ûrp™ÈjF˘c¨O∂‹+œ˜&˘U‚íÂ8´7˜(Ç≤käÈ≠M@f¿ÆÎ!CD´$ﬁ$kâÙp•»’T	öâ‡h]«o {ı0[ÔÊ¯¥úiáZ£l´°êf;‹Œßˇ[ç;÷ãüÍ@‚ƒ;„
 endstream
 endobj
 7 0 obj
@@ -76,7 +76,7 @@ endobj
 endobj
 12 0 obj
 <<
-/Length 5909
+/Length 9129
 /Type /EmbeddedFile
 /Subtype /application#2Fxml
 /Params 13 0 R
@@ -85,14 +85,14 @@ stream
 <ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:mif="urn:hl7-org:v3/mif" xmlns:sdtc="urn:hl7-org:sdtc"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <realmCode code="IT"/>
   <typeId root="2.16.840.1.113883.1.3" extension="POCD_MT000040UV02"/>
-  <templateId root="2.16.840.1.113883.2.9.10.1.11.1.1" extension="1.1" assigningAuthorityName="HL7 Italia"/>
-  <id root="2.16.840.1.113883.2.9.2.90.4.4" extension="SISPC-null.null.87273-9.Fri Feb 03 10:10:31 CET 2023"/>
-  <code code="87273-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Immunization note"/>
-  <title>Scheda della singola Vaccinazione</title>
-  <effectiveTime value="20230203101031+0100"/>
+  <templateId root="2.16.840.1.113883.2.9.10.1.11.1.2" extension="1.1" assigningAuthorityName="HL7 Italia"/>
+  <id root="2.16.840.1.113883.2.9.2.90.4.4" extension="SISPC-null.null.82593-5.Thu Apr 20 13:56:40 CEST 2023"/>
+  <code code="82593-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Immunization summary report"/>
+  <title>Certificato Vaccinale</title>
+  <effectiveTime value="20230420135640+0100"/>
   <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" codeSystemName="HL7 Confidentiality" displayName="Normal"/>
   <languageCode code="it-IT"/>
-  <setId root="2.16.840.1.113883.2.9.2.90.4.4" extension="SISPC-null.null.87273-9.Fri Feb 03 10:10:31 CET 2023" assigningAuthorityName="Regione Toscana"/>
+  <setId root="2.16.840.1.113883.2.9.2.90.4.4" extension="SISPC-null.null.82593-5.Thu Apr 20 13:56:40 CEST 2023" assigningAuthorityName="Regione Toscana"/>
   <versionNumber value="1"/>
   <recordTarget>
     <patientRole classCode="PAT">
@@ -124,25 +124,25 @@ stream
   </custodian>
   <component>
     <structuredBody moodCode="EVN" classCode="DOCBODY">
-      <component typeCode="COMP">
+      <component typeCode="COMP" contextConductionInd="true">
         <section classCode="DOCSECT" moodCode="EVN">
-          <templateId root="2.16.840.1.113883.2.9.10.1.11.3.1"/>
-          <code code="11369-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Immunization note"/>
-          <title>Scheda della singola Vaccinazione</title>
+          <templateId root="2.16.840.1.113883.2.9.10.1.11.3.2"/>
+          <code code="11369-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Immunization summary report"/>
+          <title>Certificato Vaccinale</title>
           <text/>
           <entry>
             <substanceAdministration moodCode="EVN" classCode="SBADM">
               <templateId root="2.16.840.1.113883.2.9.10.1.11.4.1"/>
               <statusCode code="completed"/>
-              <effectiveTime value="20230203101030+0100"/>
+              <effectiveTime value="20230120135639+0100"/>
               <routeCode code="SQ" codeSystem="2.16.840.1.113883.5.112" codeSystemName="HL7 RouteOfAdministration"/>
               <approachSiteCode code="LUFA" codeSystem="2.16.840.1.113883.5.1052" codeSystemName="ActSite"/>
-              <doseQuantity value="2" unit="somministrazione"/>
+              <doseQuantity value="1" unit="somministrazione"/>
               <consumable typeCode="CSM">
                 <manufacturedProduct>
                   <manufacturedMaterial>
-                    <code code="035606033" codeSystem="2.16.840.1.113883.2.9.6.1.5" codeSystemName="AIC">
-                      <translation code="B01AX05" codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
+                    <code code="002238044" codeSystem="2.16.840.1.113883.2.9.6.1.5" codeSystemName="AIC">
+                      <translation code="J07AM01" codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
                     </code>
                   </manufacturedMaterial>
                 </manufacturedProduct>
@@ -152,7 +152,7 @@ stream
                   <templateId root="2.16.840.1.113883.2.9.10.1.11.4.3"/>
                   <code code="30973-2" displayName="Numero di dose" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                   <statusCode code="completed"/>
-                  <value value="2" xsi:type="INT"/>
+                  <value value="1" xsi:type="INT"/>
                 </observation>
               </entryRelationship>
               <entryRelationship typeCode="REFR" inversionInd="false">
@@ -160,7 +160,7 @@ stream
                   <templateId root="2.16.840.1.113883.2.9.10.1.11.4.4"/>
                   <code code="59778-1" displayName="Date when overdue for immunization" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                   <statusCode code="completed"/>
-                  <value value="20230203101034+0100" xsi:type="TS"/>
+                  <value value="20240420135641+0100" xsi:type="TS"/>
                 </observation>
               </entryRelationship>
               <entryRelationship typeCode="REFR" inversionInd="false">
@@ -168,7 +168,23 @@ stream
                   <templateId root="2.16.840.1.113883.2.9.10.1.11.4.4"/>
                   <code code="30980-7" displayName="Date vaccine due" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                   <statusCode code="completed"/>
-                  <value value="20230203101034+0100" xsi:type="TS"/>
+                  <value value="20240120135641+0100" xsi:type="TS"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="RSON" inversionInd="false">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.2.9.10.1.11.4.5"/>
+                  <code code="95715-9" displayName="Categorie a rischio" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <statusCode code="completed"/>
+                  <value codeSystem="2.16.840.1.113883.2.9.6.1.56.2" codeSystemName="Categorie di rischio" code="24" displayName="Altro" xsi:type="CD"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="RSON" inversionInd="false">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.2.9.10.1.11.4.6"/>
+                  <code code="59785-6" displayName="Indicazioni per la vaccinazione" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <statusCode code="completed"/>
+                  <value codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD-9CM" code="14" displayName="Infezione da HIV" xsi:type="CD"/>
                 </observation>
               </entryRelationship>
               <entryRelationship typeCode="RSON" inversionInd="false">
@@ -176,7 +192,39 @@ stream
                   <templateId root="2.16.840.1.113883.2.9.10.1.11.4.9"/>
                   <code code="75323-6" displayName="Condizione" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                   <statusCode code="completed"/>
-                  <value codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD-9CM (diagnosis codes)" code="045" displayName="Poliomielite acuta" xsi:type="CD"/>
+                  <value codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD-9CM" code="037" displayName="Tetano" xsi:type="CD"/>
+                </observation>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+          <entry>
+            <substanceAdministration moodCode="EVN" classCode="SBADM">
+              <templateId root="2.16.840.1.113883.2.9.10.1.11.4.2"/>
+              <statusCode code="cancelled"/>
+              <effectiveTime value="20230420135639+0100"/>
+              <consumable typeCode="CSM">
+                <manufacturedProduct>
+                  <manufacturedMaterial/>
+                </manufacturedProduct>
+              </consumable>
+              <entryRelationship typeCode="RSON" inversionInd="false">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.2.9.10.1.11.4.10"/>
+                  <code code="85714-4" displayName="Motivo per cui non si √® ricevuto vaccino" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <statusCode code="completed"/>
+                  <effectiveTime>
+                    <low value="20230420135639+0100"/>
+                    <high value="20240120135639+0100"/>
+                  </effectiveTime>
+                  <value codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD-9CM" code="03" displayName="Esonerato in maniera temporanea per motivi di salute o altra causa" xsi:type="CD"/>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="RSON" inversionInd="false">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.2.9.10.1.11.4.9"/>
+                  <code code="75323-6" displayName="Condizione" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+                  <statusCode code="completed"/>
+                  <value codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD-9CM" code="079.82" displayName="SARS-Coronavirus associato" xsi:type="CD"/>
                 </observation>
               </entryRelationship>
             </substanceAdministration>
@@ -190,7 +238,7 @@ endstream
 endobj
 13 0 obj
 <<
-/Size 5909
+/Size 9129
 >>
 endobj
 xref
@@ -202,19 +250,19 @@ xref
 0000000190 00000 n
 0000000302 00000 n
 0000000348 00000 n
-0000000601 00000 n
-0000000634 00000 n
-0000000695 00000 n
-0000000727 00000 n
-0000000759 00000 n
-0000000859 00000 n
-0000006886 00000 n
+0000000603 00000 n
+0000000636 00000 n
+0000000697 00000 n
+0000000729 00000 n
+0000000761 00000 n
+0000000861 00000 n
+0000010108 00000 n
 trailer
 <<
 /Root 1 0 R
-/ID [<9611F85DED6A98F13559D05EDD6DCBC7> <9611F85DED6A98F13559D05EDD6DCBC7>]
+/ID [<4DC05147311750171D239F10AA83D16B> <4DC05147311750171D239F10AA83D16B>]
 /Size 14
 >>
 startxref
-6919
+10141
 %%EOF
