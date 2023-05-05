@@ -8,7 +8,7 @@ Questo repository raccoglie i risultati dei test effettuati per l'accreditamento
 		- [Pull request](#pull-request)
 
 ## Procedura di caricamento dei risultati
-Per sottomettere i risultati dei test effettuati è necessario esegure una pull request.  
+Per inviare i risultati dei test effettuati è necessario esegure una pull request.  
 La struttura del repository è la seguente:
     
         GATEWAY/{commonName auth}/{subject_application_vendor}/{subject_application_id}/{subject_application_version}
