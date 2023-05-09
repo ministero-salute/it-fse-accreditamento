@@ -40,8 +40,9 @@ endobj
 /Filter /FlateDecode
 >>
 stream
-xú-é=¬0E˜¸äãS+¢Mjª˘U,æ¡¡%öW[µI1È‡ø∑àÀÖ3ú√]ìòRÅ*!Á”t*√"I@FDT7^∑›ãQ5√xgÀoÿ‡˙¡®8)∑J˝‰7.Q’µóxgsîŒ¢‡+d
-πÃì,W)6;ÇJTÉÇ∆"⁄[ﬂÒ- ‘Çæ’-€‡'¯∏æv˝À†rΩ5–ÿlW8óáˇ˚<6”_jG‚»l;t
+xú-é¡
+Ç@ÑÔ˚C'ã®uK"oe	AB‡Ë‡ek≥“U⁄ı‡€'—e`>òèŸìX¶!B*E∏^D†≥P6RÇå®z:8›t5£|é1÷[˛hœ∑ì4W∏Rd˙ÕAŸ5≈tÇ÷∆†ûG<@*ÑQ,∑±⁄"9Ê%’j
+z	öâ‡d]«w_1¥˜˙^5lΩõch{∏™ÌkÉ≤Ì≠ÅFrÿ·öùˇWÏk‹±Y¸TG_;È
 endstream
 endobj
 7 0 obj
@@ -76,7 +77,7 @@ endobj
 endobj
 12 0 obj
 <<
-/Length 7563
+/Length 8964
 /Type /EmbeddedFile
 /Subtype /application#2Fxml
 /Params 13 0 R
@@ -92,22 +93,22 @@ stream
 	<realmCode code="IT"/>
 	<typeId extension="POCD_MT000040UV02" root="2.16.840.1.113883.1.3"/>
 	<templateId assigningAuthorityName="HL7 Italia" extension="1.1" root="2.16.840.1.113883.2.9.10.1.7.1"/>
-	<id assigningAuthorityName="SOLE" displayable="true" extension="103080212PA06900235000103" root="2.16.840.1.113883.2.9.2.90108"/>
+	<id assigningAuthorityName="PRESIDIO01" displayable="true" extension="103080212PA06900235000103" root="2.16.840.1.113883.2.9.2.99999"/>
 	<code code="68604-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Referto Radiologico">
-		<translation code="RAD" codeSystem="2.16.840.1.113883.2.9.2.80.3.1.6.2" codeSystemName="Tipologie documento VIRTUHIS" displayName="Referto di Radiologia">
+		<translation code="RAD" codeSystem="2.16.840.1.113883.2.9.2.99999" codeSystemName="Tipologie documento VIRTUHIS" displayName="Referto Radiologico">
 		</translation>
 	</code>
-	<title/>
+	<title>REFERTO RADIOLOGICO</title>
 	<sdtc:statusCode code="active"/>
-	<effectiveTime value="20230212082750"/>
+	<effectiveTime value="20230502082750"/>
 	<confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" codeSystemName="HL7 Confidentiality" displayName="Normal">
 	</confidentialityCode>
 	<languageCode code="it-IT"/>
-	<setId assigningAuthorityName="VIRTUHIS" extension="103080212PA06900235000103" root="2.16.840.1.113883.2.9.2.90108"/>
+	<setId assigningAuthorityName="PRESIDIO01" extension="103080212PA06900235000103" root="2.16.840.1.113883.2.9.2.99999"/>
 	<versionNumber value="1"/>
 	<recordTarget>
 		<patientRole>
-			<id assigningAuthorityName="MEF" displayable="true" extension="" root="2.16.840.1.113883.2.9.4.3.2"/>
+			<id assigningAuthorityName="MEF" displayable="true" extension="XXXYYY00X99X999Z" root="2.16.840.1.113883.2.9.4.3.2"/>
 			<addr use="H">
 				<country>100</country>
 				<city>FIRENZE</city>
@@ -115,12 +116,14 @@ stream
 				<streetAddressLine>VIALE FIRENZE 22</streetAddressLine>
 				<censusTract>048017</censusTract>
 			</addr>
+			<telecom use="HP" value="mailto:prova.provax@gmail.it"/>
+			<telecom use="MC" value="349123456789"/>
 			<patient>
 				<name>
 					<family>PAZIENTE UNO</family>
 					<given>PALLINO</given>
 				</name>
-				<administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" codeSystemName="HL7 AdministrativeGender" displayName="Maschio"/>
+				<administrativeGenderCode code="A" codeSystem="2.16.840.1.113883.5.1" codeSystemName="HL7 AdministrativeGender" displayName="Altro"/>
 				<birthTime value="19940617"/>
 				<birthplace>
 					<place>
@@ -135,7 +138,7 @@ stream
 		</patientRole>
 	</recordTarget>
 	<author>
-		<time value="20230212082750"/>
+		<time value="20230502082750"/>
 		<assignedAuthor classCode="ASSIGNED">
 			<id assigningAuthorityName="MEF" extension="MXSSZT75E53G317J" root="2.16.840.1.113883.2.9.4.3.2"/>
 			<addr use="HP">
@@ -147,11 +150,11 @@ stream
 				<postalCode/>
 				<streetAddressLine/>
 			</addr>
-			<telecom use="MC" value=""/>
+			<telecom use="HP" value="miaemail@domain.com"/>
 			<assignedPerson>
 				<name>
-					<family>Test</family>
-					<given>Simone</given>
+					<family>TEST</family>
+					<given>SIMONE</given>
 				</name>
 			</assignedPerson>
 		</assignedAuthor>
@@ -159,44 +162,92 @@ stream
 	<custodian>
 		<assignedCustodian>
 			<representedCustodianOrganization>
-				<id assigningAuthorityName="AOUS Le Scotte" extension="90108" root="2.16.840.1.113883.2.9.4.1.3"/>
-				<name>AOUS Le Scotte</name>
+				<id assigningAuthorityName="PRESIDIO01" extension="99999" root="2.16.840.1.113883.2.9.4.1.3"/>
+				<name>PRESIDIO01</name>
 			</representedCustodianOrganization>
 		</assignedCustodian>
 	</custodian>
 	<legalAuthenticator>
-		<time value="20230212082750"/>
+		<time value="20230502082750"/>
 		<signatureCode code="S"/>
 		<assignedEntity>
 			<id assigningAuthorityName="MEF" displayable="true" extension="MXSSZT75E53G317J" root="2.16.840.1.113883.2.9.4.3.2"/>
+			<addr use="HP">
+				<country/>
+				<state/>
+				<county/>
+				<city/>
+				<censusTract/>
+				<postalCode/>
+				<streetAddressLine/>
+			</addr>
+			<telecom use="HP" value="miaemail@domain.com"/>
 			<assignedPerson>
 				<name>
-					<family>Test</family>
-					<given>Simone</given>
+					<family>TEST</family>
+					<given>SIMONE</given>
 				</name>
 			</assignedPerson>
 		</assignedEntity>
 	</legalAuthenticator>
+	<participant typeCode="SPRF" contextControlCode="OP">
+		<functionCode code="PRE" codeSystem="2.16.840.1.113883.2.9.5.1.88"/>
+		<time value="20230501112426"/>
+		<associatedEntity classCode="PROV">
+			<id root="2.16.840.1.113883.2.9.4.3.2" extension="TECNICX00X00X00Y" assigningAuthorityName="MEF"/>
+			<code code="3211" codeSystem="2.16.840.1.113883.2.9.6.2.7" codeSystemName="ISCO-08" displayName="Tecnici di imaging medicale e apparecchiature terapeutiche"/>
+			<addr>
+				<country>100</country>
+				<state>120</state>
+				<county>RM</county> 
+				<city>Roma</city> 
+				<censusTract>058091</censusTract> 
+				<postalCode>00187</postalCode> 
+				<streetAddressLine>via Vittorio Veneto 3</streetAddressLine> 
+			</addr>
+			<telecom use="HP" value="mailto:prova.provax@gmail.it"/>
+			<associatedPerson>
+				<name>
+					<family>TECNICO</family>
+					<given>ESECUTORE</given>
+				</name>
+			</associatedPerson>
+			<scopingOrganization>
+				<id root="2.16.840.1.113883.2.9.4.1.1" extension="99999" assigningAuthorityName="Ministero della Salute"/>
+				<name>PRESIDIO01</name>
+				<telecom use="WP" value="mailto:prova.provax@pec.it"/> 
+				<addr>
+					<country>100</country>
+					<state>120</state>
+					<county>RM</county> 
+					<city>Roma</city> 
+					<censusTract>058091</censusTract> 
+					<postalCode>00137</postalCode> 
+					<streetAddressLine>via Emilio Praga 39</streetAddressLine> 
+				</addr>
+			</scopingOrganization>
+		</associatedEntity>
+	</participant>
 	<inFulfillmentOf>
 		<order classCode="ACT" moodCode="RQO">
 			<id assigningAuthorityName="RIS" extension="SPF5008259" root="1.2.840.10008.2.16.4"/>
 			<id assigningAuthorityName="RIS" extension="SPFX5008259" root="1.2.840.10008.2.16.4"/>
-			<priorityCode code="R" codeSystem="2.16.840.1.113883.5.7" codeSystemName="HL7 ActPriority" displayName="routine"/>
+			<priorityCode code="R" codeSystem="2.16.840.1.113883.5.7" codeSystemName="HL7 ActPriority" displayName="Nornale"/>
 		</order>
 	</inFulfillmentOf>
 	<componentOf>
 		<encompassingEncounter>
-			<effectiveTime value="20230212082750"/>
+			<effectiveTime value="20230502082750"/>
 			<location>
 				<healthCareFacility>
-					<id extension="90108.00.0069" root="2.16.840.1.113883.2.9.4.1.6"/>
+					<id extension="99999.99.9999" root="2.16.840.1.113883.2.9.4.1.6"/>
 					<location>
-						<name>AOUS Le Scotte - Radiologia</name>
+						<name>PRESIDIO01</name>
 					</location>
 					<serviceProviderOrganization>
-						<id assigningAuthorityName="Ministero della Salute" extension="90108" root="2.16.840.1.113883.2.9.4.1.2"/>
+						<id assigningAuthorityName="Ministero della Salute" extension="99999" root="2.16.840.1.113883.2.9.4.1.2"/>
 						<asOrganizationPartOf>
-							<id extension="080999" root="2.16.840.1.113883.2.9.4.1.1"/>
+							<id extension="99999" root="2.16.840.1.113883.2.9.4.1.1"/>
 						</asOrganizationPartOf>
 					</serviceProviderOrganization>
 				</healthCareFacility>
@@ -207,7 +258,7 @@ stream
 		<structuredBody classCode="DOCBODY" moodCode="EVN">
 			<component typeCode="COMP">
 				<section ID="ESAME_ESEGUITO">
-					<code code="55111-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Descrizioni attuale procedura di imaging"/>
+					<code code="55111-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Descrizioni attuale procedure di imaging"/>
 					<title>Prestazioni</title>
 					<text>
 						<table>
@@ -282,17 +333,6 @@ stream
 					</text>
 				</section>
 			</component>
-			<component typeCode="COMP">
-				<section ID="CONCLUSIONI">
-					<code code="55110-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Conclusioni"/>
-					<title>Conclusioni</title>
-					<text> 
-						<paragraph> 
-							Quadro radiologico complessivamente nella norma ed invariato rispetto al precedente. 
-						</paragraph> 
-					</text> 
-				</section>		
-			</component>
 		</structuredBody>
 	</component>
 </ClinicalDocument>
@@ -300,7 +340,7 @@ endstream
 endobj
 13 0 obj
 <<
-/Size 7563
+/Size 8964
 >>
 endobj
 xref
@@ -318,13 +358,13 @@ xref
 0000000728 00000 n
 0000000760 00000 n
 0000000860 00000 n
-0000008541 00000 n
+0000009942 00000 n
 trailer
 <<
 /Root 1 0 R
-/ID [<E7710500337E03135C03CA28D570D85D> <E7710500337E03135C03CA28D570D85D>]
+/ID [<EF6C738E0B3C3E93E35235079A1F7D64> <EF6C738E0B3C3E93E35235079A1F7D64>]
 /Size 14
 >>
 startxref
-8574
+9975
 %%EOF
