@@ -1,0 +1,250 @@
+{
+  "appVendor": "EUROMEDICAL",
+  "appID": "MEDIWEB",
+  "appVersion": "1.0",
+  "results": [
+    {
+      "id": 147,
+      "ts": "2023-05-09T10:31:04Z",
+		"traceID": "5ef067ff5db57808",
+	    "workflowInstanceId": "2.16.840.1.113883.2.9.2.120.4.4.2f4f313cb2e0ce8e818e774cb40980b61a0afdaa6c3d9b9c9bde5816b4a76f34.ba1eeffb4b^^^^urn:ihe:iti:xdw:2013:workflowInstanceId"	  
+        "files": [
+        "ct1.pdf"
+      ]
+    }, 
+	{
+      "id": 148,
+      "ts": "2023-05-12T14:46:11Z",
+      "traceId": "11dd9d6006dd296b",
+      "workflowInstanceId": "2.16.840.1.113883.2.9.2.120.4.4.2f4f313cb2e0ce8e818e774cb40980b61a0afdaa6c3d9b9c9bde5816b4a76f34.d079c92dfa^^^^urn:ihe:iti:xdw:2013:workflowInstanceId",
+      "files": ["ct2.pdf"]
+    }, 
+	{
+      "id": 149,
+      "ts": "2023-05-12T14:57:30Z",
+      "traceId": "a6e84cfd5ae7aa23",
+      "workflowInstanceId": "2.16.840.1.113883.2.9.2.120.4.4.2f4f313cb2e0ce8e818e774cb40980b61a0afdaa6c3d9b9c9bde5816b4a76f34.3b969b6aa8^^^^urn:ihe:iti:xdw:2013:workflowInstanceId",
+      "files": ["ct3.pdf"]
+    }, 
+		{
+      "id": 150,
+      "ts": "2023-05-12T15:10:09Z",
+      "traceId": "b5032a90e4700c0c",
+      "workflowInstanceId": "2.16.840.1.113883.2.9.2.120.4.4.2f4f313cb2e0ce8e818e774cb40980b61a0afdaa6c3d9b9c9bde5816b4a76f34.06279f2b69^^^^urn:ihe:iti:xdw:2013:workflowInstanceId",
+      "files": ["ct4.pdf"]
+    }, 
+		{
+      "id": 151,
+      "ts": "2023-05-12T15:18:30Z",
+      "traceId": "a2446f87fe8fbf1e",
+      "workflowInstanceId": "2.16.840.1.113883.2.9.2.120.4.4.2f4f313cb2e0ce8e818e774cb40980b61a0afdaa6c3d9b9c9bde5816b4a76f34.2ab068fda2^^^^urn:ihe:iti:xdw:2013:workflowInstanceId",
+      "files": ["ct5.pdf"],
+
+		"type": "/msg/syntax",
+		"title": "Errore di sintassi.",
+		"detail": "ERROR: -1,-1 cvc-complex-type.2.4.a: Invalid content was found starting with element 'languageCode'. One of '{\"urn:hl7-org:v3\":confidentialityCode}' is expected.",
+		"status": 400,
+		"instance": "/validation/error"
+	  
+    }, 
+	
+		{
+      "id": 152,
+      "ts": "2023-05-12T15:24:57Z",
+      "traceId": "b81c2e8274b530a0",
+      "workflowInstanceId": "2.16.840.1.113883.2.9.2.120.4.4.2f4f313cb2e0ce8e818e774cb40980b61a0afdaa6c3d9b9c9bde5816b4a76f34.a93c23c337^^^^urn:ihe:iti:xdw:2013:workflowInstanceId",
+      "files": ["ct6.pdf"],
+	  
+    "type": "/msg/jwt-validation",
+    "title": "Campo token JWT non valido.",
+    "detail": "JWT payload: Person id presente nel JWT differente dal codice fiscale del paziente previsto sul CDA",
+    "status": 403,
+    "instance": "/jwt-person-id"
+	  
+    }, 
+
+		{
+      "id": 153,
+      "ts": "2023-05-12T15:37:23Z",
+      "traceId": "1d6df04ecaf178b6",
+      "workflowInstanceId": "2.16.840.1.113883.2.9.2.120.4.4.2f4f313cb2e0ce8e818e774cb40980b61a0afdaa6c3d9b9c9bde5816b4a76f34.126ee7a276^^^^urn:ihe:iti:xdw:2013:workflowInstanceId",
+      "files": ["ct7.pdf"],
+	  
+    "type": "/msg/semantic",
+    "title": "Errore semantico.",
+    "detail": "[ERRORE-6| L'elemento ClinicalDocument/confidentialityCode DEVE avere l'attributo @code valorizzato con 'N' o 'V', e il @codeSystem='2.16.840.1.113883.5.25']",
+    "status": 422,
+    "instance": "/validation/error"
+	  
+    }, 
+	
+		{
+      "id": 154,
+      "ts": "2023-05-12T15:41:45Z",
+      "traceId": "f6c6a2f7e274c318",
+    "workflowInstanceId": "2.16.840.1.113883.2.9.2.120.4.4.2f4f313cb2e0ce8e818e774cb40980b61a0afdaa6c3d9b9c9bde5816b4a76f34.b17c23f0ca^^^^urn:ihe:iti:xdw:2013:workflowInstanceId",
+      "files": ["ct8.pdf"],
+	  
+    "type": "/msg/semantic",
+    "title": "Errore semantico.",
+    "detail": "[ERRORE-11| L'elemento ClinicalDocument/recordTarget/patientRole/addr DEVE riportare i sotto-elementi 'country', 'city' e 'streetAddressLine' ]",
+    "status": 422,
+    "instance": "/validation/error"
+	  
+    }, 
+	
+	
+	
+	{
+      "id": 155,
+      "ts": "2023-05-12T15:46:26Z",
+      "traceId": "ed42f7659fc66372",
+	   "workflowInstanceId": "2.16.840.1.113883.2.9.2.120.4.4.2f4f313cb2e0ce8e818e774cb40980b61a0afdaa6c3d9b9c9bde5816b4a76f34.f9f2ac28aa^^^^urn:ihe:iti:xdw:2013:workflowInstanceId",
+      "files": ["ct9.pdf"],
+
+    "type": "/msg/semantic",
+    "title": "Errore semantico.",
+    "detail": "[ERRORE-14| L'elemento ClinicalDocument/recordTaget/patientRole/patient/name DEVE riportare gli elementi 'given' e 'family']",
+    "status": 422,
+    "instance": "/validation/error"
+	  
+    }, 
+	
+	
+{
+      "id": 156,
+      "ts": "2023-05-12T15:51:53Z",
+      "traceId": "3af74998dbdf22d0",
+       "workflowInstanceId": "2.16.840.1.113883.2.9.2.120.4.4.2f4f313cb2e0ce8e818e774cb40980b61a0afdaa6c3d9b9c9bde5816b4a76f34.fe36ff00e5^^^^urn:ihe:iti:xdw:2013:workflowInstanceId",
+      "files": ["ct10.pdf"],
+
+    "type": "/msg/vocabulary",
+    "title": "Errore vocabolario.",
+    "detail": "Almeno uno dei seguenti vocaboli non è censito: [CodeSystem: 2.16.840.1.113883.5.1 v2.1.0, Codes: NB]",
+    "status": 400,
+    "instance": "/validation/error"
+	  
+    }, 	
+
+{
+      "id": 157,
+      "ts": "2023-05-12T15:57:38Z",
+      "traceId": "8ff803b2bdded13e",
+    "workflowInstanceId": "2.16.840.1.113883.2.9.2.120.4.4.2f4f313cb2e0ce8e818e774cb40980b61a0afdaa6c3d9b9c9bde5816b4a76f34.d98cc5a3e5^^^^urn:ihe:iti:xdw:2013:workflowInstanceId",
+      "files": ["ct11.pdf"],
+
+    "type": "/msg/semantic",
+    "title": "Errore semantico.",
+    "detail": "[ERRORE-33a| L'elemento ClinicalDocument/documentationOf/serviceEvent deve contenere l'elemento code e DEVE valorizzare il suo attributo code con uno dei seguenti valori: 'PROG'|'DIR' ]",
+    "status": 422,
+    "instance": "/validation/error"
+	  
+    }, 	
+
+{
+      "id": 158,
+      "ts": "2023-05-12T16:04:17Z",
+      "traceId": "88d6178acfd769e8",
+    "workflowInstanceId": "2.16.840.1.113883.2.9.2.120.4.4.2f4f313cb2e0ce8e818e774cb40980b61a0afdaa6c3d9b9c9bde5816b4a76f34.7b1b7ebb70^^^^urn:ihe:iti:xdw:2013:workflowInstanceId",
+      "files": ["ct12.pdf"],
+
+    "type": "/msg/semantic",
+    "title": "Errore semantico.",
+    "detail": "[ERRORE-38| inFulfillmentOf/order/priorityCode DEVE avere l'attributo '@codeSystem='2.16.840.1.113883.5.7' e @code valorizzato con uno dei seguenti valori: 'R'|'P'|'UR'|'EM' ]",
+    "status": 422,
+    "instance": "/validation/error"
+	  
+    }, 	
+	
+	{
+      "id": 159,
+      "ts": "2023-05-12T16:08:58Z",
+      "traceId": "f331f179bbeb584d",
+    "workflowInstanceId": "2.16.840.1.113883.2.9.2.120.4.4.2f4f313cb2e0ce8e818e774cb40980b61a0afdaa6c3d9b9c9bde5816b4a76f34.747cdb277e^^^^urn:ihe:iti:xdw:2013:workflowInstanceId",
+      "files": ["ct13.pdf"],
+
+    "type": "/msg/syntax",
+    "title": "Errore di sintassi.",
+    "detail": "ERROR: -1,-1 cvc-complex-type.2.4.a: Invalid content was found starting with element 'priorityCode'. One of '{\"urn:hl7-org:v3\":realmCode, \"urn:hl7-org:v3\":typeId, \"urn:hl7-org:v3\":templateId, \"urn:hl7-org:v3\":id}' is expected.",
+    "status": 400,
+    "instance": "/validation/error"
+	  
+    }, 	
+	
+{
+      "id": 160,
+      "ts": "2023-05-12T16:13:49Z",
+      "traceId": "4e60fc595c943395",
+    "workflowInstanceId": "2.16.840.1.113883.2.9.2.120.4.4.2f4f313cb2e0ce8e818e774cb40980b61a0afdaa6c3d9b9c9bde5816b4a76f34.bbe7348085^^^^urn:ihe:iti:xdw:2013:workflowInstanceId",
+      "files": ["ct14.pdf"],
+
+    "type": "/msg/syntax",
+    "title": "Errore di sintassi.",
+    "detail": "ERROR: -1,-1 cvc-complex-type.2.4.b: The content of element 'entry' is not complete. One of '{\"urn:hl7-org:v3\":realmCode, \"urn:hl7-org:v3\":typeId, \"urn:hl7-org:v3\":templateId, \"urn:hl7-org:v3\":act, \"urn:hl7-org:v3\":encounter, \"urn:hl7-org:v3\":observation, \"urn:hl7-org:v3\":observationMedia, \"urn:hl7-org:v3\":organizer, \"urn:hl7-org:v3\":procedure, \"urn:hl7-org:v3\":regionOfInterest, \"urn:hl7-org:v3\":substanceAdministration, \"urn:hl7-org:v3\":supply}' is expected.",
+    "status": 400,
+    "instance": "/validation/error"
+	  
+    }, 		
+	
+	{
+      "id": 161,
+      "ts": "2023-05-12T16:17:45Z",
+      "traceId": "908d07236adef3d8",
+    "workflowInstanceId": "2.16.840.1.113883.2.9.2.120.4.4.2f4f313cb2e0ce8e818e774cb40980b61a0afdaa6c3d9b9c9bde5816b4a76f34.0ab11abfd4^^^^urn:ihe:iti:xdw:2013:workflowInstanceId",
+      "files": ["ct15.pdf"],
+
+    "type": "/msg/syntax",
+    "title": "Errore di sintassi.",
+    "detail": "ERROR: -1,-1 cvc-complex-type.2.4.b: The content of element 'component' is not complete. One of '{\"urn:hl7-org:v3\":realmCode, \"urn:hl7-org:v3\":typeId, \"urn:hl7-org:v3\":templateId, \"urn:hl7-org:v3\":section}' is expected.",
+    "status": 400,
+    "instance": "/validation/error"
+	  
+    }, 		
+	
+	
+	{
+      "id": 162,
+      "ts": "2023-05-12T16:26:01Z",
+      "traceId": "d86b5d4391f04eea",
+    "workflowInstanceId": "2.16.840.1.113883.2.9.2.120.4.4.2f4f313cb2e0ce8e818e774cb40980b61a0afdaa6c3d9b9c9bde5816b4a76f34.8d5cf86316^^^^urn:ihe:iti:xdw:2013:workflowInstanceId",
+      "files": ["ct16.pdf"],
+
+    "type": "/msg/semantic",
+    "title": "Errore semantico.",
+    "detail": "[ERRORE-b20| Il codice '18785-6' non è corretto. La sezione deve essere valorizzata con uno dei seguenti codici:\n\t\t\t29299-5\tSezione Quesito Diagnostico\n\t\t\t11329-0\tSezione Storia Clinica\n\t\t\t30954-2\tSezione Precedenti Esami Eseguiti\n\t\t\t29545-1\tSezione Esame Obiettivo\n\t\t\t62387-6\tSezione Prestazioni\n\t\t\t93126-1\tSezione Confronto Con Precedenti Esami Eseguiti\n\t\t\t47045-0\tSezione Referto\n\t\t\t29548-5 Sezione Diagnosi\n\t\t\t55110-1\tSezione Conclusioni\n\t\t\t62385-0\tSezione Suggerimenti Per Il Medico Prescrittore \n\t\t\t80615-8 Sezione Accertamenti e Controlli Consigliati \n\t\t\t93341-6 Sezione Terapia Farmacologica Consigliata\n\t\t\t]",
+    "status": 422,
+    "instance": "/validation/error"
+	  
+    }, 			
+	
+	{
+      "id": 163,
+      "ts": "2023-05-12T16:31:30Z",
+      "traceId": "71029993454d5507",
+    "workflowInstanceId": "2.16.840.1.113883.2.9.2.120.4.4.2f4f313cb2e0ce8e818e774cb40980b61a0afdaa6c3d9b9c9bde5816b4a76f34.ddfc738e41^^^^urn:ihe:iti:xdw:2013:workflowInstanceId",
+      "files": ["ct17.pdf"],
+
+    "type": "/msg/semantic",
+    "title": "Errore semantico.",
+    "detail": "[ERRORE-b3| Sezione Prestazioni: la sezione DEVE contenere un elemento 'entry']",
+    "status": 422,
+    "instance": "/validation/error"
+	  
+    }, 				
+	
+	{
+      "id": 169,
+      "ts": "2023-05-12T16:57:42Z",
+      "traceId": "fb422aca359233df",
+    "workflowInstanceId": "2.16.840.1.113883.2.9.2.120.4.4.2f4f313cb2e0ce8e818e774cb40980b61a0afdaa6c3d9b9c9bde5816b4a76f34.84900737e0^^^^urn:ihe:iti:xdw:2013:workflowInstanceId",
+      "files": ["ct23.pdf"],
+
+    "type": "/msg/semantic",
+    "title": "Errore semantico.",
+    "detail": "[ERRORE-30| L'elemento ClinicalDocument/legalAuthenticator/signatureCode deve essere valorizzato con il codice \"S\" ]",
+    "status": 422,
+    "instance": "/validation/error"
+	  
+    } 					
+  ]
+}
