@@ -40,9 +40,11 @@ endobj
 /Filter /FlateDecode
 >>
 stream
-xœ-Ë
-Â0D÷ùŠ¡«*¢M´(İÕGAP¼nbsk|4-Mºğï-âf`ÌaÖ$f…„T JÈÅ4„J±L1Ù‡‡×uûfT!†zgÇlpû *Î
-§m£~q‡k\µõu¡qÈöÈÛ*œgÉ*S›İ™ æ#ĞSĞXÄ{ç[.‚eètikvÁOğizxÛôoƒªéÆf›ãr<ü¯¸ç°c3ı©v$¾€;İ
+xœ-Á
+‚@„ïûC'‹(wKo•
+ABĞuè²µ¿™å*îzğí“è20ğÍÇìH,3	©@…ëE:
+a† #*_N×í‡Q¼Æë“-wÚ³Á}À$;+œ’¹~s‡[P´õm:Acc\F$×d¹‰U¯$öé™ Bµš‚*A3¬kùááK†ö^?Êš­wsMW6ıÇ hzk ±O¶¸æÇÿ[;6‹Ÿ*%ñ
+;Ó
 endstream
 endobj
 7 0 obj
@@ -77,7 +79,7 @@ endobj
 endobj
 12 0 obj
 <<
-/Length 5930
+/Length 6298
 /Type /EmbeddedFile
 /Subtype /application#2Fxml
 /Params 13 0 R
@@ -87,13 +89,13 @@ stream
   <realmCode code="IT"/>
   <typeId root="2.16.840.1.113883.1.3" extension="POCD_MT000040UV02"/>
   <templateId root="2.16.840.1.113883.2.9.10.1.11.1.1" extension="1.1" assigningAuthorityName="HL7 Italia"/>
-  <id root="2.16.840.1.113883.2.9.2.90.4.4" extension="SISPC-null.null.87273-9.Thu Apr 20 13:08:20 CEST 2023"/>
+  <id root="2.16.840.1.113883.2.9.2.90.4.4" extension="SISPC-null.null.87273-9.Wed May 10 17:25:29 CEST 2023"/>
   <code code="87273-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Immunization note"/>
   <title>Scheda della singola Vaccinazione</title>
-  <effectiveTime value="20230420130820+0100"/>
+  <effectiveTime value="20230510172529+0100"/>
   <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" codeSystemName="HL7 Confidentiality" displayName="Normal"/>
   <languageCode code="it-IT"/>
-  <setId root="2.16.840.1.113883.2.9.2.90.4.4" extension="SISPC-null.null.87273-9.Thu Apr 20 13:08:20 CEST 2023" assigningAuthorityName="Regione Toscana"/>
+  <setId root="2.16.840.1.113883.2.9.2.90.4.4" extension="SISPC-null.null.87273-9.Wed May 10 17:25:29 CEST 2023" assigningAuthorityName="Regione Toscana"/>
   <versionNumber value="1"/>
   <recordTarget>
     <patientRole classCode="PAT">
@@ -123,31 +125,36 @@ stream
       </representedCustodianOrganization>
     </assignedCustodian>
   </custodian>
-  <component>
+  <component typeCode="COMP" contextConductionInd="true">
     <structuredBody moodCode="EVN" classCode="DOCBODY">
       <component typeCode="COMP" contextConductionInd="true">
-        <section classCode="DOCSECT" moodCode="EVN">
+        <section ID="Singola_Vaccinazione" classCode="DOCSECT" moodCode="EVN">
           <templateId root="2.16.840.1.113883.2.9.10.1.11.3.1"/>
-          <code code="11369-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Immunization note"/>
+          <code code="11369-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Storia delle immunizzazioni"/>
           <title>Scheda della singola Vaccinazione</title>
           <text>ATC: J07BB02</text>
           <entry>
             <substanceAdministration moodCode="EVN" classCode="SBADM">
               <templateId root="2.16.840.1.113883.2.9.10.1.11.4.1"/>
               <statusCode code="completed"/>
-              <effectiveTime value="20230420130819+0100"/>
+              <effectiveTime value="20230510172528+0100"/>
               <routeCode code="SQ" codeSystem="2.16.840.1.113883.5.112" codeSystemName="HL7 RouteOfAdministration"/>
               <approachSiteCode code="LUFA" codeSystem="2.16.840.1.113883.5.1052" codeSystemName="ActSite"/>
               <doseQuantity value="2" unit="somministrazione"/>
               <consumable typeCode="CSM">
                 <manufacturedProduct>
                   <manufacturedMaterial>
-                    <code code="043132063" codeSystem="2.16.840.1.113883.2.9.6.1.5" codeSystemName="AIC">
+                    <code codeSystem="2.16.840.1.113883.2.9.6.1.5" codeSystemName="AIC" code="043132063">
                       <translation code="J07BB02" codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
                     </code>
                   </manufacturedMaterial>
                 </manufacturedProduct>
               </consumable>
+              <participant typeCode="LOC">
+                <participantRole classCode="ROL">
+                  <id extension="123456" root="2.16.840.1.113883.2.9.4.1.2" assigningAuthorityName="Ministero della Salute"/>
+                </participantRole>
+              </participant>
               <entryRelationship typeCode="SUBJ" inversionInd="true">
                 <observation classCode="OBS" moodCode="EVN">
                   <templateId root="2.16.840.1.113883.2.9.10.1.11.4.3"/>
@@ -161,7 +168,7 @@ stream
                   <templateId root="2.16.840.1.113883.2.9.10.1.11.4.4"/>
                   <code code="59778-1" displayName="Date when overdue for immunization" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                   <statusCode code="completed"/>
-                  <value value="20240420130820+0100" xsi:type="TS"/>
+                  <value value="20240510172530+0100" xsi:type="TS"/>
                 </observation>
               </entryRelationship>
               <entryRelationship typeCode="REFR" inversionInd="false">
@@ -169,7 +176,7 @@ stream
                   <templateId root="2.16.840.1.113883.2.9.10.1.11.4.4"/>
                   <code code="30980-7" displayName="Date vaccine due" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
                   <statusCode code="completed"/>
-                  <value value="20240120130820+0100" xsi:type="TS"/>
+                  <value value="20240210172530+0100" xsi:type="TS"/>
                 </observation>
               </entryRelationship>
               <entryRelationship typeCode="RSON" inversionInd="false">
@@ -191,7 +198,7 @@ endstream
 endobj
 13 0 obj
 <<
-/Size 5930
+/Size 6298
 >>
 endobj
 xref
@@ -209,13 +216,13 @@ xref
 0000000729 00000 n
 0000000761 00000 n
 0000000861 00000 n
-0000006909 00000 n
+0000007277 00000 n
 trailer
 <<
 /Root 1 0 R
-/ID [<ECB0026DC0BB317CB7491A949E7D3B2F> <ECB0026DC0BB317CB7491A949E7D3B2F>]
+/ID [<90EB41BCC7902F0CBB7B323764EBB314> <90EB41BCC7902F0CBB7B323764EBB314>]
 /Size 14
 >>
 startxref
-6942
+7310
 %%EOF
