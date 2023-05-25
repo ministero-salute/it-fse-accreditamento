@@ -40,7 +40,7 @@ endobj
 /Filter /FlateDecode
 >>
 stream
-xú-éMÇ@ÑÔ˚+ÜNa∫%Ç∑æÑ¿ Ë=tË≤πØiÂ*Ózﬂ∑DóÅxffGbï«à%®Ò&L@Öê	“(iP›XX’ˆF’xÒˆ…ÜÂX„1añ_%.ágıÊ˜†Í€˚|ÜŒd»á∆«÷~ …í4ã$ˆ«+AFr=Ω-Dp2∂Á“¡’Âú*Îñç≥KL›[w„G£ÍF£°∞?lq;ˇ+ÊÂ9÷·ØÍH‚	;—
+xú-éMÇ@ÑÔ˚+OQÓfﬁ˙ÇÇ¿Í–ek_≥“U‹ı–øœ¢À¿¿<≥"1Õ$§B&ì9h/‘ã8R˘pp∫n+FÒb®w∂‹iœ◊7Ç,W8n2Ùã;\¬¢≠/QÄ∆¶8ìe€}Ì2Neí&	÷€ú†b5ã@OA#Ó¨k˘Ê·KÜˆ^ﬂ ö≠wcºõÆl˙ †hzk†±ﬁ,q>ÏˇWÏs‡ÿL~™-â%;Ã
 endstream
 endobj
 7 0 obj
@@ -75,7 +75,7 @@ endobj
 endobj
 12 0 obj
 <<
-/Length 7973
+/Length 9920
 /Type /EmbeddedFile
 /Subtype /application#2Fxml
 /Params 13 0 R
@@ -153,7 +153,7 @@ stream
   <encompassingEncounter>
    <effectiveTime>
     <low value="20230315154129+0100"/>
-    <high value="20230315154129+0100"/>
+    <high value="20230315154229+0100"/>
    </effectiveTime>
    <location>
     <healthCareFacility>
@@ -172,16 +172,18 @@ stream
    <component typeCode="COMP" contextConductionInd="true">
     <section ID="CERTIFICATO_VACCINALE" classCode="DOCSECT" moodCode="EVN">
      <templateId root="2.16.840.1.113883.2.9.10.1.11.3.2"/>
-     <code code="11369-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of Immunization Narrative"/>
+     <code code="11369-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Storia delle immunizzazioni"/>
      <title>Certificato Vaccinale</title>
      <text>VACCINI SOMMINISTRATI:
-VACCINO PER EPATITE B ADULTI Data/ora 10-mar-23 00:00:00	lotto AHBVC957AB
-MENINGOCOCCO ACWY Data/ora 09-mar-23 00:00:00	lotto DA2548</text>
+VACCINO PER EPATITE B ADULTI Data/ora 10-mar-23 00:00:00 lotto AHBVC957AB
+MENINGOCOCCO ACWY Data/ora 09-mar-23 00:00:00 lotto DA2548</text>
      <entry>
       <substanceAdministration classCode="SBADM" moodCode="EVN">
        <templateId root="2.16.840.1.113883.2.9.10.1.11.4.1"/>
        <statusCode code="completed"/>
        <effectiveTime value="20230310154129+0100"/>
+       <routeCode code="IM" codeSystem="2.16.840.1.113883.5.112" codeSystemName="HL7 RouteOfAdministration" displayName="Intramuscolo"/>
+       <approachSiteCode code="RD" codeSystem="2.16.840.1.113883.5.1052" codeSystemName="ActSite" displayName="Deltoide destro"/>
        <consumable typeCode="CSM">
         <manufacturedProduct>
          <manufacturedMaterial>
@@ -218,6 +220,8 @@ MENINGOCOCCO ACWY Data/ora 09-mar-23 00:00:00	lotto DA2548</text>
        <templateId root="2.16.840.1.113883.2.9.10.1.11.4.1"/>
        <statusCode code="completed"/>
        <effectiveTime value="20230309154129+0100"/>
+       <routeCode code="IM" codeSystem="2.16.840.1.113883.5.112" codeSystemName="HL7 RouteOfAdministration" displayName="Intramuscolo"/>
+       <approachSiteCode code="RD" codeSystem="2.16.840.1.113883.5.1052" codeSystemName="ActSite" displayName="Deltoide destro"/>
        <consumable typeCode="CSM">
         <manufacturedProduct>
          <manufacturedMaterial>
@@ -247,6 +251,32 @@ MENINGOCOCCO ACWY Data/ora 09-mar-23 00:00:00	lotto DA2548</text>
          <value xsi:type="TS" value="20230831154129+0100"/>
         </observation>
        </entryRelationship>
+
+       <entryRelationship typeCode="RSON">
+        <observation classCode="OBS" moodCode="EVN">
+         <templateId root="2.16.840.1.113883.2.9.10.1.11.4.7" />
+         <code code="59784-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Malattia con immunit√† presunta" />
+         <statusCode code="completed" />
+         <value xsi:type="CD" code="403.9" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9-CM" displayName="NEFROPATIA">
+          <originalText>
+           <reference value="#[TESTO_IMMUN]"></reference>
+          </originalText>
+         </value>
+        </observation>
+       </entryRelationship>
+       <entryRelationship typeCode="RSON" inversionInd="false">
+        <observation classCode="OBS" moodCode="EVN">
+         <templateId root="2.16.840.1.113883.2.9.10.1.11.4.10"/>
+         <code code="85714-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Motivo per cui non si √® ricevuto il vaccino"/>
+         <statusCode code="completed"/>
+         <effectiveTime>
+          <low value="20230315154129+0100"/>
+          <high value="20230316154129+0100"/>
+         </effectiveTime>
+         <value xsi:type="CD" code="10" codeSystem="2.16.840.1.113883.2.9.6.1.56.5" codeSystemName="AVN: Motivi Esclusione" displayName="Mancata disponibilit√† del vaccino"/>
+        </observation>
+       </entryRelationship>
+
       </substanceAdministration>
      </entry>
     </section>
@@ -259,7 +289,7 @@ endstream
 endobj
 13 0 obj
 <<
-/Size 7973
+/Size 9920
 >>
 endobj
 xref
@@ -277,13 +307,13 @@ xref
 0000000729 00000 n
 0000000761 00000 n
 0000000861 00000 n
-0000008952 00000 n
+0000010899 00000 n
 trailer
 <<
 /Root 1 0 R
-/ID [<60C9EB1518364F95B285F056439C0719> <60C9EB1518364F95B285F056439C0719>]
+/ID [<02F7F7EE326B47876FA609CFB5B0E81F> <02F7F7EE326B47876FA609CFB5B0E81F>]
 /Size 14
 >>
 startxref
-8985
+10932
 %%EOF

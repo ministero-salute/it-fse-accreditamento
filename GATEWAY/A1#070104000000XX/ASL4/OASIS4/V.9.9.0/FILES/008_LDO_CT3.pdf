@@ -40,10 +40,7 @@ endobj
 /Filter /FlateDecode
 >>
 stream
-xú-é=¬0Ñ˜¸ä√©ähçb7ø
-ÇÇ‡;8tâÊ≠≠⁄¥4È‡ø7àÀ¡<w∑!1Õ$Tàd>Q†£ê
-À8QY98]∑oFQ	ˆ¡ñ;ÌŸ‡ˆ¡ ªHúwN˙≈Ú®hÎ|8@cSd]‚≥0†RµH’
-€˝Ö c9ÇûÇF":X◊Ú›√óÌΩæó5[Ô∆¯4=\ŸÙoÉ¢È≠Å∆v∑∆ıt¸_±œ¿±ô¸™ˆ$æ%;‹
+xú-éMÇ@ÑÔ˚+OQÓfﬁ˙ÇÇ¿Í–ek_≥“U‹ı–øœ¢À¿¿<≥"1Õ$§B&ì9h/‘ã8R˘pp∫n+FÒb®w∂‹iœ◊7Ç,W8n2Ùã;\¬¢≠/QÄ∆¶8ìe€}Ì2Neí&ÎmNP±öE†ß†ëw÷µ|Û%C{ØoeÕ÷ª1ﬁMW6}eP4Ω5–Xoñ8ˆˇ+ˆ9pl&?’ñƒ;…
 endstream
 endobj
 7 0 obj
@@ -78,7 +75,7 @@ endobj
 endobj
 12 0 obj
 <<
-/Length 23103
+/Length 26537
 /Type /EmbeddedFile
 /Subtype /application#2Fxml
 /Params 13 0 R
@@ -210,7 +207,7 @@ stream
      <text>Testo di prova Inquadramento Clinico iniziale con sottosezioni
 - Anamnesi
 - Esame Obiettivo
-- Terapia Farmacologica all‚Äôingresso</text>
+- Terapia Farmacologica all'ingresso</text>
      <component typeCode="COMP">
       <section ID="Anamnesi">
        <code code="11329-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Anamnesi Generale"/>
@@ -290,7 +287,7 @@ Questo √® il testo esame obiettivo</text>
      </component>
      <component typeCode="COMP">
       <section ID="Terapia_Farmacologica_Ingresso">
-       <code code="42346-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Terapia Farmacologica all‚Äôingresso"/>
+       <code code="42346-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Terapia Farmacologica all'ingresso"/>
        <title>Terapia Farmacologica all‚Äôingresso</title>
        <text>Terapia farmacologica all'ingresso:
 Questo √® il testo della terapia farmacologica all'ingresso</text>
@@ -489,6 +486,85 @@ Testo delle allergie</text>
        </tbody>
       </table>
      </text>
+     <entry>
+      <substanceAdministration classCode="SBADM" moodCode="EVN">
+       <text>
+        <reference value="#[testo_rif]"/>
+       </text>
+       <statusCode code="completed"/>
+       <effectiveTime xsi:type="IVL_TS">
+        <low value="20230328200619+0200"/>
+        <high value="20230328200819+0200"/>
+       </effectiveTime>
+       <effectiveTime xsi:type="PIVL_TS" operator="A" institutionSpecified="true">
+        <period value="24" unit="h"/>
+       </effectiveTime>
+       <routeCode code="IM" codeSystem="2.16.840.1.113883.5.112" codeSystemName="HL7 RouteOfAdministration" displayName="Intramuscolare"/>
+       <approachSiteCode code="LA" codeSystem="2.16.840.1.113883.5.1052" codeSystemName="ActSite" displayName="Braccio destro"/>
+       <doseQuantity>
+        <low value="5" unit="ml"/>
+        <high value="5" unit="ml"/>
+       </doseQuantity>
+       <rateQuantity>
+        <low value="5" unit="ml/h"/>
+        <high value="10" unit="ml/h"/>
+       </rateQuantity>
+       <administrationUnitCode code="385219001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED" displayName="Soluzione iniettabile"/>
+       <consumable>
+        <manufacturedProduct classCode="MANU">
+         <manufacturedMaterial>
+          <code code="035606033" codeSystem="2.16.840.1.113883.2.9.6.1.5" codeSystemName="AIC" displayName="ARIXTRA">
+           <originalText>
+            <reference value="#[rif_farmaco]"/>
+           </originalText>
+           <translation code="B01AX05" codeSystem="2.16.840.1.113883.6.73" codeSystemName="WHO ATC" displayName="fondaparinux"/>
+          </code>
+         </manufacturedMaterial>
+        </manufacturedProduct>
+       </consumable>
+       <performer>
+        <time value="20230328200619+0200"/>
+        <assignedEntity>
+         <id root="2.16.840.1.113883.2.9.4.3.2" extension="MDCDRV80A41D969D" assigningAuthorityName="MEF"/>
+         <assignedPerson>
+          <name>
+           <family>MEDICO</family>
+           <given>DIPROVA</given>
+          </name>
+         </assignedPerson>
+        </assignedEntity>
+       </performer>
+       <participant typeCode="REF">
+        <time value="20230328200619+0200"/>
+        <participantRole>
+         <id root="2.16.840.1.113883.2.9.4.3.2" extension="MDCDRV80A41D969D" assigningAuthorityName="MEF"/>
+         <playingEntity>
+          <name>
+           <family>MEDICO</family>
+           <given>DIPROVA</given>
+          </name>
+         </playingEntity>
+        </participantRole>
+       </participant>
+       <entryRelationship typeCode="COMP">
+        <observation classCode="OBS" moodCode="EVN">
+         <code code="029480086" codeSystem="2.16.840.1.113883.2.9.6.1.5" codeSystemName="AIC" displayName="Grammatura"/>
+         <value xsi:type="REAL" value="5"/>
+        </observation>
+       </entryRelationship>
+       <entryRelationship typeCode="COMP">
+        <observation classCode="OBS" moodCode="EVN">
+         <code code="029480086" codeSystem="2.16.840.1.113883.2.9.6.1.5" codeSystemName="AIC" displayName="Quantit√† nella Confezione"/>
+         <value xsi:type="REAL" value="10"/>
+        </observation>
+       </entryRelationship>
+       <entryRelationship typeCode="COMP">
+        <supply classCode="SPLY" moodCode="RQO">
+         <quantity value="2"/>
+        </supply>
+       </entryRelationship>
+      </substanceAdministration>
+     </entry>
     </section>
    </component>
    <component typeCode="COMP">
@@ -617,7 +693,7 @@ endstream
 endobj
 13 0 obj
 <<
-/Size 23103
+/Size 26537
 >>
 endobj
 xref
@@ -635,13 +711,13 @@ xref
 0000000729 00000 n
 0000000761 00000 n
 0000000861 00000 n
-0000024083 00000 n
+0000027517 00000 n
 trailer
 <<
 /Root 1 0 R
-/ID [<85FA9404860742484D0A9421EAA678A4> <85FA9404860742484D0A9421EAA678A4>]
+/ID [<9336A439A9F1CC910FD769D3782B9919> <9336A439A9F1CC910FD769D3782B9919>]
 /Size 14
 >>
 startxref
-24117
+27551
 %%EOF
