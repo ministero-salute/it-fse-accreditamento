@@ -6,6 +6,7 @@ Questo repository raccoglie i risultati dei test effettuati per l'accreditamento
 		- [Struttura dei risultati (data.json)](#struttura-dei-risultati-datajson)
 		- [File riassuntivo (report-checklist.xlsx)](#file-riassuntivo-report-checklistxlsx)
 		- [Pull request](#pull-request)
+	- [Nuova tipologia documentale per applicativo già presente nella Lista dei software convalidati](#nuova-tipologia-documentale-per-applicativo-già-presente-nella-lista-dei-software-convalidati)
 
 ## Procedura di caricamento dei risultati
 Per inviare i risultati dei test effettuati è necessario esegure una pull request.  
@@ -115,6 +116,20 @@ La descrizione della pull request dovrà contenere i dati che compongono la *dir
 * `subject_application_vendor`
 * `subject_application_id`
 * `subject_application_version`
+
+
+## Nuova tipologia documentale per applicativo già presente nella Lista dei software convalidati
+
+Nel caso un applicativo abbia superato la Fase 1 per una particolare tipologia documentale (per es. LDO) e il fornitore sottometta una nuova richiesta di accreditamento per un’altra tipologia documentale (per es. RSA), l’applicativo ripeterà l’intera Fase 1 per le due tipologie documentali.
+
+
+I fornitori dovranno sottomettere una nuova pull request contenente tutti i casi di test (e relativo data.json) eseguiti per le due tipologie documentali ( LDO+RSA ).
+
+
+All’interno della Lista dei software convalidati la soluzione applicativa sarà riportata due volte: nella prima riga si riporterà l’esito relativo al LDO, nella seconda l’esito relativo a LDO, RSA.
+
+
+Ai fini del conteggio dei documenti trasmessi dalle Regioni/PA si terrà presente la data di conclusione della Fase 1 di ciascuna tipologia documentale.
 
 
 
