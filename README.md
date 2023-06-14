@@ -152,11 +152,11 @@ All’interno della *directory di sottomissione* creare un file `version.json` c
     	"appID": "id",
     	"appVersion": "version3.0",
     	"ts":"2023-06-08T15:30:29Z",
-		“equiv_releases: [
-			“version3.1”,
-			“version3.2”,
-			“version3.2.1”
-]
+		"equiv_releases": [
+			"version3.1",
+			"version3.2",
+			"version3.2.1"
+		]
   }
 ```
 
