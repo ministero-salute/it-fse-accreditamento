@@ -160,6 +160,16 @@ All’interno della *directory di sottomissione* creare un file `versions.json` 
   }
 ```
 
+Di seguito la descrizione delle chiavi del file `versions.json`:
+
+|chiave|descrizione|
+|---|---|
+|**appVendor**|`subject_application_vendor`|
+|**appID**|`subject_application_id`|
+|**appVersion**|`subject_application_version` dell'applicativo validato|
+|**ts**|timestamp di produzione del file versions.json in formato ISO_8601 semplificato `YYYY-MM-DDThh:mm:ssZ` |
+|**equiv_releases**|array di versioni equivalenti a quella validata|
+
 
 ## Nuova tipologia documentale per applicativo già presente nella Lista dei software convalidati
 
