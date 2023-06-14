@@ -144,7 +144,7 @@ Per eseguire la pull request, seguire le indicazioni sopra riportate.
  
 ### Struttura file json di equivalenza
 
-All’interno della *directory di sottomissione* creare un file `version.json` con il seguente schema:
+All’interno della *directory di sottomissione* creare un file `versions.json` con il seguente schema:
 
 ```json
 {
