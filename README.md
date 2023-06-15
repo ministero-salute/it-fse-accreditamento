@@ -123,7 +123,7 @@ La descrizione della pull request dovrà contenere i dati che compongono la *dir
 
 ## Gestione equivalenza versione software 
  
-Il fornitore ha la possibilità di autodichiare l’equivalenza tra una versione di software **già validata** ed una sua release successiva **se questa non ha subito modifiche al codice nei moduli relativi alla gestione dei CDA2 e al colloquio col gateway**.
+Il fornitore ha la possibilità di autodichiarare l’equivalenza tra una versione di software **già validata** ed una sua release successiva **se questa non ha subito modifiche al codice nei moduli relativi alla gestione dei CDA2 e al colloquio col gateway**.
 
 
 L’equivalenza è pertanto da intendersi come:
