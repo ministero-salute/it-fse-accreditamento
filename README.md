@@ -6,6 +6,9 @@ Questo repository raccoglie i risultati dei test effettuati per l'accreditamento
 		- [Struttura dei risultati (data.json)](#struttura-dei-risultati-datajson)
 		- [File riassuntivo (report-checklist.xlsx)](#file-riassuntivo-report-checklistxlsx)
 		- [Pull request](#pull-request)
+	- [Gestione equivalenza versione software](#gestione-equivalenza-versione-software)
+		- [Procedura di caricamento delle informazioni di equivalenza applicativa](#procedura-di-caricamento-delle-informazioni-di-equivalenza-applicativa)
+		- [Struttura file json di equivalenza](#struttura-file-json-di-equivalenza)
 	- [Nuova tipologia documentale per applicativo già presente nella Lista dei software convalidati](#nuova-tipologia-documentale-per-applicativo-già-presente-nella-lista-dei-software-convalidati)
 
 ## Procedura di caricamento dei risultati
@@ -116,6 +119,56 @@ La descrizione della pull request dovrà contenere i dati che compongono la *dir
 * `subject_application_vendor`
 * `subject_application_id`
 * `subject_application_version`
+
+
+## Gestione equivalenza versione software 
+ 
+Il fornitore ha la possibilità di autodichiarare l’equivalenza tra una versione di software **già validata** ed una sua release successiva **se questa non ha subito modifiche al codice nei moduli relativi alla gestione dei CDA2 e al colloquio col gateway**.
+
+
+L’equivalenza è pertanto da intendersi come:
+* stesse tipologie documentali trattate
+* stessi servizi invocati
+* stessa gestione degli errori e casi di applicabilità
+
+
+Dati questi presupposti le versioni del software contenute nell’autodichiarazione **non è necessario che siano sottoposte al processo di convalida**.
+
+ 
+### Procedura di caricamento delle informazioni di equivalenza applicativa
+
+Per dichiarare l’equivalenza tra le versioni di un applicativo è necessario eseguire una pull request che riporti come  titolo **”Dichiarazione di versioni equivalenti”**, e contenente il solo file json `versions.json` con le informazioni di equivalenza, la cui struttura è di seguito riportata.
+
+Per eseguire la pull request, seguire le indicazioni sopra riportate.
+
+ 
+### Struttura file json di equivalenza
+
+All’interno della *directory di sottomissione* creare un file `versions.json` con il seguente schema:
+
+```json
+{
+    	"appVendor": "vendor",
+    	"appID": "id",
+    	"appVersion": "version3.0",
+    	"ts":"2023-06-08T15:30:29Z",
+		"equiv_releases": [
+			"version3.1",
+			"version3.2",
+			"version3.2.1"
+		]
+  }
+```
+
+Di seguito la descrizione delle chiavi del file `versions.json`:
+
+|chiave|descrizione|
+|---|---|
+|**appVendor**|`subject_application_vendor`|
+|**appID**|`subject_application_id`|
+|**appVersion**|`subject_application_version` dell'applicativo validato|
+|**ts**|timestamp di produzione del file versions.json in formato ISO_8601 semplificato `YYYY-MM-DDThh:mm:ssZ` |
+|**equiv_releases**|array di versioni equivalenti a quella validata|
 
 
 ## Nuova tipologia documentale per applicativo già presente nella Lista dei software convalidati
