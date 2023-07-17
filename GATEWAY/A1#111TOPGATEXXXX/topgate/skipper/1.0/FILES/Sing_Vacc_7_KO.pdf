@@ -40,9 +40,8 @@ endobj
 /Filter /FlateDecode
 >>
 stream
-xú-éMÇ@ÑÔ˚+OQ∫%ë∑JÖ !=tË≤µØŸáª“Æˇ}]ÊÅyòâE#ñ†Zƒ´y:
-ô`E -BjNµ›õQ?∆ÎùîgçÎÄ†®$NYÅRΩ¯ÉKXwÌe¿ö•5# 7àóÈ*I£˚º"»H.'†ß†©∆u|ÛCyØnMÀ∆ª€√5∂k‘∂7
-˚lãsy¸_1œq«z˛SÂ$æÊ;Ê
+xú-é±
+¬0Ñ˜<≈·TE4ç°õVÇ¡tpâÊØµ⁄¥òtË€ƒÂ‡‡æª€êòÁ1b*Eºú%†ÉP	VRÇåà®z:8›toF˘ÏÉ-¥gÉ€ÄQ~R8ns˙≈\£≤kÆ„Zõ‚"Ö∞2UI™$≤›â†§ZåAµ†âàˆ÷u|˜C{ØÔU√÷ª)Ü∂á´⁄˛mP∂Ω5–»∂k\ä√ˇä≠«fˆ´⁄ë¯Ã;Õ
 endstream
 endobj
 7 0 obj
@@ -77,26 +76,28 @@ endobj
 endobj
 12 0 obj
 <<
-/Length 15456
+/Length 16705
 /Type /EmbeddedFile
 /Subtype /application#2Fxml
 /Params 13 0 R
 >>
 stream
 <!--VACCINAZIONI HEADER CDA2-->
+
 <ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:mif="urn:hl7-org:v3/mif" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdtc="urn:hl7-org:sdtc">
 	<realmCode code="IT"/>
 	<typeId root="2.16.840.1.113883.1.3" extension="POCD_MT000040UV02"/>
-	<templateId root="2.16.840.1.113883.2.9.10.1.11.1.2" extension="1.1" assigningAuthorityName="HL7 Italia"/> 
+	<templateId root="2.16.840.1.113883.2.9.10.1.11.1.1" extension="1.1" assigningAuthorityName="HL7 Italia"/> 
 	<id root="2.16.840.1.113883.2.9.2.120.4.4" extension="030702.LCNLDE90L47H501Q.20220420112426.DW322E34" assigningAuthorityName="Regione Liguria"/>
-	<code code="82593-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Immunization summary report"> 
-		<!--translation code="[CODICE_LOCALE]" codeSystem="[OID_SISTEMA_CODIFICA]" codeSystemName="[DESCRIZIONE_SISTEMA_CODIFICA]" displayName="Immunization summary report"/-->
+	<code code="87273-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName=" Immunization note"> 
+		<!--translation code="[CODICE_LOCALE]"	codeSystem="[OID_SISTEMA_CODIFICA]" codeSystemName="[DESCRIZIONE_SISTEMA_CODIFICA]" displayName="Immunization note"/-->
 	</code>
-	<title> Certificato Vaccinale</title>
+	<title> Scheda della singola Vaccinazione </title>
 	<effectiveTime value="20220210183023+0100"/>
-	<confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" codeSystemName="HL7 Confidentiality" displayName="Normal"/>
+	<confidentialityCode code="Restricted" codeSystem="2.16.840.1.113883.5.25" codeSystemName="HL7 Confidentiality" displayName="Normal"/>
 	<languageCode code="it-IT"/>
 	<setId root="2.16.840.1.113883.2.9.2.120.4.4" extension="030702.LCNLDE90L47H501Q.20220420112426.DW322E34" assigningAuthorityName="Regione Liguria"/>
+	<!--setId root="2.16.840.1.113883.2.9.2.120.4.4" extension="030702.LCNLDE90L47H501Q.20220520112426.Q123E456" assigningAuthorityName="Regione Lazio"/-->
 	<versionNumber value="1"/>
 	<recordTarget>
 		<patientRole classCode="PAT">
@@ -109,14 +110,14 @@ stream
 				<city>La Spezia</city> 
 				<censusTract>011015</censusTract> 
 				<postalCode>19123</postalCode> 
-				<streetAddressLine>via Milano 7</streetAddressLine>
+				<streetAddressLine>via Milano 7</streetAddressLine> 
 			</addr> 			
 			<telecom use="HP" value="mailto:prova.provax@example.com"/>
 			<telecom use="MC" value="tel:3340000000"/>
 			<patient> 
 				<name> 
-					<family>Test</family>
-					<given>Esempio</given>
+					<family>Test</family> 
+					<given>Esempio</given> 
 				</name> 
 				<administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" codeSystemName="HL7 AdministrativeGender" displayName="Maschio"/> 
 				<birthTime value="19930619"/>
@@ -126,7 +127,7 @@ stream
 							<country>100</country>
 							<state>070</state>
 							<county>SP</county> 
-							<city>La Spezia</city>
+							<city>La Spezia</city> 
 							<censusTract>011015</censusTract> 
 						</addr>					
 					</place> 
@@ -137,7 +138,7 @@ stream
 	<author>
 		<time value="20220330112426+0100"/>
 		<assignedAuthor classCode="ASSIGNED"> 
-			<id root="2.16.840.1.113883.2.9.4.3.2" extension="MNNLEI00H08B832O" assigningAuthorityName="MEF"/>
+			<id root="2.16.840.1.113883.2.9.4.3.2" extension="MNNLEI00H08B832O" assigningAuthorityName="MEF"/> 
 			<addr use="HP"> 
 				<country>100</country>
 				<state>070</state>
@@ -145,21 +146,21 @@ stream
 				<city>La Spezia</city> 
 				<censusTract>011015</censusTract> 
 				<postalCode>19123</postalCode> 
-				<streetAddressLine>via Milano 7</streetAddressLine>
+				<streetAddressLine>via Milano 7</streetAddressLine> 
 			</addr> 
 			<telecom use="HP" value="mailto:prova.provax@example.com"/> 
 			<telecom use="WP" value="mailto:prova.provax@example.com"/> 
-			<telecom use="MC" value="tel:3470000000"/>
+			<telecom use="MC" value="tel:3340000000"/>
 			<assignedPerson> 
 				<name> 
-					<family>Test</family>
-					<given>Esempio</given>
+					<family>Prova</family> 
+					<given>Esempio</given> 
 				</name> 
 			</assignedPerson>
 			<representedOrganization>
-				<id root="2.16.840.1.113883.2.9.4.1.2" extension="011015" assigningAuthorityName="Ministero della Salute"/>
-				<name>ASL 5 Spezzino</name>
-				<telecom use="WP" value="tel:3340000000"/> 
+				<id root="2.16.840.1.113883.2.9.4.1.2" extension="120148" assigningAuthorityName="Ministero della Salute"/>	
+				<name>SAN RAFFAELE NOMENTANA</name>
+				<telecom use="WP" value="tel: 010 000000000"/> 
 				<addr use="WP"> 
 					<country>100</country>
 					<state>070</state>
@@ -171,12 +172,12 @@ stream
 				</addr>
 			</representedOrganization>
 		</assignedAuthor> 
-	</author> 
+	</author> 	
 	<custodian> 
 		<assignedCustodian> 
 			<representedCustodianOrganization>
-				<id root="2.16.840.1.113883.2.9.4.1.2" extension="011015" assigningAuthorityName="Ministero della Salute"/>
-				<name>ASL 5 Spezzino</name>
+				<id root="2.16.840.1.113883.2.9.4.1.1" extension="111" assigningAuthorityName="Ministero della Salute"/>	
+				<name>XXX</name>
 				<telecom use="WP" value="tel:3340000000"/> 
 				<addr use="DIR"> 
 					<country>100</country>
@@ -189,7 +190,7 @@ stream
 				</addr>
 			</representedCustodianOrganization> 
 		</assignedCustodian> 
-	</custodian>	
+	</custodian>		
 	<legalAuthenticator> 
 		<time value="20220330112426+0100"/> 
 		<signatureCode code="S"/> 
@@ -197,52 +198,52 @@ stream
 			<id root="2.16.840.1.113883.2.9.4.3.2" extension="MNNLEI00H08B832O" assigningAuthorityName="MEF"/> 
 			<addr> 
 				<country>100</country>
-					<state>070</state>
-					<county>SP</county> 
-					<city>La Spezia</city> 
-					<censusTract>011015</censusTract> 
-					<postalCode>19123</postalCode> 
-					<streetAddressLine>via Milano 7</streetAddressLine>
+				<state>070</state>
+				<county>SP</county> 
+				<city>La Spezia</city> 
+				<censusTract>011015</censusTract> 
+				<postalCode>19123</postalCode> 
+				<streetAddressLine>via Milano 7</streetAddressLine> 
 			</addr> 
 			<telecom use="HP" value="mailto:prova.provax@example.com"/> 
 			<telecom use="MC" value="tel:3340000000"/>
 			<assignedPerson> 
 				<name>  
-					<family>Test</family>
+					<family>Test</family> 
 					<given>Esempio</given>
 					<prefix>Dott.</prefix>
 				</name> 
 			</assignedPerson> 
 		</assignedEntity> 
-	</legalAuthenticator> 		
+	</legalAuthenticator> 	
 	<participant typeCode="IND">
 		<associatedEntity classCode="PROV">
-			<id root="2.16.840.1.113883.2.9.4.3.2" extension="MNNLEI00H08B832O" assigningAuthorityName="MEF"/>
+			<id root="2.16.840.1.113883.2.9.4.3.2" extension="MNNLEI00H08B832O" assigningAuthorityName="MEF"/> 
 			<associatedPerson>
 				<name>
-					<family>Test</family>
-					<given>Esempio</given>
+					<family>Esempio</family>
+					<given>test</given>
 				</name>
 			</associatedPerson>
 		</associatedEntity>
 	</participant>	
 	<!--relatedDocument typeCode="RPLC">
 		<parentDocument>
-			<id root="2.16.840.1.113883.2.9.2.120.4.4" extension="030702.LCNLDE90L47H501Q.20220420112426.0009rty" assigningAuthorityName="Regione Lazio"/>
+			<id root="2.16.840.1.113883.2.9.2.120.4.4" extension="030702.LCNLDE90L47H501Q.20220520112426.Q123E446" assigningAuthorityName="Regione Lazio"/>
 			<versionNumber value="1"/> 
 		</parentDocument> 
 	</relatedDocument-->
 	
-<!--BODY VCC-->
+<!--VACCINAZIONI BODY CDA2-->
 
 	<component typeCode="COMP" contextConductionInd="true">
 		<structuredBody moodCode="EVN" classCode="DOCBODY">
 			<component typeCode="COMP" contextConductionInd="true">
-				<section classCode="DOCSECT" moodCode="EVN" ID="Certificato_Vaccinale">
-					<templateId root="2.16.840.1.113883.2.9.10.1.11.3.2"/>
-					<!--id root="XXX"/-->
+				<section classCode="DOCSECT" moodCode="EVN" ID="Singola_Vaccinazione">
+					<templateId root="2.16.840.1.113883.2.9.10.1.11.3.1"/>					
+					<id root="XXX"/>
 					<code code="11369-6" displayName="Storia delle immunizzazioni" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/> 	
-					<title> Certificato Vaccinazione </title>
+					<title> Scheda della singola Vaccinazione </title>
 					<text>
 						[NARRATIVE_BLOCK]
 					</text>
@@ -252,7 +253,7 @@ stream
 							<templateId root="2.16.840.1.113883.2.9.10.1.11.4.1"/>
 							<statusCode code="completed"/>
 							<effectiveTime value="20220330101000+0100"/>
-							<routeCode code="IABDINJ" codeSystem="2.16.840.1.113883.5.112" codeSystemName="HL7 RouteOfAdministration" displayName="Injection, intra-abdominal"/>
+							<routeCode code="IABDINJ" codeSystem="2.16.840.1.113883.5.112" codeSystemName=" HL7 RouteOfAdministration" displayName="Injection, intra-abdominal"/>
 							<approachSiteCode code="LA" codeSystem="2.16.840.1.113883.5.1052" codeSystemName="ActSite" displayName="left arm"/>
 							<doseQuantity value="20" unit="mL"/>
 							<consumable typeCode="CSM">
@@ -264,7 +265,7 @@ stream
 										<lotNumberText>20</lotNumberText>
 									</manufacturedMaterial>
 									<manufacturerOrganization>
-										<id root="1.1.1.1.1.1.1" extension="999999" assigningAuthorityName="[NOME_AUTHORITY]"/>
+										<id root="1.1.1.1.1.1.1.1" extension="999999" assigningAuthorityName="[NOME_AUTHORITY]"/>
 										<name>XXX</name>
 									</manufacturerOrganization>
 								</manufacturedProduct>
@@ -274,8 +275,6 @@ stream
 									<id root="2.16.840.1.113883.2.9.4.1.2" extension="120148" assigningAuthorityName="Ministero della Salute"/>	
 								</participantRole>
 							</participant>
-							
-							
 							<!--numero di dose-->
 							<entryRelationship typeCode="SUBJ" inversionInd="true">  
 								<observation classCode="OBS" moodCode="EVN">
@@ -305,11 +304,11 @@ stream
 									<value xsi:type="TS" value="20220308221122+0100"/>
 								</observation>
 							</entryRelationship>
-							<!--categorie di rischio-->
+							<!--categorie a rischio-->
 							<entryRelationship typeCode="RSON" inversionInd="false"> 
 								<observation classCode="OBS" moodCode="EVN"> 
 									<templateId root="2.16.840.1.113883.2.9.10.1.11.4.5"/>
-									<code code="95715-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Categorie a rischio"/>
+									<code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="95715-9" displayName="Categorie a rischio"/>
 									<statusCode code="completed"/> 
 									<value xsi:type="CD" codeSystem="2.16.840.1.113883.2.9.6.1.56.2" codeSystemName="Categorie di Rischio" code="[COD_RISCHIO]" displayName="[DESC_RISCHIO]"/>
 								</observation>
@@ -320,9 +319,9 @@ stream
 									<templateId root="2.16.840.1.113883.2.9.10.1.11.4.6"/>
 									<code code="59785-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Indicazioni per la vaccinazione"/>
 									<statusCode code="completed"/> 
-									<value xsi:type="CD" code="493.9" codeSystem="2.16.840.1.113883.6.103" displayName="bronchite asmatica (acuta)" codeSystemName="ICD-9CM (diagnosis codes)"> 
+									<value xsi:type="CD"  code="493.9" codeSystem="2.16.840.1.113883.6.103" displayName="bronchite asmatica (acuta)" codeSystemName="ICD-9CM (diagnosis codes)"> 
 										<originalText> 
-										 <reference value="#[REF_CONSRISK]"/> 
+											<reference value="#[REF_CONSRISK]"/> 
 										</originalText> 
 									</value> 
 								</observation>	
@@ -338,9 +337,9 @@ stream
 										<high value ="20220506101010+0100"/>
 									</effectiveTime>
 									<value xsi:type="CD" code="692.3" codeSystem="2.16.840.1.113883.6.103" displayName="Dermatite da contatto con farmaci" codeSystemName="ICD-9CM (diagnosis codes)"> 
-									<originalText>
-										<reference value="#[REF_REAZ]"/> 
-									</originalText>
+										<originalText>
+											<reference value="#[REF_REAZ]"/> 
+										</originalText>
 									</value>
 								</observation>
 							</entryRelationship>
@@ -357,14 +356,11 @@ stream
 									</value>
 								</observation>
 							</entryRelationship>
-							
-							
 						</substanceAdministration>
-					</entry>
-					
-					<!--dati esonero/omissione o differimento-->					
-					<entry>  
-						<substanceAdministration moodCode="EVN" classCode="SBADM">
+					</entry>	
+					<!--dati esonero/omissione o differimento-->
+					<!--entry-->  
+						<!--substanceAdministration moodCode="EVN" classCode="SBADM">
 							<templateId root="2.16.840.1.113883.2.9.10.1.11.4.2"/>
 							<statusCode code="cancelled"/>
 							<effectiveTime value="20220410222222+0100"/>
@@ -374,35 +370,25 @@ stream
 										<code code="043348022" displayName="[DESC_AIC_VACC]" codeSystem="2.16.840.1.113883.2.9.6.1.5" codeSystemName="AIC">
 											<translation code="C08CA01" displayName="[DESC_ATC_VACC]" codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
 										</code>
-										<lotNumberText>20</lotNumberText>
 									</manufacturedMaterial>
 								</manufacturedProduct>
 							</consumable>
 							<participant typeCode="LOC">
 								<participantRole classCode="ROL">
-									<id root="1.1.1.1.1" extension="999999" assigningAuthorityName="[NOME_AUTHORITY]"/>
+									<id root="XXX" extension="999999" assigningAuthorityName="[NOME_AUTHORITY]"/>
 								</participantRole>
-							</participant>
-							 
-							 <!--malattia con presunta immunit√†-->
-							<entryRelationship typeCode="RSON">
+							</participant-->
+							<!--numero di dose-->
+							<!--entryRelationship typeCode="SUBJ" inversionInd="true">  
 								<observation classCode="OBS" moodCode="EVN">
-									<templateId root="2.16.840.1.113883.2.9.10.1.11.4.7" />
-									<code code="59784-9" codeSystem="2.16.840.1.113883.6.1"
-										codeSystemName="LOINC" displayName="Disease with presumed immunity" />
-									<statusCode code="completed" />
-									<value xsi:type="CD" code="403.9"
-										codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD-9CM"
-										displayName="Nefropatia ipertensiva non specificata">
-										<originalText>
-											<reference value="#[REF_IMMUNE]"></reference>
-										</originalText>
-									</value>
+									<templateId root="2.16.840.1.113883.2.9.10.1.11.4.3"/> 
+									<code code="30973-2" displayName="Numero di dose" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/> 
+									<statusCode code="completed"/> 
+									<value xsi:type="INT" value="3"/> 
 								</observation>
-							</entryRelationship>
-							
+							</entryRelationship-->
 							<!--ragione esonero/omissione o differimento-->
-							<entryRelationship typeCode="RSON" inversionInd="false"> 
+							<!--entryRelationship typeCode="RSON"> 
 								<observation classCode="OBS" moodCode="EVN">
 									<templateId root="2.16.840.1.113883.2.9.10.1.11.4.10"/>
 									<code code="85714-4" displayName="Motivo per cui non si √® ricevuto vaccino" codeSystemName="HL7 ActNoImmunizationReason" codeSystem="2.16.840.1.113883.6.1"/>
@@ -413,19 +399,47 @@ stream
 									</effectiveTime>
 									<value xsi:type="CD" code="427.89" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD-9CM" displayName="Bradicardia"/>
 								</observation>
+							</entryRelationship-->
+							<!--malattia con presunta immunit√†-->
+							<!--entryRelationship typeCode="RSON">
+								<observation classCode="OBS" moodCode="EVN"> 
+									<templateId root="2.16.840.1.113883.2.9.10.1.11.4.7"/>
+									<code code="59784-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Disease with presumed immunity"/>
+									<statusCode code="completed"/>
+									<value xsi:type="CD" code="403.9" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD-9CM" displayName="Nefropatia ipertensiva non specificata">
+										<originalText>
+											<reference value="#[REF_IMMUNE]"></reference>
+										</originalText>
+									</value>
+								</observation>
+							</entryRelationship-->	
+							<!--malattia per cui si effettua la vaccinazione-->
+							<!--entryRelationship typeCode="RSON" inversionInd="false"> 
+								<observation classCode="OBS" moodCode="EVN"> 
+									<templateId root="2.16.840.1.113883.2.9.10.1.11.4.9"/> 
+									<code code="75323-6" displayName="Condizione" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/> 
+									<statusCode code="completed"/> 
+									<value xsi:type="CD" code="99.45" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD-9CM" displayName="Morbillo">
+										<originalText>
+											<reference value="#[REF_MAL]"></reference>
+										</originalText>
+									</value>
+								</observation>
 							</entryRelationship>
 						</substanceAdministration>
-					</entry>
+					</entry-->
 				</section>
 			</component>
 		</structuredBody>
 	</component>
 </ClinicalDocument>	
+
+
 endstream
 endobj
 13 0 obj
 <<
-/Size 15456
+/Size 16705
 >>
 endobj
 xref
@@ -443,13 +457,13 @@ xref
 0000000729 00000 n
 0000000761 00000 n
 0000000861 00000 n
-0000016436 00000 n
+0000017685 00000 n
 trailer
 <<
 /Root 1 0 R
-/ID [<8353D4EE78B295D12B6D9593E2C953FA> <8353D4EE78B295D12B6D9593E2C953FA>]
+/ID [<C203D806D4ACB0DC9796D3C97882BF95> <C203D806D4ACB0DC9796D3C97882BF95>]
 /Size 14
 >>
 startxref
-16470
+17719
 %%EOF
