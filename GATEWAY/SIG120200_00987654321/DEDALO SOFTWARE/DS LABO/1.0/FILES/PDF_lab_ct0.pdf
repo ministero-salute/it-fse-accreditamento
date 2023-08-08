@@ -120,7 +120,7 @@ endstream
 endobj
 15 0 obj
 <<
-/Length 18710
+/Length 15171
 /Type /EmbeddedFile
 /Subtype /application#2Fxml
 /Params 17 0 R
@@ -132,10 +132,10 @@ stream
 	<typeId root="2.16.840.1.113883.1.3" extension="POCD_MT000040UV02"/>
 	<templateId root="2.16.840.1.113883.2.9.10.1.1" extension="1.3" assigningAuthorityName="HL7 Italia"/>
 	<id root="2.16.840.1.113883.2.9.2.120.4.4" extension="030702.TSTSMN63A01F205H.20220325112426.OQlvTq1J" assigningAuthorityName="Regione Lazio"/>
-	<code code="11502-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Referto di laboratorio"/>
+	<code 	code="11502-2"	codeSystem="2.16.840.1.113883.6.1"  codeSystemName="LOINC" displayName="Referto di laboratorio"/>
 	<title> REFERTO DI LABORATORIO</title>
 	<sdtc:statusCode code="active"/>
-	<effectiveTime value="20230630200101"/>
+	<effectiveTime value="20220330112426+0100"/>
 	<confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" codeSystemName="HL7 Confidentiality" displayName="Normal"/>
 	<languageCode code="it-IT"/>
 	<setId root="2.16.840.1.113883.2.9.2.120.4.4" extension="030702.TSTSMN63A01F205H.20220325112426.OQlvTq1J" assigningAuthorityName="Regione Lazio"/>
@@ -209,6 +209,7 @@ stream
 			</assignedPerson>
 		</assignedAuthor>
 	</author>
+
 	<dataEnterer typeCode="ENT">
 		<time value="20220325120000+0100"/>
 		<assignedEntity>
@@ -221,6 +222,7 @@ stream
 			</assignedPerson>
 		</assignedEntity>
 	</dataEnterer>
+
 	<custodian>
 		<assignedCustodian>
 			<representedCustodianOrganization>
@@ -251,31 +253,33 @@ stream
 			</informationRecipient>
 		</intendedRecipient>
 	</informationRecipient>
+
 	<legalAuthenticator>
 		<time value="20220325110000+0100"/>
-		<signatureCode code="S"/>
-		<assignedEntity>
-			<id root="2.16.840.1.113883.2.9.4.3.2" extension="PROVAX00X00X000Y" assigningAuthorityName="MEF"/>
-			<addr>
-				<country>100</country>
-				<state>120</state>
-				<county>RM</county>
-				<city>Roma</city>
-				<censusTract>058091</censusTract>
-				<postalCode>00164</postalCode>
-				<streetAddressLine>Via Corvetto 3</streetAddressLine>
-			</addr>
-			<telecom use="HP" value="mailto:prova.provax@example.com"/>
-			<telecom use="WP" value="tel:3340000000"/>
-			<assignedPerson>
-				<name>
-					<family>Prova</family>
-					<given>Federico</given>
-					<prefix>Dttr.</prefix>
-				</name>
-			</assignedPerson>
-		</assignedEntity>
+			<signatureCode code="S"/>
+			<assignedEntity>
+				<id root="2.16.840.1.113883.2.9.4.3.2" extension="PROVAX00X00X000Y" assigningAuthorityName="MEF"/>
+				<addr>
+					<country>100</country>
+					<state>120</state>
+					<county>RM</county>
+					<city>Roma</city>
+					<censusTract>058091</censusTract>
+					<postalCode>00164</postalCode>
+					<streetAddressLine>Via Corvetto 3</streetAddressLine>
+				</addr>
+				<telecom use="HP" value="mailto:prova.provax@example.com"/>
+				<telecom use="WP" value="tel:3340000000"/>
+				<assignedPerson>
+					<name>
+						<family>Prova</family>
+						<given>Federico</given>
+						<prefix>Dttr.</prefix>
+					</name>
+				</assignedPerson>
+			</assignedEntity>
 	</legalAuthenticator>
+
 	<authenticator>
 		<time value="20220325110000+0100"/>
 		<signatureCode code="S"/>
@@ -300,8 +304,9 @@ stream
 			</assignedPerson>
 		</assignedEntity>
 	</authenticator>
+
 	<participant typeCode="REF" contextControlCode="OP">
-		<functionCode code="PRE" codeSystem="2.16.840.1.113883.2.9.5.1.88"/>
+		<functionCode code="PRE" codeSystem= "2.16.840.1.113883.2.9.5.1.88"/>
 		<time value="20220320110000+0100"/>
 		<associatedEntity classCode="QUAL">
 			<id root="2.16.840.1.113883.2.9.4.3.2" extension="PROVAX00X00X000Y" assigningAuthorityName="MEF"/>
@@ -322,9 +327,8 @@ stream
 				</name>
 			</associatedPerson>
 			<scopingOrganization>
-				<id root="2.16.840.1.113883.2.9.4.1.2" extension="120148" assigningAuthorityName="Ministero della Salute"/>
-				<!-- STS11-->
-				<name/>
+				<id root="2.16.840.1.113883.2.9.4.1.2" extension="120148" assigningAuthorityName="Ministero della Salute"/><!-- STS11-->
+				<name></name>
 				<name>SAN RAFFAELE NOMENTANA</name>
 				<telecom use="WP" value="tel:3340000000"/>
 				<addr>
@@ -339,16 +343,18 @@ stream
 			</scopingOrganization>
 		</associatedEntity>
 	</participant>
+
 	<inFulfillmentOf>
 		<order classCode="ACT" moodCode="RQO">
 			<id root="2.16.840.1.113883.2.9.4.3.9" extension="[NRE]" assigningAuthorityName="Ministero delle Finanze"/>
 			<priorityCode code="R" codeSystem="2.16.840.1.113883.5.7" codeSystemName="HL7 ActPriority" displayName="Normale"/>
 		</order>
 	</inFulfillmentOf>
+
 	<documentationOf>
 		<serviceEvent moodCode="EVN">
 			<statusCode code="completed"/>
-			<effectiveTime value="20230630200101"/>
+			<effectiveTime value="20220324112426+0100"/>
 			<performer typeCode="PRF">
 				<assignedEntity>
 					<id root="2.16.840.1.113883.2.9.4.3.2" extension="PROVAX00X00X000Y" assigningAuthorityName="MEF"/>
@@ -369,6 +375,7 @@ stream
 			</performer>
 		</serviceEvent>
 	</documentationOf>
+
 	<!-- <relatedDocument typeCode ="RPLC">
 		<parentDocument>
 			<id root="2.16.840.1.113883.2.9.2.120.4.4" extension="030702.TSTSMN63A01F205H.20220330112426.TSS1Tkju" assigningAuthorityName="Regione Lazio"/>
@@ -376,9 +383,10 @@ stream
 			<versionNumber value="1"/>
 		</parentDocument>
 	</relatedDocument>  -->
+
 	<componentOf>
 		<encompassingEncounter>
-			<effectiveTime value="20230630200101"/>
+			<effectiveTime value="20220330112426+0100"/>
 			<responsibleParty>
 				<assignedEntity>
 					<id root="2.16.840.1.113883.2.9.4.3.2" extension="PROVAX00X00X000Y" assigningAuthorityName="MEF"/>
@@ -405,19 +413,21 @@ stream
 			</location>
 		</encompassingEncounter>
 	</componentOf>
+
+
 	<!-- Structured body -->
 	<component>
 		<structuredBody>
 			<component>
-				<section ID="ESAME_MICROBIOLOGICO">
-					<code code="18725-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="ESAME MICROBIOLOGICO DELLE VIE AEREE"/>
-					<title>Esame microbiologico delle vie aeree</title>
+				<section ID="ESAMI_URINE">
+					<code code="18729-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="ESAMI DELLE URINE"/>
+					<title>Esami delle Urine</title>
 					<component>
-						<section ID="ESAME_MICROSCOPICO">
-							<code code="11553-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Esame microscopico">
+						<section ID="ALBUMINA_URINE">
+							<code code="14957-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Microalbumin Massa/Volume in Urine">
 								<translation code="0090334.02" codeSystem="2.16.840.1.113883.2.9.2.30.6.11" codeSystemName="SISS" displayName="XXX"/>
 							</code>
-							<title>Esame microscopico</title>
+							<title>Albumina nelle Urine</title>
 							<text>
 								<list>
 									<item>
@@ -438,14 +448,14 @@ stream
 											</thead>
 											<tbody>
 												<tr>
-													<td>Esame microscopico</td>
-													<td/>
-													<td>Carica batterica</td>
-													<td>maggiore di 100.000</td>
-													<td/>
-													<td>UFC/mL</td>
-													<td> </td>
-													<td/>
+													<td>Microalbumina massa/volume in urine</td>
+													<td></td>
+													<td>Urine</td>
+													<td>20</td>
+													<td></td>
+													<td>mg/L</td>
+													<td> 0 - 20 </td>
+													<td></td>
 													<td>N</td>
 													<td/>
 												</tr>
@@ -455,96 +465,59 @@ stream
 								</list>
 							</text>
 							<entry typeCode="DRIV">
-								 <act moodCode="EVN" classCode="ACT">
-								<!--	<code code="622-1" codeSystem="2.16.840.1.113883.6.1" SystemName="LOINC" displayName="Batteri, identificato"/>-->
-									<code code="2002273" codeSystem="2.16.840.1.113883.2.9.2.42101.6.2.1" codeSystemName="Codici Esami Laboratorio" displayName="ESAME MICROBIOLOGICO DELLE VIE AEREE"/>
-								    <statusCode code="completed"/>
-									<specimen typeCode="SPC">
-										<specimenRole classCode="SPEC">
+								<act moodCode="EVN" classCode="ACT">
+									<code code="14957-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Microalbumin Massa/Volume in Urine"/>
+									<statusCode code="active"/>
+									<specimen>
+										<specimenRole>
 											<specimenPlayingEntity>
-												<code code="SPT" codeSystem="2.16.840.1.113883.5.129" codeSystemName="SpecimenType" displayName="Sputum"/>
+												<code code="UR" codeSystem="2.16.840.1.113883.5.129" codeSystemName="SpecimenType " displayName="Urine"/>
 											</specimenPlayingEntity>
 										</specimenRole>
 									</specimen>
-									<!--Observation per Esame microscopico-->
+									<entryRelationship typeCode="SUBJ">
+										<act moodCode="EVN" classCode="ACT">
+											<code code="48767-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Annotazioni e commenti"/>
+											<text>
+												<reference value="#nota1"/>
+											</text>
+										</act>
+									</entryRelationship>
+
 									<entryRelationship typeCode="COMP">
 										<observation moodCode="EVN" classCode="OBS">
-											<code code="11553-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Esame microscopico"/>
-										    <statusCode code="completed"/>
-											<effectiveTime value="20230630181000"/>
-											<value xsi:type="ST">alcuni leucociti, bacilli gram negativi, cocchi gram positivi, carica batterica maggiore 100.000 UFC/mL</value>
-											<methodCode code="0240" codeSystem="2.16.840.1.113883.5.84" codeSystemName="ObservationMethod" displayName="Antibiotic sensitivity, disk" />
-										</observation>
-									</entryRelationship>
-									<!--Organizer cluster che descrive le prove di resistenza agli antibiotici sull'isolato Staphylococcus aureus identificato attraverso l'esame colturale in aerobiosi -->
-									<entryRelationship typeCode="COMP">
-										<organizer moodCode="EVN" classCode="CLUSTER">
+											<code code="14957-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Microalbumin Massa/Volume in Urine">
+												<translation code="0090334.02" codeSystem="2.16.840.1.113883.2.9.2.30.6.11" codeSystemName="SISS" displayName="Albumina nelle urine"/>
+											</code>
 											<statusCode code="completed"/>
-											<effectiveTime value="20230630200101"/>
+											<effectiveTime value="20220330112426+0100"/>
+											<value xsi:type="PQ" value="16.00" unit="mg/L"/>
+											<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 Observation Interpretation" displayName="Normal"/>
 											<specimen typeCode="SPC">
 												<specimenRole classCode="SPEC">
-													<specimenPlayingEntity classCode="MIC">
-													 <!--	<code code="STAFFAU"  codeSystemName="OID sistema di codifica" displayName="Staphylococcus aureus"/>-->
-													 <code code="STAFFAU"  codeSystemName="SNOMED-CT" displayName="Staphylococcus aureus"/>
+													<specimenPlayingEntity>
+														<code code="UR" codeSystem="2.16.840.1.113883.5.129" codeSystemName="SpecimenType" displayName="Urine"/>
 													</specimenPlayingEntity>
 												</specimenRole>
 											</specimen>
-											<!--Observation per Esame colturale in aerobiosi che ha identificato lo Staphylococcus aureus-->
-											<component typeCode="COMP">
-												<observation classCode="OBS" moodCode="EVN">
-													<code code="622-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Batteri, identificato"/>
-													<statusCode code="completed"/>
-													<effectiveTime value="20230630200101"/>
-												    <!-- <value xsi:type="CE" code="3092008" codeSystem="OID sistema di codifica" codeSystemName="sistema di codifica" displayName="Staphylococcus aureus"/>-->
-													<!-- <code code="3092008" codeSystem="2.16.840.1.113883.6.96"  codeSystemName="SNOMED-CT" displayName="Staphylococcus aureus"/>-->
-												    <value xsi:type="CE" code="3092008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="sistema di codifica" displayName="Staphylococcus aureus"/>
-													<methodCode code="0240" codeSystem="2.16.840.1.113883.5.84" codeSystemName="ObservationMethod" displayName="Antibiotic sensitivity, disk" />
-													<specimen typeCode="SPC">
-														<specimenRole classCode="SPEC">
-															<specimenPlayingEntity>
-																<code code="SPT" codeSystem="2.16.840.1.113883.5.129" codeSystemName="SpecimenType" displayName="Sputum"/>
-															</specimenPlayingEntity>
-														</specimenRole>
-													</specimen>
-												</observation>
-											</component>
-											<component typeCode="COMP">
-												<observation moodCode="EVN" classCode="OBS">
-													<!-- <code code="xxxxxxxx" codeSystem="2.16.840.1.113883.2.9.99" codeSystemName="nome sistema codifica locale" displayName="Concentrazione"/>-->
-													<code code="conc"  codeSystem="2.16.840.1.113883.2.9.99" codeSystemName="LocalTable"  displayName="Concentrazione"/>
-													<statusCode code="completed"/>
-													<effectiveTime value="20230630200101"/>
-													<value xsi:type="PQ" value="100000" unit="/mL"/>
-													<methodCode code="0240" codeSystem="2.16.840.1.113883.5.84" codeSystemName="ObservationMethod" displayName="Antibiotic sensitivity, disk" />
-												</observation>
-											</component>
-											<component typeCode="COMP">
-												<organizer moodCode="EVN" classCode="BATTERY">
-													<code code="29576-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Suscettibilità batterica, panel"/>
-													<statusCode code="completed"/>
-													<component typeCode="COMP">
-														<!--Observation per la prova di resistenza alla "Penicillina g" del 2715 batterio isolato Staphylococcus aureus-->
-														<observation moodCode="EVN" classCode="OBS">
-															<code code="18965-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Penicillina G"/>
-															<statusCode code="completed"/>
-															<effectiveTime value="20230630200101"/>
-															<value xsi:type="ST"> R </value>
-															<methodCode code="0240" codeSystem="2.16.840.1.113883.5.84" codeSystemName="ObservationMethod" displayName="Antibiotic sensitivity, disk" />
-														</observation>
-													</component>
-													<component typeCode="COMP">
-														<!--Observation per la prova di resistenza alla "Ciprofloxacina" del 2735 batterio isolato Staphylococcus aureus-->
-														<observation moodCode="EVN" classCode="OBS">
-															<code code="18906-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Ciprofloxacina"/>
-															<statusCode code="completed"/>
-															<effectiveTime value="20230630200101"/>
-															<value xsi:type="ST"> R </value>
-															<methodCode code="0240" codeSystem="2.16.840.1.113883.5.84" codeSystemName="ObservationMethod" displayName="Antibiotic sensitivity, disk" />
-														</observation>
-													</component>
-												</organizer>
-											</component>
-										</organizer>
+											<referenceRange>
+												<observationRange>
+													<value xsi:type="IVL_PQ">
+														<low value="0.00" unit="mg/L"/>
+														<high value="20.00" unit="mg/L"/>
+													</value>
+													<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 Observation Interpretation" displayName="Normal"/>
+													<lab:precondition>
+														<lab:criterion>
+															<lab:code code="30525-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Età"/>
+															<lab:value xsi:type="IVL_PQ">
+																<high value="60" unit="a"/>
+															</lab:value>
+														</lab:criterion>
+													</lab:precondition>
+												</observationRange>
+											</referenceRange>
+										</observation>
 									</entryRelationship>
 								</act>
 							</entry>
@@ -606,7 +579,7 @@ endstream
 endobj
 17 0 obj
 <<
-/Size 18710
+/Size 15171
 >>
 endobj
 xref
@@ -627,8 +600,8 @@ xref
 0000001323 00000 n
 0000001525 00000 n
 0000001904 00000 n
-0000020733 00000 n
-0000027615 00000 n
+0000017194 00000 n
+0000024076 00000 n
 trailer
 <<
 /Size 18
@@ -637,5 +610,5 @@ trailer
 /ID [<52346E4F591C55DB724B14573011B50E> <52346E4F591C55DB724B14573011B50E>]
 >>
 startxref
-27649
+24110
 %%EOF
