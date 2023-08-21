@@ -40,9 +40,9 @@ endobj
 /Filter /FlateDecode
 >>
 stream
-xú-éÀ
-¬0D˜˘ä¡U—4ZDwæ
-Ç¡+∫Ë&ö[Î£i1È¢oa83Ãäƒ8ç+P!‚È(ÌÖJ0ìdDDÂ√¡È™y3äG∞Ôl˘£=\;Ù“£¬aì"”/˛ èä¶ ˚=‘vÅs@2›AM!Áã†D‚Dk(©&}–S–@D;Îæy¯í°Ω◊∑≤bÎ›]›¬ïu˚6(Í÷h¨7K\≤˝ˇâ}Üõ—ojK‚÷ó;ô
+xú-é±
+¬0Ñ˜<≈·‘äh-B7µ¡_ppâÊØU€¥4…‡€[ƒÂ‡ÜÔæ[ìò	*E≤ò¶†ΩP)ñRÇåà®z:8›t5£|1‘[ÓµgÉ€£‚§pÃÙõ{\£≤kÆÒ≠Õ@Å±
+»Aêf©Ãâ3m†§ö«†ó†±àv÷u|˜C{ØÔU√÷ª	>mÄ´⁄Pîm∞õ|ÖÀaˇb_«f˙õ⁄í¯“^;ç
 endstream
 endobj
 7 0 obj
@@ -77,27 +77,25 @@ endobj
 endobj
 12 0 obj
 <<
-/Length 12027
+/Length 15467
 /Type /EmbeddedFile
 /Subtype /application#2Fxml
 /Params 13 0 R
 >>
 stream
-<ClinicalDocument
-	xmlns="urn:hl7-org:v3"
-	xmlns:mif="urn:hl7-org:v3/mif"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns:sdtc="urn:hl7-org:sdtc">
+
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:mif="urn:hl7-org:v3/mif" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdtc="urn:hl7-org:sdtc">
 	<realmCode code="IT"/>
 	<typeId root="2.16.840.1.113883.1.3" extension="POCD_MT000040UV02"/>
-	<templateId root="2.16.840.1.113883.2.9.10.1.11.1.1" extension="1.1" assigningAuthorityName="HL7 Italia"/>
-	<id root="2.16.840.1.113883.2.9.2.120.4.4" extension="SINGOLA_VACCINAZIONE.666666.TEST_4" assigningAuthorityName="Regione Lazio"/>
-	<code code="87273-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName=" Immunization note"></code>
-	<title> Scheda della singola Vaccinazione </title>
-	<effectiveTime value="20230401140201+0100"/> 
+	<templateId root="2.16.840.1.113883.2.9.10.1.11.1.2" extension="1.1" assigningAuthorityName="HL7 Italia"/> 
+	<id root="2.16.840.1.113883.2.9.2.120.4.4" extension="CERTIFICATO_VACCINALE.666666.TEST_4" assigningAuthorityName="Regione Lazio"/>
+	<code code="82593-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Immunization summary report"> 
+    </code>
+	<title> Certificato Vaccinale</title>
+	<effectiveTime value="20230501140201+0100"/>
 	<confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" codeSystemName="HL7 Confidentiality" displayName="Normal"/>
 	<languageCode code="it-IT"/>
-	<setId root="2.16.840.1.113883.2.9.2.120.4.4" extension="SINGOLA_VACCINAZIONE.666666.TEST_4" assigningAuthorityName="Regione Lazio"/>
+	<setId root="2.16.840.1.113883.2.9.2.120.4.4" extension="CERTIFICATO_VACCINALE.666666.TEST_4" assigningAuthorityName="Regione Lazio"/>
 	<versionNumber value="1"/>
 	<recordTarget typeCode="RCT" contextControlCode="OP">
 		<patientRole classCode="PAT">
@@ -113,7 +111,9 @@ stream
 			<telecom use="MC" value="tel:3340000000"/>
 			<patient classCode="PSN" determinerCode="INSTANCE">
 				<name>
-					<family>Clemente</family><given>Antonio Vincenzo Stefano</given></name>
+                <family>Clemente</family>
+                <given>Antonio Vincenzo Stefano</given>
+                </name>
 				<administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" codeSystemName="HL7 AdministrativeGender" displayName="Maschio"/>
 				<birthTime value="19980215"/>
 					<birthplace classCode="BIRTHPL">
@@ -131,7 +131,7 @@ stream
 		</patientRole>
 	</recordTarget>
 	<author typeCode="AUT" contextControlCode="OP">
-		<time value="20230401140201+0100"/>
+		<time value="20230501140201+0100"/>
 		<assignedAuthor classCode="ASSIGNED">
 			<id root="2.16.840.1.113883.2.9.4.3.2" extension="MRDDRM60R30Z600D" assigningAuthorityName="MEF"/>
 			<assignedPerson classCode="PSN" determinerCode="INSTANCE">
@@ -151,7 +151,7 @@ stream
 		</assignedCustodian>
 	</custodian>
 	<legalAuthenticator typeCode="LA" contextControlCode="OP">
-		<time value="20230401140201+0100"/>
+		<time value="20230501140201+0100"/>
 		<signatureCode xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CS" code="S"/>
 		<assignedEntity classCode="ASSIGNED">
 			<id root="2.16.840.1.113883.2.9.4.3.2" extension="STLLNN51S66Z134H" assigningAuthorityName="MEF"/>
@@ -164,41 +164,63 @@ stream
 			</assignedPerson>
 		</assignedEntity>
 	</legalAuthenticator>
+
 	<component typeCode="COMP" contextConductionInd="true">
 		<structuredBody moodCode="EVN" classCode="DOCBODY">
 			<component typeCode="COMP" contextConductionInd="true">
-				<section classCode="DOCSECT" moodCode="EVN" ID="Singola_Vaccinazione">
-					<templateId root="2.16.840.1.113883.2.9.10.1.11.3.1"/>
+            <section classCode="DOCSECT" moodCode="EVN" ID="Certificato_Vaccinale">
+					<templateId root="2.16.840.1.113883.2.9.10.1.11.3.2"/>
 			<id root="id-cf56324b-e43a-4cc7-8768-eaba5eb61214"/>
 				<code code="11369-6" displayName="Storia delle immunizzazioni" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-					<title> Scheda della singola Vaccinazione </title><text mediaType="text/x-hl7-text+xml">
-							<paragraph>SCHEDA DELLA SINGOLA VACCINAZIONE</paragraph>
+				<title> Certificato Vaccinazione </title>
+						<text mediaType="text/x-hl7-text+xml">
+							<paragraph>SCHEDA STORICA DELLE VACCINAZIONI</paragraph>
 								<table> <tbody>
 									<tr>
-										<th>VACCINO</th><th>SOMMINISTRAZIONE</th><th>MALATTIA DA IMMUNIZZARE</th>
-										<th>CATEGORIA</th><th>CONDIZIONE</th><th>REAZIONE AVVERSA</th>
+										<th>VACCINO</th>
+                                        <th>SOMMINISTRAZIONE</th>
+                                        <th>MALATTIA DA IMMUNIZZARE</th>
+										<th>CATEGORIA</th>
+                                        <th>CONDIZIONE</th>
+                                        <th>REAZIONE AVVERSA</th>
+                                     </tr>   
+                                        <tr ID="id-SOMMINISTRAZIONE-I">
+                                                <td ID="id-vaccino-i">INF4I ANTINFLUENZALE TETRAVALENTE INATTIVATO</td>
+                                                <td ID="id_vaccino_dettaglio-i">SECONDA DOSE - 01/04/2023 14:02 <br />LOTTOINF <br />FLUARIX TETRA* 10 SIRINGHE 0,5 ML CON AGO <br />043132063 <br />Dottore Vaccinatore: Ragno Uomo <br />Infermiere Assistente: Woman Wonder <br />Via: Intramuscolare <br />Sito: Braccio SX</td>
+                                                <td ID="id-Malattia-i">Influenza con altre manifestazioni respiratorie</td>
+                                                <td ID="id-Categoria-i">Convivente di soggetto ad alto rischio</td>
+                                                <td ID="id-Condizione-i">Bronchite cronica ostruttiva (codice AVN=03)</td>
+                                                <td ID="id-Reazione-i">Bradicardia</td>
+									    </tr>        			
+                                    <tr ID="id-SOMMINISTRAZIONE-T">
+									    <td ID="id-vaccino-t"> T ANATOSSINA TETANICA</td>
+										<td ID="id_vaccino_dettaglio-t">RICHIAMO - 01/05/2023 14:02 <br />LOTTOTET <br />ANATETALL* 1 SIRINGHA 0,5 ML 40 UI <br />002238044 <br />Dottore Vaccinatore: Ragno Uomo <br />Infermiere Assistente: Woman Wonder <br />Via: Intramuscolare <br />Sito: Braccio SX</td>
+                                        <td ID="id-Malattia-t">Tetano (037)</td>
+										<td ID="id-Categoria-t">Convivente di soggetto ad alto rischio</td>
+										<td ID="id-Condizione-t">Bronchite cronica ostruttiva (codice AVN=03)</td>
+										<td ID="id-Reazione-t">Bradicardia</td>
 									</tr>
-									<tr ID="id-SOMMINISTRAZIONE">
-									    <td ID="id-vaccino">INF4I ANTINFLUENZALE TETRAVALENTE INATTIVATO</td>
-										<td ID="id_vaccino_dettaglio">PRIMA DOSE - 01/04/2023 14:02 <br />LOTTOINF <br />FLUARIX TETRA* 10 SIRINGHE 0,5 ML CON AGO <br />043132063 <br />Dottore Vaccinatore: Ragno Uomo <br />Infermiere Assistente: Woman Wonder <br />Via: Intramuscolare <br />Sito: Braccio SX</td>
-										<td ID="id-Malattia">Influenza con altre manifestazioni respiratorie</td>
-										<td ID="id-Categoria">Convivente di soggetto ad alto rischio</td>
-										<td ID="id-Condizione">Bronchite cronica ostruttiva (codice AVN=03)</td>
-										<td ID="id-Reazione">Bradicardia</td>
-									</tr>
+                                    <tr ID="id-SOMMINISTRAZIONE-C">
+									    <td ID="id-vaccino-c">COV19 ANTI SARS COV2</td>
+										<td ID="id_vaccino_dettaglio-c">SECONDA DOSE - 01/04/2023 14:02 <br />LOTTOCOV <br />COMIRNATY (BioNTech/Pfizer) <br />043132063 <br />Dottore Vaccinatore: Ragno Uomo <br />Infermiere Assistente: Woman Wonder <br />Via: Intramuscolare <br />Sito: Braccio SX</td>
+										<td ID="id-Malattia-c">Malattia da SARS-Cov-2(COVID-19)</td>
+										<td ID="id-Categoria-c">Convivente di soggetto ad alto rischio</td>
+										<td ID="id-Condizione-c">Immunodeficenza comune variabile (codice AVN=37)</td>
+                                        <td ID="id-Reazione-c">Nessuna reazione</td>
+                                    </tr>
 								</tbody></table>
 						</text><entry contextConductionInd="true">
 						<substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
 							<templateId root="2.16.840.1.113883.2.9.10.1.11.4.1"/>
-							<id root="id-986a72ca-c940-4403-923d-c00855928100"/>
+							<id root="id-986a72ca-c940-4403-923d-c00855928102"/>
 							<code code="IMMUNIZ" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
 								<text>
-									<reference value="#id-SOMMINISTRAZIONE"/>
+									<reference value="#id-SOMMINISTRAZIONE-T"/>
 								</text>
 							<statusCode code="completed"/>
-							<effectiveTime value="20230401140201+0100"/>
+							<effectiveTime value="20230501140201+0100"/>
 							<priorityCode code="EL"/>
-							<routeCode code="IABDINJ" codeSystem="2.16.840.1.113883.5.112" codeSystemName=" HL7 RouteOfAdministration" displayName="Injection, intra-abdominal"/>
+							<routeCode code="IABDINJ" codeSystem="2.16.840.1.113883.5.112" codeSystemName="HL7 RouteOfAdministration" displayName="Injection, intra-abdominal"/>
 							<approachSiteCode code="LA" codeSystem="2.16.840.1.113883.5.1052" codeSystemName="ActSite" displayName="left arm"/>
 							<doseQuantity value="20" unit="mL"/>
 							<consumable typeCode="CSM">						
@@ -206,31 +228,34 @@ stream
 										<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.2"/>
 										<templateId root="2.16.840.1.113883.10.20.1.53"/>
 										<templateId root="2.16.840.1.113883.2.9.10.1.4.3.3.2"/>
-										<manufacturedMaterial classCode="MMAT" determinerCode="KIND"><code code="043132063" codeSystem="2.16.840.1.113883.2.9.6.1.5" codeSystemName="AIC" displayName="FLUARIX TETRA* 10 SIRINGHE 0,5 ML CON AGO">
+										<manufacturedMaterial classCode="MMAT" determinerCode="KIND"><code code="002238044" codeSystem="2.16.840.1.113883.2.9.6.1.5" codeSystemName="AIC" displayName="ANATETALL* 1 SIRINGHA 0,5 ML 40 UI">
 											<originalText>
-													<reference value="#id-vaccino"/>
+													<reference value="#id-vaccino2-t"/>
 												</originalText>
-											<translation code="J07BB02" codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC" displayName="VACCINO INFLUENZALE INAT. VIRUS PLIT O ANTIGENE DI SUPERF."/>
-										</code><lotNumberText>LOTTOINF</lotNumberText>
+											<translation code="J07AM01" codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC" displayName="ANATOSSINA TETANICA"/>
+										</code><lotNumberText>LOTTOTET</lotNumberText>
 										</manufacturedMaterial>
 									</manufacturedProduct>
 								</consumable>
-<!--Collocazione Struttura esecuzione somministrazione-->								
+
+
+
+							
 							<participant typeCode="LOC">
 								<participantRole classCode="ROL">
 									<id root="2.16.840.1.113883.2.9.4.1.2" extension="120148" assigningAuthorityName="Ministero della Salute"/>	
 								</participantRole>
 							</participant>	
-<!--numero di dose-->
+
 						<entryRelationship typeCode="SUBJ" inversionInd="true">
 							<observation classCode="OBS" moodCode="EVN">
 								<templateId root="2.16.840.1.113883.2.9.10.1.11.4.3"/>
 								<code code="30973-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Numero di dose"/>
 								<statusCode code="completed"/>
-								<value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="INT" value="1"/>
+								<value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="INT" value="2"/>
 								</observation>
 						</entryRelationship>	
-<!--periodo di copertura-->
+
 							<entryRelationship typeCode="REFR" inversionInd="false"> 
 								<observation classCode="OBS" moodCode="EVN"> 
 									<templateId root="2.16.840.1.113883.2.9.10.1.11.4.4"/> 
@@ -241,7 +266,7 @@ stream
 									</value>
 								</observation>
 							</entryRelationship>
-<!--schedulazione del prossimo vaccino (DATA PROSSIMO APPUNTAMENTO)-->
+
 							<entryRelationship typeCode="REFR" inversionInd="false"> 
 								<observation classCode="OBS" moodCode="EVN"> 
 									<templateId root="2.16.840.1.113883.2.9.10.1.11.4.4"/> 
@@ -250,7 +275,7 @@ stream
 									<value xsi:type="TS" value="20231201140201+0100"/>
 								</observation>
 							</entryRelationship>
-<!--categorie a rischio -->							
+						
 				<entryRelationship typeCode="RSON" inversionInd="false">
 							<observation classCode="OBS" moodCode="EVN">
 							<templateId root="2.16.840.1.113883.2.9.10.1.11.4.5"/>
@@ -259,25 +284,25 @@ stream
 							<value xsi:type="CD" codeSystem="2.16.840.1.113883.2.9.6.1.56.2" codeSystemName="Categorie di Rischio"
 												code="20" displayName="Convivente di soggetto ad alto rischio">
 									<originalText>
-										<reference value="#id-Categoria"/>
+										<reference value="#id-Categoria-t"/>
 									</originalText>
 							</value>
 							</observation> 
 				</entryRelationship>							
-<!--condizione sanitaria  a rischio -->					
+			
 				<entryRelationship typeCode="RSON" inversionInd="false"> 
 							<observation classCode="OBS" moodCode="EVN">
 							<templateId root="2.16.840.1.113883.2.9.10.1.11.4.6"/> 
-							<code code="59785-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Condizioni sanitarie a rischio"/>
+							<code code="59785-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Indicazioni per la vaccinazione"/>
 							<statusCode code="completed"/>
 							<value xsi:type="CD" code="491.2" codeSystem="2.16.840.1.113883.6.103" displayName="BPCO" codeSystemName="ICD-9CM (diagnosis codes)">
 									<originalText>
-										<reference value="#id-Condizione"/> 
+										<reference value="#id-Condizione-t"/> 
 									</originalText>
 							</value>
 						</observation>
 				</entryRelationship>	
-<!--reazione avversa -->						
+					
 						<entryRelationship typeCode="CAUS" inversionInd="false">
 								<observation classCode="OBS" moodCode="EVN" > 
 									<templateId root="2.16.840.1.113883.2.9.10.1.11.4.8"/>
@@ -285,36 +310,61 @@ stream
 								<code  code="31044-1" displayName= "Reazione alla vaccinazione" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
 								<statusCode code="completed"/>
 								<effectiveTime>
-									<low value="20230401140201+0100"/>
+									<low value="20230501140201+0100"/>
 									</effectiveTime>
 								<value xsi:type="CD" code="427.89" codeSystem="2.16.840.1.113883.6.103" 
 								displayName="Bradicardia" codeSystemName="ICD-9CM (diagnosis 985 codes)">
 									<originalText>
-										<reference value="#id-Reazione"/>
+										<reference value="#id-Reazione-t"/>
 									</originalText>
 								</value>
 
 							</observation>
-						</entryRelationship>				
-<!--malattia per cui si effettua la vaccinazione-->
+						</entryRelationship>	
+
 							<entryRelationship typeCode="RSON" inversionInd="false"> 
 								<observation classCode="OBS" moodCode="EVN"> 
 									<templateId root="2.16.840.1.113883.2.9.10.1.11.4.9"/> 
 									<code code="75323-6" displayName="Condizione" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/> 
 									<statusCode code="completed"/> 
-									<value xsi:type="CD" code="487.1" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD-9CM" displayName="Influenza con altre manifestazioni respiratorie">
+									<value xsi:type="CD" code="037" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD-9CM" displayName="Tetano">
 										<originalText>
-											<reference value="#id-Malattia-vacc1"></reference>
+											<reference value="#id-Malattia-t"></reference>
 										</originalText>
 									</value>
 								</observation>
-							</entryRelationship>	
-
-
-
-			</substanceAdministration>
+							</entryRelationship>
+ </substanceAdministration>
+		</entry><entry contextConductionInd="true">
+                    <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="true">
+                    <templateId root="2.16.840.1.113883.2.9.10.1.11.4.2"/>
+                    <statusCode code="cancelled"/>
+                    <effectiveTime value="20230501140201+0100"/>
+                    <consumable typeCode="CSM">
+                    <manufacturedProduct>
+                            <manufacturedMaterial>
+                            <code code="043348022" displayName="049269107 COMIRNATY (BioNTech/Pfizer)" codeSystem="2.16.840.1.113883.2.9.6.1.5" codeSystemName="AIC">
+                            <translation code="J07BB02" displayName="ALTRI VACCINI VIRALI- Vaccino amRNA contro COVID-19" codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
+                            </code>
+                            </manufacturedMaterial>
+                    </manufacturedProduct>
+                    </consumable><entryRelationship typeCode="RSON" inversionInd="false">
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.2.9.10.1.11.4.10"/>
+									<code code="85714-4" 
+                                    displayName="Motivo per cui non si e' ricevuto il vaccino" 
+                                    codeSystemName="LOINC" 
+                                   codeSystem="2.16.840.1.113883.6.1"/>
+									<statusCode code="completed"/>
+									<effectiveTime>
+										<low value="20230501140201+0100"/>
+										<high value="20231001140201+0100"/>
+									</effectiveTime>
+									<value xsi:type="CD" code="279.06" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD-9CM" displayName="Immunodeficenza comune Variabile"/>
+								</observation>
+</entryRelationship></substanceAdministration>
 		</entry>
-	</section>
+    </section>
 	</component>
 </structuredBody>
 </component>
@@ -324,7 +374,7 @@ endstream
 endobj
 13 0 obj
 <<
-/Size 12027
+/Size 15467
 >>
 endobj
 xref
@@ -342,13 +392,13 @@ xref
 0000000728 00000 n
 0000000760 00000 n
 0000000860 00000 n
-0000013006 00000 n
+0000016446 00000 n
 trailer
 <<
 /Root 1 0 R
-/ID [<26981C3A67CDFDB3BA5816912FD5CE6E> <26981C3A67CDFDB3BA5816912FD5CE6E>]
+/ID [<413CE8E4BA26D6053958C0B6BAED4AF8> <413CE8E4BA26D6053958C0B6BAED4AF8>]
 /Size 14
 >>
 startxref
-13040
+16480
 %%EOF
