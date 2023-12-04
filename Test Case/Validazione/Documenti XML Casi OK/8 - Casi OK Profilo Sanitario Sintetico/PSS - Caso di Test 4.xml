@@ -293,7 +293,7 @@
 												<low value="20220410000000+0100"/>
 												<!--high value="20220420000000+0100"/-->
 											</effectiveTime>
-											<value xsi:type="CD" code="493.9" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD-9CM (diagnosis codes)" displayName="ASMA,TIPO NON SPECIFICATO">
+											<value xsi:type="CD" code="493.9" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD-9CM" displayName="ASMA,TIPO NON SPECIFICATO">
 												<originalText>
 													<reference value="#[REF_REAZ]"/>
 												</originalText>
@@ -481,7 +481,7 @@
 										<low value="20220510100000+0100"/>
 										<!--high value="20220510110000+0100"/-->
 									</effectiveTime>
-									<value xsi:type="CD" code="787.02" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD-9CM (diagnosis codes)" displayName="NAUSEA SOLO">
+									<value xsi:type="CD" code="787.02" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD-9CM" displayName="NAUSEA SOLO">
 										<originalText>
 											<reference value="#[REF_REAZ]"/>
 										</originalText>
@@ -569,7 +569,7 @@
 								<observation classCode="OBS" moodCode="EVN">
 									<templateId root="2.16.840.1.113883.2.9.10.1.4.3.4.2"/>
 									<id root="XXX"/>
-									<code code="75326-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem"/>
+									<code code="75326-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problema"/>
 									<text>
 										<reference value="#[REF_PROBLEMA]"/>
 									</text>
@@ -862,7 +862,7 @@
 								<reference value="#pregn_1_info"/>
 							</text>
 							<statusCode code="completed"/>
-							<effectiveTime value="20150409"/>
+							<effectiveTime value="20150409101010+0100"/>
 							<value xsi:type="INT" value="1"/>
 						</observation>
 					</entry>
@@ -988,8 +988,8 @@
 				<section ID="PROTESI_IMPIANTI_AUSILI">
 					<templateId root="2.16.840.1.113883.2.9.10.1.4.2.9"/>
 					<id root="XXX"/>
-					<code code="46264-8" displayName="Storia di uso di dispositivi medici" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-					<title>Protesi, Impianti ed Ausilii</title> 
+					<code code="46264-8" displayName="Storia d'uso di dispositivi medici" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+					<title>Protesi, impianti e ausili</title> 
 					<text>
 						<table border="1" width="100%">
 							<thead>
@@ -1140,7 +1140,7 @@
 							<entryRelationship typeCode="RSON">
 								<observation classCode="OBS" moodCode="EVN">
 									<id root="XXX"/>
-									<code code="410" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD-9CM (diagnosis codes)" displayName="IMA"/>
+									<code code="410" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD-9CM" displayName="IMA"/>
 								</observation>
 							</entryRelationship>
 						</procedure>
