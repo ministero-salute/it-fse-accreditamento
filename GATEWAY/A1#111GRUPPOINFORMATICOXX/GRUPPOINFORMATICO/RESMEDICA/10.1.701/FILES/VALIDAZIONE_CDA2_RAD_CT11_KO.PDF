@@ -14,19 +14,19 @@ endobj
 
 endobj
 49 0 obj
-<</Subtype /text#2Fxml /Params <</CreationDate <443A32303234303131353136353732302B303127303027> /Size 7803 >>
- /Length 7803 >>
+<</Subtype /text#2Fxml /Params <</CreationDate <443A32303234303131353134323232302B303127303027> /Size 7961 >>
+ /Length 7961 >>
 stream
 <?xml version="1.0" encoding="utf-8"?>
 <ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" moodCode="EVN" xmlns="urn:hl7-org:v3">
   <realmCode code="IT" />
   <typeId root="2.16.840.1.113883.1.3" extension="POCD_MT000040UV02" />
-  <templateId root="2.16.840.1.113883.2.9.10.1.9.1" extension="1.1" assigningAuthorityName="HL7 Italia" />
+  <templateId root="2.16.840.1.113883.2.9.10.1.7.1" extension="1.1" assigningAuthorityName="HL7 Italia" />
   <id root="2.16.840.1.113883.2.9.2.120.4.4" extension="030702.LCNLDE90L47H501Q.20220509102426.Q123E456" assigningAuthorityName="Regione Lazio" />
-  <code code="11488-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Nota di consulto" />
-  <title>Referto di Specialistica Ambulatoriale</title>
+  <code code="68604-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Referto Radiologico" />
+  <title>Referto Radiologico</title>
   <statusCode xmlns="urn:hl7-org:sdtc" />
-  <effectiveTime value="20240115165719+0100" />
+  <effectiveTime value="20240115142220+0100" />
   <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" codeSystemName="HL7 Confidentiality" displayName="Normal" />
   <languageCode code="it-IT" />
   <setId root="2.16.840.1.113883.2.9.2.120.4.4" extension="030702.LCNLDE90L47H501Q.20220509102426.Q123E456" assigningAuthorityName="Regione Lazio" />
@@ -34,6 +34,7 @@ stream
   <recordTarget typeCode="RCT" contextControlCode="OP">
     <patientRole classCode="PAT">
       <id root="2.16.840.1.113883.2.9.4.3.2" extension="PRVCPL85E27G619L" assigningAuthorityName="MEF" />
+      <id root="2.16.840.1.113883.9.9.9.9.9.9" extension="299336" assigningAuthorityName="PACS" />
       <addr use="H">
         <county>100</county>
         <country>PE</country>
@@ -63,7 +64,7 @@ stream
     </patientRole>
   </recordTarget>
   <author typeCode="AUT" contextControlCode="OP">
-    <time value="20231229104719+0100" />
+    <time value="20231220162427+0100" />
     <assignedAuthor classCode="ASSIGNED">
       <id root="2.16.840.1.113883.2.9.4.3.2" extension="VLLFRC80R01L219B" assigningAuthorityName="MEF" />
       <telecom value="tel:3221223222" use="MC" />
@@ -86,7 +87,7 @@ stream
     </assignedCustodian>
   </custodian>
   <legalAuthenticator typeCode="LA" contextControlCode="OP">
-    <time value="20231229104719+0100" />
+    <time value="20231220162427+0100" />
     <signatureCode code="S" />
     <assignedEntity classCode="ASSIGNED">
       <id root="2.16.840.1.113883.2.9.4.3.2" extension="VLLFRC80R01L219B" assigningAuthorityName="MEF" />
@@ -99,6 +100,17 @@ stream
       </assignedPerson>
     </assignedEntity>
   </legalAuthenticator>
+  <participant typeCode="REF" contextControlCode="OP">
+    <associatedEntity classCode="PROV">
+      <id root="2.16.840.1.113883.2.9.4.3.2" extension="BKRMMH88D27A007W" assigningAuthorityName="MEF" />
+    </associatedEntity>
+  </participant>
+  <inFulfillmentOf>
+    <order moodCode="RQO">
+      <id root="2.16.840.1.113883.2.9.4.3.4" extension="010111111111111" assigningAuthorityName="MEF" />
+      <priorityCode code="R" codeSystem="2.16.840.1.113883.5.7" codeSystemName="HL7 ActPriority" />
+    </order>
+  </inFulfillmentOf>
   <documentationOf typeCode="DOC">
     <serviceEvent moodCode="EVN">
       <code code="PROG" codeSystem="2.16.840.1.113883.2.9.5.1.4" codeSystemName="ActCode" displayName="Accesso Programmato" />
@@ -124,23 +136,20 @@ stream
     <structuredBody classCode="DOCBODY" moodCode="EVN">
       <component typeCode="COMP">
         <section ID="STORIA_CLINICA" classCode="DOCSECT" moodCode="EVN">
-          <code code="11329-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Storia Generale" />
+          <code code="11329-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Storia Clinica" />
           <title>Storia Clinica</title>
-          <text mediaType="text/x-hl7-text+xml">Storia clinica</text>
+          <text mediaType="text/x-hl7-text+xml">Prova Anamnesi</text>
         </section>
       </component>
       <component typeCode="COMP">
-        <section ID="PRESTAZIONI" classCode="DOCSECT" moodCode="EVN">
-          <code code="62387-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Interventi" />
-          <title>Prestazioni</title>
+        <section ID="ESAME_ESEGUITO" classCode="DOCSECT" moodCode="EVN">
+          <code code="55111-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Descrizioni attuale procedure di imaging" />
+          <title>Esame Eseguito</title>
           <text mediaType="text/x-hl7-text+xml" />
           <entry>
             <act classCode="ACT" moodCode="EVN">
-              <code code="04.12" codeSystem="2.16.840.1.113883.2.9.2.90.6.22" codeSystemName="DIZ_REG_ESENZIONI_regioneToscana" displayName="BIOPSIA">
-                <originalText>
-                  <reference value="Prestazione – 1" />
-                </originalText>
-              </code>
+              <code code="04.12" codeSystem="2.16.840.1.113883.2.9.2.90.6.22" codeSystemName="DIZ_REG_ESENZIONI_regioneToscana" displayName="BIOPSIA" />
+              <statusCode code="completed" />
               <effectiveTime value="20240119000000+0100" />
               <entryRelationship typeCode="XCRPT">
                 <procedure classCode="PROC" moodCode="EVN">
@@ -153,19 +162,10 @@ stream
       </component>
       <component typeCode="COMP">
         <section ID="REFERTO" classCode="DOCSECT" moodCode="EVN">
-          <code code="47045-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Referto" />
+          <code code="18782-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Referto" />
           <title>Referto</title>
           <text mediaType="text/x-hl7-text+xml">
-            <paragraph>Testo Referto</paragraph>
-          </text>
-        </section>
-      </component>
-      <component typeCode="COMP">
-        <section ID="DIAGNOSI" classCode="DOCSECT" moodCode="EVN">
-          <code code="29548-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnosi" />
-          <title>Diagnosi</title>
-          <text mediaType="text/x-hl7-text+xml">
-            <paragraph>Diagnosi</paragraph>
+            <paragraph>Prova Referto</paragraph>
           </text>
         </section>
       </component>
@@ -174,7 +174,7 @@ stream
           <code code="55110-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Conclusioni" />
           <title>Conclusioni</title>
           <text mediaType="text/x-hl7-text+xml">
-            <paragraph>Conclusioni</paragraph>
+            <paragraph>Prova Conclusioni</paragraph>
           </text>
         </section>
       </component>
@@ -756,7 +756,7 @@ endobj
 47 0 obj
 <</Type /Metadata /Subtype /XML /Length 1030 >>
 stream
-<?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?><x:xmpmeta xmlns:x="adobe:ns:meta/"><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:about="" xmlns:pdf="http://ns.adobe.com/pdf/1.3/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/"><pdf:Producer>Microsoft® Word per Microsoft 365 - InfoCert GoSign</pdf:Producer><dc:creator><rdf:Seq><rdf:li>Federico Vecce</rdf:li></rdf:Seq></dc:creator><xmp:CreatorTool>Microsoft® Word per Microsoft 365</xmp:CreatorTool><xmp:CreateDate>2024-01-15T16:57:20+01:00</xmp:CreateDate><xmp:ModifyDate>2024-01-15T16:57:20+01:00</xmp:ModifyDate><xmpMM:DocumentID>uuid:CB4B131A-488E-4047-9A82-872D37E974AA</xmpMM:DocumentID><xmpMM:InstanceID>uuid:CB4B131A-488E-4047-9A82-872D37E974AA</xmpMM:InstanceID><xmp:MetadataDate>2024-01-15T16:57:20+01:00</xmp:MetadataDate></rdf:Description></rdf:RDF></x:xmpmeta><?xpacket end="w"?>
+<?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?><x:xmpmeta xmlns:x="adobe:ns:meta/"><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:about="" xmlns:pdf="http://ns.adobe.com/pdf/1.3/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/"><pdf:Producer>Microsoft® Word per Microsoft 365 - InfoCert GoSign</pdf:Producer><dc:creator><rdf:Seq><rdf:li>Federico Vecce</rdf:li></rdf:Seq></dc:creator><xmp:CreatorTool>Microsoft® Word per Microsoft 365</xmp:CreatorTool><xmp:CreateDate>2024-01-15T14:22:20+01:00</xmp:CreateDate><xmp:ModifyDate>2024-01-15T14:22:20+01:00</xmp:ModifyDate><xmpMM:DocumentID>uuid:CB4B131A-488E-4047-9A82-872D37E974AA</xmpMM:DocumentID><xmpMM:InstanceID>uuid:CB4B131A-488E-4047-9A82-872D37E974AA</xmpMM:InstanceID><xmp:MetadataDate>2024-01-15T14:22:20+01:00</xmp:MetadataDate></rdf:Description></rdf:RDF></x:xmpmeta><?xpacket end="w"?>
 endstream
 endobj
 46 0 obj
@@ -788,7 +788,7 @@ endobj
 
 endobj
 44 0 obj
-<</Author <FEFF0046006500640065007200690063006F002000560065006300630065> /Creator <FEFF004D006900630072006F0073006F0066007400AE00200057006F0072006400200070006500720020004D006900630072006F0073006F006600740020003300360035> /Producer <FEFF004D006900630072006F0073006F0066007400AE00200057006F0072006400200070006500720020004D006900630072006F0073006F0066007400200033003600350020002D00200049006E0066006F004300650072007400200047006F005300690067006E> /CreationDate <443A32303234303131353136353732302B303127303027> /ModDate <443A32303234303131353136353732302B303127303027> >>
+<</Author <FEFF0046006500640065007200690063006F002000560065006300630065> /Creator <FEFF004D006900630072006F0073006F0066007400AE00200057006F0072006400200070006500720020004D006900630072006F0073006F006600740020003300360035> /Producer <FEFF004D006900630072006F0073006F0066007400AE00200057006F0072006400200070006500720020004D006900630072006F0073006F0066007400200033003600350020002D00200049006E0066006F004300650072007400200047006F005300690067006E> /CreationDate <443A32303234303131353134323232302B303127303027> /ModDate <443A32303234303131353134323232302B303127303027> >>
 
 endobj
 xref
@@ -796,63 +796,63 @@ xref
 0000000000 00000 f
 0000000017 00000 n
 3 1
-0000009319 00000 n
+0000009477 00000 n
 5 1
-0000103827 00000 n
+0000103985 00000 n
 8 6
-0000103976 00000 n
-0000132745 00000 n
-0000133048 00000 n
-0000132987 00000 n
-0000073959 00000 n
-0000102813 00000 n
+0000104134 00000 n
+0000132903 00000 n
+0000133206 00000 n
+0000133145 00000 n
+0000074117 00000 n
+0000102971 00000 n
 15 1
-0000008423 00000 n
+0000008581 00000 n
 19 2
-0000133109 00000 n
-0000008806 00000 n
+0000133267 00000 n
+0000008964 00000 n
 30 2
-0000009522 00000 n
-0000010065 00000 n
+0000009680 00000 n
+0000010223 00000 n
 33 1
-0000009792 00000 n
+0000009950 00000 n
 37 2
-0000073179 00000 n
-0000020624 00000 n
+0000073337 00000 n
+0000020782 00000 n
 40 30
-0000020465 00000 n
-0000010349 00000 n
-0000073461 00000 n
-0000134609 00000 n
-0000134863 00000 n
-0000134711 00000 n
-0000134286 00000 n
-0000133168 00000 n
+0000020623 00000 n
+0000010507 00000 n
+0000073619 00000 n
+0000134767 00000 n
+0000135021 00000 n
+0000134869 00000 n
+0000134444 00000 n
+0000133326 00000 n
 0000000301 00000 n
 0000000452 00000 n
-0000073809 00000 n
-0000008863 00000 n
-0000073738 00000 n
-0000009756 00000 n
-0000009965 00000 n
-0000010239 00000 n
-0000010702 00000 n
-0000010816 00000 n
-0000015125 00000 n
-0000020716 00000 n
-0000020806 00000 n
-0000073624 00000 n
-0000074135 00000 n
-0000103056 00000 n
-0000103487 00000 n
-0000104067 00000 n
-0000134420 00000 n
-0000134392 00000 n
-0000134531 00000 n
-0000134791 00000 n
+0000073967 00000 n
+0000009021 00000 n
+0000073896 00000 n
+0000009914 00000 n
+0000010123 00000 n
+0000010397 00000 n
+0000010860 00000 n
+0000010974 00000 n
+0000015283 00000 n
+0000020874 00000 n
+0000020964 00000 n
+0000073782 00000 n
+0000074293 00000 n
+0000103214 00000 n
+0000103645 00000 n
+0000104225 00000 n
+0000134578 00000 n
+0000134550 00000 n
+0000134689 00000 n
+0000134949 00000 n
 trailer
 <</Size 70 /Info 44 0 R /ID [<635674FE8AE2F53B3DA76AB3FBA3A578> <1A134BCB8E4847409A82872D37E974AA>] /Root 1 0 R >>
 
 startxref
-135450
+135608
 %%EOF
