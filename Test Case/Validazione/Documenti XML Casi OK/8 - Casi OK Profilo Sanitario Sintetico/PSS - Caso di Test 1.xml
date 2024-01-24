@@ -17,12 +17,12 @@
 				<country>100</country>
 				<state>120</state>
 				<county>RM</county> 
-				<!--city>Roma</city--> 
+				<city>Roma</city> 
 				<censusTract>058091</censusTract> 
 				<postalCode>00187</postalCode> 
 				<streetAddressLine>Via Aurora 12</streetAddressLine> 
 			</addr> 
-			<telecom use="HP" value="mailto:prova.provax@example.com"/> 
+			<telecom use="HP" value="mailto:prova.provax@gmail.it"/>
 			<telecom use="MC" value="tel:3340000000"/>
 			<patient>
 				<name>
@@ -59,8 +59,8 @@
 				<postalCode>00184</postalCode> 
 				<streetAddressLine>via Milano 7</streetAddressLine> 
 			</addr> 
-			<telecom use="HP" value="mailto:prova.provax@example.com"/> 
-			<telecom use="WP" value="mailto:prova.provax@example.com"/> 
+			<telecom use="HP" value="mailto:prova.provax@gmail.it"/> 
+			<telecom use="WP" value="mailto:prova.provax@pec.it"/> 
 			<telecom use="MC" value="tel:3340000000"/>
 			<assignedPerson>
 				<name>
@@ -83,8 +83,8 @@
 				<censusTract>058091</censusTract>
 				<streetAddressLine>via Roma 7</streetAddressLine>
 			</addr>
-			<telecom use="HP" value="mailto:prova.provax@example.com"/> 
-			<telecom use="MC" value="tel:3340000000"/>
+			<telecom use="WP" value="mailto:prova.provax@pec.it"/>
+			<telecom use="WP" value="tel:3345698820"/>
 			<assignedPerson>
 				<name>
 					<family>Test</family>
@@ -103,12 +103,13 @@
 			</relatedPerson> 
 		</relatedEntity> 
 	</informant>
+	
 	<custodian>
 		<assignedCustodian>
 			<representedCustodianOrganization>
 				<id root="2.16.840.1.113883.2.9.4.1.2" extension="XXX" assigningAuthorityName="Ministero della Salute"/>
 				<name>XXX</name>
-				<telecom use="MC" value="tel:3340000000"/>
+				<telecom use="WP" value="tel:0640402233"/>
 				<addr>
 					<country>100</country>
 					<state>120</state>
@@ -133,8 +134,8 @@
 				<censusTract>058091</censusTract>
 				<streetAddressLine>Vico San Giovanni 3</streetAddressLine>
 			</addr>
-			<telecom use="HP" value="mailto:prova.provax@example.com"/> 
-			<telecom use="MC" value="tel:3340000000"/>
+			<telecom use="WP" value="mailto:prova.provax@pec.it"/>
+			<telecom use="WP" value="tel:3333097821"/>
 			<assignedPerson>
 				<name>
 					<family>Prova</family>
@@ -157,8 +158,8 @@
 				<censusTract>058091</censusTract>
 				<streetAddressLine>Vico San Giovanni 3</streetAddressLine>
 			</addr> 
-			<telecom use="WP" value="mailto:prova.provax@example.com"/> 
-			<telecom use="MC" value="tel:3340000000"/>
+			<telecom use="WP" value="mailto:prova.provax@pec.it"/>
+			<telecom use="WP" value="tel:3333097821"/>
 			<assignedPerson>
 				<name>
 					<family>Test</family>
@@ -181,7 +182,7 @@
 				<postalCode>00164</postalCode> 
 				<streetAddressLine>via Corvetto 3</streetAddressLine>
 			</addr>
-			<telecom use="HP" value="mailto:prova.provax@example.com"/> 
+			<telecom use="HP" value="mailto:prova.provax@gmail.it"/>
 			<associatedPerson>
 				<name>
 					<family>Prova</family>
@@ -292,7 +293,7 @@
 												<low value="20220410000000+0100"/>
 												<!--high value="20220420000000+0100"/-->
 											</effectiveTime>
-											<value xsi:type="CD" code="493.9" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD-9CM (diagnosis codes)" displayName="ASMA,TIPO NON SPECIFICATO">
+											<value xsi:type="CD" code="493.9" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD-9CM" displayName="ASMA,TIPO NON SPECIFICATO">
 												<originalText>
 													<reference value="#[REF_REAZ]"/>
 												</originalText>
@@ -406,7 +407,7 @@
 					</entry-->
 				</section>
 			</component>
-		
+			
 			<component typeCode="COMP">
 				<section ID="LISTA_PROBLEMI">
 					<templateId root="2.16.840.1.113883.2.9.10.1.4.2.4"/>
@@ -471,7 +472,7 @@
 								<observation classCode="OBS" moodCode="EVN">
 									<templateId root="2.16.840.1.113883.2.9.10.1.4.3.4.2"/>
 									<id root="XXX"/>
-									<code code="75326-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem"/>
+									<code code="75326-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problema"/>
 									<text>
 										<reference value="#[REF_PROBLEMA]"/>
 									</text>
@@ -549,13 +550,13 @@
 					</entry>
 				</section>
 			</component>
-					
+			
 			<component typeCode="COMP">
 				<section ID="PROTESI_IMPIANTI_AUSILI">
 					<templateId root="2.16.840.1.113883.2.9.10.1.4.2.9"/>
 					<id root="XXX"/>
-					<code code="46264-8" displayName="Storia di uso di dispositivi medici" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-					<title>Protesi, Impianti ed Ausilii</title> 
+					<code code="46264-8" displayName="Storia d'uso di dispositivi medici" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+					<title>Protesi, impianti e ausili</title> 
 					<text>
 						<table border="1" width="100%">
 							<thead>
@@ -591,7 +592,7 @@
 					</entry-->
 				</section>
 			</component>
-			
+
 			<component typeCode="COMP">
 				<section ID="TRATTAMENTI_PROCEDURE_TERAPEUTICHE_CHIRURGICHE_DIAGNOSTICHE">
 					<templateId root="2.16.840.1.113883.2.9.10.1.4.2.11"/>
@@ -616,13 +617,14 @@
 							<entryRelationship typeCode="RSON">
 								<observation classCode="OBS" moodCode="EVN">
 									<id root="XXX"/>
-									<code code="410" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD-9CM (diagnosis codes)" displayName="IMA"/>
+									<code code="410" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD-9CM" displayName="IMA"/>
 								</observation>
 							</entryRelationship>
 						</procedure>
 					</entry>
 				</section>
 			</component>
+			
 			
 			<component typeCode="COMP">
 				<section ID="STATO_FUNZIONALE_PAZIENTE">
@@ -680,6 +682,7 @@
 					</entry> 
 				</section>
 			</component>
+			
 			
 		</structuredBody>
 	</component>
