@@ -173,7 +173,7 @@
 	<component>
 		<structuredBody moodCode="EVN" classCode="DOCBODY">
 			<component typeCode="COMP">
-				<section ID="Motivo_del_Ricovero">
+				<section ID="Motivo_Ricovero">
 					<code code="46241-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnosi di accettazione"/>
 					<title>Motivo del ricovero</title>
 					<text>
@@ -188,7 +188,7 @@
 					</text>
 					<entry>
 						<observation classCode="OBS" moodCode="EVN">
-							<code code="8646-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnosi di Accettazione Opsedaliera"/>
+							<code code="8646-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnosi di Accettazione Ospedaliera"/>
 							<value xsi:type="CD" code="300.01" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9CM" displayName="Disturbo di panico">
 								<!--translation code="[CODICE_DIAGNOSI]" codeSystem="2.16.99" codeSystemName="Catalogo Ultraspecialisitco Locale" displayName="[DESCRIZIONE_DETTAGLIO_DIAGNOSI]"/-->
 							</value>
@@ -424,7 +424,7 @@
 			
 			<component typeCode="COMP">
 				<section ID="Esami_Eseguiti_Durante_il_Ricovero">
-					<code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Esami diagnostici e/o di laboratorio significativi"/>
+					<code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Esami diagnostici e/o di laboratorio significativi."/>
 					<title>Esami eseguiti durante il ricovero</title>
 					<text>
 						<table>
@@ -507,7 +507,7 @@
 			</component>
 			<component typeCode="COMP">
 				<section ID="ALLERGIE">
-					<code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergie e/o reazioni avverse"/>
+					<code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="ALLERGIE E/O REAZIONI AVVERSE"/>
 					<title>Allergie e/o reazioni avverse</title>
 					<text>
 						Allergico a Cefalosporine
@@ -525,7 +525,7 @@
 							</effectiveTime>
 							<entryRelationship typeCode="SUBJ">
 								<observation classCode="OBS" moodCode="EVN">
-									<code code="52473-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergie o causa della reazione"/>
+									<code code="52473-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergia o causa della reazione"/>
 									<text>
 										<reference value="#[REF_NOTA1]"/>
 									</text>
@@ -600,8 +600,8 @@
 			</component>
 
 			<component typeCode="COMP">
-				<section ID="TERAPIA_FARMACOLOGICA_DURANTE_RICOVERO">
-					<code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Terapia Farmacologica"/>
+				<section ID="Terapia_farmacologica_effettuata_durante_ricovero">
+					<code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Terapie Farmacologiche"/>
 					<title>Terapia farmacologica effettuata durante il ricovero</title>
 					<text>
 						Dal 21/03 al 17/04: Losaprex 50 mg 1 cpr ore 8
@@ -649,7 +649,7 @@
 											<originalText>
 												<reference value="#[REF_FARMACO]"/>
 											</originalText>
-											<translation code="B01AX05" codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC" displayName="FONDAPARINUX"/>
+											<translation code="B01AX05" codeSystem="2.16.840.1.113883.6.73" codeSystemName="WHO ATC GE" displayName="FONDAPARINUX"/>
 										</code>
 									</manufacturedMaterial>
 								</manufacturedProduct>
@@ -716,7 +716,7 @@
 					</text>
 					<entry>
 						<observation classCode="OBS" moodCode="EVN">
-							<code code="8651-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnosi di Dimissione"/>
+							<code code="8651-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnosi di Dimissione Ospedaliera"/>
 							<value xsi:type="CD" code="428.0" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9CM" displayName="Insufficienza cardiaca">
 								<translation code="67502-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Cardiac arrest"/>
 							</value>
@@ -726,7 +726,7 @@
 			</component>
 			
 			<component typeCode="COMP">
-				<section ID="TERAPIA_FARMACOLOGICA_DIMISSIONE">
+				<section ID="Terapia_farmacologica_dimissione">
 					<code code="10183-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Terapia Farmacologica alla dimissione"/>
 					<title>Terapia farmacologica alla dimissione</title>
 					<text>
@@ -779,7 +779,7 @@
 											<originalText>
 												<reference value="#[REF_FARMACO]"/>
 											</originalText>
-											<translation code="C08CA01" codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC" displayName="AMLODIPINA"/>
+											<translation code="C08CA01" codeSystem="2.16.840.1.113883.6.73" codeSystemName="WHO ATC Gruppi di Equivalenza" displayName="AMLODIPINA"/>
 										</code>
 									</manufacturedMaterial>
 								</manufacturedProduct>
@@ -823,7 +823,7 @@
 			</component>
 
 			<component typeCode="COMP">
-				<section ID="ISTRUZIONI_FOLLOW_UP">
+				<section ID="Istruzioni_followup">
 					<code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Piano di cura"/>
 					<title>Istruzioni di follow-up</title>
 					<text> 
