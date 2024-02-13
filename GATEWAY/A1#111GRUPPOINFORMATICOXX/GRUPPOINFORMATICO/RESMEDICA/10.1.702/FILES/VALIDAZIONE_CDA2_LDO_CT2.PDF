@@ -14,8 +14,8 @@ endobj
 
 endobj
 49 0 obj
-<</Subtype /text#2Fxml /Params <</CreationDate <443A32303234303133303134313133302B303127303027> /Size 35651 >>
- /Length 35651 >>
+<</Subtype /text#2Fxml /Params <</CreationDate <443A32303234303230393132313131312B303127303027> /Size 35679 >>
+ /Length 35679 >>
 stream
 <!--LDO header-->
 
@@ -192,7 +192,7 @@ stream
 	<component>
 		<structuredBody moodCode="EVN" classCode="DOCBODY">
 			<component typeCode="COMP">
-				<section ID="Motivo_del_Ricovero">
+				<section ID="Motivo_Ricovero">
 					<code code="46241-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnosi di accettazione"/>
 					<title>Motivo del ricovero</title>
 					<text>
@@ -207,7 +207,7 @@ stream
 					</text>
 					<entry>
 						<observation classCode="OBS" moodCode="EVN">
-							<code code="8646-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnosi di Accettazione Opsedaliera"/>
+							<code code="8646-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnosi di Accettazione Ospedaliera"/>
 							<value xsi:type="CD" code="300.01" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9CM" displayName="Disturbo di panico">
 								<!--translation code="[CODICE_DIAGNOSI]" codeSystem="2.16.99" codeSystemName="Catalogo Ultraspecialisitco Locale" displayName="[DESCRIZIONE_DETTAGLIO_DIAGNOSI]"/-->
 							</value>
@@ -443,7 +443,7 @@ stream
 			
 			<component typeCode="COMP">
 				<section ID="Esami_Eseguiti_Durante_il_Ricovero">
-					<code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Esami diagnostici e/o di laboratorio significativi"/>
+					<code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Esami diagnostici e/o di laboratorio significativi."/>
 					<title>Esami eseguiti durante il ricovero</title>
 					<text>
 						<table>
@@ -526,7 +526,7 @@ stream
 			</component>
 			<component typeCode="COMP">
 				<section ID="ALLERGIE">
-					<code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergie e/o reazioni avverse"/>
+					<code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="ALLERGIE E/O REAZIONI AVVERSE"/>
 					<title>Allergie e/o reazioni avverse</title>
 					<text>
 						Allergico a Cefalosporine
@@ -544,7 +544,7 @@ stream
 							</effectiveTime>
 							<entryRelationship typeCode="SUBJ">
 								<observation classCode="OBS" moodCode="EVN">
-									<code code="52473-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergie o causa della reazione"/>
+									<code code="52473-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergia o causa della reazione"/>
 									<text>
 										<reference value="#[REF_NOTA1]"/>
 									</text>
@@ -619,8 +619,8 @@ stream
 			</component>
 
 			<component typeCode="COMP">
-				<section ID="TERAPIA_FARMACOLOGICA_DURANTE_RICOVERO">
-					<code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Terapia Farmacologica"/>
+				<section ID="Terapia_farmacologica_effettuata_durante_ricovero">
+					<code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Terapie Farmacologiche"/>
 					<title>Terapia farmacologica effettuata durante il ricovero</title>
 					<text>
 						Dal 21/03 al 17/04: Losaprex 50 mg 1 cpr ore 8
@@ -668,7 +668,7 @@ stream
 											<originalText>
 												<reference value="#[REF_FARMACO]"/>
 											</originalText>
-											<translation code="B01AX05" codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC" displayName="FONDAPARINUX"/>
+											<translation code="B01AX05" codeSystem="2.16.840.1.113883.6.73" codeSystemName="WHO ATC" displayName="FONDAPARINUX"/>
 										</code>
 									</manufacturedMaterial>
 								</manufacturedProduct>
@@ -735,7 +735,7 @@ stream
 					</text>
 					<entry>
 						<observation classCode="OBS" moodCode="EVN">
-							<code code="8651-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnosi di Dimissione"/>
+							<code code="8651-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnosi di Dimissione Ospedaliera"/>
 							<value xsi:type="CD" code="428.0" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9CM" displayName="Insufficienza cardiaca">
 								<translation code="67502-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Cardiac arrest"/>
 							</value>
@@ -745,7 +745,7 @@ stream
 			</component>
 			
 			<component typeCode="COMP">
-				<section ID="TERAPIA_FARMACOLOGICA_DIMISSIONE">
+				<section ID="Terapia_farmacologica_dimissione">
 					<code code="10183-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Terapia Farmacologica alla dimissione"/>
 					<title>Terapia farmacologica alla dimissione</title>
 					<text>
@@ -798,7 +798,7 @@ stream
 											<originalText>
 												<reference value="#[REF_FARMACO]"/>
 											</originalText>
-											<translation code="C08CA01" codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC" displayName="AMLODIPINA"/>
+											<translation code="C08CA01" codeSystem="2.16.840.1.113883.6.73" codeSystemName="WHO ATC" displayName="AMLODIPINA"/>
 										</code>
 									</manufacturedMaterial>
 								</manufacturedProduct>
@@ -842,7 +842,7 @@ stream
 			</component>
 
 			<component typeCode="COMP">
-				<section ID="ISTRUZIONI_FOLLOW_UP">
+				<section ID="Istruzioni_followup">
 					<code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Piano di cura"/>
 					<title>Istruzioni di follow-up</title>
 					<text> 
@@ -1435,7 +1435,7 @@ endobj
 47 0 obj
 <</Type /Metadata /Subtype /XML /Length 1030 >>
 stream
-<?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?><x:xmpmeta xmlns:x="adobe:ns:meta/"><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:about="" xmlns:pdf="http://ns.adobe.com/pdf/1.3/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/"><pdf:Producer>Microsoft® Word per Microsoft 365 - InfoCert GoSign</pdf:Producer><dc:creator><rdf:Seq><rdf:li>Federico Vecce</rdf:li></rdf:Seq></dc:creator><xmp:CreatorTool>Microsoft® Word per Microsoft 365</xmp:CreatorTool><xmp:CreateDate>2024-01-30T14:11:30+01:00</xmp:CreateDate><xmp:ModifyDate>2024-01-30T14:11:30+01:00</xmp:ModifyDate><xmpMM:DocumentID>uuid:CB4B131A-488E-4047-9A82-872D37E974AA</xmpMM:DocumentID><xmpMM:InstanceID>uuid:CB4B131A-488E-4047-9A82-872D37E974AA</xmpMM:InstanceID><xmp:MetadataDate>2024-01-30T14:11:30+01:00</xmp:MetadataDate></rdf:Description></rdf:RDF></x:xmpmeta><?xpacket end="w"?>
+<?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?><x:xmpmeta xmlns:x="adobe:ns:meta/"><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:about="" xmlns:pdf="http://ns.adobe.com/pdf/1.3/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/"><pdf:Producer>Microsoft® Word per Microsoft 365 - InfoCert GoSign</pdf:Producer><dc:creator><rdf:Seq><rdf:li>Federico Vecce</rdf:li></rdf:Seq></dc:creator><xmp:CreatorTool>Microsoft® Word per Microsoft 365</xmp:CreatorTool><xmp:CreateDate>2024-02-09T12:11:11+01:00</xmp:CreateDate><xmp:ModifyDate>2024-02-09T12:11:11+01:00</xmp:ModifyDate><xmpMM:DocumentID>uuid:CB4B131A-488E-4047-9A82-872D37E974AA</xmpMM:DocumentID><xmpMM:InstanceID>uuid:CB4B131A-488E-4047-9A82-872D37E974AA</xmpMM:InstanceID><xmp:MetadataDate>2024-02-09T12:11:11+01:00</xmp:MetadataDate></rdf:Description></rdf:RDF></x:xmpmeta><?xpacket end="w"?>
 endstream
 endobj
 46 0 obj
@@ -1467,7 +1467,7 @@ endobj
 
 endobj
 44 0 obj
-<</Author <FEFF0046006500640065007200690063006F002000560065006300630065> /Creator <FEFF004D006900630072006F0073006F0066007400AE00200057006F0072006400200070006500720020004D006900630072006F0073006F006600740020003300360035> /Producer <FEFF004D006900630072006F0073006F0066007400AE00200057006F0072006400200070006500720020004D006900630072006F0073006F0066007400200033003600350020002D00200049006E0066006F004300650072007400200047006F005300690067006E> /CreationDate <443A32303234303133303134313133302B303127303027> /ModDate <443A32303234303133303134313133302B303127303027> >>
+<</Author <FEFF0046006500640065007200690063006F002000560065006300630065> /Creator <FEFF004D006900630072006F0073006F0066007400AE00200057006F0072006400200070006500720020004D006900630072006F0073006F006600740020003300360035> /Producer <FEFF004D006900630072006F0073006F0066007400AE00200057006F0072006400200070006500720020004D006900630072006F0073006F0066007400200033003600350020002D00200049006E0066006F004300650072007400200047006F005300690067006E> /CreationDate <443A32303234303230393132313131312B303127303027> /ModDate <443A32303234303230393132313131312B303127303027> >>
 
 endobj
 xref
@@ -1475,63 +1475,63 @@ xref
 0000000000 00000 f
 0000000017 00000 n
 3 1
-0000037169 00000 n
+0000037197 00000 n
 5 1
-0000131677 00000 n
+0000131705 00000 n
 8 6
-0000131826 00000 n
-0000160595 00000 n
-0000160898 00000 n
-0000160837 00000 n
-0000101809 00000 n
-0000130663 00000 n
+0000131854 00000 n
+0000160623 00000 n
+0000160926 00000 n
+0000160865 00000 n
+0000101837 00000 n
+0000130691 00000 n
 15 1
-0000036273 00000 n
+0000036301 00000 n
 19 2
-0000160959 00000 n
-0000036656 00000 n
+0000160987 00000 n
+0000036684 00000 n
 30 2
-0000037372 00000 n
-0000037915 00000 n
+0000037400 00000 n
+0000037943 00000 n
 33 1
-0000037642 00000 n
+0000037670 00000 n
 37 2
-0000101029 00000 n
-0000048474 00000 n
+0000101057 00000 n
+0000048502 00000 n
 40 30
-0000048315 00000 n
-0000038199 00000 n
-0000101311 00000 n
-0000162459 00000 n
-0000162713 00000 n
-0000162561 00000 n
-0000162136 00000 n
-0000161018 00000 n
+0000048343 00000 n
+0000038227 00000 n
+0000101339 00000 n
+0000162487 00000 n
+0000162741 00000 n
+0000162589 00000 n
+0000162164 00000 n
+0000161046 00000 n
 0000000301 00000 n
 0000000452 00000 n
-0000101659 00000 n
-0000036713 00000 n
-0000101588 00000 n
-0000037606 00000 n
-0000037815 00000 n
-0000038089 00000 n
-0000038552 00000 n
-0000038666 00000 n
-0000042975 00000 n
-0000048566 00000 n
-0000048656 00000 n
-0000101474 00000 n
-0000101985 00000 n
-0000130906 00000 n
-0000131337 00000 n
-0000131917 00000 n
+0000101687 00000 n
+0000036741 00000 n
+0000101616 00000 n
+0000037634 00000 n
+0000037843 00000 n
+0000038117 00000 n
+0000038580 00000 n
+0000038694 00000 n
+0000043003 00000 n
+0000048594 00000 n
+0000048684 00000 n
+0000101502 00000 n
+0000102013 00000 n
+0000130934 00000 n
+0000131365 00000 n
+0000131945 00000 n
+0000162298 00000 n
 0000162270 00000 n
-0000162242 00000 n
-0000162381 00000 n
-0000162641 00000 n
+0000162409 00000 n
+0000162669 00000 n
 trailer
 <</Size 70 /Info 44 0 R /ID [<635674FE8AE2F53B3DA76AB3FBA3A578> <1A134BCB8E4847409A82872D37E974AA>] /Root 1 0 R >>
 
 startxref
-163300
+163328
 %%EOF
