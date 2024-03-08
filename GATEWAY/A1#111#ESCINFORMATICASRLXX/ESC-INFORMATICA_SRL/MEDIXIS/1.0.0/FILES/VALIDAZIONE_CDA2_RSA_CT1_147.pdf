@@ -2,7 +2,7 @@
 %âãÏÓ
 3 0 obj
 <</Length 2 0 R/Type/EmbeddedFile/Params 1 0 R/Subtype/text#2fxml/Filter/FlateDecode>>stream
-xÚI(¶×<?xml version="1.0" encoding="utf-8"?>
+xÚs0ŒÏ<?xml version="1.0" encoding="utf-8"?>
 <ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="urn:hl7-org:v3  CDA.xsd" moodCode="EVN" xmlns="urn:hl7-org:v3">
   <realmCode code="IT" />
   <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040" />
@@ -17,7 +17,7 @@ xÚI(¶×<?xml version="1.0" encoding="utf-8"?>
     </translation>
   </code>
   <title>Referto di Specialistica Ambulatoriale</title>
-  <effectiveTime value="20240307164536+0100" />
+  <effectiveTime value="20240308100053+0100" />
   <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" codeSystemName="HL7 Confidentiality" displayName="Normal">
     <translation code="AN" codeSystem="2.16.840.1.113883.2.9.2.80.3.1.6.1" codeSystemName="SOLE" displayName="Accesso Normale" />
   </confidentialityCode>
@@ -64,7 +64,7 @@ xÚI(¶×<?xml version="1.0" encoding="utf-8"?>
     </patientRole>
   </recordTarget>
   <author typeCode="AUT" contextControlCode="OP">
-    <time value="20240307164532" />
+    <time value="20240308100049" />
     <assignedAuthor classCode="ASSIGNED">
       <id root="2.16.840.1.113883.2.9.4.3.2" extension="MDCTTN62R10A944D" assigningAuthorityName="Ministero Economia e Finanze" />
       <telecom value="tel:3391234567" use="MC" />
@@ -86,7 +86,7 @@ xÚI(¶×<?xml version="1.0" encoding="utf-8"?>
     </assignedCustodian>
   </custodian>
   <legalAuthenticator typeCode="LA" contextControlCode="OP">
-    <time value="20240307164532" />
+    <time value="20240308100049" />
     <signatureCode code="S" />
     <assignedEntity classCode="ASSIGNED">
       <id root="2.16.840.1.113883.2.9.4.3.2" extension="MDCTTN62R10A944D" assigningAuthorityName="Ministero Economia e Finanze" />
@@ -156,6 +156,25 @@ xÚI(¶×<?xml version="1.0" encoding="utf-8"?>
                     </tr>
                   </tbody>
                 </table>
+                <paragraph>
+                  <caption>Procedure Operative Eseguite</caption>
+                </paragraph>
+                <list>
+                  <item ID="procedura1">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>Descrizione procedura operativa</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td ID="ProcDesc1">Procedura ESAME AUDIOMETRICO</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </item>
+                </list>
               </item>
               <item ID="Esame2">
                 <table>
@@ -172,6 +191,25 @@ xÚI(¶×<?xml version="1.0" encoding="utf-8"?>
                     </tr>
                   </tbody>
                 </table>
+                <paragraph>
+                  <caption>Procedure Operative Eseguite</caption>
+                </paragraph>
+                <list>
+                  <item ID="procedura2">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>Descrizione procedura operativa</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td ID="ProcDesc2">Procedura IRRIGAZIONE DELL'ORECCHIO</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </item>
+                </list>
               </item>
             </list>
           </text>
@@ -187,6 +225,11 @@ xÚI(¶×<?xml version="1.0" encoding="utf-8"?>
               </text>
               <statusCode code="active" />
               <effectiveTime value="20240223000000+0100" />
+              <entryRelationship typeCode="COMP">
+                <procedure classCode="PROC" moodCode="EVN">
+                  <code code="1883.001" codeSystem="2.16.840.1.113883.2.9.2.80.6.1.11" codeSystemName="Catalogo Unico SOLE" displayName="ESAME AUDIOMETRICO" />
+                </procedure>
+              </entryRelationship>
             </act>
           </entry>
           <entry>
@@ -201,6 +244,11 @@ xÚI(¶×<?xml version="1.0" encoding="utf-8"?>
               </text>
               <statusCode code="active" />
               <effectiveTime value="20240223000000+0100" />
+              <entryRelationship typeCode="COMP">
+                <procedure classCode="PROC" moodCode="EVN">
+                  <code code="1899.113" codeSystem="2.16.840.1.113883.2.9.2.80.6.1.11" codeSystemName="Catalogo Unico SOLE" displayName="IRRIGAZIONE DELL'ORECCHIO" />
+                </procedure>
+              </entryRelationship>
             </act>
           </entry>
         </section>
@@ -228,14 +276,14 @@ xÚI(¶×<?xml version="1.0" encoding="utf-8"?>
       </component>
     </structuredBody>
   </component>
-</ClinicalDocument>ý6
+</ClinicalDocument>À&ÕÈ
 endstream
 endobj
 2 0 obj
-10324
+12414
 endobj
 1 0 obj
-<</ModDate(D:20240307164537+01'00')/Size 10313>>
+<</ModDate(D:20240308100055+01'00')/Size 12403>>
 endobj
 4 0 obj
 <</Type/Filespec/F(cda.xml)/UF(cda.xml)/EF<</F 3 0 R/UF 3 0 R>>/AFRelationship(cda)/Desc(cda)>>
@@ -244,7 +292,7 @@ endobj
 <</Names[(cda) 4 0 R]>>
 endobj
 6 0 obj
-<</ModDate(D:20240307164537+01'00')/Producer(iTextSharp’ 5.5.13 ©2000-2018 iText Group NV \(AGPL-version\))>>
+<</ModDate(D:20240308100055+01'00')/Producer(iTextSharp’ 5.5.13 ©2000-2018 iText Group NV \(AGPL-version\))>>
 endobj
 7 0 obj
 <</Length 3157/Type/Metadata/Subtype/XML>>stream
@@ -256,8 +304,8 @@ endobj
       <pdfaid:conformance>B</pdfaid:conformance>
     </rdf:Description>
     <rdf:Description xmlns:xmp="http://ns.adobe.com/xap/1.0/" about="">
-      <xmp:CreateDate>2024-03-07T16:45:37.1670977+01:00</xmp:CreateDate>
-      <xmp:ModifyDate>2024-03-07T16:45:37.1670977+01:00</xmp:ModifyDate>
+      <xmp:CreateDate>2024-03-08T10:00:54.7577548+01:00</xmp:CreateDate>
+      <xmp:ModifyDate>2024-03-08T10:00:54.7577548+01:00</xmp:ModifyDate>
       <xmp:CreatorTool>Telerik PdfProcessing</xmp:CreatorTool>
     </rdf:Description>
   </rdf:RDF>
@@ -496,32 +544,32 @@ endobj
 xref
 0 24
 0000000000 65535 f 
-0000010479 00000 n 
-0000010458 00000 n 
+0000012569 00000 n 
+0000012548 00000 n 
 0000000015 00000 n 
-0000010543 00000 n 
-0000010654 00000 n 
-0000010693 00000 n 
-0000010818 00000 n 
-0000014050 00000 n 
-0000019726 00000 n 
-0000020261 00000 n 
-0000014422 00000 n 
-0000020601 00000 n 
-0000020977 00000 n 
-0000014645 00000 n 
-0000014857 00000 n 
-0000014910 00000 n 
-0000017558 00000 n 
-0000017612 00000 n 
-0000017817 00000 n 
-0000017851 00000 n 
-0000019707 00000 n 
-0000021322 00000 n 
-0000045894 00000 n 
+0000012633 00000 n 
+0000012744 00000 n 
+0000012783 00000 n 
+0000012908 00000 n 
+0000016140 00000 n 
+0000021816 00000 n 
+0000022351 00000 n 
+0000016512 00000 n 
+0000022691 00000 n 
+0000023067 00000 n 
+0000016735 00000 n 
+0000016947 00000 n 
+0000017000 00000 n 
+0000019648 00000 n 
+0000019702 00000 n 
+0000019907 00000 n 
+0000019941 00000 n 
+0000021797 00000 n 
+0000023412 00000 n 
+0000047984 00000 n 
 trailer
-<</Size 24/Root 14 0 R/Info 6 0 R/ID [<e37acd5f4d9a827307f440829ff5237e><e3cf0e8f98f4435c723bd71de83044c0>]>>
+<</Size 24/Root 14 0 R/Info 6 0 R/ID [<264e3f837c53fee415479268ca1517f4><fc2d5da3c54ff9a5496cd95f6d4e3f66>]>>
 %iText-5.5.13
 startxref
-55930
+58020
 %%EOF
