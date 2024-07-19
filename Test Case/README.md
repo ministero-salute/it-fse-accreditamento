@@ -45,7 +45,7 @@ All'interno di [REQUEST_BODY_PUBBLICAZIONE](Pubblicazione/REQUEST_BODY_PUBBLICAZ
 
 Il fornitore che deve testare il software dovrà quindi:
 
-* Compilare il [modulo di richiesta accreditamento](https://ec.europa.eu/eusurvey/runner/FSE-raccolta-id-applicativo) indicando la tipologia di documento e servizi desiderati
+* Compilare il [modulo di richiesta accreditamento](https://ec.europa.eu/eusurvey/runner/FSE-2-validazione) indicando la tipologia di documento e servizi desiderati
 * Selezionare i test rilevanti nel file `accreditamento-checklist.xlsx` (fare riferimento al foglio `summary`)
 * Eseguire i test appropiati seguendo anche quanto definito nella directory specifica del tipo di documento
 * Collezionare i risultati nel file `report-checklist.xlsx`
