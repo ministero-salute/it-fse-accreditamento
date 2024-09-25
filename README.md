@@ -34,7 +34,7 @@ I dati da inviare comprendono:
   * In caso di validazione, se pertinente (il software ha la funzionalità di firma e la firma è oggetto di adeguamento), i file file pdf utilizzati nell'invocazione dei servizi firmati PADES (all'interno della directory `FILES/SIGNED`)
 * file riassuntivo (foglio di calcolo) `report-checklist.xlsx` di tutti i test case eseguiti
 
-I risultati delle verifiche verranno mandate per mail all'indirizzo immesso nel [modulo di richiesta accreditamento](https://ec.europa.eu/eusurvey/runner/FSE-raccolta-id-applicativo)
+I risultati delle verifiche verranno mandate per mail all'indirizzo immesso nel [modulo di richiesta accreditamento](https://ec.europa.eu/eusurvey/runner/FSE-2-validazione)
 
 ### Struttura dei risultati (data.json)
 All'interno della directory bisognerà creare un file `data.json` con il seguente schema:

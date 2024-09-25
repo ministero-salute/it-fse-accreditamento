@@ -2,7 +2,7 @@
 
 Questa directory contiene i Test Case da effettuare per l'accreditamento (convalida) dei software al sistema FSE 2.0.
 
-*I file di supporto ai test sono divisi per servizio all'interno delle directory [Validazione](Validazione/) e [Pubblicazione](Pubblicazione/)*
+*I file di supporto ai test sono divisi per servizio all'interno delle directory [Validazione](Validazione/)*
 
 Il file `accreditamento-checklist.xlsx` contiene la lista di tutti i test case possibili tra i quali è necessario individuare quelli rilevanti per la specifica sessione di verifica.  
 Il file dovrà essere "*personalizzato*" mantenendo solo i casi attinenti a quanto dichiarato nel modulo di richiesta accreditamento.
@@ -19,33 +19,11 @@ Ogni directory contiene:
 * foglio contenente i test "OK" con la descrizione dei campi richiesti nei documenti per le diverse tipologie di test.
 * foglio contenente i test "KO" con una guida dei campi da valorizzare per le diverse tipologie di test.
 
-## Pubblicazione
-
-**N.B**
-
-**Il processo di accreditamento (convalida) dei software per il servizio di pubblicazione è posticipato, al momento la priorità è data al processo di accreditamento legato all’adeguamento dei CDA2 alle nuove specifiche.  
-Si ricorda che sono comunque disponibili i test case di pubblicazione ed è sempre possibile utilizzare i servizi dell’istanza del gateway in pre-produzione per test interni in ottica accreditamento.  
-L’avvio dell’accreditamento (convalida) dei software per il servizio di pubblicazione sarà comunicato in seguito.**
-
-
-
-All'interno della directory [Pubblicazione](Pubblicazione/) sono presenti i file di supporto per il servizio di **pubblicazione**.
-
-Se il fornitore non ha a disposizione un documento *validato* da usare nei test, può utilizzare i file (già firmati) presenti nella directory 
-[PDF_PER_PUBBLICAZIONE](Pubblicazione/PDF_PER_PUBBLICAZIONE/) e i metadati presenti nella directory [REQUEST_BODY_PUBBLICAZIONE](Pubblicazione/REQUEST_BODY_PUBBLICAZIONE).
-
-All'interno di [REQUEST_BODY_PUBBLICAZIONE](Pubblicazione/REQUEST_BODY_PUBBLICAZIONE) ci sono directory, suddivise per tipologia di documento, contenenti:
-
-* file `xml` del CDA2
-* file `xml` del CDA2 per operazione di *replace*
-* file `json` contenenti i diversi `requestBody` da utilizzare per le diverse operazioni
-
-
 ## Svolgimento dei test
 
 Il fornitore che deve testare il software dovrà quindi:
 
-* Compilare il [modulo di richiesta accreditamento](https://ec.europa.eu/eusurvey/runner/FSE-raccolta-id-applicativo) indicando la tipologia di documento e servizi desiderati
+* Compilare il [modulo di richiesta accreditamento](https://ec.europa.eu/eusurvey/runner/FSE-2-validazione) indicando la tipologia di documento e servizi desiderati
 * Selezionare i test rilevanti nel file `accreditamento-checklist.xlsx` (fare riferimento al foglio `summary`)
 * Eseguire i test appropiati seguendo anche quanto definito nella directory specifica del tipo di documento
 * Collezionare i risultati nel file `report-checklist.xlsx`
