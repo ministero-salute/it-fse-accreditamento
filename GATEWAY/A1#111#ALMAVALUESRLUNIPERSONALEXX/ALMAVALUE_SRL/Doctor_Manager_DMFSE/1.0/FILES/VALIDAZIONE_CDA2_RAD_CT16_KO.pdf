@@ -1,8 +1,8 @@
 %PDF-1.7
 %‚„œ”
 1 0 obj
-<</Length 28465/Type/EmbeddedFile/Filter/FlateDecode/Params<</ModDate(D:20240725161334+02'00')/Size 28454>>>>stream
-x⁄&oŸê<ClinicalDocument xmlns:mif="urn:hl7-org:v3/mif" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:lab="urn:oid:1.3.6.1.4.1.19376.1.3.2" xmlns="urn:hl7-org:v3">
+<</Length 30596/Type/EmbeddedFile/Filter/FlateDecode/Params<</ModDate(D:20240912094310+02'00')/Size 30585>>>>stream
+x⁄ywÜà<ClinicalDocument xmlns:mif="urn:hl7-org:v3/mif" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:lab="urn:oid:1.3.6.1.4.1.19376.1.3.2" xmlns="urn:hl7-org:v3">
   <realmCode code="IT" />
   <typeId root="2.16.840.1.113883.1.3" extension="POCD_MT000040UV02" />
   <templateId root="2.16.840.1.113883.2.9.10.1.7.1" extension="1.1" assigningAuthorityName="HL7 Italia" />
@@ -75,6 +75,9 @@ x⁄&oŸê<ClinicalDocument xmlns:mif="urn:hl7-org:v3/mif" xmlns:xsi="http://www.w3
           <given>Matteo</given>
         </name>
       </assignedPerson>
+      <representedOrganization>
+        <id root="2.16.840.1.113883.9.9.9.9.9.9" />
+      </representedOrganization>
     </assignedAuthor>
   </author>
   <dataEnterer typeCode="ENT">
@@ -229,8 +232,16 @@ x⁄&oŸê<ClinicalDocument xmlns:mif="urn:hl7-org:v3/mif" xmlns:xsi="http://www.w3
       <effectiveTime value="20220330112426+0200" />
     </serviceEvent>
   </documentationOf>
+  <relatedDocument typeCode="APND">
+    <parentDocument>
+      <id root="2.16.840.1.113883.2.9.2.120.4.4" extension="030702.TSTSMN63A01F205H.20220330112426.TSS1Tkju" assigningAuthorityName="Regione Lazio" />
+      <setId root="2.16.840.1.113883.2.9.2.120.4.4" extension="c030702.TSTSMN63A01F205H.20220325112426.TSS1Tkju" assigningAuthorityName="Regione Lazio" />
+      <versionNumber value="1" />
+    </parentDocument>
+  </relatedDocument>
   <componentOf>
     <encompassingEncounter>
+      <id root="2.16.840.1.113883.9.9.9.9.9.9" extension="ASDF001" assigningAuthorityName="SAN RAFFAELE NOMENTANA" />
       <effectiveTime value="20220330112426+0200" />
       <responsibleParty>
         <assignedEntity>
@@ -427,7 +438,7 @@ Anamnesi Patologica Prossima: Ne mese di marzo 2016 √® stata colpita da sindrome
                         <high value="20220320121122+0100" />
                       </effectiveTime>
                       <value xsi:type="CD">
-                        <originalText>Intolleranza ai peli di gatto<reference value="#[REF_NOTA1]" /></originalText>
+                        <originalText>Intollerenza<reference value="#[REF_NOTA1]" /></originalText>
                       </value>
                       <participant typeCode="CSM">
                         <participantRole classCode="MANU">
@@ -533,7 +544,7 @@ Anamnesi Patologica Prossima: Ne mese di marzo 2016 √® stata colpita da sindrome
           </text>
           <entry>
             <act classCode="ACT" moodCode="EVN">
-              <code code="87.3" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD-9-CM" displayName="Soft tissue x-ray of thorax">
+              <code code="87.3" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9-CM" displayName="Soft tissue x-ray of thorax">
                 <originalText>
                   <reference value="#EsameDesc1" />
                 </originalText>
@@ -567,6 +578,36 @@ Anamnesi Patologica Prossima: Ne mese di marzo 2016 √® stata colpita da sindrome
         </section>
       </component>
       <component typeCode="COMP">
+        <section ID="Informazioni_Aggiuntive">
+          <code code="55107-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Appendice" />
+          <title>Informazioni Aggiuntive</title>
+          <text>
+            <paragraph>Si consiglia di rimuovere la medicazione entro 3 giorni e di non sottoporre l'arto a sforzo.</paragraph>
+          </text>
+        </section>
+      </component>
+      <component typeCode="COMP">
+        <section ID="COMPLICANZE">
+          <code code="55109-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Complicazioni" />
+          <title>Complicanze</title>
+          <text>
+            <paragraph>Dopo la somministrazione del mezzo di contrasto, il paziente ha manifestato una evidente reazione allergica.</paragraph>
+          </text>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <code code="75326-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem" />
+              <effectiveTime>
+                <low value="20170101090000+0100" />
+                <high value="20170101103000+0100" />
+              </effectiveTime>
+              <value xsi:type="CD">
+                <originalText><reference value="#[Ref_nota]" /></originalText>
+              </value>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component typeCode="COMP">
         <section ID="SUGGERIMENTI_MEDICO_PRESCRITTORE">
           <code code="18783-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Raccomandazione studio - Radiologia" />
           <title>Suggerimenti per il medico prescrittore</title>
@@ -577,7 +618,7 @@ Anamnesi Patologica Prossima: Ne mese di marzo 2016 √® stata colpita da sindrome
       </component>
     </structuredBody>
   </component>
-</ClinicalDocument>xMÌe
+</ClinicalDocument>„>
 endstream
 endobj
 2 0 obj
@@ -587,7 +628,7 @@ endobj
 <</Names[(cda.xml) 2 0 R]>>
 endobj
 4 0 obj
-<</Author(Pasquale Lauriola)/CreationDate(D:20240624163342+02'00')/ModDate(D:20240725161334+02'00')/Producer(Microsoft: Print To PDF; modified using iTextSharpí 5.5.13.4 ©2000-2024 iText Group NV \(AGPL-version\))/Title(Microsoft Word - Documento1)>>
+<</Author(Pasquale Lauriola)/CreationDate(D:20240624163342+02'00')/ModDate(D:20240912094310+02'00')/Producer(Microsoft: Print To PDF; modified using iTextSharpí 5.5.13.4 ©2000-2024 iText Group NV \(AGPL-version\))/Title(Microsoft Word - Documento1)>>
 endobj
 5 0 obj
 <</Pages 6 0 R/Type/Catalog/Names<</EmbeddedFiles 3 0 R>>>>
@@ -1288,25 +1329,25 @@ xref
 0 18
 0000000000 65535 f 
 0000000015 00000 n 
-0000028622 00000 n 
-0000028717 00000 n 
-0000028760 00000 n 
-0000029026 00000 n 
-0000029101 00000 n 
-0000029152 00000 n 
-0000216945 00000 n 
-0000217255 00000 n 
-0000029311 00000 n 
-0000029338 00000 n 
-0000029362 00000 n 
-0000029398 00000 n 
-0000029418 00000 n 
-0000215774 00000 n 
-0000215942 00000 n 
-0000216512 00000 n 
+0000030753 00000 n 
+0000030848 00000 n 
+0000030891 00000 n 
+0000031157 00000 n 
+0000031232 00000 n 
+0000031283 00000 n 
+0000219076 00000 n 
+0000219386 00000 n 
+0000031442 00000 n 
+0000031469 00000 n 
+0000031493 00000 n 
+0000031529 00000 n 
+0000031549 00000 n 
+0000217905 00000 n 
+0000218073 00000 n 
+0000218643 00000 n 
 trailer
-<</Size 18/Root 5 0 R/Info 4 0 R/ID [<42002fc9799cb6261e3b20da8c57c575><bb25a6c356c4ed69b53b89a12ca10210>]>>
+<</Size 18/Root 5 0 R/Info 4 0 R/ID [<6ec30cd83608f78d54520ce9285c0d43><a3d3c4dadf0a20c2c85e8318e19851eb>]>>
 %iText-5.5.13.4
 startxref
-217294
+219425
 %%EOF
