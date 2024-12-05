@@ -37,7 +37,7 @@ A partire dalla versione 8.2, per la compilazione della checklist occorre seguir
    * versione applicazione: `subject_application_version`;
 
 2) Per tutti i casi di test coerenti con la/e tipologia/e di documento utilizzata/e dal software è necessario compilare SEMPRE la colonna APPLICABILITA' con SI o NO
-3) Nel caso in cui tra le tipologie documentali oggetto di accreditamento per l'applicativo figurino PSS,RAP,RAD,RSA,LDO,LAB, i relativi casi di test con id 444, 417, 446, 448, 450, 452, che recepiscono quanto previsto dal Decreto 07 settembre 2023, devono essere obbligatoriamente eseguiti e compilati (la colonna APPLICABILITA' deve essere valorizzata con SI)
+3) Nel caso in cui tra le tipologie documentali oggetto di accreditamento per l'applicativo figurino PSS,RAD,RAP i relativi casi di test con id 444,446,417,418,460 che recepiscono quanto previsto dal Decreto 07 settembre 2023, devono essere obbligatoriamente eseguiti e compilati (la colonna APPLICABILITA' deve essere valorizzata con SI)
 4) Se il test è applicabile la colonna APPLICABILITA' deve essere compilata con SI e dovranno essere valorizzate:
    * `DATA ESECUZIONE`
    * `TIMESTAMP`
