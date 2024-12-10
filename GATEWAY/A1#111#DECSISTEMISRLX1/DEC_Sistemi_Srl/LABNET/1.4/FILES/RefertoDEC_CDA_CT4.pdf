@@ -4,7 +4,7 @@
 %âãÏÓ
 3 0 obj
 <</Length 2 0 R/Type/EmbeddedFile/Params 1 0 R/Subtype/application#2fxml/Filter/FlateDecode>>stream
-xÚÂ.=Ñ<?xml version="1.0" encoding="UTF-8"?>
+xÚx/‡Ğ<?xml version="1.0" encoding="UTF-8"?>
 <ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:mif="urn:hl7-org:v3/mif" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
   <realmCode code="IT" />
   <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040" />
@@ -12,7 +12,7 @@ xÚÂ.=Ñ<?xml version="1.0" encoding="UTF-8"?>
   <id root="2.16.840.1.113883.2.9.2.190.4.4" />
   <code code="11502-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Referto di Laboratorio" />
   <title>Referto di Laboratorio</title>
-  <effectiveTime value="20241115103000" />
+  <effectiveTime value="20241210103000" />
   <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" codeSystemName="HL7 Confidentiality" displayName="Normal" />
   <languageCode code="It-IT" />
   <setId root="2.16.840.1.113883.2.9.2.50120.4.4" assigningAuthorityName="Regione Sicilia" />
@@ -38,7 +38,7 @@ xÚÂ.=Ñ<?xml version="1.0" encoding="UTF-8"?>
     </patientRole>
   </recordTarget>
   <author typeCode="AUT" contextControlCode="OP">
-    <time value="202411151030" />
+    <time value="202412101030" />
     <assignedAuthor>
       <id root="2.16.840.1.113883.2.9.4.3.2" extension="PROVAX00X00X000Y" assigningAuthorityName="Ministero Economia e Finanze" />
       <telecom use="MC" value="tel:0524526415" />
@@ -68,7 +68,7 @@ xÚÂ.=Ñ<?xml version="1.0" encoding="UTF-8"?>
     </assignedCustodian>
   </custodian>
   <legalAuthenticator>
-    <time value="202411151030" />
+    <time value="202412101030" />
     <signatureCode code="S" />
     <assignedEntity classCode="ASSIGNED">
       <id extension="PROVAX00X00X000Y" root="2.16.840.1.113883.2.9.4.3.2" assigningAuthorityName="Ministero Economia e Finanze" />
@@ -146,7 +146,7 @@ xÚÂ.=Ñ<?xml version="1.0" encoding="UTF-8"?>
                     <translation code="90.93.5" codeSystem="2.16.840.1.113883.2.9.2.0.6.12" codeSystemVersion="1.0" codeSystemName="Nomenclatore Nazionale" displayName="TAMPONE FARINGEO: Esito, Batterio identificato, Colonie, Antibiotico, Note" />
                   </code>
                   <statusCode code="completed" />
-                  <effectiveTime value="20241115152901" />
+                  <effectiveTime value="20241120100401" />
                   <specimen>
                     <specimenRole classCode="SPEC">
                       <specimenPlayingEntity>
@@ -168,7 +168,7 @@ xÚÂ.=Ñ<?xml version="1.0" encoding="UTF-8"?>
                   <entryRelationship typeCode="COMP" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
                     <organizer moodCode="EVN" classCode="CLUSTER">
                       <statusCode code="completed" />
-                      <effectiveTime value="20241115152901" />
+                      <effectiveTime value="20241120100401" />
                       <specimen typeCode="SPC">
                         <specimenRole classCode="SPEC">
                           <specimenPlayingEntity classCode="MIC">
@@ -181,7 +181,7 @@ xÚÂ.=Ñ<?xml version="1.0" encoding="UTF-8"?>
                         <observation moodCode="EVN" classCode="OBS">
                           <code code="622-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Batteri, identificato" />
                           <statusCode code="completed" />
-                          <effectiveTime value="20241115152901" />
+                          <effectiveTime value="20241120100401" />
                           <value xsi:type="CE" code="86319-1" codeSystem="2.16.840.1.113883.2.9.99" codeSystemName="sistema di codifica " codeSystemVersion="Staphylococcus aureus" />
                           <specimen typeCode="SPC">
                             <specimenRole classCode="SPEC">
@@ -196,15 +196,16 @@ xÚÂ.=Ñ<?xml version="1.0" encoding="UTF-8"?>
                         <organizer moodCode="EVN" classCode="BATTERY">
                           <code code="29576-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="SuscettibilitÃ  batterica, panel" />
                           <statusCode code="completed" />
-                          <effectiveTime value="20241115152901" />
+                          <effectiveTime value="20241120100401" />
                           <component typeCode="COMP">
                             <!--Observation per la prova di resistenza alla AntibioticoX sul batterio isolato-->
                             <observation moodCode="EVN" classCode="OBS">
                               <code code="392-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Penicillina G" />
                               <statusCode code="completed" />
-                              <effectiveTime value="20241115152901" />
+                              <effectiveTime value="20241120100401" />
                               <value xsi:type="ST"> R </value>
                               <interpretationCode code="R" codeSystem="2.16.840.1.113883.5.83" codeSystemName="ObservationInterpretation" displayName="R" />
+                              <methodCode code="0272" codeSystem="2.16.840.1.113883.5.84" codeSystemName="ObservationMethod" displayName="Minimum Inhibitory Concentration (MIC)" />
                             </observation>
                           </component>
                         </organizer>
@@ -227,14 +228,14 @@ xÚÂ.=Ñ<?xml version="1.0" encoding="UTF-8"?>
       </component>
     </structuredBody>
   </component>
-</ClinicalDocument>E2
+</ClinicalDocument>¬y²
 endstream
 endobj
 2 0 obj
-11981
+12163
 endobj
 1 0 obj
-<</ModDate(D:20241115170302+01'00')/Size 11970>>
+<</ModDate(D:20241210104211+01'00')/Size 12152>>
 endobj
 4 0 obj
 <</Type/Filespec/F(cda.xml)/UF(cda.xml)/EF<</F 3 0 R/UF 3 0 R>>/Desc(D:\\VS2013\\FSE20\\DECdotNet\\TestACS-SYNLAB-COV19\\FSE20\\LABTest01.xml)>>
@@ -243,15 +244,13 @@ endobj
 <</Names[(D:\\VS2013\\FSE20\\DECdotNet\\TestACS-SYNLAB-COV19\\FSE20\\LABTest01.xml) 4 0 R]>>
 endobj
 6 0 obj
-<</CreationDate<feff0044003a00320030003200340031003100310035003100360035003400300033>/Producer(ComponentOne PDF Generator 8.0; modified using iTextSharp’ 5.5.13-SNAPSHOT ©2000-2017 iText Group NV \(AGPL-version\))/ModDate(D:20241115170302+01'00')>>
+<</CreationDate<feff0044003a00320030003200340031003200310030003100300033003600340033>/Producer(ComponentOne PDF Generator 8.0; modified using iTextSharp’ 5.5.13-SNAPSHOT ©2000-2017 iText Group NV \(AGPL-version\))/ModDate(D:20241210104211+01'00')>>
 endobj
 7 0 obj
 <</Length 912/Filter/FlateDecode>>stream
 xœ…V]«6}_iÿÃ¼µ•nÛ|?’,w‹”…,qö¡U¼„äº"x¤÷×ö§tL²	!¨	gæœ±gæ€ø@ñšø6ñ8Ø”6øÔ#‡|Ó˜Â“†×ÇJ|.·z÷ø`Ù„à1N˜Åˆ ³‡º€-zÀ_ğëoˆ½ùÓÕãÃô+³! ¾¢s4—a˜	°â9àqNÄ&ŒnhàÇ§¢Ékõ]éª€¢‘ûîü¢U,ÒŸ@ü‘8“2Ş‘"•åqâ¹}®€Ø~Gµ®Tû/lìUs¨%b½ÉR×
-]ïe©Î ãØ±ƒQ˜D·Åÿ´iÃïÚàqø`£Kù]U[@–®V1¼„Yœö;Gß'Ü8¾)	™ŞË/7k2~íàQF)ÌàÆÜåÄf@¬„‰ÇBÊ~v(›İ8ÙœøşÀ‰9SÆ¦œr»onsgÜ!©	\Ûúq¬qãŠ„”Rç*’cñQjŠo°ğe™&|Å'ÏÑMq\’ƒ\.Où†2jT«û„œ¹&£ÆKÖêO}—Éóˆ5w&Û¶¨•µÁzP[•ËkfjR:ê
-c®ZùñíŸRç:ÏÈC]š»ÑºN·v…4×¥®Tqß˜ñh|c†X 3|‘ß¥öÔF~0É7ıh|§ûòîN›XÃ¶ñ°ß•nU>rÚc£»3\•ÊUYªJÂóİØLÁ›£/)ç˜FGC±ËüP)(‹V –êx—]„°«åªb'±~qy•M!};y«ÿ¢—ı!AÒ_nÙóçÜp3uºÇu	³>ßËŞèè©xçâİ»R_±"‚Ea.bÒUš¤x"…yšˆ,],RxŠáuÿ‹ğˆq1„È<£lÎÒ,)Š/Ì³W |LfÿÜSgâ•ÈzPË,~EhèŞ¢ä—8MÌÛj•\zŠç\lÿî~£'u¢êü|*Ç×Ë¡ô{‚sÏ¨÷IÀÏı€½¾ÿ@	Us&ŒM0‰XÊfÆ».ÉãÄØöû„è’àˆ˜Û¢FÀF·­6ãë
-¶
-%BîT+Ë6²Ä‹¶%Wºî8&‘¶ı9˜Î°K%+Ïµ¹4à \NßœÚÄõÁ¢× ³8ÅüÁ¦@Z'/Ò¨h¦›FAsl`®ëFÃzÿnv€#³;Špe/—¹ğ6+¨
+]ïe©Î ãØ±ƒQ˜D·Åÿ´iÃïÚàqø`£Kù]U[@–®V1¼„Yœö;Gß'Ü8¾)	™ŞË/7k2~íàQF)ÌàÆÜåÄf@¬„‰ÇBÊ~v(›İ8ÙœøşÀ‰Ñ)ãSN¹İ7·9†3îÔ®m}‹8Ö¸qEBJ©sÉ±ø(5Å7Ø@ø²L“¾â“çè¦8.ÉA.—ƒ‹§|C5ªÕ}BÎ\“‹Qã¥Fkõ§¾ËäyÄ†;“m[ÔJƒÚ`=¨­Êå535)u…± ÇW­üøöO©sç‡ä¡.Íİh]§[»BšëRWª¸oÌx4¾1C,P‚¾ÈïR{j#?„ä›~4¾Ó}yw'M¬a[„xØïJ·*9í1‡ÑİŒ.‹Jåª,U%áùnl¦à‡ÍÑ—”sL#†£!Ø…e~¨”Å+ Kõ¼Ë.BØÕrU±“X¿¸<†‡ÊÎ‡€¦¾¼?ÕÑËş Fé/·ìùsn¸Œ™:İƒãº„YŸïeotôT¼sq‚n„]©¯XÁ"‚0	1
+é*MR¼	‘Â<MD–.)<ÅğºÆÿEøÄ¸BdQ¶giŠÅæÙ+P>&3î©3ñJdH½F¨e¿…"4toQòKœ&æmµÊ.=Åó.¶w¿Ñ“:Qu~>•ãëåPú=Á¹gÔû$àç~À^ß „€*Ñ	ãLâ–rG€™qÇ®Kò81¶=Á>!º$8"fÅ¶¨°Ñm«ÍxÆäº‚­ÂA‰;ÕÊ²€,ñÃ¢mÉ•®;I¤m¦3ìRÉJÃóAm.8(—Ó÷§6q}°è5À,N1°)ÇÉ‹4*šé¦QPÀœ@#˜ëºÑ°Ş¿›àÈì"\DÙËe.ü}+ 
 endstream
 endobj
 8 0 obj
@@ -960,66 +959,39 @@ endobj
 xref
 0 15
 0000000000 65535 f 
-0000012143 00000 n 
-0000012122 00000 n 
+0000012325 00000 n 
+0000012304 00000 n 
 0000000015 00000 n 
-0000012207 00000 n 
-0000012367 00000 n 
-0000012475 00000 n 
-0000012739 00000 n 
-0000013718 00000 n 
-0000013949 00000 n 
-0000015011 00000 n 
-0000175308 00000 n 
-0000175400 00000 n 
-0000175488 00000 n 
-0000175587 00000 n 
+0000012389 00000 n 
+0000012549 00000 n 
+0000012657 00000 n 
+0000012921 00000 n 
+0000013900 00000 n 
+0000014131 00000 n 
+0000015193 00000 n 
+0000175490 00000 n 
+0000175582 00000 n 
+0000175670 00000 n 
+0000175769 00000 n 
 trailer
-<</Size 15/Root 14 0 R/Info 6 0 R/ID [<bdba1e75078a7b7fd447fb742d160304><e3bbd16fe31fb9c958e6fe2d190af161>]>>
+<</Size 15/Root 14 0 R/Info 6 0 R/ID [<20c4c151f666b731af735bbcd4e2d342><aae19d33b6c7c69657adbfaea4018f49>]>>
 %iText-5.5.13-SNAPSHOT
 startxref
-175664
+175846
 %%EOF
-ef
-175680
-%%EOF
-0000 n 
-0000175795 00000 n 
-trailer
-<</Size 15/Root 14 0 R/Info 6 0 R/ID [<9aafb95bbfdda7259d5bbf5f90bb0696><473d9ebd2a7ab02b46a7645f41c0725a>]>>
-%iText-5.5.13-SNAPSHOT
-startxref
-175872
-%%EOF
- R/Resources 12 0 R/MediaBox[0 0 592 842]>>
-endobj
-14 0 obj
-<</Type/Catalog/Pages 11 0 R/Names<</EmbeddedFiles 5 0 R>>>>
-endobj
-xref
-0 15
-0000000000 65535 f 
-0000012952 00000 n 
-0000012931 00000 n 
-0000000015 00000 n 
-0000013016 00000 n 
-0000013176 00000 n 
-0000013284 00000 n 
-0000013548 00000 n 
-0000014528 00000 n 
-0000014759 00000 n 
-0000015821 00000 n 
-0000176118 00000 n 
-0000176210 00000 n 
-0000176298 00000 n 
-0000176397 00000 n 
-trailer
-<</Size 15/Root 14 0 R/Info 6 0 R/ID [<75165b3da7aafbaa0e77199884f4f660><89ab279315285b0035d110fa834e0fb3>]>>
-%iText-5.5.13-SNAPSHOT
-startxref
-176474
-%%EOF
-                                                                                                                            Àßš`ß>ÿ     À_K¸GÚ                 `*î½     üŸ}NÎ´     ¸/Ü³&Ò¸/şáğå
+6/d1ßX·~
+UH$Ê²³BA•ÁĞXkïloï…›`````````!³å…_>åİ¯93g™%zŸ™Z¸éöŒ÷Œ9ûzK»»äm­L—‹\WQYşe‰á€Jñ±T¼\\´XÈûs!ûUc=ßgf!f.9½¢loğ
+Èôéö†Ù‚ÔŞ€Á€íI	ˆÄDd<F!££çDD¼rõê[gÏ¬	9|ñÒå{÷âÒq¤²Ò¶¶¾'½Cı£CÃã#£Ğ`=´"ó?7kğS?%A¸¡æo9<ûªzŸı•ªÇÆÆúÿ¿½{Šê¾8>˜ÖÓMÛ³=ín»Ûn¶§§9I4
+Ÿ¢`4I‰¶u³Ñli4‰6±6Æ˜*Õ “Då!ñø‘‡"ïaf‘÷DŞ¯™¹sw0<LÒ=nÛ#ßÏ¹sïÌ\pÎïÌ¹ÿßüş¿¯¡£«Ù®®®N£ÑÔÔÔ”––*•Ö…¢0[Q–WT”y-'ıò•³	±Ÿ$''8ZÃÙÓAÿ?ÿ¹TãzHff^ÉÌØĞÚ±ô¹g,_¶dÕêç7lx}ë»›eÁòèO&&M¹–•™“—W ®ª­TÙVÃ,WªËJ+K•ŠbÛŠ™Ö-?¿Ü1´¥&²•ÙYeW2Ê¬g«Ó{ötÿ´¹é_««ÿMQôïÍ:’xùÒ%åõ\ëyô:ëø®·§wèAmÚ‰¿Vccã¹³{EËú®^ÿ£GfÎõö’Jeû"#ââ.¦¦g\¹ZXP¢©Õ×Tk««4UêZUeMÅªåUÊ²ªÒRµBQYTtÃ‘°ÆdnnÙõœòœkÖ€,‰9¶aÃ3‚É»»ë?nO¥úANÎ#Ş^³Ï-NK+ÏÍ«­¨l¾¥7´·÷õ9’ˆ  Àßİ=æVŒ>êâ6ÛBt$",ÖkZ“Ù404Ü10P×Õ¥ho¿|§1Q«	V«·T”ÿFQøRî5ßŒôGSÏ÷ìÉ‡O'5ùø4GÇHÇ”
+[‡xIbœäğ¡‘%*<¹¦TØû$QQÓ¢öNÛaK8„…KBåYˆGpğCÛ·ıË¦?Ìxã•›7¿&ßwæÌ%¥òfWgÿ€qhX¶×»é|ßrÎ·Àz5o©W¿c×¾grBŒ{'¾«nGœ¡ëühÿrËØİ1§Rc¡¨¨ ¾~hùCaÙò˜ıó?Üíõö;OşæµYk_ùâêŸ=û¼Ï"?/ooÏ™3gÎ˜1ÃÓkæÓ‹®Z½â•µkŞÚ¸>0p‡T*?œtâdJêå¼¼‚ââ’*µF¥ÒVThıŸ^¨ÑÍìí{¬½õ‘ZíTÜxlérŸŒŒÂŠzMmKcc§Á0Ğ×oœ"Ë’âYD¡©©%;ûˆ(†	â¦:ÿöí^¿{í‰—Vy=û¼·ŸŸ÷Ü9^³gÏ~òÉÙsæÌñğ[ı‹^ıŸ—7ÿqSPĞîğğğ„„Ä³gR.]¼¢(Vª*k´š[í­êj½uS«ëOº´rå\ó°mµÜÖ¶İ¬ıq¹òQo¯Ù¥å¶ô—VÓÚÜÜc[¸odš	  €ƒ`&sŸ#ùĞİ£0ÜÍjnNÒé>®ªÚY^şfqáË¹9ÏfgÌO¿8#åÜ#çO}ÿtÒ·N~Ä5Ÿ"6ÖÃº:4ÚÃaÿ'ö„ƒ­¼A)±W8Häa’PÉG²iRé´¿~cÛ{?yoÛ‹»‚ŞO8üéµœü:]Cw×€ÙlqlÖ1 ÃÀ£ğ¦ ğzmõá!ãÇİ»×7Ü^S§}®±1@¯ó×hW×,R«ı**|KK|Ó/Ï;uòg‰ñ>r¹Oğïwÿä¹ñ-ï_ÿÖûW¿œÿÂŠyKüæxûÌö|â‰'f<¹è©ùKı-ğin](Zğlm™QY5ë¥•Og]Ëom2|fèéî´U°eÑŞÖr-óœY<!Š1Cƒé0üN¯{ñvÃ²Z_MÍ’ªª§TUKrr|ÓÒ|“/ŒŞ¿@¶àƒís7mô^ÿú¼_­™ûÂÊEó|æxzzÎ²şóğûùŠ¥ÿıÊêw6oÜ´éí^ôÅ%ñ©ÁA¯–¦Y
+…÷2ÿ%*õÍö¶Î»ŸÙÉ2:Z8ü½ß   à>³^å
+‚I0
+¦N“±u°¿¾»K}·£¨½-£ùÎù†[Çêj£ªT{JJŞÌÏ{9+cqê…Ç“’¾{8ákñq_‹ıŠõöĞÁi1r6pˆòˆŠ²Í§Ø·W.Ù+÷—KÂB%¡2$2©GĞéı4\¾îpbTVVVuuµÁ`69fR¸äXn,fN«(Î+*Ê¾˜zîÓÄ„ğˆ©T¶kW 4dW„|glÜÎ„Ã:yêíÔÔMWÒ_/(úmqÉºŠŠÿÒhWiuÏwÜ]ŞÒĞxÇO_ï«»µHSç«×,¨¨œ§RùVª«PıÒbY'ŠkDËªş¡gŞ{Ï?pçöŞŞş¾şacÿğ°ÑÙ-p°†eww¯²¬X©ÌË½’r2æÀşPY˜5wÈB·FF¾½åØñM'NlHMû}Væ«9×_V”¬*-[¡©ûyÎ¿©)àömŞÿæÍÅ99¾WÒœ?·ğHâ‚ãI‹O&¯8qü£¸N´¬5[VuŞ]ºvm@ì¡hk@ö÷;ºÈ’h  ÀjL1¿}ŠÑ,™Í}Fc×Ğa`°¥·WÛa(klJÕß:V]¡,{??ÿµìÌ_¤§-»˜êwş¬Ïé“³’?š˜øÃ„ØïÅDÿóşOŞ9}oÄ´ˆp[ÂAæ*óI=>
+–Ø¶éÑÑ>gNm+,HÕëjï~Ö1444öo¸¿}#ñÌ}ívp°¿¯¯¯­­íÎ;uuujuuY©"÷zVöÕ´ó)II'ÇÅ“Kƒ‚v[íÙ³#2âÃØC;bc·Ÿ¾°ùRÚ;E[êõïß5üYw‰âAÜ)Š[_¿sçÖûÈÎlÌÁbRsXğÅ\³Ïlpíì}]Í½½½C{KK‹Nw«¶V[Zª,,ÊµFcÊÅäS§FØ·/*Ô–•ØøÁ|ôg™t[ô­±q[’“ßJKÛ˜—ûNıí­]]¢¸[¥ö€|7Döæ˜Èã°c…Vú—  `jéšh½c4õµ÷÷ÕwvªÚÛ‹î4e5ÔŸÓj«Õû+”ÁùÌÌX—raÙé“ó™ûÃè¿-(4Ì#$ÔÖÆA*üPPGP$,ô›Ç-/Èß_ß êïïµí"1Œë!):Ÿ
+Îö§·ã£÷]­KFš’Øï÷õõuvuXƒz}¦V¯¼Q^RVšW‘ŸŸ‘{--3=5åÂé¸¸¹,D.ß30Øc+æ±ŸÆo ç€IÜsìïŒF³sÉİ	Ï2™„¶¶–æ–Ûµµ5UU¶.²…y¹×³²²Î_½šrñÒ™³ç’bbb‚?’~z$ŞÖ±ÖˆÔ6   `êÜÛTZÇk&ã€ÑØ3<ÜiK>´öô6tuj::TÍw2tÚ¤ÊŠˆ¢‚m9Wß¸|qÍ¹3ËO[ÿøÁƒD}üğ½‡„M—…ü“,äë²oŒŸu)ı•úB‡¡Ù$˜-_Ğ¦Ñ¡–àXÑÕºoüÜvšÎ€DË˜ÖÎ³YƒæÉ^%šŒV#Œt&ı,²G£ı[KX{”º¯äX§xük]»c9ÃVÌÆ{å.   €ˆ0ş:Ùı{ä/É2áE–1çq´
+œø[øvo
+šXäà"Œšóke÷ƒ®]×Ğoüq÷º×™ÍÂ˜f-Œõ0Å=Ş		éĞ{,I#XFÃÕ=ğ&K¥:ÊF#  €)hÒªaò‹ãÑ‹ó1Ç>çJÚ2æT“\Øãôe?u_ÑÕullÃ‡‘a[jËÑûcdySGÚÁí§âè|39Œã
+3Û§“++ ¸İŠnõ}Gé‚Å}oÒ°²õ±Şº—è8‰>   Àk¬7úmòXã/»ÇU»]«SÜh0ŒÔ-¸U³»?Çí;bçóÍ¢[yÃd#@AÉ3P`ƒ/Ep4“ÇÛLYuå¸ÌÎ££Ç›ë®ÉQÆç                                                                                                                                                                                                                 Àßš`ß>ÿ     À_K¸GÚ                 `*î½     üŸ}NÎ´     ¸/Ü³&Ò¸/şáğå
 endstream
 endobj
 11 0 obj
@@ -1037,23 +1009,66 @@ endobj
 xref
 0 15
 0000000000 65535 f 
-0000014109 00000 n 
-0000014088 00000 n 
+0000016676 00000 n 
+0000016655 00000 n 
 0000000015 00000 n 
-0000014173 00000 n 
-0000014333 00000 n 
-0000014441 00000 n 
-0000014705 00000 n 
-0000015577 00000 n 
-0000015808 00000 n 
-0000016870 00000 n 
-0000177167 00000 n 
-0000177259 00000 n 
-0000177347 00000 n 
-0000177446 00000 n 
+0000016740 00000 n 
+0000016900 00000 n 
+0000017008 00000 n 
+0000017272 00000 n 
+0000018146 00000 n 
+0000018377 00000 n 
+0000019439 00000 n 
+0000179736 00000 n 
+0000179828 00000 n 
+0000179916 00000 n 
+0000180015 00000 n 
 trailer
-<</Size 15/Root 14 0 R/Info 6 0 R/ID [<332064d948bfe4f69f8ebd24e65ebf56><e3c42399f097e0a65fa07a8bc28c7e34>]>>
+<</Size 15/Root 14 0 R/Info 6 0 R/ID [<0b53b0b37889f9962230834c3d491334><a868f8d858e913d618ba24a47ed58bc6>]>>
 %iText-5.5.13-SNAPSHOT
 startxref
-177523
+180092
+%%EOF
+·W.Ù+÷—KÂB%¡2$2©GĞéı4\¾îpbTVVVuuµÁ`69fR¸äXn,fN«(Î+*Ê¾˜zîÓÄ„ğˆ©T¶kW 4dW„|glÜÎ„Ã:yêíÔÔMWÒ_/(úmqÉºŠŠÿÒhWiuÏwÜ]ŞÒĞxÇO_ï«»µHSç«×,¨¨œ§RùVª«PıÒbY'ŠkDËªş¡gŞ{Ï?pçöŞŞş¾şacÿğ°ÑÙ-p°†eww¯²¬X©ÌË½’r2æÀşPY˜5wÈB·FF¾½åØñM'NlHMû}Væ«9×_V”¬*-[¡©ûyÎ¿©)àömŞÿæÍÅ99¾WÒœ?·ğHâ‚ãI‹O&¯8qü£¸N´¬5[VuŞ]ºvm@ì¡hk@ö÷;ºÈ’h  ÀjL1¿}ŠÑ,™Í}Fc×Ğa`°¥·WÛa(klJÕß:V]¡,{??ÿµìÌ_¤§-»˜êwş¬Ïé“³’?š˜øÃ„ØïÅDÿóşOŞ9}oÄ´ˆp[ÂAæ*óI=>
+–Ø¶éÑÑ>gNm+,HÕëjï~Ö1444öo¸¿}#ñÌ}ívp°¿¯¯¯­­íÎ;uuujuuY©"÷zVöÕ´ó)II'ÇÅ“Kƒ‚v[íÙ³#2âÃØC;bc·Ÿ¾°ùRÚ;E[êõïß5üYw‰âAÜ)Š[_¿sçÖûÈÎlÌÁbRsXğÅ\³Ïlpíì}]Í½½½C{KK‹Nw«¶V[Zª,,ÊµFcÊÅäS§FØ·/*Ô–•ØøÁ|ôg™t[ô­±q[’“ßJKÛ˜—ûNıí­]]¢¸[¥ö€|7Döæ˜Èã°c…Vú—  `jéšh½c4õµ÷÷ÕwvªÚÛ‹î4e5ÔŸÓj«Õû+”ÁùÌÌX—raÙé“ó™ûÃè¿-(4Ì#$ÔÖÆA*üPPGP$,ô›Ç-/Èß_ß êïïµí"1Œë!):Ÿ
+Îö§·ã£÷]­KFš’Øï÷õõuvuXƒz}¦V¯¼Q^RVšW‘ŸŸ‘{--3=5åÂé¸¸¹,D.ß30Øc+æ±ŸÆo ç€IÜsìïŒF³sÉİ	Ï2™„¶¶–æ–Ûµµ5UU¶.²…y¹×³²²Î_½šrñÒ™³ç’bbb‚?’~z$ŞÖ±ÖˆÔ6   `êÜÛTZÇk&ã€ÑØ3<ÜiK>´öô6tuj::TÍw2tÚ¤ÊŠˆ¢‚m9Wß¸|qÍ¹3ËO[ÿøÁƒD}üğ½‡„M—…ü“,äë²oŒŸu)ı•úB‡¡Ù$˜-_Ğ¦Ñ¡–àXÑÕºoüÜvšÎ€DË˜ÖÎ³YƒæÉ^%šŒV#Œt&ı,²G£ı[KX{”º¯äX§xük]»c9ÃVÌÆ{å.   €ˆ0ş:Ùı{ä/É2áE–1çq´
+œø[øvo
+šXäà"Œšóke÷ƒ®]×Ğoüq÷º×™ÍÂ˜f-Œõ0Å=Ş		éĞ{,I#XFÃÕ=ğ&K¥:ÊF#  €)hÒªaò‹ãÑ‹ó1Ç>çJÚ2æT“\Øãôe?u_ÑÕullÃ‡‘a[jËÑûcdySGÚÁí§âè|39Œã
+3Û§“++ ¸İŠnõ}Gé‚Å}oÒ°²õ±Şº—è8‰>   Àk¬7úmòXã/»ÇU»]«SÜh0ŒÔ-¸U³»?Çí;bçóÍ¢[yÃd#@AÉ3P`ƒ/Ep4“ÇÛLYuå¸ÌÎ££Ç›ë®ÉQÆç                                                                                                                                                                                                                 Àßš`ß>ÿ     À_K¸GÚ                 `*î½     üŸ}NÎ´     ¸/Ü³&Ò¸/şáğå
+endstream
+endobj
+11 0 obj
+<</Type/Pages/Count 1/MediaBox[0 0 592 842]/Resources 12 0 R/Kids[13 0 R]>>
+endobj
+12 0 obj
+<</ProcSet[/PDF/Text/ImageC]/Font<</F14 9 0 R>>/XObject<</I0 10 0 R>>>>
+endobj
+13 0 obj
+<</Type/Page/Parent 11 0 R/Contents 7 0 R/Resources 12 0 R/MediaBox[0 0 592 842]>>
+endobj
+14 0 obj
+<</Type/Catalog/Pages 11 0 R/Names<</EmbeddedFiles 5 0 R>>>>
+endobj
+xref
+0 15
+0000000000 65535 f 
+0000019231 00000 n 
+0000019210 00000 n 
+0000000015 00000 n 
+0000019295 00000 n 
+0000019455 00000 n 
+0000019563 00000 n 
+0000019827 00000 n 
+0000020699 00000 n 
+0000020930 00000 n 
+0000021992 00000 n 
+0000182289 00000 n 
+0000182381 00000 n 
+0000182469 00000 n 
+0000182568 00000 n 
+trailer
+<</Size 15/Root 14 0 R/Info 6 0 R/ID [<98bbaa928f2cf7e37110db2809f2ad04><33cc50a35e0f7f19e3a7088dc1555945>]>>
+%iText-5.5.13-SNAPSHOT
+startxref
+182645
 %%EOF
