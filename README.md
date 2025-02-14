@@ -1,7 +1,7 @@
-# Accreditamento FSE 2.0 (DRAFT)
+# Accreditamento FSE 2.0
 Questo repository raccoglie i risultati dei test effettuati per l'accreditamento dei software con il sistema FSE 2.0
 
-- [Accreditamento FSE 2.0 (DRAFT)](#accreditamento-fse-20-draft)
+- [Accreditamento FSE 2.0](#accreditamento-fse-20)
 	- [Procedura di caricamento dei risultati](#procedura-di-caricamento-dei-risultati)
 		- [Struttura dei risultati (data.json)](#struttura-dei-risultati-datajson)
 		- [File riassuntivo (report-checklist.xlsx)](#file-riassuntivo-report-checklistxlsx)
