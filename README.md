@@ -104,6 +104,15 @@ Il file modificato dovrà contenere solo i test individuati da *tipo documento* 
 
 Il file `report-checklist.xlsx` andrà caricato nella *directory di sottomissione*.
 
+Si riporta di seguito il changelog delle modifiche introdotte sul file report-checklist in ottemperanza a quanto espresso dal Decreto settembre 2023: 
+
+| Versione checklist| Data rilascio      | CDA adeguato                          | Test case obbligatorio da decreto |
+|-------------------|------------------- |-------------------------------------- |-----------------------------------|
+| 8.2.0		    | 12/06/2024         | PSS                                   |		444		     |
+| 8.2.1		    | 19/07/2024         | RAP, RAD                              |         417, 446                  |
+| 8.2.2             | 04/12/2024         | RAP                                   |         417, 418, 460             |
+| 8.2.3             | 14/02/2025  	 | RSA, LDO, LAB, VPS, CERT_VAC, SING_VAC| 448, 450, 452,454, 456, 457, 458  |
+
 ### Pull request
 Per inviare i risultati sarà quindi necessario fare un pull request.  
 I passi sono sostanzialmente:
