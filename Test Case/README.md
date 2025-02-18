@@ -50,3 +50,16 @@ A partire dalla versione 8.2, per la compilazione della checklist occorre seguir
    * `GESTIONE ERRORE` da compilare con la procedura che viene adottata per la gestione dell'errore, solo per i casi KO (ovvero con CASO OK / KO= KO) e per i casi di test di TIMEOUT,  specificando le modalità di invio del documento clinico al FSE a seguito della correzione dell'errore e chiarendo se è possibile per l'utente (medico) proseguire con il processo e produrre il documento. Esclusivamente per i casi di test di TIMEOUT, qualora non fosse prevista una coda di retry e la gestione dell'errore non fossa gestita da un operatore di backoffice, indicare le modalità attraverso cui è reso esplicito all’utente (medico) di effettuare nuovi tentativi di invio verso il FSE fino al ripristino del servizio di validazione.
 5) Se il test NON è applicabile la colonna APPLICABILITA' riporterà NO e dovrà essere compilata esclusivamente la colonna RAZIONALE DI APPLICABILITA' con le motivazioni per cui il test non è applicabile. Il campo è valorizzabile tramite selezione da menù a tendina (campo/sezione non gestito/a in modo strutturato dall’applicativo;campo obbligatorio; campo valorizzato di default; campo valorizzato in automatico tramite dati recuperati da servizi esterni; campo valorizzabile tramite selezione da un set di valori ammessi; l’applicativo effettua controlli preventivi sul dato inserito; altro (specificare)). Nel caso in cui si selezioni l'opzione "Altro (specificare)" è necessario compilare la colonna RAZIONALE DI "APPLICABILITA' - ALTRO" con le motivazioni per le quali il test non è applicabile
 6) La colonna TEST AUTOCERTIFICATO non deve mai essere compilata dal fornitore
+
+
+## Cambiamenti
+
+Si riporta di seguito il changelog delle modifiche introdotte sul file report-checklist in ottemperanza a quanto espresso dal Decreto settembre 2023: 
+
+| Versione checklist| Data rilascio      | CDA adeguato                          | Test case obbligatorio da decreto |
+|-------------------|------------------- |-------------------------------------- |-----------------------------------|
+| 8.2.0		    | 12/06/2024         | PSS                                   |		444		     |
+| 8.2.1		    | 19/07/2024         | RAP, RAD                              |         417, 446                  |
+| 8.2.2             | 04/12/2024         | RAP                                   |         417, 418, 460             |
+| 8.2.3             | 14/02/2025  	 | RSA, LDO, LAB, VPS, CERT_VAC, SING_VAC| 448, 450, 452,454, 456, 457, 458  |
+
