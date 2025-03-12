@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" moodCode="EVN" xmlns="urn:hl7-org:v3">
+  <realmCode code="IT" />
+  <typeId root="2.16.840.1.113883.1.3" extension="POCD_MT000040UV02" />
+  <templateId root="2.16.840.1.113883.2.9.10.1.9.1" extension="1.1" assigningAuthorityName="HL7 Italia" />
+  <id root="2.16.840.1.113883.2.9.2.120.4.4" extension="030702.LCNLDE90L47H501Q.20220509102426.Q123E456" assigningAuthorityName="Regione Lazio" />
+  <code code="11488-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Nota di consulto" />
+  <title>Referto di Specialistica Ambulatoriale</title>
+  <statusCode xmlns="urn:hl7-org:sdtc" />
+  <effectiveTime value="20240205144445+0100" />
+  <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" codeSystemName="HL7 Confidentiality" displayName="Normal" />
+  <languageCode code="it-IT" />
+  <setId root="2.16.840.1.113883.2.9.2.120.4.4" extension="030702.LCNLDE90L47H501Q.20220509102426.Q123E456" assigningAuthorityName="Regione Lazio" />
+  <versionNumber value="1" />
+  <recordTarget typeCode="RCT" contextControlCode="OP">
+    <patientRole classCode="PAT">
+      <id root="2.16.840.1.113883.2.9.4.3.2" extension="PRVCPL85E27G619L" assigningAuthorityName="MEF" />
+      <addr use="H">
+        <county>100</county>
+        <country>PE</country>
+        <city>ABBATEGGIO</city>
+        <censusTract>068001</censusTract>
+        <postalCode>65020</postalCode>
+        <streetAddressLine>VIA DEI PROVETTI 13</streetAddressLine>
+      </addr>
+      <telecom value="tel:3334589568" use="MC" />
+      <telecom value="mailto:prova.esempio@gmail.com" use="HP" />
+      <patient classCode="PSN" determinerCode="INSTANCE">
+        <name>
+          <family>PROVA</family>
+          <given>COMPLETO</given>
+        </name>
+        <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" codeSystemName="HL7 AdministrativeGender" displayName="MASCHIO" />
+        <birthTime value="19850527" />
+        <birthplace classCode="BIRTHPL">
+          <place determinerCode="INSTANCE">
+            <addr>
+              <county>100</county>
+              <censusTract>006129</censusTract>
+            </addr>
+          </place>
+        </birthplace>
+      </patient>
+    </patientRole>
+  </recordTarget>
+  <author typeCode="AUT" contextControlCode="OP">
+    <time value="20231229122005+0100" />
+    <assignedAuthor classCode="ASSIGNED">
+      <id root="2.16.840.1.113883.2.9.4.3.2" extension="VLLFRC80R01L219B" assigningAuthorityName="MEF" />
+      <telecom value="tel:3221223222" use="MC" />
+      <telecom value="mailto:federico.villani@prova.it" use="HP" />
+      <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+        <name>
+          <family>VILLANI</family>
+          <given>FEDERICO</given>
+          <prefix>Dott.</prefix>
+        </name>
+      </assignedPerson>
+    </assignedAuthor>
+  </author>
+  <custodian typeCode="CST">
+    <assignedCustodian classCode="ASSIGNED">
+      <representedCustodianOrganization classCode="ORG" determinerCode="INSTANCE">
+        <id root="2.16.840.1.113883.2.9.4.1.1" extension="MALP" assigningAuthorityName="Malpighi" />
+        <name>Malpighi</name>
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+  <legalAuthenticator typeCode="LA" contextControlCode="OP">
+    <time value="20231229122005+0100" />
+    <signatureCode code="S" />
+    <assignedEntity classCode="ASSIGNED">
+      <id root="2.16.840.1.113883.2.9.4.3.2" extension="VLLFRC80R01L219B" assigningAuthorityName="MEF" />
+      <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+        <name>
+          <family>VILLANI</family>
+          <given>FEDERICO</given>
+          <prefix>Dott.</prefix>
+        </name>
+      </assignedPerson>
+    </assignedEntity>
+  </legalAuthenticator>
+  <participant typeCode="REF" contextControlCode="OP">
+    <associatedEntity classCode="PROV">
+      <id root="2.16.840.1.113883.2.9.4.3.2" extension="RBBSRA79M66I470V" assigningAuthorityName="MEF" />
+    </associatedEntity>
+  </participant>
+  <inFulfillmentOf>
+    <order moodCode="RQO">
+      <id root="2.16.840.1.113883.2.9.4.3.4" extension="010549822255541" assigningAuthorityName="MEF" />
+      <priorityCode code="R" codeSystem="2.16.840.1.113883.5.7" codeSystemName="HL7 ActPriority" />
+    </order>
+  </inFulfillmentOf>
+  <documentationOf typeCode="DOC">
+    <serviceEvent moodCode="EVN">
+      <code code="PROG" codeSystem="2.16.840.1.113883.2.9.5.1.4" codeSystemName="ActCode" displayName="Accesso Programmato" />
+      <effectiveTime value="20240126000000+0100" />
+    </serviceEvent>
+  </documentationOf>
+  <componentOf>
+    <encompassingEncounter classCode="ENC" moodCode="EVN">
+      <effectiveTime value="20240126000000+0100" />
+      <location>
+        <healthCareFacility>
+          <serviceProviderOrganization classCode="ORG" determinerCode="INSTANCE">
+            <id root="2.16.840.1.113883.2.9.4.1.6" extension="XXX" assigningAuthorityName="Ministero della Salute" />
+            <asOrganizationPartOf classCode="PART">
+              <id root="2.16.840.1.113883.2.9.4.1.1" extension="CodMalp" assigningAuthorityName="Ministero della Salute" />
+            </asOrganizationPartOf>
+          </serviceProviderOrganization>
+        </healthCareFacility>
+      </location>
+    </encompassingEncounter>
+  </componentOf>
+  <component>
+    <structuredBody classCode="DOCBODY" moodCode="EVN">
+      <component typeCode="COMP">
+        <section ID="STORIA_CLINICA" classCode="DOCSECT" moodCode="EVN">
+          <code code="11329-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Storia Generale" />
+          <title>Storia Clinica</title>
+          <text mediaType="text/x-hl7-text+xml">Anamnesi</text>
+        </section>
+      </component>
+      <component typeCode="COMP">
+        <section ID="PRESTAZIONI" classCode="DOCSECT" moodCode="EVN">
+          <code code="62387-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Interventi" />
+          <title>Prestazioni</title>
+          <text mediaType="text/x-hl7-text+xml" />
+          <entry>
+            <act classCode="ACT" moodCode="EVN">
+              <code code="04.12" codeSystem="2.16.840.1.113883.2.9.2.90.6.22" codeSystemName="DIZ_REG_ESENZIONI_regioneToscana" displayName="BIOPSIA">
+                <originalText>
+                  <reference value="Prestazione – 1" />
+                </originalText>
+              </code>
+              <effectiveTime value="20240126000000+0100" />
+              <entryRelationship typeCode="XCRPT">
+                <procedure classCode="PROC" moodCode="EVN">
+                  <code />
+                </procedure>
+              </entryRelationship>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component typeCode="COMP">
+        <section ID="DIAGNOSI" classCode="DOCSECT" moodCode="EVN">
+          <code code="29548-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnosi" />
+          <title>Diagnosi</title>
+          <text mediaType="text/x-hl7-text+xml">
+            <paragraph>Diagnosi</paragraph>
+          </text>
+        </section>
+      </component>
+      <component typeCode="COMP">
+        <section ID="CONCLUSIONI" classCode="DOCSECT" moodCode="EVN">
+          <code code="55110-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Conclusioni" />
+          <title>Conclusioni</title>
+          <text mediaType="text/x-hl7-text+xml">
+            <paragraph>Conclusioni</paragraph>
+          </text>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>
