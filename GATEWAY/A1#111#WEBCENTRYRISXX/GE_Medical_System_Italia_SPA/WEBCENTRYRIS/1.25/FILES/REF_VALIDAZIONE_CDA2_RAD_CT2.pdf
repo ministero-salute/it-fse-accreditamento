@@ -1,20 +1,20 @@
 %PDF-1.4
 %‚„œ”
 1 0 obj
-<</Length 11445/Type/EmbeddedFile/Filter/FlateDecode/Params<</ModDate(D:20250512175406+02'00')/Size 11434>>>>stream
-x⁄™,U”<?xml version="1.0" encoding="utf-8"?>
-<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:ex="urn:hl7-DIT-Ext:v1" xmlns="urn:hl7-org:v3">
+<</Length 22824/Type/EmbeddedFile/Filter/FlateDecode/Params<</ModDate(D:20250520123319+02'00')/Size 22813>>>>stream
+x⁄Y‚¶<?xml version="1.0" encoding="utf-8"?>
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:hl7-org:v3">
   <realmCode code="IT" />
   <typeId root="2.16.840.1.113883.1.3" extension="POCD_MT000040UV02" />
   <templateId root="2.16.840.1.113883.2.9.10.1.7.1" extension="1.1" />
-  <id root="2.16.840.1.113883.2.9.2.180101.4.4" extension="GIUSEPPE.MF.20250512175223.3ALDT" assigningAuthorityName="A.S.L.VIBO VALENTIA" />
+  <id root="2.16.840.1.113883.2.9.2.180101.4.4" extension="GIUSEPPE.MF.20250520123244.LZ05F" assigningAuthorityName="A.S.L.VIBO VALENTIA" />
   <code code="68604-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Referto Radiologico" />
   <title>REFERTO RADIOLOGICO</title>
-  <sdtc:statusCode code="completed" />
-  <effectiveTime value="20250512175223.0000" />
+  <statusCode code="completed" xmlns="urn:hl7-org:sdtc" />
+  <effectiveTime value="20250520123249.0000" />
   <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" codeSystemName="Confidentiality" displayName="Normal" />
   <languageCode code="it-IT" />
-  <setId root="2.16.840.1.113883.2.9.2.180101.4.4" extension="GIUSEPPE.MF.20250512175223.3ALDT" assigningAuthorityName="A.S.L.VIBO VALENTIA" />
+  <setId root="2.16.840.1.113883.2.9.2.180101.4.4" extension="GIUSEPPE.MF.20250520123244.LZ05F" assigningAuthorityName="A.S.L.VIBO VALENTIA" />
   <versionNumber value="1" />
   <recordTarget>
     <patientRole>
@@ -120,9 +120,229 @@ x⁄™,U”<?xml version="1.0" encoding="utf-8"?>
         </section>
       </component>
       <component typeCode="COMP">
+        <section ID="Quesito_Diagnostico">
+          <code code="18785-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Motivo per lo studio - Radiologia" />
+          <title>Quesito Diagnostico</title>
+          <text mediaType="text/x-hl7-text+xml">
+            <paragraph>Altre anomalie cervicali congenite o acquisite</paragraph>
+          </text>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <code code="29308-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnosi" />
+              <value xsi:type="CD" code="654.6" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9CM" displayName="Altre anomalie cervicali congenite o acquisite" />
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component typeCode="COMP">
+        <section ID="STORIA_CLINICA">
+          <code code="11329-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Storia Generale" />
+          <title>Storia Clinica</title>
+          <text mediaType="text/x-hl7-text+xml">
+            <paragraph>Anamnesi Familiare: La madre a 35 anni ha avuto una Infezione actinomicotica polmonare ed √® decedeuta a 60 anni.
+Anamnesi Fisiologica: All'et√† di 11 anni si √® manifestata l' allergia alla polvere.
+Anamnesi Patologica Remota: Niente da segnalare.
+Anamnesi Patologica Prossima: Niente da segnalare</paragraph>
+          </text>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <code code="75326-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem" />
+              <statusCode code="completed" />
+              <effectiveTime>
+                <low value="20241203000000+0100" />
+                <high value="20250104000000+0100" />
+              </effectiveTime>
+              <value xsi:type="CD" code="60975-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Hemodynamic resistance" />
+              <entryRelationship typeCode="REFR" inversionInd="false">
+                <observation classCode="OBS" moodCode="EVN">
+                  <code code="89261-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Decorso Clinico" />
+                  <text>
+                    <reference value="#[REF_CRON]" />
+                  </text>
+                  <statusCode code="completed" />
+                  <value xsi:type="CE" code="LA18821-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Acute" />
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="REFR" inversionInd="false">
+                <observation classCode="OBS" moodCode="EVN">
+                  <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Stato" />
+                  <text>
+                    <reference value="#[REF_STATO]" />
+                  </text>
+                  <statusCode code="completed" />
+                  <value xsi:type="CE" code="LA18632-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Inactive" />
+                </observation>
+              </entryRelationship>
+            </observation>
+          </entry>
+          <entry>
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <code code="10157-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Storia di malattie di membri familiari" />
+              <statusCode code="completed" />
+              <effectiveTime value="20241203000000+0100" />
+              <subject typeCode="SBJ">
+                <relatedSubject classCode="PRS">
+                  <code code="MTH" codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" displayName="mother" />
+                  <subject>
+                    <administrativeGenderCode code="F" codeSystem="2.16.840.1.113883.5.1" codeSystemName="HL7 AdministrativeGender" displayName="Femmina" />
+                  </subject>
+                </relatedSubject>
+              </subject>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <code code="52797-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnosi codice ICD" />
+                  <statusCode code="completed" />
+                  <effectiveTime nullFlavor="UNK" />
+                  <value xsi:type="CD" code="039.1" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9-CM" displayName="Infezione actinomicotica polmonare" />
+                  <entryRelationship typeCode="SUBJ">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <code code="35267-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Et√† diagnosi patologia" />
+                      <value xsi:type="PQ" value="36" unit="a" />
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship typeCode="SUBJ">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <code code="39016-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Et√† decesso" />
+                      <value xsi:type="PQ" value="60" unit="a" />
+                    </observation>
+                  </entryRelationship>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <component typeCode="COMP">
+            <section ID="Allergie">
+              <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergie e/o reazioni avverse" />
+              <title>Allergie</title>
+              <text mediaType="text/x-hl7-text+xml">
+                <paragraph>
+                  <content ID="REF_ALL1">Allergia</content>
+                  <br />
+                </paragraph>
+              </text>
+              <entry>
+                <act classCode="ACT" moodCode="EVN">
+                  <code nullFlavor="NA" />
+                  <statusCode code="completed" />
+                  <effectiveTime>
+                    <low value="20241203000000+0100" />
+                    <high value="20250102000000+0100" />
+                  </effectiveTime>
+                  <entryRelationship typeCode="SUBJ">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <code code="52473-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergia o causa della reazione" />
+                      <text>
+                        <reference value="#REF_ALL1" />
+                      </text>
+                      <statusCode code="completed" />
+                      <effectiveTime>
+                        <low value="20241203000000+0100" />
+                        <high value="20250102000000+0100" />
+                      </effectiveTime>
+                      <value xsi:type="CD" code="ALG" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ObservationIntoleranceType" displayName="Allergy" />
+                      <participant typeCode="CSM">
+                        <participantRole classCode="MANU">
+                          <playingEntity classCode="MMAT">
+                            <code code="260152009" codeSystem="2.16.840.1.113883.2.9.77.22.11.2" codeSystemName="Allergeni (No Farmaci)" displayName="Peli di gatto">
+                              <originalText>
+                                <reference value="#[REF_AGENTE1]" />
+                              </originalText>
+                            </code>
+                          </playingEntity>
+                        </participantRole>
+                      </participant>
+                      <entryRelationship typeCode="MFST">
+                        <observation classCode="OBS" moodCode="EVN">
+                          <code code="75321-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Obiettivit√† Clinica" />
+                          <text>
+                            <reference value="#[REF_TXT_OBS]" />
+                          </text>
+                          <statusCode code="active" />
+                          <effectiveTime>
+                            <low value="20241113000000+0100" />
+                          </effectiveTime>
+                          <value xsi:type="CD" code="477.2" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9-CM" displayName="Rinite allergica da peli o forfora animale (gatto) (cane)">
+                            <originalText>
+                              <reference value="#[REF_REAZ]" />
+                            </originalText>
+                          </value>
+                        </observation>
+                      </entryRelationship>
+                      <entryRelationship typeCode="SUBJ">
+                        <observation classCode="OBS" moodCode="EVN">
+                          <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Criticality" />
+                          <text>
+                            <reference value="#[REF_TXT_CRIT]" />
+                          </text>
+                          <statusCode code="completed" />
+                          <value xsi:type="CD" code="M" codeSystem="2.16.840.1.113883.5.1063" codeSystemName="CriticalityObservation" displayName="Moderate" />
+                        </observation>
+                      </entryRelationship>
+                      <entryRelationship typeCode="REFR">
+                        <observation classCode="OBS" moodCode="EVN">
+                          <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Stato" />
+                          <text>
+                            <reference value="#[REF_STATO]" />
+                          </text>
+                          <statusCode code="completed" />
+                          <value xsi:type="CD" code="LA18632-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Inactive" />
+                        </observation>
+                      </entryRelationship>
+                      <entryRelationship typeCode="SUBJ">
+                        <act classCode="ACT" moodCode="EVN">
+                          <code code="48767-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Annotation Comment" />
+                          <text>
+                            <reference value="#[REF_COMMENTI]" />
+                          </text>
+                          <statusCode code="completed" />
+                        </act>
+                      </entryRelationship>
+                    </observation>
+                  </entryRelationship>
+                </act>
+              </entry>
+            </section>
+          </component>
+        </section>
+      </component>
+      <component typeCode="COMP">
+        <section ID="PRECEDENTI_ESAMI_ESEGUITI">
+          <code code="55114-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Precedente procedura di imaging, descrizioni" />
+          <title>Precedenti Esami Eseguiti</title>
+          <text mediaType="text/x-hl7-text+xml">
+            <table>
+              <thead>
+                <tr>
+                  <th>Precedente Esame Eseguito</th>
+                  <th>Data Esame</th>
+                  <th>Esito</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr ID="PREC_ESAME1">
+                  <td ID="PREC_DESCRESAME1">Radiografia del torace</td>
+                  <td>03/11/2024 11:13:00</td>
+                  <td>Nessun trauma riscontrato</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <code code="36554-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Radiografia del torace" />
+              <effectiveTime>
+                <low value="20241103111300+0100" />
+                <high value="20241103111300+0100" />
+              </effectiveTime>
+              <value xsi:type="ST">Nessun trauma riscontrato</value>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component typeCode="COMP">
         <section ID="ESAME_ESEGUITO">
           <code code="55111-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Descrizioni attuale procedure di imaging" />
-          <title>Esame eseguito</title>
+          <title>Esame Eseguito</title>
           <text mediaType="text/x-hl7-text+xml">
             <table>
               <thead>
@@ -171,41 +391,21 @@ TESTO REFERTO
         </section>
       </component>
       <component typeCode="COMP">
-        <section ID="Quesito_Diagnostico">
-          <code code="18785-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Motivo per lo studio - Radiologia" />
-          <title>Quesito Diagnostico</title>
+        <section ID="CONCLUSIONI">
+          <code code="55110-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Conclusioni" />
+          <title>Conclusioni</title>
           <text mediaType="text/x-hl7-text+xml">
-            <paragraph>Altre anomalie cervicali congenite o acquisite</paragraph>
+            <paragraph>Si consiglia ulteriore approfondimento</paragraph>
           </text>
-          <entry>
-            <observation moodCode="EVN">
-              <code code="29308-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnosi" />
-              <value xsi:type="CD" code="654.6" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9CM" displayName="Altre anomalie cervicali congenite o acquisite" />
-            </observation>
-          </entry>
         </section>
       </component>
       <component typeCode="COMP">
-        <section ID="STORIA_CLINICA">
-          <code code="11329-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Storia Generale" />
-          <title>Storia Clinica</title>
+        <section ID="Informazioni_Aggiuntive">
+          <code code="55107-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Appendice" />
+          <title>Informazioni Aggiuntive</title>
           <text mediaType="text/x-hl7-text+xml">
-            <paragraph>Anamnesi Familiare: Niente da segnalare.
-Anamnesi Fisiologica: All'et√† di 11 anni si √® manifestata l' allergia alla polvere.
-Anamnesi Patologica Remota: Niente da segnalare.
-Anamnesi PAtologica Prossima: Niente da segnalare</paragraph>
+            <paragraph>Testo informazioni aggiuntive</paragraph>
           </text>
-          <entry>
-            <observation moodCode="EVN">
-              <code code="75326-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem" />
-              <statusCode code="completed" />
-              <effectiveTime>
-                <low value="20241001130000+0200" />
-                <high value="20241002000000+0200" />
-              </effectiveTime>
-              <value xsi:type="CD" code="56839-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Acutezza, valutazione" />
-            </observation>
-          </entry>
         </section>
       </component>
       <component typeCode="COMP">
@@ -219,7 +419,7 @@ Anamnesi PAtologica Prossima: Niente da segnalare</paragraph>
             </paragraph>
           </text>
           <entry>
-            <observation moodCode="EVN">
+            <observation classCode="OBS" moodCode="EVN">
               <code code="75326-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem" />
               <effectiveTime>
                 <low value="20250203090000+0100" />
@@ -245,7 +445,7 @@ Anamnesi PAtologica Prossima: Niente da segnalare</paragraph>
       </component>
     </structuredBody>
   </component>
-</ClinicalDocument>=˛3∂
+</ClinicalDocument>¥gv
 endstream
 endobj
 2 0 obj
@@ -255,7 +455,7 @@ endobj
 <</Names[(desc) 2 0 R]>>
 endobj
 4 0 obj
-<</Title<feff>/Author<feff>/Subject<feff>/Keywords<feff>/Creator<feff>/Producer(Developer Express Inc. DXperience \(tm\) v19.1.16; modified using iTextSharpí 5.5.10 ©2000-2016 iText Group NV \(AGPL-version\))/CreationDate<443a32303235303531323137353232312b303227303027>/ModDate(D:20250512175406+02'00')>>
+<</Title<feff>/Author<feff>/Subject<feff>/Keywords<feff>/Creator<feff>/Producer(Developer Express Inc. DXperience \(tm\) v19.1.16; modified using iTextSharpí 5.5.10 ©2000-2016 iText Group NV \(AGPL-version\))/CreationDate<443a32303235303532303132333234322b303227303027>/ModDate(D:20250520123319+02'00')>>
 endobj
 5 0 obj
 <</Length 3223/Type/Metadata/Subtype/XML>>stream
@@ -268,9 +468,9 @@ endobj
         xmlns:dc="http://purl.org/dc/elements/1.1/"
       pdf:Producer="Developer Express Inc. DXperience (tm) v19.1.16; modified using iTextSharp‚Ñ¢ 5.5.10 ¬©2000-2016 iText Group NV (AGPL-version)"
       pdf:Keywords=""
-      xmp:CreateDate="2025-05-12T17:52:21+02:00"
-      xmp:ModifyDate="2025-05-12T17:54:06+02:00"
-      xmp:MetadataDate="2025-05-12T17:54:06+02:00"
+      xmp:CreateDate="2025-05-20T12:32:42+02:00"
+      xmp:ModifyDate="2025-05-20T12:33:19+02:00"
+      xmp:MetadataDate="2025-05-20T12:33:19+02:00"
       xmp:CreatorTool="">
       <dc:creator>
         <rdf:Seq>
@@ -349,12 +549,12 @@ endobj
 <</Font<</FNT0 11 0 R/FNT1 14 0 R/FNT2 17 0 R/FNT3 20 0 R/FNT4 23 0 R>>/ProcSet[/PDF/Text/ImageB/ImageC/ImageI]>>
 endobj
 10 0 obj
-<</Filter/FlateDecode/Length 1115>>stream
-XÖ≈W€ä‰F˝ï˙ÅTJ™;Ñ¿LO:∞ê@íÜ<,˚îΩ@»f_Ú˚9*ÀÆrw{‹Ω6Ãò™.À≤t$…ÊŸ8„,ëcobçñsL¶≤•‘b>Ω3øõøµøOˆdﬂõ_Ã≥!6D&Ül
-]™`≤9öúíu©V9Ÿ‰\2X9v%ªb¢‘µ?(}6è'ÛÌÒÁì3îÃÈΩ©¡ÊP° g[<Ã<Ω5ØÕwŒ˘Ípá¯‹ø‹q-+{r∫‚7ÙÚ”ÂÙZﬁ±Á·ÔfË‰ÇﬂP‰Û⁄&˜8……Âﬂø1ßWÊá`π]∂p∫f[ÛÄ€2B˚¢ÃÆÃÇ+πbcäñ€ÍBá5MnxqµË>Î>pÎû’eÅE†hÎÉ¬ê˘¨05˝˜Aë≠è»Sg¡S
-íQ7É•ç=±ÎÄê©í†ÄdVm(‘ë†xe=Ù$"úŒà5aäÓ£˛ñµ‹‚©≥%áH´¯é≤ÅMâ¨O- (€àpQ£ªÔ{b◊}c§
-≈yh˜±VáÑ∑·Z®”*0D3Ú]AÙ>¿Dòîà≠'–ì#˘<é∑Hnr∆ÏŒ†<Sb\¸iu˛®!
-”˛™Òn§è∑b≤-y&æÆ1È\zó˝îú0)8À	VÖb•ŒÕøA∫ı~)ŒAr⁄”–®Â°Ó>´ªc>3ò'HeÅõ™∞Íπ[{b{å”¿)*ÉS!k’Ô2ºêç≥AL€Ÿó€ã«¢!õF∫§z7πÔöª#t±_∫MlZ¸4ù›Y‘Qb h$$ù®ùàVì—-í[E=ª6Ë6?¥≠¨mK◊Ÿ•vÜ&“‘ŒÊ˚Ù§mmlec9ùç§‹>ìÁ–†Ë6û€ñ‹leº&πlpi˝D⁄˛I…n$ÙrÖ:›œHcêgD>∞N8*#@…Ÿ4ù¿{ùŸc<ÅimÉ™ó9≈ÊRiòbFñ˛£>˛˙£y˝Î[\Øp˝â…Õ¸tÄ† †Â'pPÙ»bZ•˚<Û≤∫‹‹<ˆ^&ÓåÉ\Éá÷˜Y¡•g§±G.nw?Él>"¶…f7û˝e~ÎôÑh#r2∆ ü~Ó	%N”¨Òè±fxÛ««≠Œgä'õ2>?4V„®x{ô—ˇπæX|‘\ÿ‚¸Wx7òÖÀ¢fB"{M‡Ä˘∞∏RÜ∆ÍøDƒE'5ÕÕ∫Í}Á*·!“ÆwPnûzRébΩ_zÜcÁ≤∆gzo÷1Ô€≥√}Ò2Œ˙›t.¸6?”ÙÈ3Qª∞º;ñﬁ&˘-Ñ"ÜqÔæ°X1Ê≈éP≥Ä◊l>êå¨°Â´áÜ&UO4Ujxò<îﬂÀ«Ãº√SC1ÙÊ∏íØ”⁄dT◊“9.¶Äù ãøL —Á°◊Ωêç£˝[˛ﬁˇ |xÜ<bO¯‘©úni˘3üíÙæyúiÁ=w}6XÓœµ˜∞û◊ÛåZ’⁄<[®ÃX√KÊ]º{ƒÂ_‰(Î
+<</Filter/FlateDecode/Length 1114>>stream
+XÖ≈Wmã7˛+˛u,ŸÚî¬›^∑h …B?Ñ|j^ $ÅÀó˛˝JyÏŸ›πôMJ ›`ØG£ëIè4Ê—8„,ÄCo®ê≈D—‰ 6ÁíÕ∑˜Ê/Û’@˝˚ˆqKˆÉyi†0í…p©¡&2)FÎb)Ü0⁄Ë\4º"u%õb¢‘’?V˙hÓOÊŸÒ≈…àÊÙ¡î`S(¨ %õ=õyzgﬁò_ùÛ≈9<ˇ‡ˇ˚ÌÀó≤≤ß+ˇÜÉ^~∫ú^Ûªà˜8úÒªëubÊﬂ¨»ß•MÓ~íìÀ~{kNœÕÔ'Üe∫hŸÈílIfhÛÌì2k∏"
+Æ‡≤•HÜ-∑≈Ökú‹‚j÷}“=pÎ’eÅE†®Îù¬˘§0U˝∑Aë¨'ŒSg∞ß$£ﬂF4∂ƒÆ¶HÇ2$MŸê°#"AÏ…zËI§âÇ∫f›∑sYÛOùÕ)\¨‚;ó€¡˙X£ÃeK. 1∫˚æ%v›w1F™PúÁ‚>Ø≈”ê‚6ª ¥
+ƒ¡$º)àﬁ6ëMäÄ÷”Ç#Ò<é{$W9£π3(aû…D≥?µŒÔ5Da⁄ˇO5ﬁçÙ¥ìu…0ÒeâIÁ“õÏáË¨–Äâ¡YålU»V*‡‹¸Ç◊≠˜sq*8ß=%(u˜]uÿÛâ1cÛ©$pCV=wkKlãq∫v
+Ú‡THZu«õœ`©Ñ∞êmπ≠xÃB∞q§K(7ì˚¶πB{à˝“–ub”‚áÈ‡∆¢&â)r#ÈDyËD∞òåˆHÆusm–·m~h[I€ñÆÕ•z∆M8ƒ©ùµ˚†mmlec9ùçÓ§‹æìÁ∏A¡>û[ó\me∏$πlpq˝D⁄˛A…n$Ù|Ö:›œHcêgD>†N8*#@…Ÿ4ùò˜wfœ„	õV7\ı2ßÿî≥ %Œ“‘«Wò7oy}«◊sæ>Ò‰f˛º@P ∏ÂGÊ ÚúÄ∞H˜6Û¢∫\›<ˆ^&ÓåÉ\Öñ˜Q¡πgƒ±GŒnw?fÉê#–|·òFõ‹xˆŸºÓôƒ—Ê»…√˘ƒ·«ûP‚44çøx{ÿo˛˛≤÷˘Ç@‚Lˆ`c‚œèç≈8*ﬁ^fÙnáœñ?j.lq˛'ºõôÛH3°ëΩäá&p‡˘0ªúáÊ’G|äà≥N j477Îä˜ù´Ñá@ªﬁAπIxÍA9
+ı~ÓyéùÀ*üÈΩ¶£ÌÎ≥√}Òíö~7ùøµg™>}Ü¥Àª)˜ˆ0…Ø!D<å{˜cQ·1è:B’\≤y˚ XEÀVM™`™‘p7y(ø]õÑ€:O≈–õ„BæLkïQ]sÁ∏ò:A˛:<êOCØ{"*G˙∑~˚ﬁˇ…|xÜ{Ñ¯Sß`‹”ÚüÇÙ‹=Œ‘ÛÉûª>Ã˜[Ì›-Á¡ı<£µ÷fïkxŒºãwè∏¸‘ËÎ
 endstream
 endobj
 27 0 obj
@@ -897,55 +1097,55 @@ xref
 0 48
 0000000000 65535 f 
 0000000015 00000 n 
-0000011602 00000 n 
-0000011694 00000 n 
-0000011734 00000 n 
-0000012054 00000 n 
-0000015352 00000 n 
-0000016482 00000 n 
-0000015419 00000 n 
-0000016542 00000 n 
-0000016671 00000 n 
-0000015537 00000 n 
-0000020544 00000 n 
-0000048976 00000 n 
-0000015665 00000 n 
-0000049576 00000 n 
-0000081487 00000 n 
-0000015801 00000 n 
-0000081973 00000 n 
-0000100311 00000 n 
-0000015934 00000 n 
-0000100709 00000 n 
-0000117283 00000 n 
-0000016075 00000 n 
-0000117489 00000 n 
-0000136149 00000 n 
-0000016216 00000 n 
-0000017855 00000 n 
-0000021050 00000 n 
-0000021243 00000 n 
-0000021326 00000 n 
-0000048894 00000 n 
-0000050046 00000 n 
-0000050247 00000 n 
-0000050330 00000 n 
-0000081405 00000 n 
-0000082367 00000 n 
-0000082580 00000 n 
-0000082663 00000 n 
-0000100229 00000 n 
-0000101031 00000 n 
-0000101252 00000 n 
-0000101335 00000 n 
-0000117201 00000 n 
-0000117836 00000 n 
-0000118057 00000 n 
-0000118140 00000 n 
-0000136067 00000 n 
+0000022981 00000 n 
+0000023073 00000 n 
+0000023113 00000 n 
+0000023433 00000 n 
+0000026731 00000 n 
+0000027861 00000 n 
+0000026798 00000 n 
+0000027921 00000 n 
+0000028050 00000 n 
+0000026916 00000 n 
+0000031922 00000 n 
+0000060354 00000 n 
+0000027044 00000 n 
+0000060954 00000 n 
+0000092865 00000 n 
+0000027180 00000 n 
+0000093351 00000 n 
+0000111689 00000 n 
+0000027313 00000 n 
+0000112087 00000 n 
+0000128661 00000 n 
+0000027454 00000 n 
+0000128867 00000 n 
+0000147527 00000 n 
+0000027595 00000 n 
+0000029233 00000 n 
+0000032428 00000 n 
+0000032621 00000 n 
+0000032704 00000 n 
+0000060272 00000 n 
+0000061424 00000 n 
+0000061625 00000 n 
+0000061708 00000 n 
+0000092783 00000 n 
+0000093745 00000 n 
+0000093958 00000 n 
+0000094041 00000 n 
+0000111607 00000 n 
+0000112409 00000 n 
+0000112630 00000 n 
+0000112713 00000 n 
+0000128579 00000 n 
+0000129214 00000 n 
+0000129435 00000 n 
+0000129518 00000 n 
+0000147445 00000 n 
 trailer
-<</Size 48/Root 26 0 R/Info 4 0 R/ID [<d4572a4eef4ab64e8105788cf2ef24c3><7b5d719d3838d419af22eda31d678ec8>]>>
+<</Size 48/Root 26 0 R/Info 4 0 R/ID [<72b307a748e2bc42880fb989288881ac><78c4b5ea4fc70de7f3a4feea9dc98e87>]>>
 %iText-5.5.10
 startxref
-136441
+147819
 %%EOF
