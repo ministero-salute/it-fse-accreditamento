@@ -40,8 +40,10 @@ endobj
 /Filter /FlateDecode
 >>
 stream
-xœ-Ž±
-Â0„÷<ÅáTE4-B7µÁtèÍ_kµi1éàÛÄåàà¾»[‘˜1bªDœÌRÐ^¨)AFDT?œnû£z	öÎ–ßÚ³ÁõƒQqR8æúÉo”QÕ·åx„Îf8‡Èn°IÈ¤Ì’ëÍ‰ ¤JÇ FÐDD[ëz¾yøš¡½×·ºeëÝŸn€«»áePuƒ5ÐXçK\ûÿÛŽÍìWµ!ñP;Ö
+xœ-ŽË
+Â0D÷ùŠÁUÑ$´Ýù*(
+‚tÑM4·ÖGÓbÒ…o7sffAbZ((ª„J'h't†™” +ªïÞ4Ý‹QÝ£D{cÇoØâòÁ 8jVöæÉo”IÕ5åp€Öå8ÅÈ¶wiÈ¥ÊS…åúHÐRgCÐCÐH$ç;¾„šaB0×ºaüŸ¶‡¯ÛþeQµ½³0X®æ8ïwÿ+î9¶“_ÕšÄ
+—;Ô
 endstream
 endobj
 7 0 obj
@@ -76,21 +78,22 @@ endobj
 endobj
 12 0 obj
 <<
-/Length 9096
+/Length 11732
 /Type /EmbeddedFile
 /Subtype /application#2Fxml
 /Params 13 0 R
 >>
 stream
-<?xml version="1.0" encoding="utf-8"?>
-<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="urn:hl7-org:v3 ./XSD_CDA2_LIS_1.2.xsd" moodCode="EVN" xmlns="urn:hl7-org:v3">
+ï»¿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="https://www.fascicolosanitario.gov.it/sites/default/files/media/CDAit.xsl"?>
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3">
   <realmCode code="IT" />
   <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040" />
   <templateId root="2.16.840.1.113883.2.9.10.1.1" extension="1.1" />
   <id assigningAuthorityName="Regione Sicilia" extension="190206462600_01462-003" root="2.16.840.1.113883.2.9.2.190.4.4" />
   <code code="11502-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Referto di laboratorio">
   </code>
-  <effectiveTime value="20250528000000+0100" />
+  <effectiveTime value="20250522000000+0100" />
   <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" codeSystemName="Confidentiality" displayName="Normal">
   </confidentialityCode>
   <languageCode code="ita-ITA" />
@@ -127,7 +130,7 @@ stream
     </patientRole>
   </recordTarget>
   <author>
-    <time value="20250528000000+0100" />
+    <time value="20250522000000+0100" />
     <assignedAuthor>
       <id assigningAuthorityName="Ministero Economia e Finanze" extension="PROVAX00X00X000Y" root="2.16.840.1.113883.2.9.4.3.2" />
 	  <telecom value="tel:3333333333" use="HP"/>
@@ -157,7 +160,7 @@ stream
     </assignedCustodian>
   </custodian>
   <legalAuthenticator>
-    <time value="20250528000000+0100" />
+    <time value="20250522000000+0100" />
     <signatureCode code="S" />
     <assignedEntity classCode="ASSIGNED">
       <id assigningAuthorityName="Ministero Economia e Finanze" extension="PROVAX00X00X000Y" root="2.16.840.1.113883.2.9.4.3.2" />
@@ -173,22 +176,22 @@ stream
   <inFulfillmentOf>
 		<order classCode="ACT" moodCode="RQO">
 			<id extension="20230300014" root="2.16.840.1.113883.2.9.2.150.4.8"/>
-			<priorityCode code="R" codeSystem="2.16.840.1.113883.5.7" codeSystemName="Hl7 ActPriority" displayName="Routine"/>
+			<priorityCode code="W" codeSystem="2.16.840.1.113883.5.7" codeSystemName="Hl7 ActPriority" displayName="Routine"/>
 		</order>
   </inFulfillmentOf>
   <component>
     <structuredBody classCode="DOCBODY" moodCode="EVN">
       <component>
         <section classCode="DOCSECT" moodCode="EVN">
-          <code code="18724-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HLA" />
+          <code code="18729-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
           <component>
             <section classCode="DOCSECT" moodCode="EVN">
-              <code code="18724-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HLA" />
-              <title>HLA-B[Type]</title>
+              <code code="18725-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="MICROBIOLOGIA" />
+              <title>BATTERIOLOGICO TAMP. NASALE DX :</title>
               <text mediaType="text/x-hl7-text+xml">
                 <list>
                   <item>
-                    <paragraph>HLA / HLA STUDIES</paragraph>
+                    <paragraph>MICROBIOLOGIA / MICROBIOLOGY</paragraph>
                   </item>
                   <item>
                     <paragraph></paragraph>
@@ -198,7 +201,6 @@ stream
                   </item>
                   <item>
                     <table>
-                      <caption>G020 - HLA-B[Type]</caption>
                       <thead>
                         <tr>
                           <th>Esame</th>
@@ -209,17 +211,33 @@ stream
                       </thead>
                       <tbody>
                         <tr>
-                          <td>HLA-B[Type]</td>
-                          <td>Negativo</td>
+                          <td>BATTERIOLOGICO TAMP. NASALE DX :</td>
+                          <td>L'esame ha dato luogo allo sviluppo del seguente microrganismo:</td>
                           <td></td>
-                          <td>Negativo</td>
+                          <td></td>
                         </tr>
                         <tr styleCode="colSpan">
-                          <td colspan="2" align="left">Metodo: Polimerase Chain Reaction e Reverse Dot Blot</td>
-                          <td colspan="2" align="right"></td>
+                          <td colspan="4" align="left">Metodo: Colturale</td>
+                        </tr>
+                        <tr>
+                          <td>GERME 1</td>
+                          <td>STAPHYLOCOCCUS AUREUS</td>
+                          <td></td>
+                          <td></td>
                         </tr>
                         <tr styleCode="colSpan">
-                          <td colspan="4"></td>
+                          <td align="left"></td>
+                          <td colspan="3" align="left">ANTIBIOGRAMMA       MIC                BREAKPOINT (&lt;=)      NOTE</td>
+                        </tr>
+                        <tr styleCode="colSpan">
+                          <td align="left" charoff="3">ACIDO FUSIDICO</td>
+                          <td align="left">SENSIBILE</td>
+                          <td colspan="2" align="left">1          -                -</td>
+                        </tr>
+                        <tr styleCode="colSpan">
+                          <td align="left" charoff="3">CIPROFLOXACINA</td>
+                          <td align="left">INTERMEDIO</td>
+                          <td colspan="2" align="left">&lt;=0,5      -                -</td>
                         </tr>
                       </tbody>
                     </table>
@@ -228,29 +246,55 @@ stream
               </text>
               <entry typeCode="DRIV">
                 <act classCode="ACT" moodCode="EVN">
-                  <code code="G020" codeSystem="2.16.840.1.113883.2.9.2.30.3.1.20.6.1.111.100" codeSystemName="VITALSW" />
+                  <code code="M055" codeSystem="2.16.840.1.113883.2.9.2.30.3.1.20.6.1.111.100"/>
                   <statusCode code="completed" />
                   <specimen typeCode="SPC">
-                    <specimenRole classCode="SPEC">
-                      <id root="2.16.840.1.113883.2.9.2.111.4.21" extension="VITALSW.CAMPIONE.G020" />
+                    <specimenRole>
+                      <id root="2.16.840.1.113883.2.9.2.111.4.21"/>
                       <specimenPlayingEntity determinerCode="INSTANCE">
-                        <code code="BLD" codeSystem="2.16.840.1.113883.5.129" codeSystemName="SpecimenType" displayName="Whole blood" />
+                        <code code="CAMPIONE.M055" codeSystem="2.16.840.1.113883.2.9.2.30.3.1.20.6.1.111.150"/>
                       </specimenPlayingEntity>
                     </specimenRole>
                   </specimen>
                   <entryRelationship typeCode="COMP">
-                    <organizer classCode="BATTERY" moodCode="EVN">
-                      <code code="G020" codeSystem="2.16.840.1.113883.2.9.2.30.3.1.20.6.1.111.100" codeSystemName="VITALSW" displayName="HLA-B[Type]" />
+                    <organizer classCode="CLUSTER" moodCode="EVN">
+                      <code code="M055" codeSystem="2.16.840.1.113883.2.9.2.30.3.1.20.6.1.111.100" codeSystemName="VITALSW" displayName="BATTERIOLOGICO TAMP. NASALE DX :" />
                       <statusCode code="completed" />
-                      <component typeCode="COMP">
-                        <observation classCode="OBS" moodCode="EVN">
-                          <code code="13299-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HLA-B[Type]" />
+                      <effectiveTime value="20250410175502+0200" />
+                      <specimen typeCode="SPC">
+                        <specimenRole>
+                          <id root="2.16.840.1.113883.2.9.2.111.4.21" extension="VITALSW.GERME.M055" />
+                          <specimenPlayingEntity classCode="MIC" determinerCode="INSTANCE">
+                            <code code="GERME.FUORI.M055" codeSystem="2.16.840.1.113883.2.9.2.30.3.1.20.6.1.111.400" codeSystemName="VITALSW" displayName="BATTERIOLOGICO TAMP. NASALE DX :" />
+                          </specimenPlayingEntity>
+                        </specimenRole>
+                      </specimen>
+                      <component>
+                        <organizer classCode="BATTERY" moodCode="EVN">
+                          <code code="M055" codeSystem="2.16.840.1.113883.2.9.2.30.3.1.20.6.1.111.100" codeSystemName="VITALSW" />
                           <statusCode code="completed" />
-                          <effectiveTime value="20250522111011+0200" />
-                          <value xsi:type="ST">Negativo</value>
-                          <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" codeSystemName="ObservationInterpretation" displayName="N" />
-                          <methodCode code="0033" codeSystem="2.16.840.1.113883.5.84" codeSystemName="ObservationMethod" displayName="Polimerase Chain Reaction e Reverse Dot Blot" />
-                        </observation>
+                          <effectiveTime value="20250410175503+0200" />
+                          <component>
+                            <observation classCode="OBS" moodCode="EVN">
+                              <code code="BATTERIOLOGICO_TAMP._NASALE_DX_:" codeSystem="2.16.840.1.113883.2.9.2.30.3.1.20.6.1.111.300" codeSystemName="VITALSW" displayName="BATTERIOLOGICO TAMP. NASALE DX :" />
+                              <statusCode code="completed" />
+                              <effectiveTime value="20250410175503+0200" />
+                              <value xsi:type="ST">L'esame ha dato luogo allo sviluppo del seguente microrganismo:</value>
+                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" codeSystemName="ObservationInterpretation" displayName="N" />
+                              <methodCode code="0037" codeSystem="2.16.840.1.113883.5.84" codeSystemName="ObservationMethod" displayName="Colturale" />
+                            </observation>
+                          </component>
+                          <component>
+                            <observation classCode="OBS" moodCode="EVN">
+                              <code code="GERME_1" codeSystem="2.16.840.1.113883.2.9.2.30.3.1.20.6.1.111.300" codeSystemName="VITALSW" displayName="GERME 1" />
+                              <statusCode code="completed" />
+                              <effectiveTime value="20250410175503+0200" />
+                              <value xsi:type="ST">STAPHYLOCOCCUS AUREUS</value>
+                              <interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" codeSystemName="ObservationInterpretation" displayName="N" />
+                              <methodCode code="0037" codeSystem="2.16.840.1.113883.5.84" codeSystemName="ObservationMethod" displayName="Colturale" />
+                            </observation>
+                          </component>
+                        </organizer>
                       </component>
                     </organizer>
                   </entryRelationship>
@@ -259,12 +303,6 @@ stream
                       <code code="48767-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Annotazioni e commenti" />
                       <text>...<reference value="#n1" /></text>
                     </act>
-                  </entryRelationship>
-                  
-                  <entryRelationship typeCode="COMP">
-                    <procedure classCode="PROC" moodCode="EVN">
-                      <targetSiteCode code="T-D8200" codeSystem="2.16.840.1.113883.6.96" displayName="Abdomen" />
-                    </procedure>
                   </entryRelationship>
                 </act>
               </entry>
@@ -279,7 +317,7 @@ endstream
 endobj
 13 0 obj
 <<
-/Size 9096
+/Size 11732
 >>
 endobj
 xref
@@ -297,13 +335,13 @@ xref
 0000000729 00000 n
 0000000761 00000 n
 0000000861 00000 n
-0000010075 00000 n
+0000012712 00000 n
 trailer
 <<
 /Root 1 0 R
-/ID [<5998D9049E9C4C105B26251051CBE03E> <5998D9049E9C4C105B26251051CBE03E>]
+/ID [<A4823C8973D8500B4FACA18B4A59F842> <A4823C8973D8500B4FACA18B4A59F842>]
 /Size 14
 >>
 startxref
-10108
+12746
 %%EOF
