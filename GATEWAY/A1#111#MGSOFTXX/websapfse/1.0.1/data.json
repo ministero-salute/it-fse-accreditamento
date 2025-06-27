@@ -6,58 +6,44 @@
     [
        {
         "id":417,
-        "ts":"2025-06-24T05:54:45.3769959Z",
-        "traceID":"a96f2a5dbba491c2d4880c52abcb24b3",
-        "spanID":"c84c9e71abc0e42f",
-        "workflowInstanceId":"2.16.840.1.113883.2.9.4.3.2.3e05c26b4c84205b037d4a52adbeb75980db08e9eefbde326335effc5e3ba8c7.80ab0fb359^^^^urn:ihe:iti:xdw:2013:workflowInstanceId",
+       "ts": "2025-06-27T09:23:32.5326369Z",
+        "traceID":"d3c8e2f89806d3d482be250acb9ce2fe",
+        "spanID":"6f8d3f0dbd0a3aad",
+        "workflowInstanceId":"2.16.840.1.113883.2.9.4.3.2.3e05c26b4c84205b037d4a52adbeb75980db08e9eefbde326335effc5e3ba8c7.5cb1b76972^^^^urn:ihe:iti:xdw:2013:workflowInstanceId",
         "files":
         [
-          "Referto_8054_con_CDA(1).pdf"
+          "Referto_21923_con_CDA (3).pdf"
         ]  
       }
-      ,
-      {
-        "id":418,
-        "ts":"2025-06-24T06:04:22.3811929Z",
-        "traceID":"231f74c9af7b9a83aac894672dba3f94",
-        "spanID":"a0d0632b4e6f95d1",
-        "workflowInstanceId":"2.16.840.1.113883.2.9.4.3.2.3e05c26b4c84205b037d4a52adbeb75980db08e9eefbde326335effc5e3ba8c7.12d35f3b49^^^^urn:ihe:iti:xdw:2013:workflowInstanceId",
-        "files":
-        [
-          "Referto_8054_con_CDA(2).pdf"
-        ]  
-      },
-      {
-        "id":419,
-        "ts": "2025-06-24T07:45:55.3894454Z",	
-        "traceID":"c7872084cb1bda23b068098514390963",
-        "spanID":"f42d2917c29bdcd6",
-        "workflowInstanceId":"2.16.840.1.113883.2.9.4.3.2.3e05c26b4c84205b037d4a52adbeb75980db08e9eefbde326335effc5e3ba8c7.72a7e088c7^^^^urn:ihe:iti:xdw:2013:workflowInstanceId",
-        "files":
-        [
-          "Referto_8054_con_CDA(3).pdf"
-        ]  
-      },      
+      ,      
       {
         "id":423,
-        "ts":"2025-06-24T06:22:13.2915679Z",
-        "traceID":"6bf20afea91f0a1b50ced9cdb9818df7",
-        "spanID":"8b240c21ad9a4698",
+        "ts": "2025-06-27T12:05:33.8711503Z",	
+        "traceID":"2495540f9334c834ea7fda36444d5048",
+        "spanID":"5772b4c08c7d8553",
+        "type":"/msg/jwt-validation",
+        "title":"Campo token JWT non valido.",
+        "detail":"Il campo purpose_of_use non è valorizzato",
+        "status":403,"instance":"/jwt-mandatory-field-missing",
         "workflowInstanceId":"UNKNOWN_WORKFLOW_ID",
         "files":
         [
-          "Referto_8054_con_CDA_KO_TEST_423.pdf"
+          "Referto_21924_con_CDA_KO_423.pdf"          
         ]  
       },
         {
-        "id":424,
-        "ts":"2025-06-24T07:18:03.3382061Z",
-        "traceID":"7227db003c8e4cda6045956505cb8d49",
-        "spanID":"ee88d3119b2a3017",
-        "workflowInstanceId":"UNKNOWN_WORKFLOW_ID",
+          "id": 424
+          "ts": "2025-06-27T12:32:22.7643981Z",
+          "traceID":"110197f55bd529cb85cc641a770db8ae",
+          "spanID":"aa714e3e63488fe0",
+          "type":"/msg/jwt-validation",
+          "title":"Campo token JWT non valido.",
+          "detail":"Il campo action_id non è corretto",
+          "status":403,"instance":"/jwt-mandatory-field-malformed",
+          "workflowInstanceId":"UNKNOWN_WORKFLOW_ID",
         "files":
         [
-          "Referto_8054_con_CDA_KO_TEST_424.pdf"
+          "Referto_21923_con_CDA_KO_424.pdf"
         ]  
       },
       {
@@ -70,50 +56,63 @@
         [
           "Referto_8054_con_CDA.pdf"
         ]  
-      },
+      },      
       {
-        "id":432,
-        "ts":"2025-06-25T07:41:24.1233959Z",
-        "traceID":"2b5d5073de26ffbb20d350da13e2d8f4",
-	      "spanID":"5c453d5cdf9559d2",
-	      "type":"/msg/vocabulary",
-	      "title":"Errore vocabolario.",
-	      "detail":"Almeno uno dei seguenti vocaboli non è censito: [CodeSystem: 2.16.840.1.113883.6.1 v2.80, Codes: 15824419-4]",
-	      "status":400,"instance":"/validation/error",
-        "workflowInstanceId":"2.16.840.1.113883.2.9.4.3.2.3e05c26b4c84205b037d4a52adbeb75980db08e9eefbde326335effc5e3ba8c7.830be2060a^^^^urn:ihe:iti:xdw:2013:workflowInstanceId",
+        "id": 432,
+        "ts": "2025-06-27T12:45:28.910284Z",
+        "traceID":"4ffd81b6f4a7564081c955fc42e1f2be",
+        "spanID":"fa5b0ef42134605e",
+        "type":"/msg/semantic",
+        "title":"Errore semantico.",
+        "detail":"[ERRORE-b48| Il codice '1522635-7' non è corretto. L'elemento code della section DEVE essere valorizzato con uno dei seguenti codici LOINC individuati:\n\t\t\t\t22636-5 NOTIZIE CLINICHE\n\t\t\t\t29300-1 PROCEDURA\n\t\t\t\t22634-0 OSSERVAZIONE MACROSCOPICA\n\t\t\t\t22635-7\tOSSERVAZIONE MICROSCOPICA\n\t\t\t\t33755-0 STATO DEL MARGINE\n\t\t\t\t22639-9 ANALISI SUPPLEMENTARI DEI CAMPIONI\n\t\t\t\t85691-4 EPICRISI\n\t\t\t\t22637-3 DIAGNOSI\n\t\t\t\t62385-0 ULTERIORI ACCERTAMENTI DIAGNOSTICI\n\t\t\t]",
+        "status":422,
+        "instance":"/validation/error",
+        "workflowInstanceId":"2.16.840.1.113883.2.9.4.3.2.3e05c26b4c84205b037d4a52adbeb75980db08e9eefbde326335effc5e3ba8c7.bfe48c5d7b^^^^urn:ihe:iti:xdw:2013:workflowInstanceId",
         "files":
         [
-          "Referto_8054_con_CDA (6).pdf"
+          "Referto_21923_con_CDA_KO_432.pdf"
         ]  
       },      
       {
         "id":434,
-        "ts": "2025-06-25T08:12:40.7157033Z",
-        "traceID":"9c522b0ab6fa06a4acf8cc1ec5fc4b11",
-        "spanID":"ea061d42206c75a4",
+        "ts": "2025-06-27T13:15:56.3394214Z",
+        "traceID":"9d6de24a9106f319a49c092463b711be",
+        "spanID":"9d602ade5ed41d01",
         "type":"/msg/semantic",
         "title":"Errore semantico.",
         "detail":"[ERRORE-45| L'elemento 'id' deve contenere gli attributi @root ed @extension valorizzati.]",
         "status":422,"instance":"/validation/error",
-        "workflowInstanceId":"2.16.840.1.113883.2.9.4.3.2.3e05c26b4c84205b037d4a52adbeb75980db08e9eefbde326335effc5e3ba8c7.30c94ac586^^^^urn:ihe:iti:xdw:2013:workflowInstanceId",
+        "workflowInstanceId":"2.16.840.1.113883.2.9.4.3.2.3e05c26b4c84205b037d4a52adbeb75980db08e9eefbde326335effc5e3ba8c7.0c9464f96b^^^^urn:ihe:iti:xdw:2013:workflowInstanceId",
         "files":
         [
-          "Referto_8054_con_CDA (10).pdf"
+          "Referto_21924_con_CDA_KO_434.pdf"
         ]  
       },
-            {
+      {
         "id":443,
-        "ts": "2025-06-25T08:12:40.7157033Z",
-        "traceID":"9c522b0ab6fa06a4acf8cc1ec5fc4b11",
-        "spanID":"ea061d42206c75a4",
+        "ts": "2025-06-27T13:32:44.4843036Z",
+        "traceID":"2705fc12f62cb6de4923da95c4c35caf",
+        "spanID":"8ad718541180514f",
         "type":"/msg/semantic",
         "title":"Errore semantico.",
-        "detail":"[ERRORE-45| L'elemento 'id' deve contenere gli attributi @root ed @extension valorizzati.]",
-        "status":422,"instance":"/validation/error",
-        "workflowInstanceId":"2.16.840.1.113883.2.9.4.3.2.3e05c26b4c84205b037d4a52adbeb75980db08e9eefbde326335effc5e3ba8c7.30c94ac586^^^^urn:ihe:iti:xdw:2013:workflowInstanceId",
+        "detail":"[ERRORE-45| L'elemento 'id' deve contenere gli attributi @root ed @extension valorizzati.],[ERRORE-b169| Sezione Procedura: l'elemento entry/procedure/entryRelationship/supply deve contenere l'elemento id.]",
+        "status":422,
+        "instance":"/validation/error",
+        "workflowInstanceId":"2.16.840.1.113883.2.9.4.3.2.3e05c26b4c84205b037d4a52adbeb75980db08e9eefbde326335effc5e3ba8c7.e104b79fb7^^^^urn:ihe:iti:xdw:2013:workflowInstanceId",
         "files":
         [
           "Referto_8054_con_CDA_KO_TEST_443.pdf"
+        ]  
+      },
+       {
+        "id":460,       
+        "ts": "2025-06-27T11:56:19.802734Z",
+        "traceID":"42b39d1d23e5e0ffacced7ccf1524209",
+        "spanID":"7c823224bcf94f61",
+        "workflowInstanceId":"2.16.840.1.113883.2.9.4.3.2.3e05c26b4c84205b037d4a52adbeb75980db08e9eefbde326335effc5e3ba8c7.ede50334b6^^^^urn:ihe:iti:xdw:2013:workflowInstanceId",
+        "files":
+        [
+          "Referto_21924_con_CDA.pdf"
         ]  
       }
     ]    
