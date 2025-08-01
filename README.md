@@ -1,7 +1,7 @@
-# Accreditamento FSE 2.0 (DRAFT)
+# Accreditamento FSE 2.0
 Questo repository raccoglie i risultati dei test effettuati per l'accreditamento dei software con il sistema FSE 2.0
 
-- [Accreditamento FSE 2.0 (DRAFT)](#accreditamento-fse-20-draft)
+- [Accreditamento FSE 2.0](#accreditamento-fse-20)
 	- [Procedura di caricamento dei risultati](#procedura-di-caricamento-dei-risultati)
 		- [Struttura dei risultati (data.json)](#struttura-dei-risultati-datajson)
 		- [File riassuntivo (report-checklist.xlsx)](#file-riassuntivo-report-checklistxlsx)
@@ -103,6 +103,18 @@ Il file riassuntivo deve essere composto a partire dalla [check list](Test%20Cas
 Il file modificato dovrà contenere solo i test individuati da *tipo documento* e *servizio* oggetto dell'accreditamento.
 
 Il file `report-checklist.xlsx` andrà caricato nella *directory di sottomissione*.
+
+Si riporta di seguito il changelog delle modifiche introdotte sul file report-checklist in ottemperanza a quanto espresso dal Decreto settembre 2023: 
+
+| Versione checklist| Data rilascio      | CDA adeguato                                          | Test case obbligatorio da decreto                           |
+|-------------------|------------------- |-------------------------------------------------------|-------------------------------------------------------------|
+| 8.2.0		    | 12/06/2024         | PSS                                                   |		444		                               |
+| 8.2.1		    | 19/07/2024         | RAP, RAD                                              |         417, 446                                            |
+| 8.2.2             | 04/12/2024         | RAP                                                   |         417, 418, 460                                       |
+| 8.2.3             | 14/02/2025  	 | RSA, LDO, LAB, VPS, CERT_VAC, SING_VAC                | 448, 450, 452, 454, 456, 457, 458                           |
+| 8.2.4             | 05/03/2025  	 | RSA, LDO, LAB, VPS, CERT_VAC, SING_VAC, RAD, PSS, RAP | 448, 450, 452, 454, 456, 457, 458                           |
+| 8.2.5             | 28/03/2025  	 | RSA, LDO, LAB, VPS, CERT_VAC, SING_VAC, RAD, PSS, RAP | 448, 450, 452, 454, 456, 457, 458, 471, 444, 417, 418, 460  |
+| 8.2.6             | 14/05/2025  	 | RSA, LAB, RAD 					 | 448, 450, 452, 454, 456, 457, 458, 471, 444, 417, 418, 460  |
 
 ### Pull request
 Per inviare i risultati sarà quindi necessario fare un pull request.  

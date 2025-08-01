@@ -953,7 +953,7 @@
 					<component typeCode="COMP">
 						<section ID="Precedenti_trattamenti_e_procedure_chirurgiche_e_diagnostiche_pregresse" classCode="DOCSECT" moodCode="EVN">
 							<templateId root="2.16.840.1.113883.3.1937.777.63.10.180"/>
-							<code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Storia di Procedure"/>							<text>
+							<code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of procedures"/>							<text>
 								Appendicectomia
 							</text> 
 							<author typeCode="AUT" contextControlCode="OP">
@@ -1148,6 +1148,7 @@
 								<observation classCode="OBS" moodCode="EVN">
 									<templateId root="2.16.840.1.113883.3.1937.777.63.10.150"/>
 									<code code="66746-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Tipo campione"/>
+									<statusCode code="completed"/>
 									<value xsi:type="CD" code="256865009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED" displayName="Brain Tissue"/>
 									<targetSiteCode code="4870002" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED" displayName="Dorsal tegmental nuclei of midbrain"/>
 									<specimen typeCode="SPC">
@@ -1636,39 +1637,6 @@
 				</section>
 			</component>
 			
-			<!--Epicrisi-->
-			<component typeCode="COMP">
-				<section ID="Epicrisi">
-					<templateId root="2.16.840.1.113883.3.1937.777.63.10.211"/>
-					<code code="85691-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Risultato dell'autopsia Narrativa"/>
-					<title>Epicrisi</title>
-					<text>
-						[NARRATIVE_BLOCK]
-					</text>
-					<author typeCode="AUT" contextControlCode="OP">
-						<time value="20220419101010+0100"/>
-						<assignedAuthor>
-							<id root="2.16.840.1.113883.2.9.4.3.2" extension="PROVAX00X00X000Y" assigningAuthorityName="Ministero Economia e Finanze"/>
-							<assignedPerson classCode="PSN" determinerCode="INSTANCE">
-								<name>
-									<prefix>Dott.</prefix>
-									<family>Prova</family>
-									<given>GIUSEPPE</given>
-								</name>
-							</assignedPerson>
-						</assignedAuthor>
-					</author>
-					<entry>
-						<act classCode="ACT" moodCode="EVN">
-							<templateId root="2.16.840.1.113883.3.1937.777.63.10.279"/>
-							<code code="48767-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Annotazioni e Commenti"/>
-							<text>
-								[Annotazioni e Commenti]
-							</text>
-						</act>
-					</entry>
-				</section>
-			</component>
 			
 			<!--Diagnosi-->
 			<component typeCode="COMP">
@@ -1922,7 +1890,7 @@
 				</section>
 			</component>
 			
-			<!--Commenti e conclusioni-->
+			<!--Ulteriori Accertamenti Diagnostici-->
 	
 			<component typeCode="COMP">
 				<section ID="Ulteriori_Accertamenti_Diagnostici" classCode="DOCSECT" moodCode="EVN">

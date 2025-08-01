@@ -143,12 +143,7 @@
 			</associatedPerson>
 		</associatedEntity>
 	</participant>	
-	<!--relatedDocument typeCode="RPLC">
-		<parentDocument>
-			<id root="2.16.840.1.113883.2.9.2.120.4.4" extension="030702.LCNLDE90L47H501Q.20220520112426.Q123E446" assigningAuthorityName="Regione Lazio"/>
-			<versionNumber value="1"/> 
-		</parentDocument> 
-	</relatedDocument-->
+
 	
 <!--VACCINAZIONI BODY CDA2-->
 
@@ -171,12 +166,12 @@
 							<effectiveTime value="20220330101000+0100"/>
 							<routeCode code="IABDINJ" codeSystem="2.16.840.1.113883.5.112" codeSystemName=" HL7 RouteOfAdministration" displayName="Injection, intra-abdominal"/>
 							<approachSiteCode code="LA" codeSystem="2.16.840.1.113883.5.1052" codeSystemName="ActSite" displayName="left arm"/>
-							<doseQuantity value="20" unit="mL"/>
+							<doseQuantity value="20" unit="mL"/> 
 							<consumable typeCode="CSM">
 								<manufacturedProduct>
 									<manufacturedMaterial>
 										<code code="035606033" codeSystem="2.16.840.1.113883.2.9.6.1.5" codeSystemName="AIC" displayName="ARIXTRA*2,5MG/0,5MLSC 10SIR.">
-											<translation code="B01AX05" codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC" displayName="FONDAPARINUX"/>
+											<translation code="B01AX05" codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC" displayName="FONDAPARINUX"/> 
 										</code>
 										<lotNumberText>20</lotNumberText>
 									</manufacturedMaterial>
@@ -186,80 +181,66 @@
 									</manufacturerOrganization>
 								</manufacturedProduct>
 							</consumable>
-							<participant typeCode="LOC">
-								<participantRole classCode="ROL">
-									<id root="2.16.840.1.113883.2.9.4.1.2" extension="120148" assigningAuthorityName="Ministero della Salute"/>	
-								</participantRole>
-							</participant>
-							<!--numero di dose-->
-							<entryRelationship typeCode="SUBJ" inversionInd="true">  
+							<!--Numero di dose-->
+							<entryRelationship typeCode="SUBJ" inversionInd="true">
 								<observation classCode="OBS" moodCode="EVN">
-									<templateId root="2.16.840.1.113883.2.9.10.1.11.4.3"/> 
-									<code code="30973-2" displayName="Numero di dose" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/> 
-									<statusCode code="completed"/> 
-									<value xsi:type="INT" value="3"/> 
+									<templateId root="2.16.840.1.113883.2.9.10.1.11.4.3"/>
+									<code code="30973-2" displayName="Numero di dose" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+									<statusCode code="completed"/>
+									<value xsi:type="INT" value="3"/>
 								</observation>
 							</entryRelationship>
-							<!--periodo di copertura-->
+							<!--Periodo di copertura-->
 							<entryRelationship typeCode="REFR" inversionInd="false"> 
 								<observation classCode="OBS" moodCode="EVN"> 
 									<templateId root="2.16.840.1.113883.2.9.10.1.11.4.4"/> 
-									<code code="59778-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Date when overdue for immunization "/> 
+									<code code="59778-1" codeSystem="2.16.840.1.113883.4.642.3.308" codeSystemName="ImmunizationRecommendationDateCriterionCodes" displayName="Date when overdue for immunization"/>
 									<statusCode code="completed"/>
-									<value xsi:type="IVL_TS">
+									<value xsi:type="IVL_TS"> 
 										<high value="20220301221122+0100"/>
 									</value>
 								</observation>
 							</entryRelationship>
-							<!--schedulazione del prossimo vaccino-->
-							<entryRelationship typeCode="REFR" inversionInd="false"> 
-								<observation classCode="OBS" moodCode="EVN"> 
-									<templateId root="2.16.840.1.113883.2.9.10.1.11.4.4"/> 
-									<code code="30980-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Date vaccine due"/> 
-									<statusCode code="completed"/> 
-									<value xsi:type="TS" value="20220308221122+0100"/>
-								</observation>
-							</entryRelationship>
-							<!--categorie a rischio-->
+							<!--Categorie a rischio-->
 							<entryRelationship typeCode="RSON" inversionInd="false"> 
 								<observation classCode="OBS" moodCode="EVN"> 
 									<templateId root="2.16.840.1.113883.2.9.10.1.11.4.5"/>
 									<code codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" code="95715-9" displayName="Categorie a rischio"/>
 									<statusCode code="completed"/> 
-									<value xsi:type="CD" codeSystem="2.16.840.1.113883.2.9.6.1.56.2" codeSystemName="Categorie di Rischio" code="22" displayName="Viaggi all'estero"/>
+									<value xsi:type="CD" codeSystem="2.16.840.1.113883.2.9.6.1.56.2" codeSystemName="Categorie di Rischio" code="01" displayName="Nessuna Indicazione"/>
 								</observation>
 							</entryRelationship>
-							<!--condizioni sanitarie a rischio-->
+							<!--Condizioni sanitarie a rischio-->
 							<entryRelationship typeCode="RSON" inversionInd="false">    
 								<observation classCode="OBS" moodCode="EVN"> 
 									<templateId root="2.16.840.1.113883.2.9.10.1.11.4.6"/>
 									<code code="59785-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Indicazioni per la vaccinazione"/>
 									<statusCode code="completed"/> 
-									<value xsi:type="CD"  code="493.9" codeSystem="2.16.840.1.113883.6.103" displayName="bronchite asmatica (acuta)" codeSystemName="ICD-9CM (diagnosis codes)"> 
+									<value xsi:type="CD"  code="493.9" codeSystem="2.16.840.1.113883.6.103" displayName="bronchite asmatica (acuta)" codeSystemName="ICD-9CM (diagnosis codes)"> <!--Da eliminare?-->
 										<originalText> 
 											<reference value="#[REF_CONSRISK]"/> 
 										</originalText> 
 									</value> 
 								</observation>	
 							</entryRelationship>
-							<!--reazioni avverse-->
+							<!--Reazioni avverse-->
 							<entryRelationship typeCode="CAUS" inversionInd="false">   
 								<observation classCode="OBS" moodCode="EVN"> 
 									<templateId root="2.16.840.1.113883.2.9.10.1.11.4.8"/> 
-									<code code="31044-1" displayName="Immunization reaction" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/> 
+									<code code="31044-1" displayName="Reazione alla Vaccinazione" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/> 
 									<statusCode code="completed"/> 
 									<effectiveTime>
 										<low value="20220427101010+0100"/>
 										<high value ="20220506101010+0100"/>
 									</effectiveTime>
-									<value xsi:type="CD" code="692.3" codeSystem="2.16.840.1.113883.6.103" displayName="Dermatite da contatto con farmaci" codeSystemName="ICD-9CM (diagnosis codes)"> 
+									<value xsi:type="CD" code="692.3" codeSystem="2.16.840.1.113883.6.103" displayName="Dermatite da contatto con farmaci" codeSystemName="ICD-9CM (diagnosis codes)"> <!--Da eliminare?-->
 										<originalText>
 											<reference value="#[REF_REAZ]"/> 
 										</originalText>
 									</value>
 								</observation>
 							</entryRelationship>
-							<!--malattia per cui si effettua la vaccinazione-->
+							<!--Malattia per cui si effettua la vaccinazione-->
 							<entryRelationship typeCode="RSON" inversionInd="false"> 
 								<observation classCode="OBS" moodCode="EVN"> 
 									<templateId root="2.16.840.1.113883.2.9.10.1.11.4.9"/> 
@@ -274,76 +255,7 @@
 							</entryRelationship>
 						</substanceAdministration>
 					</entry>	
-					<!--dati esonero/omissione o differimento-->
-					<!--entry-->  
-						<!--substanceAdministration moodCode="EVN" classCode="SBADM">
-							<templateId root="2.16.840.1.113883.2.9.10.1.11.4.2"/>
-							<statusCode code="cancelled"/>
-							<effectiveTime value="20220410222222+0100"/>
-							<consumable typeCode="CSM">
-								<manufacturedProduct>
-									<manufacturedMaterial>
-										<code code="043348022" displayName="[DESC_AIC_VACC]" codeSystem="2.16.840.1.113883.2.9.6.1.5" codeSystemName="AIC">
-											<translation code="C08CA01" displayName="[DESC_ATC_VACC]" codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC"/>
-										</code>
-									</manufacturedMaterial>
-								</manufacturedProduct>
-							</consumable>
-							<participant typeCode="LOC">
-								<participantRole classCode="ROL">
-									<id root="XXX" extension="999999" assigningAuthorityName="[NOME_AUTHORITY]"/>
-								</participantRole>
-							</participant-->
-							<!--numero di dose-->
-							<!--entryRelationship typeCode="SUBJ" inversionInd="true">  
-								<observation classCode="OBS" moodCode="EVN">
-									<templateId root="2.16.840.1.113883.2.9.10.1.11.4.3"/> 
-									<code code="30973-2" displayName="Numero di dose" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/> 
-									<statusCode code="completed"/> 
-									<value xsi:type="INT" value="3"/> 
-								</observation>
-							</entryRelationship-->
-							<!--ragione esonero/omissione o differimento-->
-							<!--entryRelationship typeCode="RSON"> 
-								<observation classCode="OBS" moodCode="EVN">
-									<templateId root="2.16.840.1.113883.2.9.10.1.11.4.10"/>
-									<code code="85714-4" displayName="Motivo per cui non si è ricevuto vaccino" codeSystemName="HL7 ActNoImmunizationReason" codeSystem="2.16.840.1.113883.6.1"/>
-									<statusCode code="completed"/>
-									<effectiveTime>
-										<low value="20220425121122+0100"/>
-										<high value="20210707221122+0100"/>
-									</effectiveTime>
-									<value xsi:type="CD" code="427.89" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD-9CM" displayName="Bradicardia"/>
-								</observation>
-							</entryRelationship-->
-							<!--malattia con presunta immunità-->
-							<!--entryRelationship typeCode="RSON">
-								<observation classCode="OBS" moodCode="EVN"> 
-									<templateId root="2.16.840.1.113883.2.9.10.1.11.4.7"/>
-									<code code="59784-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Disease with presumed immunity"/>
-									<statusCode code="completed"/>
-									<value xsi:type="CD" code="403.9" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD-9CM" displayName="Nefropatia ipertensiva non specificata">
-										<originalText>
-											<reference value="#[REF_IMMUNE]"></reference>
-										</originalText>
-									</value>
-								</observation>
-							</entryRelationship-->	
-							<!--malattia per cui si effettua la vaccinazione-->
-							<!--entryRelationship typeCode="RSON" inversionInd="false"> 
-								<observation classCode="OBS" moodCode="EVN"> 
-									<templateId root="2.16.840.1.113883.2.9.10.1.11.4.9"/> 
-									<code code="75323-6" displayName="Condizione" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/> 
-									<statusCode code="completed"/> 
-									<value xsi:type="CD" code="99.45" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD-9CM" displayName="Morbillo">
-										<originalText>
-											<reference value="#[REF_MAL]"></reference>
-										</originalText>
-									</value>
-								</observation>
-							</entryRelationship>
-						</substanceAdministration>
-					</entry-->
+					
 				</section>
 			</component>
 		</structuredBody>
