@@ -1,0 +1,193 @@
+<xfa:datasets  xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"> 
+	<xfa:data> 
+<!--LDO header-->
+<ClinicalDocument xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdtc="urn:hl7-org:sdtc">
+	<realmCode code="IT"/>
+	<typeId root="2.16.840.1.113883.1.3" extension="POCD_MT000040UV02"/>
+	<templateId root="2.16.840.1.113883.2.9.10.1.5" extension="1.2"/>
+	
+	<id root="2.16.840.1.113883.2.9.2.120.4.4" extension="030702.LCNLDE90L47H501Q.20220420112426.Q123E456" assigningAuthorityName="Regione Lazio"/>
+	
+	<code code="34105-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Lettera di dimissione ospedaliera"/>
+	
+	<!-- Data creazione lettera  (ultimi 5 sono ore +/- rispetto al tempo di Greenwich, va cambiato se ora legale -->
+	<effectiveTime value="20220417100000+0100"/>
+	
+	<!--<confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" codeSystemName="Confidentiality"/> -->
+	<languageCode code="it-IT"/>
+	
+	<setId root="2.16.840.1.113883.2.9.2.99.4.4" extension="030702.LCNLDE90L47H501Q.20220420112426.Q123E456" assigningAuthorityName="Regione Lazio"/>
+	<versionNumber value="1"/>
+	
+	<recordTarget>
+		<patientRole>
+			<id root="2.16.840.1.113883.2.9.4.3.2" extension="GTWGWY82B42G920M" assigningAuthorityName="MEF"/>
+			
+			<patient>
+				<name>
+					<family>Rossi</family>
+					<given>Guido</given>
+				</name>
+				<administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" codeSystemName="HL7 AdministrativeGender" displayName="Maschio" />
+				<birthTime value="19800329"/>
+				<birthplace>
+					<place>
+						<addr>
+							<city>Cirie</city>
+							<censusTract>001086</censusTract>
+						</addr>
+					</place>
+				</birthplace>
+			</patient>
+		</patientRole>		
+	</recordTarget>
+	<!-- Creatore del documento -->
+	<author>
+		<time value="20220417093000+0100"/>
+		<assignedAuthor>
+			<id root="2.16.840.1.113883.2.9.4.3.2" extension="BNDGLL62C11H501G" assigningAuthorityName="MEF"/>
+			<!-- Email + Pec + Telefono -->
+			<telecom use="HP" value="mailto:prova.provax@example.com"/> 
+			<telecom use="WP" value="mailto:prova.provax@example.com"/> 
+			<telecom use="MC" value="tel:3340000000"/>
+			<assignedPerson>
+				<name>
+					<family>Cervone</family>
+					<given>Matteo</given>
+					<prefix>Dott.</prefix>
+				</name>
+			</assignedPerson>
+		</assignedAuthor>
+	</author>
+	<!-- Trascrittore della lettera se diversa da Autore -->
+	<dataEnterer>
+		<time value="20220417093500+0100"/>
+		<assignedEntity>
+			<id root="2.16.840.1.113883.2.9.4.3.2" extension="CODICE FISCALEEE" assigningAuthorityName="MEF"/>
+			<assignedPerson>
+				<name>
+					<family>Palla</family>
+					<given>Pinca</given>					
+					<suffix>Segretaria</suffix>
+				</name>
+			</assignedPerson>
+		</assignedEntity>
+	</dataEnterer>
+	<!-- Organizzazione che custodisce la lettera -->
+	<custodian>
+		<assignedCustodian>
+			<representedCustodianOrganization>
+				<!-- La custodia è della struttura e in extension ci va codice struttura in HSP11 -->
+				<id root="2.16.840.1.113883.2.9.4.1.2" extension="130106" assigningAuthorityName="Ministero della Salute"/>
+				<name>ASL Roma1</name>
+			</representedCustodianOrganization>	
+		</assignedCustodian>
+	</custodian>
+	<!-- Firmatario della lettera -->
+	<legalAuthenticator>
+		<time value="20220417093500+0100"/>
+		<signatureCode code="S"/>
+		<assignedEntity>
+			<id root="2.16.840.1.113883.2.9.4.3.2" extension="CODICE FISCALEEE" assigningAuthorityName="MEF"/>
+			<assignedPerson>
+				<name>
+					<family>Silviani</family>
+					<given>Paola</given>	
+				</name>
+			</assignedPerson>
+		</assignedEntity>
+	</legalAuthenticator>
+	
+	<componentOf>
+		<!-- Sono i dati del ricovero -->
+		<encompassingEncounter>
+			<id root="2.16.840.1.113883.2.9.2.120103.4.6" extension="NUMERO NOSOLOGICO" assigningAuthorityName="NOME AZIENDA"/>
+			<effectiveTime>
+				<!-- Data inizio e fine ricovero -->
+				<low value="20220317000000+0100"/>
+				<high value="20220417100000+0100"/>
+			</effectiveTime>
+			<location>
+				<!-- Unità operativa che ha dimesso il paziente-->
+				<healthCareFacility>
+					<!-- extension= codice struttura + sub codice struttura + codice disciplina -->
+					<id root="2.16.840.1.113883.2.9.4.1.6" extension="120103.XX.49" assigningAuthorityName="Ministero della Salute"/>
+					<serviceProviderOrganization>
+						<id root="2.16.840.1.113883.2.9.4.1.2" extension="120103.XX" assigningAuthorityName="Ministero della Salute"/>
+						<name>Ospedale Sant'Eugenio</name>
+						<!-- Azienda sanitaria in cui è avvenuto il ricovero -->
+						<asOrganizationPartOf>
+							<id root="2.16.840.1.113883.2.9.4.1.1" extension="120103" assigningAuthorityName="Ministero della Salute"/>
+						</asOrganizationPartOf>
+					</serviceProviderOrganization>
+				</healthCareFacility>
+			</location>	
+		</encompassingEncounter>
+	</componentOf>
+	
+	
+	<!--Body LDO-->
+	
+	<component>
+		<structuredBody moodCode="EVN" classCode="DOCBODY">
+			<component typeCode="COMP">
+				<section ID="Motivo_del_Ricovero">
+					<code code="46241-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnosi di accettazione"/>
+					<title>Motivo del ricovero</title>
+					<text>
+						<list>
+							<item>
+								<content ID="DIAG-1">Disturbo di panico</content>
+							</item>
+							<item>
+								<content ID="DIAG-2">Ipertiroidismo</content>
+							</item>	
+						</list>
+					</text>
+				</section>
+			</component>
+			<component typeCode="COMP">
+				<section ID="Decorso_Ospedaliero">
+					<code code="8648-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Decorso Ospedaliero"/>
+					<title>Decorso Ospedaliero</title>
+					<text>
+						<paragraph>
+							Il paziente giungeva alla nostra attenzione sintomatico per 
+							scompenso cardiaco acuto. Durante il ricovero è stato ottenuto un 
+							ripristino dello stato di compenso emodinamico mediante trattamento 
+							farmacologico intensivo. 
+						</paragraph>
+					</text>
+				</section>
+			</component>
+			
+			<component typeCode="COMP">
+				<section ID="CONDIZIONI_PAZIENTE_DIAGNOSI_DIMISSIONE">
+					<code code="11535-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnosi di Dimissione"/>
+					<title>Condizioni del paziente e diagnosi alla dimissione</title>
+					<text>
+						Paziente in cattivo compenso emodinamico per insufficenza della Valvola 
+						Aortica di grado severo. Non in grado di deambulare correttamente, 
+						necessita di sedia a rotelle in ore serali. Si segnala inizio di sindrome 
+						paranoica e COPD.
+					</text>
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<code code="8651-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnosi di Dimissione"/>
+							<value xsi:type="CD" code="428.0" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9CM" displayName="Insufficienza cardiaca">
+								<!-- Non obbligatorio -->
+								<translation code="67502-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Cardiac arrest"/>
+								
+							</value>
+						</observation>
+					</entry>
+				</section>
+			</component>
+
+		</structuredBody>
+	</component>
+</ClinicalDocument>
+    </xfa:data> 
+</xfa:datasets>
+
+	
