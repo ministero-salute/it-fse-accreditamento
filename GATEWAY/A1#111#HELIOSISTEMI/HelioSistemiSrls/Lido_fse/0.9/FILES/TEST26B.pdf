@@ -40,8 +40,7 @@ endobj
 /Filter /FlateDecode
 >>
 stream
-xœ-=Â0E÷üŠ‹S+¢i°Šİü*„¾ÁÁ%šW[µI1éà¿·ˆË…3œÃİ˜å	ªD2Ÿ¦ £P)–R‚Œˆ¨n<¼n»£j†ğÎ–ß:°ÁõƒQ^*œv9
-ıä7.QÕµ—xg3Î¢äj)3¹ÈæKl÷%AI•Æ ‡ ±ˆÖw|5C‡ ouË6ø	>®‡¯]ÿ2¨\o4¶»5ÎÅñÅ>Íô—Ú“øˆ;è
+xœ-M‚@„ïû+†NQë–DŞú£ ÷ĞÁËÖ¾¦•«¸ëÁŸD—gfKb„(árR¡"¬¤PQ:8]5F^1Ô'[nµgƒ{QrU¸ìœô›[dAŞTÙx„ÚÆHÚç‡‡\ Œbµ•Äîp%(©¢1è%h"‚£u”/Ú{ı(*¶ŞMÑ×\Qwƒ¼î¬Æn¿Áí”ş¯Ø×°c3û©$¾w;×
 endstream
 endobj
 7 0 obj
@@ -76,7 +75,7 @@ endobj
 endobj
 12 0 obj
 <<
-/Length 22645
+/Length 23715
 /Type /EmbeddedFile
 /Subtype /application#2Fxml
 /Params 13 0 R
@@ -372,7 +371,7 @@ stream
 						</organizer>
 					</entry>
 					<component typeCode="COMP">
-						<section ID="ALLERGIE">
+						<section ID="Allergie">
 							<code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergie e/o reazioni avverse"/>
 							<title>Allergie</title>
 							<text>
@@ -389,7 +388,7 @@ stream
 									</effectiveTime>
 									<entryRelationship typeCode="SUBJ">
 										<observation classCode="OBS" moodCode="EVN">
-											<code code="52473-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergie o causa della reazione"/>
+											<code code="52473-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergia o causa della reazione"/>
 											<text>
 												<reference value="#[REF_NOTA1]"/>
 											</text>
@@ -456,7 +455,6 @@ stream
 													<statusCode code="completed"/>
 												</act>
 											</entryRelationship>
-											
 										</observation>
 									</entryRelationship>															
 								</act>
@@ -465,7 +463,6 @@ stream
 					</component>
 				</section>	
 			</component>
-			
 			<component typeCode="COMP">
 				<section ID="PRECEDENTI_ESAMI_ESEGUITI">
 					<code code="55114-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Precedente procedura di imaging, descrizioni"/>
@@ -568,23 +565,47 @@ stream
 			</component>
 			<component typeCode="COMP">
 				<section ID="Informazioni_Aggiuntive">
-					<code code="55107-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Conclusioni"/>
+					<code code="55107-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Appendice"/>
 					<title>Informazioni Aggiuntive</title>
 					<text>
 						<paragraph>
-							nessuna.
+							Si consiglia di rimuovere la medicazione entro 3 giorni e di non sottoporre l'arto a sforzo.
 						</paragraph>
 					</text>
 				</section>	
 			</component>
-			
 			<component typeCode="COMP">
-				<section ID="SUGGERIMENTI_MEDICO_PRESCRITTORE">
+				<section ID="COMPLICANZE">
+					<code code="55109-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Complicazioni"/>
+					<title>Complicanze</title>
+					<text>
+						<paragraph>
+							Dopo la somministrazione del mezzo di contrasto, il paziente ha manifestato una evidente reazione allergica
+						</paragraph>
+					</text>
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<code code="75326-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem"/>
+							<effectiveTime>
+								<low value="20170101090000+0200"/>
+								<high value="20170101103000+0200"/>
+							</effectiveTime>
+							<value xsi:type="CD">
+								<originalText>
+									<reference value="#[Ref_nota]"/>
+								</originalText>
+							</value>
+						</observation>
+					</entry>
+				</section>
+			</component>
+			<component typeCode="COMP">
+				<section ID="Suggerimenti_per_il_medico_prescrittore">
 					<code code="18783-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Raccomandazione studio - Radiologia"/>
 					<title>Suggerimenti per il medico prescrittore</title>
 					<text>
 						<paragraph>
-							
+						Si consiglia un approfondimento istologico al fine di definire la natura della lesione	
 						</paragraph>
 					</text>	
 				</section>
@@ -596,7 +617,7 @@ endstream
 endobj
 13 0 obj
 <<
-/Size 22645
+/Size 23715
 >>
 endobj
 xref
@@ -614,13 +635,13 @@ xref
 0000000729 00000 n
 0000000761 00000 n
 0000000861 00000 n
-0000023625 00000 n
+0000024695 00000 n
 trailer
 <<
 /Root 1 0 R
-/ID [<81029B477E4CD3C8137D652DDD342495> <81029B477E4CD3C8137D652DDD342495>]
+/ID [<4DD55FD081466AC0F860FE4537232A52> <4DD55FD081466AC0F860FE4537232A52>]
 /Size 14
 >>
 startxref
-23659
+24729
 %%EOF
