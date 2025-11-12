@@ -70,7 +70,7 @@ endobj
 9 0 obj
 <<
 /Type /EmbeddedFile
-/Length 14217
+/Length 18310
 >>
 stream
 <?xml version="1.0" encoding="UTF-8"?>
@@ -84,7 +84,7 @@ stream
     <templateId root="2.16.840.1.113883.2.9.10.1.1" extension="1.1"/>
     
     <!-- ID Documento -->
-    <id root="2.16.840.1.113883.2.9.2.120.4.4" extension="d0795319-a6e1-4fef-ac24-6a7e636f1a66"/>
+    <id root="2.16.840.1.113883.2.9.2.120.4.4" extension="f1ba0a8e-12df-4032-93f9-f6f43373aa04"/>
     
     <!-- Tipo documento (LOINC) -->
     <code code="11502-2" 
@@ -93,10 +93,10 @@ stream
           displayName="Referto di laboratorio"/>
     
     <!-- Titolo -->
-    <title>Referto Esami di Laboratorio</title>
+    <title>Referto Medicina Trasfusionale - HLA</title>
     
     <!-- Data creazione -->
-    <effectiveTime value="20251112125924"/>
+    <effectiveTime value="20251112125934"/>
     
     <!-- Confidenzialità -->
     <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" 
@@ -106,41 +106,41 @@ stream
     <languageCode code="it-IT"/>
     
     <!-- Set ID e versione -->
-    <setId root="2.16.840.1.113883.2.9.2.120.4.4" extension="d0795319-a6e1-4fef-ac24-6a7e636f1a66"/>
+    <setId root="2.16.840.1.113883.2.9.2.120.4.4" extension="f1ba0a8e-12df-4032-93f9-f6f43373aa04"/>
     <versionNumber value="1"/>
     
     <!-- PAZIENTE -->
     <recordTarget>
         <patientRole>
             <!-- CF Paziente -->
-            <id root="2.16.840.1.113883.2.9.4.3.2" extension="CLMMRC82T20D612O" 
+            <id root="2.16.840.1.113883.2.9.4.3.2" extension="RSSMRA85M01H501Q" 
                 assigningAuthorityName="MEF"/>
             
             <!-- Indirizzo paziente -->
             <addr>
-                <streetAddressLine>Via Roma 10</streetAddressLine>
-                <city>Genova</city>
-                <state>GE</state>
+                <streetAddressLine>Via Roma 1</streetAddressLine>
+                <city>Aosta</city>
+                <state>AO</state>
                 <postalCode>11100</postalCode>
                 <country>IT</country>
             </addr>
             
             <!-- Recapiti -->
-            <telecom value="tel:+393401234567" use="HP"/>
+            
             
             <patient>
                 <name>
-                    <given>Marco</given>
-                    <family>Clementi</family>
+                    <given>Mario</given>
+                    <family>Rossi</family>
                 </name>
                 <administrativeGenderCode code="M" 
                                          codeSystem="2.16.840.1.113883.5.1"/>
-                <birthTime value="19821220"/>
+                <birthTime value="19850801"/>
                 <birthplace>
                     <place>
                         <addr>
-                            <city>Genova</city>
-                            <state>GE</state>
+                            <city>Roma</city>
+                            <state>RM</state>
                         </addr>
                     </place>
                 </birthplace>
@@ -150,13 +150,13 @@ stream
     
     <!-- AUTORE (Medico richiedente) -->
     <author>
-        <time value="20251112125924"/>
+        <time value="20251112125934"/>
         <assignedAuthor>
             <!-- CF Medico -->
             <id root="2.16.840.1.113883.2.9.4.3.2" extension="NREPLA70A01H501Z"
                 assigningAuthorityName="MEF"/>
             
-            <telecom value="tel:0165888999" use="WP"/>
+            <telecom value="tel:+39 0165 544001" use="WP"/>
             
             <assignedPerson>
                 <name>
@@ -167,11 +167,11 @@ stream
             
             <!-- Organizzazione -->
             <representedOrganization>
-                <id root="2.16.840.1.113883.2.9.4.1.1" extension="98765432100"/>
-                <name>Laboratorio Analisi Cliniche San Martino</name>
-                <telecom value="tel:0165888999" use="WP"/>
+                <id root="2.16.840.1.113883.2.9.4.1.1" extension="02987410079"/>
+                <name>Centro Regionale Immunotrasfusionale</name>
+                <telecom value="tel:+39 0165 544001" use="WP"/>
                 <addr>
-                    <streetAddressLine>Via Torino 5</streetAddressLine>
+                    <streetAddressLine>Viale Ginevra 3</streetAddressLine>
                     <city>Aosta</city>
                     <state>AO</state>
                     <postalCode>11100</postalCode>
@@ -184,15 +184,15 @@ stream
     <custodian>
         <assignedCustodian>
             <representedCustodianOrganization>
-                <id root="2.16.840.1.113883.2.9.4.1.1" extension="98765432100"/>
-                <name>Laboratorio Analisi Cliniche San Martino</name>
+                <id root="2.16.840.1.113883.2.9.4.1.1" extension="02987410079"/>
+                <name>Centro Regionale Immunotrasfusionale</name>
             </representedCustodianOrganization>
         </assignedCustodian>
     </custodian>
     
     <!-- LEGAL AUTHENTICATOR -->
     <legalAuthenticator>
-        <time value="20251112125924"/>
+        <time value="20251112125934"/>
         <signatureCode code="S"/>
         <assignedEntity>
             <id root="2.16.840.1.113883.2.9.4.3.2" extension="NREPLA70A01H501Z"/>
@@ -208,16 +208,16 @@ stream
     <!-- IN FULFILLMENT OF (Richiesta) -->
     <inFulfillmentOf>
         <order>
-            <id root="2.16.840.1.113883.2.9.2.120.4.4" extension="a3306957-79fb-4c74-96fc-7ea748e884c4"/>
-        <priorityCode code="INVALID_PRIORITY" codeSystem="2.16.840.1.113883.5.7" codeSystemName="ActPriority" displayName="Invalid"/></order>
+            <id root="2.16.840.1.113883.2.9.2.120.4.4" extension="a7d8f191-6760-4839-8759-bd094a76396b"/>
+        </order>
     </inFulfillmentOf>
     
     <!-- EVENTO CLINICO (Prelievo) -->
     <documentationOf>
         <serviceEvent>
             <effectiveTime>
-                <low value="20251106083000"/>
-                <high value="20251106083000"/>
+                <low value="20251112125934"/>
+                <high value="20251112125934"/>
             </effectiveTime>
         </serviceEvent>
     </documentationOf>
@@ -231,11 +231,11 @@ stream
             
             <component>
                 <section ID="LAB_SECTION_1">
-                    <code code="18719-5" 
+                    <code code="18717-9" 
                           codeSystem="2.16.840.1.113883.6.1" 
                           codeSystemName="LOINC" 
-                          displayName="Chimica Clinica"/>
-                    <title>Chimica Clinica</title>
+                          displayName="Ematologia - Banca del Sangue"/>
+                    <title>Ematologia - Banca del Sangue</title>
                     <text>
                         
                         <table>
@@ -249,57 +249,41 @@ stream
                             <tbody>
                                 
                         <tr>
-                            <td>Glicemia</td>
-                            <td>95 mg/dL</td>
-                            <td>70-110</td>
+                            <td>Gruppo sanguigno ABO</td>
+                            <td>A</td>
+                            <td>-</td>
                         </tr>
                         <tr>
-                            <td>Creatinina</td>
-                            <td>0.9 mg/dL</td>
-                            <td>0.7-1.2</td>
-                        </tr>
-                        <tr>
-                            <td>Colesterolo totale</td>
-                            <td>190 mg/dL</td>
-                            <td>0-200</td>
+                            <td>Fattore Rh</td>
+                            <td>Positivo</td>
+                            <td>-</td>
                         </tr>
                             </tbody>
                         </table>
-                        <paragraph>Campione siero, prelievo a digiuno.</paragraph>
+                        
                     </text>
                     
                     <entry>
                         <act classCode="ACT" moodCode="EVN">
-                            <id root="2.16.840.1.113883.2.9.2.120.4.4" extension="a2121293-f521-420c-a957-008b2364ae9d"/>
-                            <code code="2345-7" 
+                            <id root="2.16.840.1.113883.2.9.2.120.4.4" extension="c6dc44ac-07d0-438a-b8b0-15334a134b77"/>
+                            <code code="882-1" 
                                   codeSystem="2.16.840.1.113883.6.1" 
                                   codeSystemName="LOINC" 
-                                  displayName="Glicemia"/>
+                                  displayName="Gruppo sanguigno ABO"/>
                             <statusCode code="completed"/>
                             <entryRelationship typeCode="COMP">
                                 <observation classCode="OBS" moodCode="EVN">
-                                    <code code="2345-7" 
+                                    <code code="882-1" 
                                           codeSystem="2.16.840.1.113883.6.1" 
                                           codeSystemName="LOINC" 
-                                          displayName="Glicemia"/>
+                                          displayName="Gruppo sanguigno ABO"/>
                                     <statusCode code="completed"/>
-                                    <effectiveTime value="20251112125924"/>
-                                    <value xsi:type="PQ" value="95" unit="mg/dL"/>
+                                    <effectiveTime value="20251112125934"/>
+                                    <value xsi:type="ST">A</value>
                                     <interpretationCode code="N" 
                                                        codeSystem="2.16.840.1.113883.5.83" 
                                                        codeSystemName="ObservationInterpretation"/>
                                     
-                            <referenceRange>
-                                <observationRange>
-                                    <value xsi:type="IVL_PQ">
-                                        <low value="70.0" unit="mg/dL"/>
-                                        <high value="110.0" unit="mg/dL"/>
-                                    </value>
-                                    <interpretationCode code="N" 
-                                                       codeSystem="2.16.840.1.113883.5.83" 
-                                                       codeSystemName="ObservationInterpretation"/>
-                                </observationRange>
-                            </referenceRange>
                                 </observation>
                             </entryRelationship>
                         </act>
@@ -307,36 +291,97 @@ stream
 
                     <entry>
                         <act classCode="ACT" moodCode="EVN">
-                            <id root="2.16.840.1.113883.2.9.2.120.4.4" extension="e4a8f266-44b3-42fc-8576-838799dd9a7d"/>
-                            <code code="2160-0" 
+                            <id root="2.16.840.1.113883.2.9.2.120.4.4" extension="23c55eec-b191-4f36-b6ff-c43ecf36582a"/>
+                            <code code="10331-7" 
                                   codeSystem="2.16.840.1.113883.6.1" 
                                   codeSystemName="LOINC" 
-                                  displayName="Creatinina"/>
+                                  displayName="Fattore Rh"/>
                             <statusCode code="completed"/>
                             <entryRelationship typeCode="COMP">
                                 <observation classCode="OBS" moodCode="EVN">
-                                    <code code="2160-0" 
+                                    <code code="10331-7" 
                                           codeSystem="2.16.840.1.113883.6.1" 
                                           codeSystemName="LOINC" 
-                                          displayName="Creatinina"/>
+                                          displayName="Fattore Rh"/>
                                     <statusCode code="completed"/>
-                                    <effectiveTime value="20251112125924"/>
-                                    <value xsi:type="PQ" value="0.9" unit="mg/dL"/>
+                                    <effectiveTime value="20251112125934"/>
+                                    <value xsi:type="ST">Positivo</value>
                                     <interpretationCode code="N" 
                                                        codeSystem="2.16.840.1.113883.5.83" 
                                                        codeSystemName="ObservationInterpretation"/>
                                     
-                            <referenceRange>
-                                <observationRange>
-                                    <value xsi:type="IVL_PQ">
-                                        <low value="0.7" unit="mg/dL"/>
-                                        <high value="1.2" unit="mg/dL"/>
-                                    </value>
+                                </observation>
+                            </entryRelationship>
+                        </act>
+                    </entry>
+                </section>
+            </component>
+
+            <component>
+                <section ID="LAB_SECTION_2">
+                    <code code="18724-5" 
+                          codeSystem="2.16.840.1.113883.6.1" 
+                          codeSystemName="LOINC" 
+                          displayName="HLA"/>
+                    <title>HLA</title>
+                    <text>
+                        
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Esame</th>
+                                    <th>Valore</th>
+                                    <th>Range di riferimento</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                        <tr>
+                            <td>HLA-A [Type]</td>
+                            <td>A*02:01, A*24:02</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>HLA-B [Type]</td>
+                            <td>B*07:02, B*44:03</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>HLA-DRB1 [Type]</td>
+                            <td>DRB1*15:01, DRB1*03:01</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>HLA-DQB1 [Type]</td>
+                            <td>DQB1*06:02, DQB1*02:01</td>
+                            <td>-</td>
+                        </tr>
+                            </tbody>
+                        </table>
+                        
+                    </text>
+                    
+                    <entry>
+                        <act classCode="ACT" moodCode="EVN">
+                            <id root="2.16.840.1.113883.2.9.2.120.4.4" extension="65903d92-2f22-4183-bdf9-82f8d2572c8c"/>
+                            <code code="13298-5" 
+                                  codeSystem="2.16.840.1.113883.6.1" 
+                                  codeSystemName="LOINC" 
+                                  displayName="HLA-A [Type]"/>
+                            <statusCode code="completed"/>
+                            <entryRelationship typeCode="COMP">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <code code="13298-5" 
+                                          codeSystem="2.16.840.1.113883.6.1" 
+                                          codeSystemName="LOINC" 
+                                          displayName="HLA-A [Type]"/>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="20251112125934"/>
+                                    <value xsi:type="ST">A*02:01, A*24:02</value>
                                     <interpretationCode code="N" 
                                                        codeSystem="2.16.840.1.113883.5.83" 
                                                        codeSystemName="ObservationInterpretation"/>
-                                </observationRange>
-                            </referenceRange>
+                                    
                                 </observation>
                             </entryRelationship>
                         </act>
@@ -344,36 +389,77 @@ stream
 
                     <entry>
                         <act classCode="ACT" moodCode="EVN">
-                            <id root="2.16.840.1.113883.2.9.2.120.4.4" extension="acbe8cdd-e43c-48e1-b241-a79205ec6422"/>
-                            <code code="2093-3" 
+                            <id root="2.16.840.1.113883.2.9.2.120.4.4" extension="ae6a4e47-5c26-4cda-8d4f-433ec7e9689c"/>
+                            <code code="13299-3" 
                                   codeSystem="2.16.840.1.113883.6.1" 
                                   codeSystemName="LOINC" 
-                                  displayName="Colesterolo totale"/>
+                                  displayName="HLA-B [Type]"/>
                             <statusCode code="completed"/>
                             <entryRelationship typeCode="COMP">
                                 <observation classCode="OBS" moodCode="EVN">
-                                    <code code="2093-3" 
+                                    <code code="13299-3" 
                                           codeSystem="2.16.840.1.113883.6.1" 
                                           codeSystemName="LOINC" 
-                                          displayName="Colesterolo totale"/>
+                                          displayName="HLA-B [Type]"/>
                                     <statusCode code="completed"/>
-                                    <effectiveTime value="20251112125924"/>
-                                    <value xsi:type="PQ" value="190" unit="mg/dL"/>
+                                    <effectiveTime value="20251112125934"/>
+                                    <value xsi:type="ST">B*07:02, B*44:03</value>
                                     <interpretationCode code="N" 
                                                        codeSystem="2.16.840.1.113883.5.83" 
                                                        codeSystemName="ObservationInterpretation"/>
                                     
-                            <referenceRange>
-                                <observationRange>
-                                    <value xsi:type="IVL_PQ">
-                                        <low value="0.0" unit="mg/dL"/>
-                                        <high value="200.0" unit="mg/dL"/>
-                                    </value>
+                                </observation>
+                            </entryRelationship>
+                        </act>
+                    </entry>
+
+                    <entry>
+                        <act classCode="ACT" moodCode="EVN">
+                            <id root="2.16.840.1.113883.2.9.2.120.4.4" extension="6b71f4a9-260b-4d93-a085-c2fa69add320"/>
+                            <code code="57298-2" 
+                                  codeSystem="2.16.840.1.113883.6.1" 
+                                  codeSystemName="LOINC" 
+                                  displayName="HLA-DRB1 [Type]"/>
+                            <statusCode code="completed"/>
+                            <entryRelationship typeCode="COMP">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <code code="57298-2" 
+                                          codeSystem="2.16.840.1.113883.6.1" 
+                                          codeSystemName="LOINC" 
+                                          displayName="HLA-DRB1 [Type]"/>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="20251112125934"/>
+                                    <value xsi:type="ST">DRB1*15:01, DRB1*03:01</value>
                                     <interpretationCode code="N" 
                                                        codeSystem="2.16.840.1.113883.5.83" 
                                                        codeSystemName="ObservationInterpretation"/>
-                                </observationRange>
-                            </referenceRange>
+                                    
+                                </observation>
+                            </entryRelationship>
+                        </act>
+                    </entry>
+
+                    <entry>
+                        <act classCode="ACT" moodCode="EVN">
+                            <id root="2.16.840.1.113883.2.9.2.120.4.4" extension="75fb4810-5741-4615-9350-a667b06a73cd"/>
+                            <code code="53938-7" 
+                                  codeSystem="2.16.840.1.113883.6.1" 
+                                  codeSystemName="LOINC" 
+                                  displayName="HLA-DQB1 [Type]"/>
+                            <statusCode code="completed"/>
+                            <entryRelationship typeCode="COMP">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <code code="53938-7" 
+                                          codeSystem="2.16.840.1.113883.6.1" 
+                                          codeSystemName="LOINC" 
+                                          displayName="HLA-DQB1 [Type]"/>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="20251112125934"/>
+                                    <value xsi:type="ST">DQB1*06:02, DQB1*02:01</value>
+                                    <interpretationCode code="N" 
+                                                       codeSystem="2.16.840.1.113883.5.83" 
+                                                       codeSystemName="ObservationInterpretation"/>
+                                    
                                 </observation>
                             </entryRelationship>
                         </act>
@@ -418,9 +504,9 @@ xref
 0000000916 00000 n 
 0000001023 00000 n 
 0000001135 00000 n 
-0000015425 00000 n 
-0000015498 00000 n 
-0000015542 00000 n 
+0000019518 00000 n 
+0000019591 00000 n 
+0000019635 00000 n 
 trailer
 <<
 /Size 13
@@ -428,5 +514,5 @@ trailer
 /Info 1 0 R
 >>
 startxref
-15595
+19688
 %%EOF
