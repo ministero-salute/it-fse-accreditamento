@@ -1,0 +1,368 @@
+%PDF-1.3
+%‚„œ”
+1 0 obj
+<<
+/Producer (pypdf)
+>>
+endobj
+2 0 obj
+<<
+/Type /Pages
+/Count 1
+/Kids [ 4 0 R ]
+>>
+endobj
+3 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+/Names 11 0 R
+>>
+endobj
+4 0 obj
+<<
+/Contents 5 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/Font 6 0 R
+/ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Parent 2 0 R
+>>
+endobj
+5 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ]
+/Length 407
+>>
+stream
+Gas2E:J\h]!6+DSMK`#593Yd+DSh-s@+;]=#;8e#Uo%pIl\ONKgPq%$Jb7:I[JBL/<sBQICNc*JP767b"67Ig@"$Hn2Fj3Y)P)LLNBSQa:M282;2Sda=cTQ$aXUBC41km#]dU6TC6\IHZWaqUA=pq\p>FC1*eNEs#G-cM#(S]9"t0$[IKUOqmXuBdE8"m)b:+N`NlJcrKIPWB3g2F=ZbBJ?$pb^,aO44pPuUolY>M_lTe2S5a@3Tn:$st^jtSmb2&boHO61ujr\P/XHlW8MI.T`F@>nC?8:dt8O-aC##og;)Eile(=]$TKN;hpPXAsh2/h:B&G$CSRK;CI5EZrMJDTMjHL36-6&tQ2)mJK-^;D^inmm7=aME6s</LG0MB(A('L63Mp6p\HS3U$A@e?QM[~>
+endstream
+endobj
+6 0 obj
+<<
+/F1 7 0 R
+/F2 8 0 R
+>>
+endobj
+7 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+8 0 obj
+<<
+/BaseFont /Helvetica-Bold
+/Encoding /WinAnsiEncoding
+/Name /F2
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+9 0 obj
+<<
+/Type /EmbeddedFile
+/Length 10205
+>>
+stream
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    
+    <!-- HEADER -->
+    <realmCode code="IT"/>
+    <typeId root="2.16.840.1.113883.1.3" extension="POCD_MT000040UV02"/>
+    
+    <!-- Template CDA2 Referto di Laboratorio -->
+    <templateId root="2.16.840.1.113883.2.9.10.1.1" extension="1.1"/>
+    
+    <!-- ID Documento -->
+    <id root="2.16.840.1.113883.2.9.2.120.4.4" extension="0181e95d-369a-4c58-8619-1b73107dcc52"/>
+    
+    <!-- Tipo documento (LOINC) -->
+    <code code="11502-2" 
+          codeSystem="2.16.840.1.113883.6.1" 
+          codeSystemName="LOINC"
+          displayName="Referto di laboratorio"/>
+    
+    <!-- Titolo -->
+    <title>Referto Medicina Trasfusionale</title>
+    
+    <!-- Data creazione -->
+    <effectiveTime value="20251120093619"/>
+    
+    <!-- Confidenzialit√† -->
+    <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" 
+                         codeSystemName="HL7 Confidentiality" displayName="Normal"/>
+    
+    <!-- Lingua -->
+    <languageCode code="it-IT"/>
+    
+    <!-- Set ID e versione -->
+    <setId root="2.16.840.1.113883.2.9.2.120.4.4" extension="0181e95d-369a-4c58-8619-1b73107dcc52"/>
+    <versionNumber value="1"/>
+    
+    <!-- PAZIENTE -->
+    <recordTarget>
+        <patientRole>
+            <!-- CF Paziente -->
+            <id root="2.16.840.1.113883.2.9.4.3.2" extension="RSSMRA85M01H501Q" 
+                assigningAuthorityName="MEF"/>
+            
+            <!-- Indirizzo paziente -->
+            <addr>
+                <streetAddressLine>Via Roma 1</streetAddressLine>
+                <city>Aosta</city>
+                <state>AO</state>
+                <postalCode>11100</postalCode>
+                <country>IT</country>
+            </addr>
+            
+            <!-- Recapiti -->
+            
+            
+            <patient>
+                <name>
+                    <given>Mario</given>
+                    <family>Rossi</family>
+                </name>
+                <administrativeGenderCode code="M" 
+                                         codeSystem="2.16.840.1.113883.5.1"/>
+                <birthTime value="19850801"/>
+                <birthplace>
+                    <place>
+                        <addr>
+                            <city>Roma</city>
+                            <state>RM</state>
+                        </addr>
+                    </place>
+                </birthplace>
+            </patient>
+        </patientRole>
+    </recordTarget>
+    
+    <!-- AUTORE (Medico richiedente) -->
+    <author>
+        <time value="20251120093619"/>
+        <assignedAuthor>
+            <!-- CF Medico -->
+            <id root="2.16.840.1.113883.2.9.4.3.2" extension="NREPLA70A01H501Z"
+                assigningAuthorityName="MEF"/>
+            
+            <telecom value="tel:+39 0165 544000" use="WP"/>
+            
+            <assignedPerson>
+                <name>
+                    <given>Paolo</given>
+                    <family>Neri</family>
+                </name>
+            </assignedPerson>
+            
+            <!-- Organizzazione -->
+            <representedOrganization>
+                <id root="2.16.840.1.113883.2.9.4.1.1" extension="02987410079"/>
+                <name>Servizio Trasfusionale Ospedale Regionale</name>
+                <telecom value="tel:+39 0165 544000" use="WP"/>
+                <addr>
+                    <streetAddressLine>Viale Ginevra 3</streetAddressLine>
+                    <city>Aosta</city>
+                    <state>AO</state>
+                    <postalCode>11100</postalCode>
+                </addr>
+            </representedOrganization>
+        </assignedAuthor>
+    </author>
+    
+    <!-- CUSTODE DEL DOCUMENTO -->
+    <custodian>
+        <assignedCustodian>
+            <representedCustodianOrganization>
+                <id root="2.16.840.1.113883.2.9.4.1.1" extension="02987410079"/>
+                <name>Servizio Trasfusionale Ospedale Regionale</name>
+            </representedCustodianOrganization>
+        </assignedCustodian>
+    </custodian>
+    
+    <!-- LEGAL AUTHENTICATOR -->
+    <legalAuthenticator>
+        <time value="20251120093619"/>
+        <signatureCode code="S"/>
+        <assignedEntity>
+            <id root="2.16.840.1.113883.2.9.4.3.2" extension="NREPLA70A01H501Z"/>
+            <assignedPerson>
+                <name>
+                    <given>Paolo</given>
+                    <family>Neri</family>
+                </name>
+            </assignedPerson>
+        </assignedEntity>
+    </legalAuthenticator>
+    
+    <!-- IN FULFILLMENT OF (Richiesta) -->
+    <inFulfillmentOf>
+        <order>
+            <id root="2.16.840.1.113883.2.9.2.120.4.4" extension="61f74361-52e1-4eba-acf9-f3aa5209521e"/>
+        </order>
+    </inFulfillmentOf>
+    
+    <!-- EVENTO CLINICO (Prelievo) -->
+    <documentationOf>
+        <serviceEvent>
+            <effectiveTime>
+                <low value="20251120093619"/>
+                <high value="20251120093619"/>
+            </effectiveTime>
+        </serviceEvent>
+    </documentationOf>
+    
+    <!-- CORPO DEL DOCUMENTO -->
+    <component>
+        <structuredBody>
+            
+            <!-- SEZIONI RISULTATI PER TIPOLOGIA -->
+            <!-- NOTA: Solo sezioni LOINC approvate per laboratorio (no motivo richiesta, note tecniche, conclusioni) -->
+            
+            <component typeCode="COMP">
+                <section ID="LAB_SECTION_1">
+                    <code code="18717-9" 
+                          codeSystem="2.16.840.1.113883.6.1" 
+                          codeSystemName="LOINC" 
+                          displayName="Banca del Sangue"/>
+                    <title>Banca del Sangue</title>
+                    <text>
+                        
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Esame</th>
+                                    <th>Valore</th>
+                                    <th>Range di riferimento</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                        <tr>
+                            <td>ABO group type in blood from donor</td>
+                            <td>A</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Ag inferred phenotype presence in blood</td>
+                            <td>CCDee K-</td>
+                            <td>-</td>
+                        </tr>
+                            </tbody>
+                        </table>
+                        
+                    </text>
+                    
+                    <entry>
+                        <act classCode="ACT" moodCode="EVN">
+                            <id root="2.16.840.1.113883.2.9.2.120.4.4" extension="1b6eed03-be58-44c2-a6b6-ed702198f713"/>
+                            <code code="14579-7" 
+                                  codeSystem="2.16.840.1.113883.6.1" 
+                                  codeSystemName="LOINC" 
+                                  displayName="ABO group type in blood from donor"/>
+                            <statusCode code="completed"/>
+                            <entryRelationship typeCode="COMP">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <code code="14579-7" 
+                                          codeSystem="2.16.840.1.113883.6.1" 
+                                          codeSystemName="LOINC" 
+                                          displayName="ABO group type in blood from donor"/>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="20251120093619"/>
+                                    <value xsi:type="ST">A</value>
+                                    <interpretationCode code="N" 
+                                                       codeSystem="2.16.840.1.113883.5.83" 
+                                                       codeSystemName="ObservationInterpretation"/>
+                                    
+                                </observation>
+                            </entryRelationship>
+                        </act>
+                    </entry>
+
+                    <entry>
+                        <act classCode="ACT" moodCode="EVN">
+                            <id root="2.16.840.1.113883.2.9.2.120.4.4" extension="916fcf56-2e2b-4a54-a1dc-9605b3d925f4"/>
+                            <code code="92551-1" 
+                                  codeSystem="2.16.840.1.113883.6.1" 
+                                  codeSystemName="LOINC" 
+                                  displayName="Ag inferred phenotype presence in blood"/>
+                            <statusCode code="completed"/>
+                            <entryRelationship typeCode="COMP">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <code code="92551-1" 
+                                          codeSystem="2.16.840.1.113883.6.1" 
+                                          codeSystemName="LOINC" 
+                                          displayName="Ag inferred phenotype presence in blood"/>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="20251120093619"/>
+                                    <value xsi:type="ST">CCDee K-</value>
+                                    <interpretationCode code="N" 
+                                                       codeSystem="2.16.840.1.113883.5.83" 
+                                                       codeSystemName="ObservationInterpretation"/>
+                                    
+                                </observation>
+                            </entryRelationship>
+                        </act>
+                    </entry>
+                </section>
+            </component>
+            
+        </structuredBody>
+    </component>
+    
+</ClinicalDocument>
+endstream
+endobj
+10 0 obj
+<<
+/Type /Filespec
+/F (cda\056xml)
+/EF <<
+/F 9 0 R
+>>
+>>
+endobj
+11 0 obj
+<<
+/EmbeddedFiles 12 0 R
+>>
+endobj
+12 0 obj
+<<
+/Names [ (cda\056xml) 10 0 R ]
+>>
+endobj
+xref
+0 13
+0000000000 65535 f 
+0000000015 00000 n 
+0000000054 00000 n 
+0000000113 00000 n 
+0000000176 00000 n 
+0000000375 00000 n 
+0000000873 00000 n 
+0000000914 00000 n 
+0000001021 00000 n 
+0000001133 00000 n 
+0000011411 00000 n 
+0000011484 00000 n 
+0000011528 00000 n 
+trailer
+<<
+/Size 13
+/Root 3 0 R
+/Info 1 0 R
+>>
+startxref
+11581
+%%EOF
