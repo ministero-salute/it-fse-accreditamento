@@ -22,7 +22,7 @@
 				<postalCode>00187</postalCode> 
 				<streetAddressLine>Via Aurora 12</streetAddressLine> 
 			</addr> 
-			<telecom use="HP" value="mailto:prova.provax@example.com"/> 
+			<telecom use="HP" value="mailto:prova.provax@gmail.it"/>
 			<telecom use="MC" value="tel:3340000000"/>
 			<patient>
 				<name>
@@ -59,8 +59,8 @@
 				<postalCode>00184</postalCode> 
 				<streetAddressLine>via Milano 7</streetAddressLine> 
 			</addr> 
-			<telecom use="HP" value="mailto:prova.provax@example.com"/> 
-			<telecom use="WP" value="mailto:prova.provax@example.com"/> 
+			<telecom use="HP" value="mailto:prova.provax@gmail.it"/> 
+			<telecom use="WP" value="mailto:prova.provax@pec.it"/> 
 			<telecom use="MC" value="tel:3340000000"/>
 			<assignedPerson>
 				<name>
@@ -83,8 +83,8 @@
 				<censusTract>058091</censusTract>
 				<streetAddressLine>via Roma 7</streetAddressLine>
 			</addr>
-			<telecom use="HP" value="mailto:prova.provax@example.com"/> 
-			<telecom use="MC" value="tel:3340000000"/>
+			<telecom use="WP" value="mailto:prova.provax@pec.it"/>
+			<telecom use="WP" value="tel:3345698820"/>
 			<assignedPerson>
 				<name>
 					<family>Test</family>
@@ -103,12 +103,13 @@
 			</relatedPerson> 
 		</relatedEntity> 
 	</informant>
+	
 	<custodian>
 		<assignedCustodian>
 			<representedCustodianOrganization>
 				<id root="2.16.840.1.113883.2.9.4.1.2" extension="XXX" assigningAuthorityName="Ministero della Salute"/>
 				<name>XXX</name>
-				<telecom use="MC" value="tel:3340000000"/>
+				<telecom use="WP" value="tel:0640402233"/>
 				<addr>
 					<country>100</country>
 					<state>120</state>
@@ -133,8 +134,8 @@
 				<censusTract>058091</censusTract>
 				<streetAddressLine>Vico San Giovanni 3</streetAddressLine>
 			</addr>
-			<telecom use="HP" value="mailto:prova.provax@example.com"/> 
-			<telecom use="MC" value="tel:3340000000"/>
+			<telecom use="WP" value="mailto:prova.provax@pec.it"/>
+			<telecom use="WP" value="tel:3333097821"/>
 			<assignedPerson>
 				<name>
 					<family>Prova</family>
@@ -157,8 +158,8 @@
 				<censusTract>058091</censusTract>
 				<streetAddressLine>Vico San Giovanni 3</streetAddressLine>
 			</addr> 
-			<telecom use="WP" value="mailto:prova.provax@example.com"/> 
-			<telecom use="MC" value="tel:3340000000"/>
+			<telecom use="WP" value="mailto:prova.provax@pec.it"/>
+			<telecom use="WP" value="tel:3333097821"/>
 			<assignedPerson>
 				<name>
 					<family>Test</family>
@@ -181,7 +182,7 @@
 				<postalCode>00164</postalCode> 
 				<streetAddressLine>via Corvetto 3</streetAddressLine>
 			</addr>
-			<telecom use="HP" value="mailto:prova.provax@example.com"/> 
+			<telecom use="HP" value="mailto:prova.provax@gmail.it"/>
 			<associatedPerson>
 				<name>
 					<family>Prova</family>
@@ -201,7 +202,6 @@
 			<id root="2.16.840.1.113883.2.9.2.120.4.4" extension="030702.LCNLDE90L47H501Q.20220509112426.Q123E456" assigningAuthorityName="Regione Lazio"/> 
 		</parentDocument> 
 	</relatedDocument-->
-
 
 <!--BODY PSS-->
 	<component>
@@ -291,8 +291,9 @@
 											<statusCode code="completed"/>
 											<effectiveTime>
 												<low value="20220410000000+0100"/>
+												<!--high value="20220420000000+0100"/-->
 											</effectiveTime>
-											<value xsi:type="CD" code="493.9" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD-9CM" displayName="ASMA,TIPO NON SPECIFICATO">
+											<value xsi:type="CD" code="493.9" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD-9CM (diagnosis codes)" displayName="ASMA,TIPO NON SPECIFICATO">
 												<originalText>
 													<reference value="#[REF_REAZ]"/>
 												</originalText>
@@ -394,6 +395,16 @@
 							</consumable>
 						</substanceAdministration>
 					</entry>
+					<!--entry>
+						<substanceAdministration classCode="SBADM" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.2.9.10.1.4.3.2.3"/>
+							<id root="XXX"/>
+							<code code="no-medication-info" codeSystem="2.16.840.1.113883.11.22.15" codeSystemName="IPSNoMedsInfo" displayName="No information about medications"/>
+							<text>
+								<reference value="#[REF_NO_MEDICATION]"/>
+							</text>
+						</substanceAdministration>
+					</entry-->
 				</section>
 			</component>
 			
@@ -470,7 +481,7 @@
 										<low value="20220510100000+0100"/>
 										<!--high value="20220510110000+0100"/-->
 									</effectiveTime>
-									<value xsi:type="CD" code="787.02" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD-9CM" displayName="NAUSEA SOLO">
+									<value xsi:type="CD" code="787.02" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD-9CM (diagnosis codes)" displayName="NAUSEA SOLO">
 										<originalText>
 											<reference value="#[REF_REAZ]"/>
 										</originalText>
@@ -488,7 +499,6 @@
 									<statusCode code="completed"/>
 								</act>
 							</entryRelationship>
-							
 						</substanceAdministration>
 					</entry>
 				</section>
@@ -503,45 +513,6 @@
 					<text>
 						[NARRATIVE_BLOCK]
 					</text>
-					<!--assenza di problemi-->
-					<!--entry>
-						<act classCode="ACT" moodCode="EVN">
-							<templateId root="2.16.840.1.113883.2.9.10.1.4.3.4.1"/>
-							<id root="XXX"/>
-							<code nullFlavor="NA"/>
-							<statusCode nullFlavor="NA"/>
-							<effectiveTime>
-								<low nullFlavor="UNK"/>
-							</effectiveTime>
-							<entryRelationship typeCode="SUBJ" inversionInd="false">
-								<observation classCode="OBS" moodCode="EVN">
-									<templateId root="2.16.840.1.113883.2.9.10.1.4.3.4.2"/>
-									<id root="XXX"/>
-									<code code="75326-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem"/>
-									<statusCode nullFlavor="NA"/>
-									<effectiveTime>
-										<low nullFlavor="UNK"/>
-										<high nullFlavor="UNK"/>
-									</effectiveTime>
-									<value xsi:type="CD" code="no-problem-info" codeSystem="2.16.840.1.113883.11.22.17" codeSystemName="Absent or Unknown Problems" displayName="No known problems">
-										<originalText>
-											<reference value="#[REF_PROBLEMA]"/>
-										</originalText>
-									</value>
-									<entryRelationship typeCode="SUBJ" inversionInd="true">
-										<act classCode="ACT" moodCode="EVN">
-											<templateId root="2.16.840.1.113883.2.9.10.1.4.3.1.7"/>
-											<code code="48767-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Annotation Comment"/>
-											<text>
-												<reference value="#[REF_COMMENTI_NKP]"/>
-											</text>
-											<statusCode code="completed"/>
-										</act>
-									</entryRelationship>
-								</observation>
-							</entryRelationship>
-						</act>
-					</entry-->
 					<!--presenza di problemi-->
 					<entry>
 						<act classCode="ACT" moodCode="EVN">
@@ -558,7 +529,7 @@
 								<observation classCode="OBS" moodCode="EVN">
 									<templateId root="2.16.840.1.113883.2.9.10.1.4.3.4.2"/>
 									<id root="XXX"/>
-									<code code="75326-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problema"/>
+									<code code="75326-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem"/>
 									<text>
 										<reference value="#[REF_PROBLEMA]"/>
 									</text>
@@ -622,7 +593,7 @@
 								</observation>
 							</entryRelationship>
 							<!--Riferimenti Interni-->
-							<!--entryRelationship typeCode="REFR" inversionInd="true">
+							<entryRelationship typeCode="REFR" inversionInd="true">
 								<act classCode="ACT" moodCode="EVN">
 									<templateId root="2.16.840.1.113883.2.9.10.1.4.3.4.3"/>
 									<id root="XXX"/>
@@ -631,7 +602,7 @@
 										<reference value="#[REF]"/>
 									</text>
 								</act>
-							</entryRelationship-->
+							</entryRelationship>
 						</act>
 					</entry>
 				</section>
@@ -698,6 +669,7 @@
 									</subject>
 								</relatedSubject>
 							</subject>
+							<!-- dettaglio anamnesi-->
 							<component>
 								<observation classCode="OBS" moodCode="EVN">
 									<templateId root="2.16.840.1.113883.2.9.10.1.4.3.16.2"/>
@@ -758,6 +730,16 @@
 							</component>
 						</organizer>
 					</entry>
+					<!--entry>
+						<observation classCode='OBS' moodCode='EVN'>
+							<templateId root='2.16.840.1.113883.2.9.10.1.4.3.16.4'/>
+							<id root='XXX'/>
+							<code code="75326-9" codeSystem="2.16.840.1.113883.2.9.77.22.11.9" codeSystemName="LOINC" displayName="Problema"/>
+							<statusCode code="completed"/>
+							<value xsi:type="CD" code="no-known-problems" codeSystem="2.16.840.1.113883.11.22.9" codeSystemName="	IPSNoProbsInfos" displayName="Informazioni non note sull'anamnesi familiare"/>
+						</observation>
+					</entry-->
+					
 				</section>
 			</component>
 			
@@ -766,7 +748,7 @@
 					<templateId root="2.16.840.1.113883.2.9.10.1.4.2.6"/>
 					<id root="XXX"/>
 					<code code="29762-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Stile di vita"/>
-					<title>Stili di Vita</title>
+					<title>Stili di Vita (Social History)</title>
 					<text>
 						<table border="1" width="100%">
 							<tbody>
@@ -803,7 +785,7 @@
 						<observation classCode="OBS" moodCode="EVN">
 							<templateId root="2.16.840.1.113883.2.9.10.1.4.3.6.1"/>
 							<id root="36e7e830-7b14-11db-9ff1-0800200c9b66"/>
-							<code code="74013-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Bevande alcoliche al giorno"/>
+							<code code="11295-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Bevande alcoliche al giorno"/>
 							<text>
 								<reference value="#alcool_use_GBL"/>
 							</text>
@@ -816,7 +798,8 @@
 							</value-->
 							<value xsi:type="PQ" value="5" unit="{drink}/d"/>
 						</observation>
-					</entry>				
+					</entry>
+				
 				</section>
 			</component>
 			
@@ -836,6 +819,10 @@
 								<content ID="pregn_2_data">Gennaio 2015</content>
 								<content ID="pregn_2_info"> Parto naturale, nessuna complicazione </content>
 							</item>
+							<!--item ID="pregn_3">
+								<content ID="pregn_3_info"> Menopausa</content>
+								<content ID="pregn_3_data">2010</content>
+							</item-->
 						</list>			
 					</text>
 					<entry>
@@ -847,7 +834,7 @@
 								<reference value="#pregn_1_info"/>
 							</text>
 							<statusCode code="completed"/>
-							<effectiveTime value="20150409101010+0100"/>
+							<effectiveTime value="20150409"/>
 							<value xsi:type="INT" value="1"/>
 						</observation>
 					</entry>
@@ -952,7 +939,7 @@
 							</component>
 						</organizer>
 					</entry>
-					<!--entry>
+					<entry>
 						<observation classCode="OBS" moodCode="EVN">
 							<templateId root="2.16.840.1.113883.2.9.10.1.4.3.8.2"/>
 							<id root="XXX"/>
@@ -961,11 +948,11 @@
 								<reference value="#[REF_OBS]"/>
 							</text>
 							<statusCode code="completed"/>
-							<effectiveTime value="2022059121122+0200"/>
+							<effectiveTime value="20220509121122+0200"/>
 							<repeatNumber value="1"/>
 							<value xsi:type="PQ" value="170" unit="cm"/>
 						</observation>
-					</entry-->
+					</entry>
 				</section>
 			</component>
 			
@@ -973,8 +960,8 @@
 				<section ID="PROTESI_IMPIANTI_AUSILI">
 					<templateId root="2.16.840.1.113883.2.9.10.1.4.2.9"/>
 					<id root="XXX"/>
-					<code code="46264-8" displayName="Storia d'uso di dispositivi medici" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
-					<title>Protesi, impianti e ausili</title> 
+					<code code="46264-8" displayName="Storia di uso di dispositivi medici" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+					<title>Protesi, Impianti ed Ausilii</title> 
 					<text>
 						<table border="1" width="100%">
 							<thead>
@@ -1000,14 +987,6 @@
 							<effectiveTime value="20190510000000+0200"/>
 						</supply>
 					</entry>
-					<!--Indicazione assenza protesi-->
-					<!--entry>
-						<supply moodCode="EVN">
-							<templateId root="2.16.840.1.113883.2.9.10.1.4.3.9.2"/>
-							<code code="no-procedure-info" codeSystem="2.16.840.1.113883.11.22.36" codeSystemName="Absent or Unknown Procedures" displayName="No known procedures"/>
-							
-						</supply>
-					</entry-->
 				</section>
 			</component>
 			
@@ -1050,7 +1029,9 @@
 							<!--Dettagli del Farmaco-->
 							<consumable>
 								<manufacturedProduct classCode="MANU">
+									<templateId root="2.16.840.1.113883.2.9.10.1.4.3.2.2"/>
 									<manufacturedMaterial>
+										<templateId root="2.16.840.1.113883.10.22.4.3"/>
 										<code code="035606033" codeSystem="2.16.840.1.113883.2.9.6.1.5" codeSystemName="AIC" displayName="ARIXTRA*2,5MG/0,5MLSC 10SIR.">
 											<originalText>
 												<reference value='#[REF_FARM]'/>
@@ -1064,7 +1045,7 @@
 					</entry>
 				<!--procedure chirurgiche-->
 					<entry>
-						<procedure classCode="PROC" moodCode="INT">
+						<procedure classCode="PROC" moodCode="RQO">
 							<templateId root="2.16.840.1.113883.2.9.10.1.4.3.10.3"/>
 							<id root="XXX"/>
 							<code code="68692-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Neurological surgery procedure note"/>
@@ -1105,7 +1086,7 @@
 				<section ID="TRATTAMENTI_PROCEDURE_TERAPEUTICHE_CHIRURGICHE_DIAGNOSTICHE">
 					<templateId root="2.16.840.1.113883.2.9.10.1.4.2.11"/>
 					<id root="XXX"/>
-					<code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Storia di Procedure"/>
+					<code code="47519-4" codeSystem="2.16.840.1.113883.6.1" displayName="Storia di Procedure"/>
 					<title> Trattamenti e procedure terapeutiche, chirurgiche e diagnostiche </title>
 					<text>
 						[NARRATIVE_BLOCK]
@@ -1121,15 +1102,33 @@
 							<statusCode code="active"/>
 							<effectiveTime>
 								<low value="20200420100000+0100"/>
+								<high value="20200421100000+0100"/>
 							</effectiveTime>
 							<entryRelationship typeCode="RSON">
 								<observation classCode="OBS" moodCode="EVN">
 									<id root="XXX"/>
-									<code code="410.9" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD-9CM" displayName="Iinfarto miocardico"/>
+									<code code="410" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD-9CM (diagnosis codes)" displayName="IMA"/>
 								</observation>
+							</entryRelationship>
+							<entryRelationship typeCode="RSON">
+								<encounter classCode="ENC" moodCode="EVN">
+								<templateId root="2.16.840.1.113883.2.9.10.1.4.3.12.1"/>
+									<id root="XXX"/>
+									<code code="FLD" codeSystem="2.16.840.1.113883.2.9.77.22.11.14" codeSystemName="EncounterCode_PSST" displayName="Assistenza Territoriale"/>
+									<effectiveTime>
+										<low value="20200420100000+0100"/>
+										<high value="20200421100000+0100"/>
+									</effectiveTime>
+									<!--performer typeCode="PRF">
+										<assignedEntity classCode="ASSIGNED">
+											<id root="2.16.840.1.113883.2.9.4.3.2" extension="PROVAX00X00X000Y" assigningAuthorityName="MEF"/>
+										</assignedEntity>
+									</performer-->
+								</encounter>
 							</entryRelationship>
 						</procedure>
 					</entry>
+					
 				</section>
 			</component>
 			
@@ -1155,7 +1154,10 @@
 								<high value="20220415000000+0100"/>
 							</effectiveTime>
 							<performer typeCode="PRF">
-								<time value="20220411121100+0100"/>
+								<time>
+									<low value="20220410000000+0100"/>
+									<high value="20220415000000+0100"/>
+								</time>
 								<assignedEntity>
 									<id root="2.16.840.1.113883.2.9.4.3.2" extension="PROVAX00X00X000Y" assigningAuthorityName="MEF"/>
 									<assignedPerson>
@@ -1211,16 +1213,28 @@
 									</effectiveTime> 
 									<value xsi:type="CD" code="LA4270-0" codeSystem="2.16.840.1.113883.6.1"  codeSystemName="LOINC" displayName="Allettato"/> 
 								</observation> 
-							</component> 
+							</component>							
 							<component> 
 								<observation classCode="OBS" moodCode="EVN"> 
-									<templateId root="2.16.840.1.113883.2.9.10.1.4.3.14.2"/>
+									<templateId root="2.16.840.1.113883.2.9.10.1.4.3.14.3"/>
 									<code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Assertion"/>
 									<statusCode code="completed"/> 
 									<effectiveTime> 
 										<low value="20220420101010+0100"/> 
 									</effectiveTime> 
 									<value xsi:type="CD" code="PSSADI" codeSystem="2.16.840.1.113883.2.9.5.2.8" displayName="Assistenza Domiciliare Integrata"/> 
+								</observation> 
+							</component> 
+							
+							<component> 
+								<observation classCode="OBS" moodCode="EVN"> 
+									<templateId root="2.16.840.1.113883.2.9.10.1.4.3.14.4"/>
+									<code code="8693-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Stato Mentale"/>
+									<statusCode code="normal"/> 
+									<effectiveTime> 
+										<low value="20220420101010+0100"/> 
+									</effectiveTime> 
+									<value xsi:type="CD" code="780.97" codeSystem="2.16.840.1.113883.6.103" displayName="Stato mentale alterato"/> 
 								</observation> 
 							</component> 
 						</organizer> 
@@ -1232,7 +1246,7 @@
 				<section ID="INDAGINI_DIAGNOSTICHE_ESAMI_LABORATORIO">
 					<templateId root="2.16.840.1.113883.2.9.10.1.4.2.14"/>
 					<id root="XXX"/>
-					<code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Test diagnostici rilevanti e/o dati di laboratorio"/>
+					<code code="30954-2" codeSystem="2.16.840.1.113883.6.1" displayName="Test diagnostici rilevanti e/o dati di laboratorio"/>
 					<title>Indagini diagnostiche e esami di laboratorio</title>
 					<text>
 						<table border="1" width="100%"> 
@@ -1301,7 +1315,7 @@
 					<entry>
 						<organizer classCode="BATTERY" moodCode="EVN">
 							<templateId root="2.16.840.1.113883.2.9.10.1.4.3.14.1"/>
-							<code code="2161-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Creatinina nelle urine"/> 
+							<code code="2161-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Creatinina nelle urine"/>
 							<statusCode code="completed"/> 
 							<effectiveTime value="20220412100000+0100"/> 
 							<component> 
@@ -1309,14 +1323,18 @@
 									<templateId root="2.16.840.1.113883.2.9.10.1.4.3.14.2"/>
 									<id root="XXX"/>
 									<code code="2161-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Creatinina nelle urine"/> 
+									<!--code nullFlavor='OTH'/-->
 									<statusCode code="completed"/> 
 									<effectiveTime value="20220412101010+0100"/> 
 									<value xsi:type="PQ" value="1.1" unit="mg/dL"> 
 										<translation value="1.1" code="mg{creat}" codeSystem="2.16.840.1.113883.6.8" codeSystemName="UCUM"/> 
 									</value> 
-									<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" codeSystemName="ObservationInterpretation" displayName="Normal"/>
+									<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83" codeSystemName="HL7 ObservationInterpretation" displayName="Normal"/>
 									<referenceRange typeCode="REFV"> 
 										<observationRange classCode="OBS" moodCode="EVN.CRT"> 
+										<!--text>
+											<reference value='test'/>
+										</text-->
 											<value xsi:type="IVL_PQ"> 
 												<low value="0.5" unit="mg/dL"/> 
 												<high value="1.2" unit="mg/dL"/> 
@@ -1425,8 +1443,7 @@
 						</act>
 					</entry>				
 				</section>
-			</component>
-			
+			</component>	
 		</structuredBody>
 	</component>
 </ClinicalDocument>	
