@@ -1,0 +1,147 @@
+<ClinicalDocument xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" xmlns="urn:hl7-org:v3" xmlns:ns2="urn:hl7-org:sdtc" xmlns:ns3="urn:oid:1.3.6.1.4.1.19376.1.3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <realmCode code="IT"/>
+    <typeId root="2.16.840.1.113883.1.3" extension="POCD_MT000040UV02"/>
+    <templateId root="2.16.840.1.113883.2.9.10.1.5" extension="1.2"/>
+    <id root="2.16.840.1.113883.2.9.2.50.4.6" extension="50503.PRVPRV09A01D325G.20230428104143.423120" assigningAuthorityName="DISTRETTO 3 -  Ospedale di Dolo"/>
+    <code code="34105-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Lettera di dimissione ospedaliera"/>
+    <title>LETTERA DI DIMISSIONE OSPEDALIERA</title>
+    <effectiveTime value="20230428084143+0100"/>
+    <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" codeSystemName="HL7 Confidentiality"/>
+    <languageCode code="it-IT"/>
+    <setId root="2.16.840.1.113883.2.9.2.50.4.6" extension="50503.PRVPRV09A01D325G.20230428104143.423120"/>
+    <versionNumber value="1"/>
+    <recordTarget>
+        <patientRole>
+            <id root="2.16.840.1.113883.2.9.4.3.2" extension="PRVPRV09A01D325G" assigningAuthorityName="Ministero Economia e Finanze"/>
+            <addr use="HP">
+                <country>100</country>
+                <state>050</state>
+                <city>DOLO</city>
+                <censusTract>087497</censusTract>
+                <streetAddressLine>VIA PROVA</streetAddressLine>
+            </addr>
+            <addr use="H">
+                <country>100</country>
+                <state>050</state>
+                <city>DOLO</city>
+                <censusTract>087497</censusTract>
+                <streetAddressLine>VIA PROVA</streetAddressLine>
+            </addr>
+            <patient>
+                <name>
+                    <family>PROVA</family>
+                    <given>PROVA</given>
+                </name>
+                <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" codeSystemName="HL7 AdministrativeGender" displayName="Maschio"/>
+                <birthTime value="19090101"/>
+                <birthplace>
+                    <place>
+                        <addr use="HP">
+                            <city>VE</city>
+                            <censusTract>087497</censusTract>
+                        </addr>
+                    </place>
+                </birthplace>
+            </patient>
+        </patientRole>
+    </recordTarget>
+    <author>
+        <time value="20230428084229+0100"/>
+        <assignedAuthor>
+            <id root="2.16.840.1.113883.2.9.4.3.2" extension="GRLMSM60R31F770Y" assigningAuthorityName="Ministero Economia e Finanze"/>
+            <telecom use="HP" value="tel:0496888012"/>
+            <assignedPerson>
+                <name>
+                    <family>IADEROSA</family>
+                    <given>GAETANO ANTONIO</given>
+                </name>
+            </assignedPerson>
+        </assignedAuthor>
+    </author>
+    <custodian>
+        <assignedCustodian>
+            <representedCustodianOrganization>
+                <id root="2.16.840.1.113883.2.9.4.1.2" extension="50503" assigningAuthorityName="Ministero della Salute"/>
+                <name>DISTRETTO 3 -  Ospedale di Dolo</name>
+            </representedCustodianOrganization>
+        </assignedCustodian>
+    </custodian>
+    <legalAuthenticator>
+        <time value="20230428084221+0100"/>
+        <signatureCode code="S"/>
+        <assignedEntity>
+            <id root="2.16.840.1.113883.2.9.4.3.2" extension="LCCDVD72A31L407J" assigningAuthorityName="Ministero Economia e Finanze"/>
+            <assignedPerson>
+                <name>
+                    <family>LUCCHI</family>
+                    <given>DAVIDE</given>
+                </name>
+            </assignedPerson>
+        </assignedEntity>
+    </legalAuthenticator>
+    <componentOf>
+        <encompassingEncounter>
+            <id root="2.16.840.1.113883.2.9.2.2.16.840.1.113883.2.9.2.20234.4.2.4.2" extension="20230000004" assigningAuthorityName="DISTRETTO 3 -  Ospedale di Dolo"/>
+            <effectiveTime>
+                <low value="20230428070000+0100"/>
+                <high value="20230428080000+0100"/>
+            </effectiveTime>
+            <responsibleParty>
+                <assignedEntity>
+                    <id root="2.16.840.1.113883.2.9.4.3.2" extension="GDNMRA64B17G224N" assigningAuthorityName="Ministero Economia e Finanze"/>
+                    <assignedPerson>
+                        <name>
+                            <family>GODINA</family>
+                            <given>MARIO</given>
+                        </name>
+                    </assignedPerson>
+                </assignedEntity>
+            </responsibleParty>
+            <location>
+                <healthCareFacility>
+                    <id root="2.16.840.1.113883.2.9.4.1.6" extension="50503.03.050503030903" assigningAuthorityName="Ministero della Salute"/>
+                </healthCareFacility>
+            </location>
+        </encompassingEncounter>
+    </componentOf>
+    <component>
+        <structuredBody classCode="DOCBODY" moodCode="EVN">
+            <component typeCode="COMP">
+                <section ID="Motivo_Ricovero" classCode="DOCSECT" moodCode="EVN">
+                    <code code="46241-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnosi di Accettazione"/>
+                    <title>Motivo del ricovero</title>
+                    <text><paragraph>Intervento di appendicectomia</paragraph></text>
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<code code="8646-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnosi di Accettazione Ospedaliera"/>
+							<value xsi:type="CD" code="30001" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9CM" displayName="Disturbo di panico">
+							</value>
+						</observation>
+					</entry>
+                </section>
+            </component>
+            <component typeCode="COMP">
+                <section ID="Decorso_Ospedaliero" classCode="DOCSECT" moodCode="EVN">
+                    <code code="8648-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Decorso_ospedaliero"/>
+                    <title>Decorso Ospedaliero</title>
+                    <text><paragraph>Il paziente sta bene</paragraph></text>
+                </section>
+            </component>
+            <component typeCode="COMP">
+                <section ID="Condizioni_paziente_diagnosi_dimissione" classCode="DOCSECT" moodCode="EVN">
+                    <code code="11535-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnosi di Dimissione"/>
+                    <title>Condizioni del paziente e diagnosi alla dimissione</title>
+                    <text>Test FSE 2.0</text>
+					<entry>
+						<observation classCode="OBS" moodCode="EVN">
+							<code code="8651-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnosi di Dimissione Ospedaliera"/>
+							<value xsi:type="CD" code="428.0" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9CM" displayName="Insufficienza cardiaca">
+								<translation code="67502-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Cardiac arrest"/>
+							</value>
+						</observation>
+					</entry>
+                </section>
+            </component>
+        </structuredBody>
+    </component>
+</ClinicalDocument>

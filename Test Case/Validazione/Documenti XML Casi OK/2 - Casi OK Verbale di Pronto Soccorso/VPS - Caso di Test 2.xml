@@ -1,0 +1,773 @@
+
+<!--VERBALE DI PRONTO SOCCORSO-->
+
+<ClinicalDocument xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdtc="urn:hl7-org:sdtc">
+	<realmCode code="IT"/>
+	<typeId root="2.16.840.1.113883.1.3" extension="POCD_MT000040UV02"/>
+	<templateId root="2.16.840.1.113883.2.9.10.1.6.1" extension="1.1" assigningAuthorityName="HL7 Italia"/>
+	<id root="2.16.840.1.113883.2.9.2.120.4.4" extension="030702.LCNLDE90L47H501Q.20220420112426.Q123E456" assigningAuthorityName="Regione Lazio"/>
+	<code code="59258-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Verbale di Pronto Soccorso">
+		<!--translation code="[CODICE_LOCALE]" codeSystem="[OID_SISTEMA_CODIFICA]" codeSystemName="[DESCRIZIONE_SISTEMA_CODIFICA]" displayName="Verbale di Pronto Soccorso"/-->
+	</code>
+	<title> VERBALE DI PRONTO SOCCORSO</title>
+	<sdtc:statusCode code="active"/>
+	<effectiveTime value="20220418123000+0100"/>
+	<confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" codeSystemName="HL7 Confidentiality" displayName="Normal"/>
+	<languageCode code="it-IT"/>
+	<setId root="2.16.840.1.113883.2.9.2.120.4.4" extension="030702.LCNLDE90L47H501Q.20220420112426.Q123E456" assigningAuthorityName="Regione Lazio"/>
+	<versionNumber value="1"/>
+	<recordTarget>
+		<patientRole>
+			<id root="2.16.840.1.113883.2.9.4.3.2" extension="RSSMRA22A01A399Z" assigningAuthorityName="MEF"/>
+			<addr use="H"> 
+				<country>100</country>
+				<state>120</state>
+				<county>RM</county> 
+				<city>Roma</city> 
+				<censusTract>058091</censusTract> 
+				<postalCode>00187</postalCode> 
+				<streetAddressLine>Via Aurora 12</streetAddressLine> 
+			</addr> 
+			<telecom use="HP" value="mailto:prova.provax@example.com"/>
+			<telecom use="MC" value="tel:3340000000"/>
+			<patient>
+				<name>
+					<family>Esempio</family>
+					<given>Test</given>
+				</name>
+				<administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" codeSystemName="HL7 AdministrativeGender" displayName="MASCHIO"/> 
+				<birthTime value="19600619"/>
+				<birthplace> 
+					<place>
+						<addr>
+							<country>100</country>
+							<state>120</state>
+							<county>RM</county> 
+							<city>Roma</city> 
+							<censusTract>058091</censusTract>
+						</addr>					
+					</place> 
+				</birthplace> 
+			</patient>
+		</patientRole>
+	</recordTarget>
+	<author>
+		<time value="20220417093000+0100"/>
+		<assignedAuthor>
+			<id root="2.16.840.1.113883.2.9.4.3.2" extension="PROVAX00X00X000Y" assigningAuthorityName="MEF"/>
+			<addr use="HP"> 
+				<country>100</country>
+				<state>120</state>
+				<county>RM</county> 
+				<city>Roma</city> 
+				<censusTract>058091</censusTract> 
+				<postalCode>00184</postalCode> 
+				<streetAddressLine>via Milano 7</streetAddressLine> 
+			</addr> 
+			<telecom use="HP" value="mailto:prova.provax@example.com"/> 
+			<telecom use="WP" value="mailto:prova.provax@example.com"/> 
+			<telecom use="MC" value="tel:3340000000"/>
+			<assignedPerson>
+				<name>
+					<family>Esempio</family>
+					<given>Test</given>
+					<prefix>Dott.</prefix>
+				</name>
+			</assignedPerson>
+		</assignedAuthor>
+	</author>
+	<dataEnterer typeCode="ENT">
+		<time value="20220417093500+0100"/>
+		<assignedEntity>
+			<id root="2.16.840.1.113883.2.9.4.3.2" extension="PROVAX00X00X000Y" assigningAuthorityName="MEF"/>
+			<addr>
+				<country>100</country>
+				<state>120</state>
+				<county>RM</county> 
+				<city>Roma</city> 
+				<censusTract>058091</censusTract>
+				<streetAddressLine>via Milano 10</streetAddressLine>
+			</addr>
+			<telecom use="HP" value="mailto:prova.provax@example.com"/>
+			<telecom use="MC" value="tel:3340000000"/>
+			<assignedPerson>
+				<name>
+					<family>Esempio</family>
+					<given>Test</given>
+				</name>
+			</assignedPerson>
+		</assignedEntity>
+	</dataEnterer>
+	<custodian>
+		<assignedCustodian>
+			<representedCustodianOrganization>
+				<id root="2.16.840.1.113883.2.9.4.1.2" extension="PROVAX00X00X000Y" assigningAuthorityName="Ministero della Salute"/>
+				<name>XXX</name>
+				<telecom use="MC" value="tel:3340000000"/>
+				<addr>
+					<country>100</country>
+					<state>120</state>
+					<county>RM</county> 
+					<city>Roma</city> 
+					<censusTract>058091</censusTract>
+					<streetAddressLine>XXX</streetAddressLine>
+				</addr>
+			</representedCustodianOrganization>
+		</assignedCustodian>
+	</custodian>
+	<legalAuthenticator>
+		<time value="202201191546+0100"/>
+		<signatureCode code="S"/>
+			<assignedEntity>
+				<id root="2.16.840.1.113883.2.9.4.3.2" extension="PROVAX00X00X000Y" assigningAuthorityName="MEF"/>
+				<addr>
+					<country>100</country>
+					<state>120</state>
+					<county>RM</county> 
+					<city>Roma</city> 
+					<censusTract>058091</censusTract>
+				</addr>
+				<telecom use="WP" value="mailto:prova.provax@example.com"/>
+				<telecom use="MC" value="tel:3340000000"/>
+				<assignedPerson>
+					<name>
+						<family>Esempio</family>
+						<given>Test</given>
+						<prefix>Dott.ssa</prefix>
+					</name>
+				</assignedPerson>
+			</assignedEntity>
+	</legalAuthenticator>
+	<participant typeCode="REF">
+		<associatedEntity classCode="PROV">
+			<id root="2.16.840.1.113883.2.9.4.3.2" extension="PROVAX00X00X000Y" assigningAuthorityName="MEF"/>
+			<addr>
+				<country>100</country>
+				<state>120</state>
+				<county>RM</county> 
+				<city>Roma</city> 
+				<censusTract>058091</censusTract> 
+				<postalCode>00164</postalCode> 
+				<streetAddressLine>via Corvetto 3</streetAddressLine>
+			</addr>
+			<telecom use="HP" value="mailto:prova.provax@example.com"/>
+			<associatedPerson>
+				<name>
+					<family>Esempio</family>
+					<given>Test</given>
+					<prefix>Dott.</prefix>
+				</name>
+			</associatedPerson>
+		</associatedEntity>
+	</participant>		
+	<documentationOf>
+		<serviceEvent>
+			<code code="DIR" codeSystem="2.16.840.1.113883.2.9.5.1.4" codeSystemName="ActCode" displayName="Accesso Programmato (PS)"/>
+			<effectiveTime>
+				<low value="20220330112426+0100"/>
+				<high value="20220407112426+0100"/>
+			</effectiveTime>	
+			<performer typeCode="PRF">
+				<assignedEntity>
+					<id root="2.16.840.1.113883.2.9.4.3.2" extension="PROVAX00X00X000Y" assigningAuthorityName="MEF"/>
+					<assignedPerson>
+						<name>
+							<family>Esempio</family>
+							<given>Test</given>
+						</name>
+					</assignedPerson>
+				</assignedEntity>
+			</performer>
+		</serviceEvent>
+	</documentationOf>
+	<!--relatedDocument typeCode="RPLC">
+		<parentDocument>
+			<id root="2.16.840.1.113883.2.9.2.120.4.4" extension="030702.TSTSMN63A01F205H.20220330112426.TSS1Tkju" assigningAuthorityName="Regione Lazio"/>
+			<setId root="2.16.840.1.113883.2.9.2.120.4.4" extension="c030702.TSTSMN63A01F205H.20220325112426.TSS1Tkju" assigningAuthorityName="Regione Lazio"/>
+			<versionNumber value="1"/> 
+		</parentDocument> 
+	</relatedDocument-->
+	<componentOf>
+		<encompassingEncounter>
+			<id root="2.16.840.1.113883.2.9.2.120110.4.6" extension="2011008159" assigningAuthorityName="MEF"/>
+			<effectiveTime>
+				<low value="20220330112426+0100"/>
+				<high value="20220418101010+0200"/>
+			</effectiveTime>	
+			<responsibleParty typeCode="RESP">
+				<assignedEntity>
+					<id root="2.16.840.1.113883.2.9.4.3.2" extension="PROVAX00X00X000Y" assigningAuthorityName="MEF"/>
+					<assignedPerson>
+						<name>
+							<family>Esempio</family>
+							<given>Test</given>
+						</name>	
+					</assignedPerson>
+				</assignedEntity>
+			</responsibleParty>
+			<encounterParticipant typeCode="ADM">
+				<assignedEntity>
+					<id root="2.16.840.1.113883.2.9.4.3.2" extension="PROVAX00X00X000Y" assigningAuthorityName="MEF"/>
+					<assignedPerson>
+						<name>
+							<family>Esempio</family>
+							<given>Test</given>
+						</name>
+					</assignedPerson>
+				</assignedEntity>
+			</encounterParticipant>
+			<location>
+				<healthCareFacility>
+					<id root="2.16.840.1.113883.2.9.4.1.6" extension="120103.XX.49" assigningAuthorityName="Ministero della Salute"/>
+					<location>
+						<name>Terapia Intensiva</name>
+					</location>
+					<serviceProviderOrganization>
+						<id root="2.16.840.1.113883.2.9.4.1.2" extension="120103.XX" assigningAuthorityName="Ministero della Salute"/>
+						<name>Ospedale Sant'Eugenio</name>
+						<telecom use="MC" value="tel:3340000000"/>
+						<asOrganizationPartOf>
+							<id root="2.16.840.1.113883.2.9.4.1.1" extension="120103" assigningAuthorityName="Ministero della Salute"/>
+						</asOrganizationPartOf>
+					</serviceProviderOrganization>
+				</healthCareFacility>
+			</location>	
+		</encompassingEncounter>
+	</componentOf>
+	
+	
+	
+	<component>
+		<structuredBody moodCode="EVN" classCode="DOCBODY">
+			<component typeCode="COMP">
+				<section classCode="DOCSECT" moodCode="EVN" ID="Modalità_di_Trasporto">
+					<templateId root="2.16.840.1.113883.2.9.10.1.6.20"/>
+					<code code="11459-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Modalità di Trasporto"/>
+					<title>Modalità di Trasporto</title>
+					<text>
+						<table>
+							<thead>
+								<tr>
+									<th>Modalità Trasporto</th>
+									<th>Responsabile dell’invio</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>[MODALITÀ_TRASPORTO]</td>
+									<td>[RESPONSABILE_INVIO]</td>
+								</tr>
+							</tbody>
+						</table>
+					</text>
+					<entry>
+						<act classCode="TRNS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.2.9.10.1.6.40"/>		
+							<code code="3" codeSystem="2.16.840.1.113883.2.9.6.1.54.6" codeSystemName="ModalitàTrasporto_VPS" displayName="Autonomo (arrivato con mezzi propri)"/>
+							<statusCode code="completed"/>
+							<participant typeCode="REFB">
+								<participantRole>
+									<code code="3" codeSystem="2.16.840.1.113883.2.9.6.1.54.1" codeSystemName="ResponsabileInvio_VPS" displayName="Specialista"/>
+								</participantRole>
+							</participant>
+						</act>
+					</entry>
+				</section>
+			</component>
+			
+			<component>
+				<section classCode="DOCSECT" moodCode="EVN" ID="MOTIVO_VISITA">
+					<templateId root="2.16.840.1.113883.2.9.10.1.6.42"/>
+					<code code="46239-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Motivo della visita"/>
+					<title>Motivo della visita</title>
+					<text>
+						<list>
+							<item>
+								<content ID="PROBLEMA_PRINCIPALE">Incidente stradale</content>
+							</item>
+							<item>
+								<content ID="CAUSA_ACCESSO">[DESC_CAUSA_ACCESSO]</content>
+							</item>
+						</list>
+					</text>
+					<entry> 
+						<observation classCode="OBS" moodCode="EVN"> 
+							<templateId root="2.16.840.1.113883.2.9.10.1.6.37"/>
+							<code code="56817-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problema all'accesso"/>
+							<statusCode code="completed"/>
+							<value xsi:type="CD" code="15" codeSystem="2.16.840.1.113883.2.9.6.1.54.2" codeSystemName="ProblemaPrincipale_VPS" displayName="Ipertensione Arteriosa"/>
+						</observation> 
+					</entry>
+					<entry> 
+						<observation classCode="OBS" moodCode="EVN"> 
+							<templateId root="2.16.840.1.113883.2.9.10.1.6.87"/>
+							<code code="29298-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Ragione della visita"/>
+							<statusCode code="completed"/>
+							<value xsi:type="ST">XXX</value>
+						</observation> 
+					</entry>
+				</section>	
+			</component>
+			
+			<component>
+				<section classCode="DOCSECT" moodCode="EVN" ID="TRIAGE">
+					<templateId root="2.16.840.1.113883.2.9.10.1.6.21"/>
+					<code code="54094-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Triage note"/>
+					<title>Triage</title>
+					<text>
+						<list>
+							<item>
+								<content ID="Codice_Triage">Rosso</content>
+							</item>
+							<item>
+								<content ID="Data_Ora_Triage">30/03/2022 alle 10:10</content>
+							</item>
+							<item>
+								<content ID="Note_Commenti">[DESC_NOTE_COMMENTI]</content>
+							</item>
+						</list>
+					</text>
+					<entry> 
+						<observation classCode="OBS" moodCode="EVN"> 
+							<templateId root="2.16.840.1.113883.2.9.10.1.6.39"/>
+							<code code="11283-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Valutazione Acutezza"/>
+							<text>
+								<reference value="#Note_Commenti"/>
+							</text>
+							<statusCode code="completed"/>
+							<effectiveTime value="20220330101000+0100"/>
+							<value xsi:type="CD" code="R" codeSystem="2.16.840.1.113883.2.9.6.1.54.4" codeSystemName="CodiceTriage_VPS" displayName="Rosso"/>
+							<performer typeCode="PRF">
+								<assignedEntity>
+									<id root="2.16.840.1.113883.2.9.4.3.2" extension="PROVAX00X00X000Y" assigningAuthorityName="MEF"/>
+									<assignedPerson>
+										<name>
+											<family>Esempio</family>
+											<given>Test</given>
+										</name>
+									</assignedPerson>
+								</assignedEntity>
+							</performer>
+						</observation> 
+					</entry>
+				</section>
+			</component>
+			
+			<component>
+				<section classCode="DOCSECT" moodCode="EVN" ID="ENCOUNTERS">
+					<templateId root="2.16.840.1.113883.2.9.10.1.6.50"/>
+					<code code="46240-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of Hospitalizations + Outpatient visits Narrative"/>
+					<title> Fasi dell’episodio di Pronto Soccorso </title>
+					<text>
+						<table>
+							<thead>
+								<tr>
+									<th>Dettagli Visita</th>
+									<th>Note dimissione - Commento</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>[DETTAGLI_VISITA]</td>
+									<td>[NOTE_DIMISSIONE_COMMENTO]</td>
+								</tr>
+							</tbody>
+						</table>
+					</text>
+					<entry>
+						<encounter moodCode="EVN" classCode="ENC"> 
+							<templateId root="2.16.840.1.113883.2.9.10.1.6.51"/>
+							<code code="XXX" codeSystem="2.16.840.1.113883.2.9.1.11.1.2.4" codeSystemName="TipoEncounter_VPS" displayName="[DESC_VISITA]"/>
+							<effectiveTime>
+								<low value="20220415090909+0100"/>
+								<high value="20220415160000+0100"/>
+							</effectiveTime>
+							<participant typeCode="ADM">
+							<!--Operatore/Medico di ammissione-->
+								<time>
+									<low value="20220415101010+0100"/>
+									<high value="20220415151515+0100"/>
+								</time>
+								<participantRole classCode="ROL">
+									<id root="2.16.840.1.113883.2.9.4.3.2" extension="PROVAX00X00X000Y" assigningAuthorityName="MEF"/>
+									<playingEntity>
+										<name>
+											<family>Esempio</family>
+											<given>Test</given>
+										</name>
+									</playingEntity>
+								</participantRole>
+							</participant>
+							<participant typeCode="ATND">
+							<!--Turnazione medica: medico che ha avuto in carico il paziente-->
+								<time>
+									<low value="20220415101010+0100"/>
+									<high value="20220415151515+0100"/>
+								</time>
+								<participantRole classCode="ROL">
+									<id root="2.16.840.1.113883.2.9.4.3.2" extension="PROVAX00X00X000Y" assigningAuthorityName="MEF"/>
+									<playingEntity>
+										<name>
+											<family>Esempio</family>
+											<given>Test</given>
+										</name>
+									</playingEntity>
+								</participantRole>
+							</participant>
+							<participant typeCode="DIS">
+							<!--Medico di dimissione-->
+								<time>
+									<low value="20220415101010+0100"/>
+									<high value="20220415151515+0100"/>
+								</time>
+								<participantRole classCode="ROL">
+									<id root="2.16.840.1.113883.2.9.4.3.2" extension="PROVAX00X00X000Y" assigningAuthorityName="MEF"/>
+									<playingEntity>
+										<name>
+											<family>Esempio</family>
+											<given>Test</given>
+										</name>
+									</playingEntity>
+								</participantRole>
+							</participant>
+							<participant typeCode="LOC">
+							<!--Collocazione Paziente-->
+								<time>
+									<low value="20220415101010+0100"/>
+									<high value="20220415151515+0100"/>
+								</time>
+								<participantRole>
+									<templateId root="2.16.840.1.113883.2.9.10.1.6.64"/>
+									<id root="2.16.840.1.113883.2.9.4.1.2" extension="111" assigningAuthorityName="Ministero della Salute"/>
+									<code code="08" codeSystem="2.16.840.1.113883.2.9.1.11.1.2.10" codeSystemName="TipoLuogo_VPS" displayName="Cardiologia(a)"/>
+								</participantRole>
+							</participant>
+							<entryRelationship typeCode="SUBJ">
+							<!--Note dimissione - Commento-->
+								<act classCode="ACT" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.2.9.10.1.6.47"/>
+									<code code="48767-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Annotation Comment"/>
+									<text>
+										<reference value="#[NOTE]"/>
+									</text>
+									<author>
+										<time value="20220420101010+0100"/>
+										<assignedAuthor>
+											<id root="2.16.840.1.113883.2.9.4.3.2" extension="PROVAX00X00X000Y" assigningAuthorityName="MEF"/>
+											<assignedPerson>
+												<name>
+													<family>Esempio</family>
+													<given>Test</given>
+												</name>
+											</assignedPerson>
+										</assignedAuthor>
+									</author>
+								</act>
+							</entryRelationship>
+						</encounter>
+					</entry>
+				</section>	
+			</component>
+			
+			<component>
+				<section classCode="DOCSECT" moodCode="EVN" ID="DECORSO_OSPEDALIERO">
+					<templateId root="2.16.840.1.113883.2.9.10.1.6.23"/>
+					<code code="8648-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Decorso ospedaliero"/>
+					<title> Decorso Ospedaliero </title>
+					<text>
+						<paragraph>
+							Il paziente giungeva alla nostra attenzione sintomatico per 
+							incidente stradale. 
+						</paragraph>
+					</text>
+					<author>
+						<time value="20220416101010+0100"/>
+						<assignedAuthor>
+							<id root="2.16.840.1.113883.2.9.4.3.2" extension="PROVAX00X00X000Y" assigningAuthorityName="MEF"/>
+							<assignedPerson>
+								<name>
+									<family>Esempio</family>
+									<given>Test</given>
+								</name>
+							</assignedPerson>
+						</assignedAuthor>
+					</author>
+				</section>
+			</component>
+						
+			<component>
+				<section classCode="DOCSECT" moodCode="EVN" ID="ACCERTAMENTI">
+					<templateId root="2.16.840.1.113883.2.9.10.1.6.27"/>
+					<code code="30954-2"  codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"	displayName="Relevant diagnostic tests/laboratory data"/>
+					<title> Accertamenti </title>
+					<text>
+						<paragraph>
+							In data 07/07 u.s. eseguita valutazione dello stato di salute del paziente.
+						</paragraph>
+					</text>
+					<entry>
+						<organizer classCode="BATTERY" moodCode="EVN"> 
+							<templateId root="2.16.840.1.113883.2.9.10.1.6.45"/>
+							<statusCode code="completed"/>
+							<performer>
+								<time value="20220420101010+0100"/>
+								<assignedEntity>
+									<id root="2.16.840.1.113883.2.9.4.3.2" extension="PROVAX00X00X000Y" assigningAuthorityName="MEF"/>
+									<assignedPerson>
+										<name>
+											<family>Esempio</family>
+											<given>Test</given>
+										</name>
+									</assignedPerson>
+								</assignedEntity>
+							</performer>
+							<participant typeCode="REF">
+								<time value="20220420101010+0100"/>
+								<participantRole>
+									<id root="2.16.840.1.113883.2.9.4.3.2" extension="PROVAX00X00X000Y" assigningAuthorityName="MEF"/>
+									<playingEntity>
+										<name>
+											<family>Esempio</family>
+											<given>Test</given>
+										</name>
+									</playingEntity>
+								</participantRole>
+							</participant>
+							<!--Dettaglio Accertamento-->
+							<component>
+								<observation classCode="OBS" moodCode="EVN"> 
+									<templateId root="2.16.840.1.113883.2.9.10.1.6.46"/>
+									<code code="86524-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Type of assessment"/>
+									<statusCode code="completed"/>
+									<effectiveTime value="20220421101010+0100"/>
+									<value xsi:type="ST">[ESITO_ACCERTAMENTO]</value>
+								</observation> 
+							</component>
+						</organizer>
+					</entry>
+				</section>	
+			</component>
+			
+			<component>
+				<section classCode="DOCSECT" moodCode="EVN" ID="DIMISSIONE">
+					<templateId root="2.16.840.1.113883.2.9.10.1.6.24"/>
+					<code code="28574-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Note di Dimissione"/>
+					<title> Dimissione </title>
+					<text>
+						<table>
+							<thead>
+								<tr>
+									<th>Dimissione</th>
+									<th>Prognosi</th>
+									<th>Livello di appropriatezza</th>
+									<th>Data di decesso</th>
+									<th>Richiesta di autopsia</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td ID="REF_1">[DESC_DIMISSIONE]</td>
+									<td ID="REF_2">[DESC_PROGNOSI]</td>
+									<td ID="REF_3">[DESC_LIVELLO_APPROPRIATEZZA]</td>
+									<td ID="REF_4">[DESC_DATA_DECESSO]</td>
+									<td ID="REF_5">[DESC_RICHIESTA_AUTOPSIA]</td>
+								</tr>
+							</tbody>
+						</table>
+					</text>
+					<entry>
+						<act classCode="ACT" moodCode="EVN"> 
+							<templateId root="2.16.840.1.113883.2.9.10.1.6.66"/>
+							<code code="dimissione" codeSystem="2.16.840.1.113883.2.9.5.1.4"/>
+							<statusCode code="completed"/>
+							<effectiveTime value="20220427101010+0100"/>
+							<performer>
+								<assignedEntity>
+									<id root="2.16.840.1.113883.2.9.4.3.2" extension="PROVAX00X00X000Y" assigningAuthorityName="MEF"/>
+									<assignedPerson>
+										<name>
+											<family>Esempio</family>
+											<given>Test</given>
+										</name>
+									</assignedPerson>
+								</assignedEntity>
+							</performer>							
+							<!--Encounter Post Dimissione-->
+							<entryRelationship typeCode="COMP">
+								<encounter classCode="ENC" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.2.9.10.1.6.67"/>
+									<id root="2.16.840.1.113883.2.9.2.120101.4.6" extension="999999"/>
+									<code code="IMP" codeSystem="2.16.840.1.113883.2.9.1.11.1.2.9" codeSystemName="TipoEncounterPostDimissione_VPS" displayName="inpatient"/>
+									<text><reference value="#[REF_1]"/></text>
+									<effectiveTime value="20220401101010+0100"/>									
+									<!--Collocazione paziente Post Dimissione-->
+									<participant typeCode="LOC">
+										<time>
+											<low value="20220410101010+0100"/>
+											<high value ="20220427101010+0100"/>
+										</time>
+										<participantRole classCode="SDLOC">
+											<templateId root="2.16.840.1.113883.2.9.10.1.6.64"/>
+											<id root="2.16.840.1.113883.2.9.4.1.1" extension="111" assigningAuthorityName="[NOME_ORGANIZZAZIONE]"/>
+											<code code="3" codeSystem="2.16.840.1.113883.2.9.1.11.1.2.11" codeSystemName="TipoLuogoPostDimissione_VPS" displayName="Trafesrimento in un altro istituto"/>
+										</participantRole>
+									</participant>							
+									<!--Ragione Collocazione-->
+									<entryRelationship typeCode="RSON">
+										<observation classCode="OBS" moodCode="EVN">
+											<templateId root="2.16.840.1.113883.2.9.10.1.6.68"/>
+											<code code="1" codeSystem="2.16.840.1.113883.2.9.1.11.1.2.13" codeSystemName="ProblemType_VPS" displayName="in continuità di soccorso"/>
+											<statusCode code="completed"/>
+											<effectiveTime value="20220428101010+0100"/>
+											<value xsi:type="ST">[DETTAGLIO_CAUSA_TRASFERIMENTO]</value>
+										</observation>
+									</entryRelationship>
+								</encounter>
+							</entryRelationship>							
+							<!--Trasferimento Post Dimissione-->
+							<entryRelationship typeCode="COMP">
+								<act classCode="TRNS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.2.9.10.1.6.92"/>
+									<code nullFlavor="NA"/>
+									<text><reference value="#[REF_1]"/></text>
+									<effectiveTime value="20220427101010+0100"/>
+									<!--Collocazione paziente Post Dimissione-->
+									<participant typeCode="LOC">
+										<time>
+											<low value="20220427101010+0100"/>
+											<high value ="20220506101010+0100"/>
+										</time>
+										<participantRole classCode="SDLOC">
+											<templateId root="2.16.840.1.113883.2.9.10.1.6.64"/>
+											<id root="2.16.840.1.113883.2.9.4.1.1" extension="111" assigningAuthorityName="[NOME_ORGANIZZAZIONE]"/>
+											<code code="2" codeSystem="2.16.840.1.113883.2.9.1.11.1.2.11" codeSystemName="TipoLuogoPostDimissione_VPS" displayName="ricovero in reparto di degenza"/>
+										</participantRole>
+									</participant>
+									<!--Ragione del Trasferimento-->
+									<entryRelationship typeCode="RSON">
+										<observation classCode="OBS" moodCode="EVN">
+												<templateId root="2.16.840.1.113883.2.9.10.1.6.68"/>
+												<code code="3" codeSystem="2.16.840.1.113883.2.9.1.11.1.2.13" codeSystemName="ProblemType_VPS" displayName="Ritorno all’ospedale che ha richiesto consulenza"/>
+												<statusCode code="completed"/>
+												<effectiveTime value="20220506101010+0100"/>
+												<value xsi:type="ST">[DETTAGLIO_CAUSA_TRASFERIMENTO]</value>
+										</observation>
+									</entryRelationship>
+								</act>
+							</entryRelationship>							
+							<!--Observation Diagnosi Dimissione-->
+							<entryRelationship typeCode="COMP">
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.2.9.10.1.6.70"/>
+									<code code="29308-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnosi"/>
+									<statusCode code="completed"/>
+									<effectiveTime value="20220427101010+0100"/>
+									<value xsi:type="CD" code="162.3" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9-CM" displayName="Tumore del solco polmonare"/>
+								</observation>
+							</entryRelationship>							
+							<!--Observation Esito-->
+							<entryRelationship typeCode="COMP">
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.2.9.10.1.6.69"/>
+									<code code="11302-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Esito"/>
+									<statusCode code="completed"/>
+									<value xsi:type="CD" code="1" codeSystem="2.16.840.1.113883.2.9.6.1.54.5" codeSystemName="EsitoTrattamento_VPS" displayName="Dimissione a domicilio"/>
+								</observation>
+							</entryRelationship>
+						</act>
+					</entry>					
+					<!--prognosi-->
+					<entry>
+						<observation classCode="OBS" moodCode="EVN"> 
+							<templateId root="2.16.840.1.113883.2.9.10.1.6.66"/>
+							<code code="75328-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Prognosi"/>
+							<statusCode code="completed"/>
+							<effectiveTime value="20220427171717+0100"/>
+							<value xsi:type="ST">[PROGNOSI]</value>
+						</observation> 
+					</entry>					
+					<!--livello di appropriatezza-->
+					<entry>
+						<observation classCode="OBS" moodCode="EVN"> 
+							<templateId root="2.16.840.1.113883.2.9.10.1.6.72"/>
+							<code code="11283-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Valutazione Acutezza"/>
+							<statusCode code="completed"/>
+							<effectiveTime value="20220427171717+0100"/>
+							<value xsi:type="CD" code="R" codeSystem="2.16.840.1.113883.2.9.6.1.54.4" codeSystemName="CodiceTriage_VPS" displayName="Rosso - Molto critico"/>
+						</observation> 
+					</entry>
+					<!--data decesso-->	
+					<entry>
+						<observation classCode="OBS" moodCode="EVN"> 
+							<templateId root="2.16.840.1.113883.2.9.10.1.6.86"/>
+							<code code="31211-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Date of death"/>
+							<statusCode code="completed"/>
+							<effectiveTime value="20220530101010+0100"/>
+						</observation> 
+					</entry> 
+					<!--richiesta autopsia-->
+					<entry>
+						<observation classCode="OBS" moodCode="EVN"> 
+							<templateId root="2.16.840.1.113883.2.9.10.1.6.73"/>
+							<code code="45477-7" codeSystem="2.16.840.1.113883.6.1" displayName="Advance directive - autopsy request"/>
+							<statusCode code="completed"/>
+							<value xsi:type="BL" value="true"/>
+						</observation> 
+					</entry>							
+				</section>
+			</component>
+			
+			<component>
+				<section classCode="DOCSECT" moodCode="EVN" ID="PIANO_CURA_DIMISSIONE">
+					<templateId root="2.16.840.1.113883.2.9.10.1.6.34"/>
+					<code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Piano di cura"/>
+					<title>Piano di cura</title>
+					<text>
+						<list>
+							<item>visite di routine per verificare che tutte le funzionalità siano tornate</item>
+							<item>fisioterapia all'arto superiore destro</item>
+						</list>
+					</text>
+					<author>
+						<time value="20220428101010+0100"/>
+						<assignedAuthor>
+							<id root="2.16.840.1.113883.2.9.4.3.2" extension="PROVAX00X00X000Y" assigningAuthorityName="MEF"/>
+							<assignedPerson>
+								<name>
+									<family>Esempio</family>
+									<given>Test</given>
+								</name>
+							</assignedPerson>
+						</assignedAuthor>
+					</author>
+					<entry>
+						<act classCode="ACT" moodCode="INT">
+							<templateId root="2.16.840.1.113883.2.9.10.1.6.62"/>
+							<code code="27536-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Cardiac rehabilitation treatment plan"/>
+							<statusCode code="active"/>
+							<author>
+								<time value="20220428101010+0100"/>
+								<assignedAuthor>
+									<id root="2.16.840.1.113883.2.9.4.3.2" extension="PROVAX00X00X000Y" assigningAuthorityName="MEF"/>
+									<assignedPerson>
+										<name>
+											<family>Esempio</family>
+											<given>Test</given>
+										</name>
+									</assignedPerson>
+								</assignedAuthor>
+							</author>
+							<reference typeCode="REFR">
+								<externalAct classCode="ACT" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.2.9.10.1.6.89"/>
+									<id root="2.16.840.1.113883.2.9.4.3.9" extension="999999" assigningAuthorityName="MEF"/>
+								</externalAct>
+							</reference>
+						</act>
+					</entry>
+				</section>
+			</component>
+			
+		</structuredBody>
+	</component>
+</ClinicalDocument>
