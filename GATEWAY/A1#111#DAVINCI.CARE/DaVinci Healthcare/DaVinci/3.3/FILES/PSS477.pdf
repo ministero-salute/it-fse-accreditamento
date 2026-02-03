@@ -36,11 +36,13 @@ endobj
 endobj
 6 0 obj
 <<
-/Length 181
+/Length 180
 /Filter /FlateDecode
 >>
 stream
-xú-éMÇ@E˜Û+.Æ,¬t≤"w}	EB–[¥p35œ¥rg\ÙÔìhs·,Œ·nHL”ë"äÉ9Ë$‰À0i·SYYXU∑oFQ3‡Éw ±∆Ì/ΩHúw)2ı‚π_¥u>Ú–òiW·®f!¢eØíXbª'»P.F†ß†±∆∂|wp%C9ßÓeÕ∆Ÿ	>M[6˝[£hz£°∞›≠qÕNˇ'Ê9x¨É_jO‚Ã±;Ä
+xú-é±
+¬0E˜|≈≈©äh¨“nZ-ﬂ‡‡Õ´µ⁄§òtÔ-‚r·Áp7$ÊEåXÅ*/f	Ë TÇïî #"™^∑›ãQ=ÜŒñﬂ:∞¡ıÉQqR8nî˙…o\¢™k/„úÕP:ãÇØê
+2Õ‚4KR‰;Çíj95Ç&"⁄[ﬂÒ- ‘Çæ’-€‡ß¯∏æv˝À†rΩ5–»∑kúÀ√ˇâmèÕÏó⁄ë¯Õ`;Ç
 endstream
 endobj
 7 0 obj
@@ -75,21 +77,20 @@ endobj
 endobj
 12 0 obj
 <<
-/Length 58643
+/Length 54987
 /Type /EmbeddedFile
 /Subtype /application#2Fxml
 /Params 13 0 R
 >>
 stream
-<?xml version='1.0' encoding='UTF-8'?>
-<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdtc="urn:hl7-org:sdtc" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+<ClinicalDocument xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdtc="urn:hl7-org:sdtc">
 	<realmCode code="IT"/>
 	<typeId root="2.16.840.1.113883.1.3" extension="POCD_MT000040UV02"/>
 	<templateId root="2.16.840.1.113883.2.9.10.1.4.1.1" extension="1.4" assigningAuthorityName="HL7 Italia"/>
 	<id root="2.16.840.1.113883.2.9.2.120.4.4" extension="030702.LCNLDE90L47H501Q.20220510112426.Q123E456" assigningAuthorityName="Regione Lazio"/>
 	<code code="60591-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Profilo Sanitario Sintetico"/>
 	<title> Profilo Sanitario Sintetico </title>
-	<effectiveTime value="20260121120546+0100"/>
+	<effectiveTime value="20220510120000+0100"/>
 	<confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" codeSystemName="HL7 Confidentiality" displayName="Normal"/>
 	<languageCode code="it-IT"/>
 	<setId root="2.16.840.1.113883.2.9.2.120.4.4" extension="030702.LCNLDE90L47H501Q.20220510112426.Q123E456" assigningAuthorityName="Regione Lazio"/>
@@ -113,7 +114,7 @@ stream
 					<family>Test</family>
 					<given>Guido</given>
 				</name>
-				<administrativeGenderCode code="X" codeSystem="2.16.840.1.113883.5.1" codeSystemName="HL7 AdministrativeGender" displayName="Femmina"/> 
+				<administrativeGenderCode code="F" codeSystem="2.16.840.1.113883.5.1" codeSystemName="HL7 AdministrativeGender" displayName="Femmina"/> 
 				<birthTime value="19900619"/>
 				<birthplace> 
 					<place>
@@ -352,7 +353,7 @@ stream
 										<low value="20200410000000+0100"/>
 										<high value="20220410000000+0100"/>
 									</effectiveTime>
-									<value xsi:type="CD" code="ALG" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ObservationIntoleranceType" displayName="Allergy"/>
+									<value xsi:type="CD" code="ALG" codeSystem="2.16.840.1.113883.1.11.19700" codeSystemName="ObservationIntoleranceType" displayName="Allergy"/>
 									<participant typeCode="CSM">
 										<participantRole classCode="MANU">
 											<playingEntity classCode="MMAT">
@@ -365,7 +366,7 @@ stream
 										</participantRole>
 									</participant>
 									<entryRelationship typeCode="MFST">
-										<observation classCode="OBS" moodCode="EVN">
+										<observation classCode="OBS" moodCode="EVN" >
 											<templateId root="2.16.840.1.113883.2.9.10.1.4.3.1.5.1"/>
 											<id root="XXX"/>
 											<code code="75321-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Obiettivit√† Clinica"/>
@@ -427,7 +428,7 @@ stream
 				<section ID="TERAPIE_FARMACOLOGICHE">
 					<templateId root="2.16.840.1.113883.2.9.10.1.4.2.2"/>
 					<id root="XXX"/>
-					<code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="HISTORY OF MEDICATION USE"/>
+					<code code='10160-0' codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC' displayName='HISTORY OF MEDICATION USE'/>
 					<title>Terapie Farmacologiche</title>
 					<text>
 						[NARRATIVE_BLOCK]
@@ -445,10 +446,10 @@ stream
 								<high value="20220501000000+0100"/>
 							</effectiveTime>
 							<effectiveTime operator="A" xsi:type="PIVL_TS" institutionSpecified="true">
-								<period value="6" unit="h"/>
+								<period value="6" unit="h" />
 							</effectiveTime>
 							<!--Via di somministrazione (OPZIONALE)-->
-							<routeCode code="SQ" codeSystem="2.16.840.1.113883.5.112" codeSystemName=" HL7 RouteOfAdministration" displayName="Injection, subcutaneous"/>
+							<routeCode code="SQ" codeSystem="2.16.840.1.113883.5.112" codeSystemName="HL7 RouteOfAdministration" displayName="Injection, subcutaneous"/>
 							<!--Sito di somministrazione (OPZIONALE)-->
 							<approachSiteCode code="LA" codeSystem="2.16.840.1.113883.5.1052" codeSystemName="ActSite" displayName="left arm"/>
 							<!--Dose (OPZIONALE)-->
@@ -470,7 +471,7 @@ stream
 										<templateId root="2.16.840.1.113883.10.22.4.3"/>
 										<code code="035606033" codeSystem="2.16.840.1.113883.2.9.6.1.5" codeSystemName="AIC" displayName="ARIXTRA*2,5MG/0,5MLSC 10SIR.">
 											<originalText>
-												<reference value="#[REF_FARM]"/>
+												<reference value='#[REF_FARM]'/>
 											</originalText>
 											<translation code="B01AX05" codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC" displayName="FONDAPARINUX"/>
 										</code>
@@ -505,13 +506,13 @@ stream
 						<substanceAdministration classCode="SBADM" moodCode="EVN">
 							<templateId root="2.16.840.1.113883.2.9.10.1.4.3.3.1"/>
 							<id root="XXX"/>
-							<code code="IMMUNIZ" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Immunization"/>
+							<code code="IMMUNIZ" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Immunization" />
 							<text>
 								<reference value="#[REF_DESC_VACC]"/>
 							</text>
 							<statusCode code="completed"/>
 							<effectiveTime value="20210420101010+0100"/>
-							<routeCode code="IM" codeSystem="2.16.840.1.113883.5.112" codeSystemName=" HL7 RouteOfAdministration" displayName="Injection, intramuscular"/>
+							<routeCode code="IM" codeSystem="2.16.840.1.113883.5.112" codeSystemName="HL7 RouteOfAdministration" displayName="Injection, intramuscular"/>
 							<consumable typeCode="CSM">
 								<manufacturedProduct classCode="MANU">
 									<templateId root="2.16.840.1.113883.2.9.10.1.4.3.3.2"/>
@@ -553,7 +554,7 @@ stream
 							</entryRelationship>
 							<!--reazioni avverse-->
 							<entryRelationship typeCode="CAUS">
-								<observation classCode="OBS" moodCode="EVN">
+								<observation classCode="OBS" moodCode="EVN" >
 									<templateId root="2.16.840.1.113883.2.9.10.1.4.3.1.5.1"/>
 									<id root="XXX"/>
 									<code code="75321-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Obiettivit√† Clinica"/>
@@ -576,7 +577,7 @@ stream
 							<entryRelationship typeCode="SUBJ" inversionInd="true">
 								<act classCode="ACT" moodCode="EVN">
 									<templateId root="2.16.840.1.113883.2.9.10.1.4.3.1.7"/>
-									<code code="48767-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Annotation Comment"/>
+									<code code="48767-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Annotazioni e commenti"/>
 									<text>
 										<reference value="#[REF_COMMENTI_VAC]"/>
 									</text>
@@ -613,7 +614,7 @@ stream
 								<observation classCode="OBS" moodCode="EVN">
 									<templateId root="2.16.840.1.113883.2.9.10.1.4.3.4.2"/>
 									<id root="XXX"/>
-									<code code="75326-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem"/>
+									<code code="75326-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problema"/>
 									<text>
 										<reference value="#[REF_PROBLEMA]"/>
 									</text>
@@ -627,7 +628,7 @@ stream
 											<reference value="#[REF_PROBLEMA]"/>
 										</originalText>
 									</value>
-									<!--gravit&#224; del problema-->
+									<!--gravit√† del problema-->
 									<entryRelationship typeCode="REFR" inversionInd="false">
 										<observation classCode="OBS" moodCode="EVN">
 											<templateId root="2.16.840.1.113883.2.9.10.1.4.3.4.4"/>
@@ -651,7 +652,7 @@ stream
 											<value xsi:type="CE" code="LA18632-2" codeSystem="2.16.840.1.113883.6.1" displayName="Inactive"/>
 										</observation>
 									</entryRelationship>
-									<!--cronicit&#224; del problema-->
+									<!--cronicit√† del problema-->
 									<entryRelationship typeCode="REFR" inversionInd="false">
 										<observation classCode="OBS" moodCode="EVN">
 											<templateId root="2.16.840.1.113883.2.9.10.1.4.3.4.5"/>
@@ -739,90 +740,16 @@ stream
 							</tbody>
 						</table>		
 					</text>
+					
 					<entry>
-						<organizer classCode="CLUSTER" moodCode="EVN">
-							<templateId root="2.16.840.1.113883.2.9.10.1.4.3.16.1"/>
-							<id root="XXX"/>
-							<code code="10157-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Storia di malattie di membri familiari"/>
-							<statusCode code="completed"/>
-							<subject typeCode="SBJ">
-								<relatedSubject classCode="PRS">
-									<code code="FTH" codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" displayName="father"/>
-									<subject>
-										<administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" codeSystemName="HL7 AdministrativeGender" displayName="Maschio"/>
-									</subject>
-								</relatedSubject>
-							</subject>
-							<!-- dettaglio anamnesi-->
-							<component>
-								<observation classCode="OBS" moodCode="EVN">
-									<templateId root="2.16.840.1.113883.2.9.10.1.4.3.16.2"/>
-									<id root="XXX"/>
-									<code code="52797-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnosi codice ICD"/>
-									<text>
-										<reference value="#fam_4"/>
-									</text>
-									<statusCode code="completed"/>
-									<effectiveTime value="20180420101010+0100"/>
-									<value xsi:type="CD" code="410.00" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9-CM" displayName="IMA DELLA PARETE ANTEROLATERALE">
-										<originalText>
-											<reference value="#fam_4"/>
-										</originalText>
-									</value>
-									<entryRelationship typeCode="SUBJ">
-										<observation classCode="OBS" moodCode="EVN">
-											<templateId root="2.16.840.1.113883.2.9.10.1.4.3.16.3"/>
-											<code code="35267-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Et√† diagnosi patologia"/>
-											<statusCode code="completed"/>
-											<value xsi:type="PQ" value="49" unit="a"/>
-										</observation>
-									</entryRelationship>	
-									<entryRelationship typeCode="SUBJ">
-										<observation classCode="OBS" moodCode="EVN">
-											<templateId root="2.16.840.1.113883.2.9.10.1.4.3.16.3"/>
-											<code code="39016-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Et√† decesso"/>
-											<statusCode code="completed"/>
-											<value xsi:type="PQ" value="50" unit="a"/>
-										</observation>
-									</entryRelationship>
-								</observation>
-							</component>
-							<component>
-								<observation classCode="OBS" moodCode="EVN">
-									<templateId root="2.16.840.1.113883.2.9.10.1.4.3.16.2"/>
-									<id root="d42ebf70-5c89-11db-b0de-0800200c9b66"/>
-									<code code="52797-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Codice diagnosi ICD"/>
-									<text>
-										<reference value="#fam_str_3"/>
-									</text>
-									<statusCode code="completed"/>
-									<effectiveTime nullFlavor="UNK"/>
-									<value xsi:type="CD" code="369.2" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD3350 9-CM (diagnosis codes)" displayName="Deficit Visivi">
-										<originalText>
-											<reference value="#fam_3"/>
-										</originalText>
-									</value>
-									<entryRelationship typeCode="SUBJ">
-										<observation classCode="OBS" moodCode="EVN">
-											<templateId root="2.16.840.1.113883.2.9.10.1.4.3.16.3"/>
-											<code code="35267-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Et√† diagnosi patologia"/>
-											<statusCode code="completed"/>
-											<value xsi:type="PQ" value="45" unit="a"/>
-										</observation>
-									</entryRelationship>
-								</observation>
-							</component>
-						</organizer>
-					</entry>
-					<!--entry>
 						<observation classCode='OBS' moodCode='EVN'>
 							<templateId root='2.16.840.1.113883.2.9.10.1.4.3.16.4'/>
 							<id root='XXX'/>
 							<code code="75326-9" codeSystem="2.16.840.1.113883.2.9.77.22.11.9" codeSystemName="LOINC" displayName="Problema"/>
 							<statusCode code="completed"/>
-							<value xsi:type="CD" code="no-known-problems" codeSystem="2.16.840.1.113883.11.22.9" codeSystemName="	IPSNoProbsInfos" displayName="Informazioni non note sull'anamnesi familiare"/>
+							<value xsi:type="CD" code="no-known-problems" codeSystem="2.16.840.1.113883.11.22.17" codeSystemName="IPSNoProbsInfos" displayName="Informazioni non note sull'anamnesi familiare"/>
 						</observation>
-					</entry-->
+					</entry>
 					
 				</section>
 			</component>
@@ -832,7 +759,7 @@ stream
 					<templateId root="2.16.840.1.113883.2.9.10.1.4.2.6"/>
 					<id root="XXX"/>
 					<code code="29762-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Stile di vita"/>
-					<title>Stili di Vita (Social History)</title>
+					<title>Stili di Vita</title>
 					<text>
 						<table border="1" width="100%">
 							<tbody>
@@ -844,8 +771,8 @@ stream
 									<td>Forte Fumatore</td>
 								</tr>
 								<tr>
-									<td><content ID="alcool_use_GBL">Consumo Alcool</content></td>
-									<td><content ID="alcool_use">Astemio</content></td>
+									<td ><content ID="alcool_use_GBL">Consumo Alcool</content></td>
+									<td><content ID="alcool_use">Astemio</content ></td>
 								</tr>
 								<tr>
 									<th colspan="2">Altro</th>
@@ -888,7 +815,7 @@ stream
 			</component>
 			
 			<component typeCode="COMP">
-				<section ID="GRAVIDANZE_PARTO">
+				<section ID="GRAVIDANZE_E_PARTO">
 					<templateId root="2.16.840.1.113883.2.9.10.1.4.2.7"/>
 					<id root="XXX"/>
 					<code code="10162-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Storia di gravidanze"/>
@@ -896,7 +823,7 @@ stream
 					<text>
 						<list>
 							<item ID="pregn_1">
-								<content ID="pregn_1_data"/>
+								<content ID="pregn_1_data"></content>
 								<content ID="pregn_1_info">Aborto spontaneo 2 mese</content>
 							</item>
 							<item ID="pregn_2">
@@ -934,7 +861,7 @@ stream
 						<table border="1" width="100%">
 							<thead>
 								<tr>
-									<th>Data</th>
+									<th >Data</th>
 									<th>Parametro</th>
 									<th>Valore</th>
 									<th>Note</th>
@@ -945,37 +872,37 @@ stream
 									<td>30/04/2020</td>
 									<td>Altezza</td>
 									<td>165 cm</td>
-									<td>¬†</td>
+									<td>&#160;</td>
 								</tr>
 								<tr>
 									<td>30/04/2020</td>
 									<td>Peso</td>
 									<td>78.8 Kg</td>
-									<td>¬†</td>
+									<td>&#160;</td>
 								</tr>
 								<tr>
 									<td>30/04/2020</td>
 									<td>BMI</td>
 									<td>28.7</td>
-									<td>¬†</td>
+									<td>&#160;</td>
 								</tr>
 								<tr>
 									<td>30/04/2020</td>
 									<td>Circonferenza Vita</td>
 									<td>234</td>
-									<td>¬†</td>
+									<td>&#160;</td>
 								</tr>
 								<tr>
 									<td>10/12/2019-20/04/2020</td>
 									<td>Media ultime 4 rilevazioni PA</td>
 									<td>84 - 150</td>
-									<td>¬†</td>
+									<td>&#160;</td>
 								</tr>
 								<tr>
 									<td>20/04/2020</td>
 									<td>PA</td>
 									<td>87 ‚Äì 90</td>
-									<td>¬†</td>
+									<td>&#160;</td>
 								</tr>
 							</tbody>
 						</table>
@@ -1041,7 +968,7 @@ stream
 			</component>
 			
 			<component typeCode="COMP">
-				<section ID="PROTESI_IMPIANTI_AUSILI">
+				<section ID="PROTESI_IMPIANTI_E_AUSILI">
 					<templateId root="2.16.840.1.113883.2.9.10.1.4.2.9"/>
 					<id root="XXX"/>
 					<code code="46264-8" displayName="Storia di uso di dispositivi medici" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
@@ -1075,11 +1002,11 @@ stream
 			</component>
 			
 			<component typeCode="COMP">
-				<section ID="PIANI_CURA">
+				<section ID="PIANI_DI_CURA">
 					<templateId root="2.16.840.1.113883.2.9.10.1.4.2.10"/>
 					<id root="XXX"/>
 					<code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Piano di cura"/>
-					<title>Piano di Cura</title>
+					<title>Piani di Cura</title>
 					<text>
 						[NARRATIVE_BLOCK]
 					</text>
@@ -1118,7 +1045,7 @@ stream
 										<templateId root="2.16.840.1.113883.10.22.4.3"/>
 										<code code="035606033" codeSystem="2.16.840.1.113883.2.9.6.1.5" codeSystemName="AIC" displayName="ARIXTRA*2,5MG/0,5MLSC 10SIR.">
 											<originalText>
-												<reference value="#[REF_FARM]"/>
+												<reference value='#[REF_FARM]'/>
 											</originalText>
 											<translation code="B01AX05" codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC" displayName="FONDAPARINUX"/>
 										</code>
@@ -1151,7 +1078,7 @@ stream
 							<effectiveTime value="20220909121122+0200"/>
 						</encounter>					
 					</entry>
-				<!--altre attivit&#224;-->
+				<!--altre attivit√†-->
 					<entry>
 						<act classCode="ACT" moodCode="RQO">
 							<templateId root="2.16.840.1.113883.2.9.10.1.4.3.10.5"/>
@@ -1170,7 +1097,7 @@ stream
 				<section ID="TRATTAMENTI_PROCEDURE_TERAPEUTICHE_CHIRURGICHE_DIAGNOSTICHE">
 					<templateId root="2.16.840.1.113883.2.9.10.1.4.2.11"/>
 					<id root="XXX"/>
-					<code code="47519-4" codeSystem="2.16.840.1.113883.6.1" displayName="Storia di Procedure"/>
+					<code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Storia di Procedure"/>
 					<title> Trattamenti e procedure terapeutiche, chirurgiche e diagnostiche </title>
 					<text>
 						[NARRATIVE_BLOCK]
@@ -1217,7 +1144,7 @@ stream
 			</component>
 			
 			<component typeCode="COMP">
-				<section ID="VISITE_RICOVERI">
+				<section ID="VISITE_E_RICOVERI">
 					<templateId root="2.16.840.1.113883.2.9.10.1.4.2.12"/>
 					<id root="XXX"/>
 					<code code="46240-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Storia di ospedalizzazioni e Storia di visite ambulatoriali"/> 
@@ -1258,9 +1185,9 @@ stream
 			</component>
 			
 			<component typeCode="COMP">
-				<section ID="STATO_FUNZIONALE_PAZIENTE">
+				<section ID="STATO_FUNZIONALE_DEL_PAZIENTE">
 					<templateId root="2.16.840.1.113883.2.9.10.1.4.2.13"/>
-					<id root="XXX"/>
+					<id root= "XXX"/>
 					<code code="47420-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Nota di valutazione dello stato funzionale"/>
 					<title>Stato funzionale del Paziente</title>
 					<text>
@@ -1295,7 +1222,7 @@ stream
 									<effectiveTime>
 										<low value="20220420101010+0100"/>
 									</effectiveTime> 
-									<value xsi:type="CD" code="LA4270-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allettato"/> 
+									<value xsi:type="CD" code="LA4270-0" codeSystem="2.16.840.1.113883.6.1"  codeSystemName="LOINC" displayName="Allettato"/> 
 								</observation> 
 							</component>							
 							<component> 
@@ -1306,7 +1233,7 @@ stream
 									<effectiveTime> 
 										<low value="20220420101010+0100"/> 
 									</effectiveTime> 
-									<value xsi:type="CD" code="PSSADI" codeSystem="2.16.840.1.113883.2.9.5.2.8" displayName="Assistenza Domiciliare Integrata"/> 
+									<value xsi:type="CD" code="PSSADI" codeSystem="2.16.840.1.113883.2.9.5.2.8" codeSystemName="AssistenzaDomiciliare_PSSIT" displayName="Assistenza Domiciliare Integrata"/> 
 								</observation> 
 							</component> 
 							
@@ -1318,7 +1245,7 @@ stream
 									<effectiveTime> 
 										<low value="20220420101010+0100"/> 
 									</effectiveTime> 
-									<value xsi:type="CD" code="780.97" codeSystem="2.16.840.1.113883.6.103" displayName="Stato mentale alterato"/> 
+									<value xsi:type="CD" code="780.97" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9CM" displayName="Stato mentale alterato"/> 
 								</observation> 
 							</component> 
 						</organizer> 
@@ -1327,10 +1254,10 @@ stream
 			</component>
 			
 			<component typeCode="COMP">
-				<section ID="INDAGINI_DIAGNOSTICHE_ESAMI_LABORATORIO">
+				<section ID="INDAGINI_DIAGNOSTICHE_E_ESAMI_DI_LABORATORIO">
 					<templateId root="2.16.840.1.113883.2.9.10.1.4.2.14"/>
 					<id root="XXX"/>
-					<code code="30954-2" codeSystem="2.16.840.1.113883.6.1" displayName="Test diagnostici rilevanti e &gt; o dati di laboratorio"/>
+					<code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Test diagnostici rilevanti e/o dati di laboratorio"/>
 					<title>Indagini diagnostiche e esami di laboratorio</title>
 					<text>
 						<table border="1" width="100%"> 
@@ -1496,7 +1423,7 @@ stream
 			</component>
 			
 			<component typeCode="COMP">
-				<section ID="RETI_PATOLOGIA">
+				<section ID="RETI_DI_PATOLOGIA">
 					<templateId root="2.16.840.1.113883.2.9.10.1.4.2.18"/>
 					<id root="XXX"/>
 					<code code="PSSIT99" codeSystem="2.16.840.1.113883.2.9.5.2.8" codeSystemName="ProfiloSanitarioSinteticoIT" displayName="Reti di Patologia"/>
@@ -1514,7 +1441,7 @@ stream
 								<low nullFlavor="UNK"/>
 								<!--high value="20200420101010+0100"/-->
 							</effectiveTime>
-							<entryRelationship typeCode="COMP">
+							<entryRelationship typeCode="SUBJ">
 								<act classCode="ACT" moodCode="EVN">
 									<templateId root="2.16.840.1.113883.2.9.10.1.4.3.1.7"/>
 									<code code="48767-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Annotation Comment"/>
@@ -1530,13 +1457,12 @@ stream
 			</component>	
 		</structuredBody>
 	</component>
-</ClinicalDocument>
-
+</ClinicalDocument>	
 endstream
 endobj
 13 0 obj
 <<
-/Size 58643
+/Size 54987
 >>
 endobj
 xref
@@ -1548,19 +1474,19 @@ xref
 0000000190 00000 n
 0000000302 00000 n
 0000000348 00000 n
-0000000603 00000 n
-0000000636 00000 n
-0000000697 00000 n
-0000000729 00000 n
-0000000761 00000 n
-0000000861 00000 n
-0000059623 00000 n
+0000000602 00000 n
+0000000635 00000 n
+0000000696 00000 n
+0000000728 00000 n
+0000000760 00000 n
+0000000860 00000 n
+0000055966 00000 n
 trailer
 <<
 /Root 1 0 R
-/ID [<4DAD53B794890BE5319630230FDBAF4B> <4DAD53B794890BE5319630230FDBAF4B>]
+/ID [<B0C3F0F4122EC09C34E2F151AFA31813> <B0C3F0F4122EC09C34E2F151AFA31813>]
 /Size 14
 >>
 startxref
-59657
+56000
 %%EOF
