@@ -1,0 +1,514 @@
+{
+  "subject_application_vendor": "INFO99 SAS",
+  "subject_application_id": "GLAB400",
+  "subject_application_version": "2.30",
+  "common_name_auth": "A1#111#INFO99SASXX",
+  "tipo_documento": [
+    "Referto di Medicina di Laboratorio",
+    "Referto di Radiologia"
+  ],
+  "servizi": [
+    "Validazione",
+    "Pubblicazione"
+  ],
+  "data_inizio_test": "2026-02-19",
+  "data_fine_test": "2026-02-26",
+  "test_results": [
+    {
+      "test_id": "LAB_TC4",
+      "test_name": "LAB - Caso di Test 4 - Microbiologia (CLUSTER)",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC4001_20260226183746795",
+      "workflow_instance_id": "2.16.840.1.113883.2.9.2.120.4.4.bca91958642e9381485555f996bfa4d7a88762d1e9f3ebfe6ec9783e1415303d.dcef23998f^^^^urn:ihe:iti:xdw:2013:workflowInstanceId",
+      "pdf_hash": "625708e7a851846020fc3ee6c6f67e214c50675591e050f38afdd7da1b356fa3",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:37:46.468604",
+      "steps": {
+        "validazione": {
+          "http_status": 201,
+          "success": true
+        },
+        "pubblicazione": {
+          "http_status": 202,
+          "success": true
+        }
+      }
+    },
+    {
+      "test_id": "LAB_TC17",
+      "test_name": "LAB - Caso di Test 17 - Emocromo con media",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC17001_20260226183750020",
+      "workflow_instance_id": "2.16.840.1.113883.2.9.2.120.4.4.74a1f8f05dbdcf11890edee3f4c20fbdfe335132a30c756bcbd9df89146fb22b.7a08982101^^^^urn:ihe:iti:xdw:2013:workflowInstanceId",
+      "pdf_hash": "a23af29a438787abb66cf739a3f8e2bffab6fbb8e206e621163890b3d9f38bf1",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:37:49.823258",
+      "steps": {
+        "validazione": {
+          "http_status": 201,
+          "success": true
+        },
+        "pubblicazione": {
+          "http_status": 202,
+          "success": true
+        }
+      }
+    },
+    {
+      "test_id": "LAB_TC7",
+      "test_name": "LAB - TC7 - CF paziente minuscolo",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC7001_20260226183751820",
+      "workflow_instance_id": null,
+      "pdf_hash": "5ca9bd8b4eb9db9ac39948b2220eb3f326fb595c090db08e752f353fe394a2cf",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:37:51.796812",
+      "steps": {
+        "validazione": {
+          "http_status": 403,
+          "success": false
+        }
+      }
+    },
+    {
+      "test_id": "LAB_TC9",
+      "test_name": "LAB - TC9 - addr/city mancante",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC9001_20260226183753230",
+      "workflow_instance_id": null,
+      "pdf_hash": "02e24be501851c5afe8a8b66f729e3dedeb76d76124730617c14bd745469f0e4",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:37:53.206294",
+      "steps": {
+        "validazione": {
+          "http_status": 400,
+          "success": false
+        }
+      }
+    },
+    {
+      "test_id": "LAB_TC10",
+      "test_name": "LAB - TC10 - patient/name/given mancante",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC10001_20260226183754639",
+      "workflow_instance_id": null,
+      "pdf_hash": "174395fd28d65346122ccb02048bec89790b82fec5ca6c892e2ba2ef16c1d216",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:37:54.615653",
+      "steps": {
+        "validazione": {
+          "http_status": 422,
+          "success": false
+        }
+      }
+    },
+    {
+      "test_id": "LAB_TC11",
+      "test_name": "LAB - TC11 - administrativeGenderCode errato",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC11001_20260226183755969",
+      "workflow_instance_id": null,
+      "pdf_hash": "01d34b323b80e97ea5b707167a4657c28dc60ef12a00724e29810158cf130aa9",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:37:55.946355",
+      "steps": {
+        "validazione": {
+          "http_status": 400,
+          "success": false
+        }
+      }
+    },
+    {
+      "test_id": "LAB_TC13",
+      "test_name": "LAB - TC13 - inFulfillmentOf/order/id mancante",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC13001_20260226183757220",
+      "workflow_instance_id": null,
+      "pdf_hash": "daff9eff6dcebaa351a5a4a6a699d274d5dad1b98feffd9acb41899eb760fff5",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:37:57.196946",
+      "steps": {
+        "validazione": {
+          "http_status": 400,
+          "success": false
+        }
+      }
+    },
+    {
+      "test_id": "LAB_TC14",
+      "test_name": "LAB - TC14 - section/code LOINC non valido",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC14001_20260226183758567",
+      "workflow_instance_id": null,
+      "pdf_hash": "080e3f37276346335f07884b63b17e22edd0aab3d89af21a9336cbffc5615da8",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:37:58.542350",
+      "steps": {
+        "validazione": {
+          "http_status": 422,
+          "success": false
+        }
+      }
+    },
+    {
+      "test_id": "LAB_TC15",
+      "test_name": "LAB - TC15 - specimenPlayingEntity/code mancante",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC15001_20260226183759822",
+      "workflow_instance_id": null,
+      "pdf_hash": "10a6b73fd07e3ee00cdd2ad37725929b0e21e4bd3ec3994a0c192f9a1b4a8ca8",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:37:59.798192",
+      "steps": {
+        "validazione": {
+          "http_status": 422,
+          "success": false
+        }
+      }
+    },
+    {
+      "test_id": "LAB_TC16",
+      "test_name": "LAB - TC16 - organizer BATTERY/code mancante",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC16001_20260226183801065",
+      "workflow_instance_id": null,
+      "pdf_hash": "77773b30a24b5578467303487af1fd5fc8d7758d83d4d83cf7b0e057e8290f5d",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:38:01.039877",
+      "steps": {
+        "validazione": {
+          "http_status": 422,
+          "success": false
+        }
+      }
+    },
+    {
+      "test_id": "LAB_TC18",
+      "test_name": "LAB - TC18 - confidentialityCode mancante",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC18001_20260226183802366",
+      "workflow_instance_id": null,
+      "pdf_hash": "8fc279ba8ed6143f50ac8bb6eb0e42dce80cd88ec5a5d42e803802e74ba218b3",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:38:02.354278",
+      "steps": {
+        "validazione": {
+          "http_status": 400,
+          "success": false
+        }
+      }
+    },
+    {
+      "test_id": "LAB_TC19",
+      "test_name": "LAB - TC19 - priorityCode errato",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC19001_20260226183803671",
+      "workflow_instance_id": null,
+      "pdf_hash": "e0059493fdef542aff6cf81f75ff66c257959d48f169b5457e69a19f6420c45b",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:38:03.659669",
+      "steps": {
+        "validazione": {
+          "http_status": 400,
+          "success": false
+        }
+      }
+    },
+    {
+      "test_id": "RAD_TC25",
+      "test_name": "RAD - Caso di Test 25 - Versione minimale",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC25001_20260226183805258",
+      "workflow_instance_id": "2.16.840.1.113883.2.9.2.120.4.4.230ffe4d6cdd2160bb19c431b3a4593a3ffd683f64b7405d3e4d4e5f82ec0234.0bb3cf3c31^^^^urn:ihe:iti:xdw:2013:workflowInstanceId",
+      "pdf_hash": "f28da034f19d5558fcbec5e74fc9da495a1cfcaf6343115ea336f7f9809c2e1b",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:38:05.076249",
+      "steps": {
+        "validazione": {
+          "http_status": 201,
+          "success": true
+        },
+        "pubblicazione": {
+          "http_status": 202,
+          "success": true
+        }
+      }
+    },
+    {
+      "test_id": "RAD_TC26",
+      "test_name": "RAD - Caso di Test 26 - Versione completa",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC26001_20260226183807182",
+      "workflow_instance_id": "2.16.840.1.113883.2.9.2.120.4.4.2346f2c34297d8cdab56fd4b47e8a90f1948d30be64d8293e67dabd0a737b9e6.a9c87a5cd6^^^^urn:ihe:iti:xdw:2013:workflowInstanceId",
+      "pdf_hash": "eeede4e86e0c098f2994e45f83251dc4b4efbaba07c924005e5ed6c6948fb4a3",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:38:06.987904",
+      "steps": {
+        "validazione": {
+          "http_status": 201,
+          "success": true
+        },
+        "pubblicazione": {
+          "http_status": 202,
+          "success": true
+        }
+      }
+    },
+    {
+      "test_id": "RAD_TC6",
+      "test_name": "RAD KO - CF paziente minuscolo",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC6001_20260226183809003",
+      "workflow_instance_id": null,
+      "pdf_hash": "5c34847cad523a81a11cd3e144a971e97e09863f1aa948b3ca92104c8e36640a",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:38:08.995199",
+      "steps": {
+        "validazione": {
+          "http_status": 403,
+          "success": false
+        }
+      }
+    },
+    {
+      "test_id": "RAD_TC8",
+      "test_name": "RAD KO - addr/city mancante",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC8001_20260226183810382",
+      "workflow_instance_id": null,
+      "pdf_hash": "1a6993159461c4737ef973c9457b2995d7229c8c1128ef2f386447746b371330",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:38:10.375658",
+      "steps": {
+        "validazione": {
+          "http_status": 400,
+          "success": false
+        }
+      }
+    },
+    {
+      "test_id": "RAD_TC9",
+      "test_name": "RAD KO - patient/name/given mancante",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC9001_20260226183811769",
+      "workflow_instance_id": null,
+      "pdf_hash": "f5b4eb3477c51be6ce14c91aacfa62ddc1d266af5324d8eb9b13820ca6391f3b",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:38:11.762532",
+      "steps": {
+        "validazione": {
+          "http_status": 422,
+          "success": false
+        }
+      }
+    },
+    {
+      "test_id": "RAD_TC10",
+      "test_name": "RAD KO - genderCode valore errato (NB)",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC10001_20260226183813065",
+      "workflow_instance_id": null,
+      "pdf_hash": "866c3e4693e924ffcfbc35264ec69de19c5812138c9db8381b11a2ccd720d62e",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:38:13.058361",
+      "steps": {
+        "validazione": {
+          "http_status": 400,
+          "success": false
+        }
+      }
+    },
+    {
+      "test_id": "RAD_TC11",
+      "test_name": "RAD KO - ISCO-08 codice non valido",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC11001_20260226183814386",
+      "workflow_instance_id": null,
+      "pdf_hash": "23c85789904b84879f3b9eb6b85f1ceecebd5765b29c6c95da6486f492092f80",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:38:14.378641",
+      "steps": {
+        "validazione": {
+          "http_status": 400,
+          "success": false
+        }
+      }
+    },
+    {
+      "test_id": "RAD_TC13",
+      "test_name": "RAD KO - inFulfillmentOf/order/id mancante",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC13001_20260226183815710",
+      "workflow_instance_id": null,
+      "pdf_hash": "2d2df3fe7e324a6fd9b77735417b544f625bda30ab64f2a04d599a14b209be36",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:38:15.702533",
+      "steps": {
+        "validazione": {
+          "http_status": 400,
+          "success": false
+        }
+      }
+    },
+    {
+      "test_id": "RAD_TC14",
+      "test_name": "RAD KO - Esame_eseguito/act/code mancante",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC14001_20260226183816935",
+      "workflow_instance_id": null,
+      "pdf_hash": "8871583456362f422f29ee038524ea31b664019032da26dd6c98f9b28495e344",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:38:16.925939",
+      "steps": {
+        "validazione": {
+          "http_status": 400,
+          "success": false
+        }
+      }
+    },
+    {
+      "test_id": "RAD_TC15",
+      "test_name": "RAD KO - sezione Referto mancante",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC15001_20260226183818171",
+      "workflow_instance_id": null,
+      "pdf_hash": "c477be551f222aeb3a11fc5c5fc33ad6876d7d0490ba4bdae815b4842bd7aa1c",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:38:18.164269",
+      "steps": {
+        "validazione": {
+          "http_status": 422,
+          "success": false
+        }
+      }
+    },
+    {
+      "test_id": "RAD_TC16",
+      "test_name": "RAD KO - Precedenti_esami text mancante",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC16001_20260226183819556",
+      "workflow_instance_id": null,
+      "pdf_hash": "e24b0bb6bf313da8919edb0195724372deff538862b355713d9843d39650e812",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:38:19.547600",
+      "steps": {
+        "validazione": {
+          "http_status": 422,
+          "success": false
+        }
+      }
+    },
+    {
+      "test_id": "RAD_TC17",
+      "test_name": "RAD KO - DICOM entry mancante",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC17001_20260226183820810",
+      "workflow_instance_id": null,
+      "pdf_hash": "6cf50cf57bbe65baa00b46eb5a7de175a2ef2daf9de01d535065a32024071b1a",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:38:20.802069",
+      "steps": {
+        "validazione": {
+          "http_status": 422,
+          "success": false
+        }
+      }
+    },
+    {
+      "test_id": "RAD_TC18",
+      "test_name": "RAD KO - Storia_Clinica effectiveTime/low",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC18001_20260226183822077",
+      "workflow_instance_id": null,
+      "pdf_hash": "0aebae58faddeafe63e339b186f8cbcefde10e47c5d713d19134fd011cfccca5",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:38:22.068362",
+      "steps": {
+        "validazione": {
+          "http_status": 422,
+          "success": false
+        }
+      }
+    },
+    {
+      "test_id": "RAD_TC19",
+      "test_name": "RAD KO - relatedSubject/code mancante",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC19001_20260226183823369",
+      "workflow_instance_id": null,
+      "pdf_hash": "67febbc4d6649dbd8f6178a19746201dc44a1330346877f9317c8e7332885aab",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:38:23.362425",
+      "steps": {
+        "validazione": {
+          "http_status": 422,
+          "success": false
+        }
+      }
+    },
+    {
+      "test_id": "RAD_TC20",
+      "test_name": "RAD KO - Allergie effectiveTime mancante",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC20001_20260226183824682",
+      "workflow_instance_id": null,
+      "pdf_hash": "fa1d591b54a494d917768edcb34f3a7eb2b841cf785ad9092f1b02364bb8501e",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:38:24.675442",
+      "steps": {
+        "validazione": {
+          "http_status": 422,
+          "success": false
+        }
+      }
+    },
+    {
+      "test_id": "RAD_TC21",
+      "test_name": "RAD KO - Allergie participant mancante",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC21001_20260226183825923",
+      "workflow_instance_id": null,
+      "pdf_hash": "e80bb2ce30dd8a150db480a1ab0f2fd0f78f4d672264da43809c75a5acb9f9b4",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:38:25.912609",
+      "steps": {
+        "validazione": {
+          "http_status": 422,
+          "success": false
+        }
+      }
+    },
+    {
+      "test_id": "RAD_TC22",
+      "test_name": "RAD KO - ICD9-CM codice errato",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC22001_20260226183827156",
+      "workflow_instance_id": null,
+      "pdf_hash": "9567fb53f6c4c6f26f55da843640783b50236cd7e1a111ba8c8f8060288c5ff6",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:38:27.147513",
+      "steps": {
+        "validazione": {
+          "http_status": 400,
+          "success": false
+        }
+      }
+    },
+    {
+      "test_id": "RAD_TC23",
+      "test_name": "RAD KO - documentationOf code non valido",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC23001_20260226183828520",
+      "workflow_instance_id": null,
+      "pdf_hash": "cccae950154587a24b358635a4484efb189f56d668691d299700e2822516c49f",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:38:28.511972",
+      "steps": {
+        "validazione": {
+          "http_status": 400,
+          "success": false
+        }
+      }
+    },
+    {
+      "test_id": "RAD_TC24",
+      "test_name": "RAD KO - confidentialityCode mancante",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC24001_20260226183829735",
+      "workflow_instance_id": null,
+      "pdf_hash": "abead108aaedb15f7c25d68974486a477d91a35e5d68d4ff9690851dbc548fee",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:38:29.728089",
+      "steps": {
+        "validazione": {
+          "http_status": 400,
+          "success": false
+        }
+      }
+    },
+    {
+      "test_id": "RAD_TC27",
+      "test_name": "RAD KO - priorityCode valore errato",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC27001_20260226183830992",
+      "workflow_instance_id": null,
+      "pdf_hash": "b831a627ca421a78e0e286954fdddc6c2730eb01156a421af6e6858404afa150",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:38:30.986341",
+      "steps": {
+        "validazione": {
+          "http_status": 400,
+          "success": false
+        }
+      }
+    }
+  ]
+}
