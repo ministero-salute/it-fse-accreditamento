@@ -1,0 +1,978 @@
+{
+  "subject_application_vendor": "INFO99 SAS",
+  "subject_application_id": "GLAB400",
+  "subject_application_version": "2.30",
+  "common_name_auth": "A1#111#INFO99SASXX",
+  "tipo_documento": [
+    "Referto di Medicina di Laboratorio",
+    "Referto di Radiologia"
+  ],
+  "servizi": [
+    "Validazione",
+    "Pubblicazione"
+  ],
+  "data_inizio_test": "2026-02-19",
+  "data_fine_test": "2026-03-03",
+  "test_results": [
+    {
+      "test_id": "LAB_TC4",
+      "test_name": "LAB - Caso di Test 4 - Microbiologia (CLUSTER)",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC4001_20260226183746795",
+      "workflow_instance_id": "2.16.840.1.113883.2.9.2.120.4.4.bca91958642e9381485555f996bfa4d7a88762d1e9f3ebfe6ec9783e1415303d.dcef23998f^^^^urn:ihe:iti:xdw:2013:workflowInstanceId",
+      "pdf_hash": "625708e7a851846020fc3ee6c6f67e214c50675591e050f38afdd7da1b356fa3",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:37:46.468604",
+      "steps": {
+        "validazione": {
+          "http_status": 201,
+          "success": true,
+          "body": {
+            "traceID": "8b7d8a883260a8afb47d70cec6c307db",
+            "spanID": "c709aea99bf224aa",
+            "workflowInstanceId": "2.16.840.1.113883.2.9.2.120.4.4.bca91958642e9381485555f996bfa4d7a88762d1e9f3ebfe6ec9783e1415303d.dcef23998f^^^^urn:ihe:iti:xdw:2013:workflowInstanceId",
+            "warning": "[SIGN_WARN - Attenzione il documento risulta firmato in validazione]"
+          },
+          "workflow_instance_id": "2.16.840.1.113883.2.9.2.120.4.4.bca91958642e9381485555f996bfa4d7a88762d1e9f3ebfe6ec9783e1415303d.dcef23998f^^^^urn:ihe:iti:xdw:2013:workflowInstanceId"
+        },
+        "pubblicazione": {
+          "http_status": 202,
+          "success": true,
+          "body": {
+            "traceID": "90dc0ee1c9f62eeea1ffb2883443e6fc",
+            "spanID": "d5af3d37af86668e",
+            "warning": "",
+            "workflowInstanceId": "2.16.840.1.113883.2.9.2.120.4.4.bca91958642e9381485555f996bfa4d7a88762d1e9f3ebfe6ec9783e1415303d.dcef23998f^^^^urn:ihe:iti:xdw:2013:workflowInstanceId"
+          }
+        }
+      }
+    },
+    {
+      "test_id": "LAB_TC17",
+      "test_name": "LAB - Caso di Test 17 - Emocromo con media",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC17001_20260226183750020",
+      "workflow_instance_id": "2.16.840.1.113883.2.9.2.120.4.4.74a1f8f05dbdcf11890edee3f4c20fbdfe335132a30c756bcbd9df89146fb22b.7a08982101^^^^urn:ihe:iti:xdw:2013:workflowInstanceId",
+      "pdf_hash": "a23af29a438787abb66cf739a3f8e2bffab6fbb8e206e621163890b3d9f38bf1",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:37:49.823258",
+      "steps": {
+        "validazione": {
+          "http_status": 201,
+          "success": true,
+          "body": {
+            "traceID": "87b13c8ca60a19a4f2d511e6dfb9de24",
+            "spanID": "244a88a597091d02",
+            "workflowInstanceId": "2.16.840.1.113883.2.9.2.120.4.4.74a1f8f05dbdcf11890edee3f4c20fbdfe335132a30c756bcbd9df89146fb22b.7a08982101^^^^urn:ihe:iti:xdw:2013:workflowInstanceId",
+            "warning": "[SIGN_WARN - Attenzione il documento risulta firmato in validazione]"
+          },
+          "workflow_instance_id": "2.16.840.1.113883.2.9.2.120.4.4.74a1f8f05dbdcf11890edee3f4c20fbdfe335132a30c756bcbd9df89146fb22b.7a08982101^^^^urn:ihe:iti:xdw:2013:workflowInstanceId"
+        },
+        "pubblicazione": {
+          "http_status": 202,
+          "success": true,
+          "body": {
+            "traceID": "a9ef2f2617fdcf78acc494a60f77512c",
+            "spanID": "55ffdadcf2db5bdb",
+            "warning": "",
+            "workflowInstanceId": "2.16.840.1.113883.2.9.2.120.4.4.74a1f8f05dbdcf11890edee3f4c20fbdfe335132a30c756bcbd9df89146fb22b.7a08982101^^^^urn:ihe:iti:xdw:2013:workflowInstanceId"
+          }
+        }
+      }
+    },
+    {
+      "test_id": "LAB_TC7",
+      "test_name": "LAB - TC7 - CF paziente minuscolo",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC7001_20260226183751820",
+      "workflow_instance_id": null,
+      "pdf_hash": "5ca9bd8b4eb9db9ac39948b2220eb3f326fb595c090db08e752f353fe394a2cf",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:37:51.796812",
+      "steps": {
+        "validazione": {
+          "http_status": 403,
+          "success": false,
+          "body": {
+            "traceID": "738ab0b919983bfa9f21f0ada3a0a084",
+            "spanID": "0b7dc0f98ff7d23a",
+            "type": "/msg/jwt-validation",
+            "title": "Campo token JWT non valido.",
+            "detail": "JWT payload: Person id presente nel JWT differente dal codice fiscale del paziente previsto sul CDA",
+            "status": 403,
+            "instance": "/jwt-person-id",
+            "workflowInstanceId": "2.16.840.1.113883.2.9.2.120.4.4.bca91958642e9381485555f996bfa4d7a88762d1e9f3ebfe6ec9783e1415303d.33ed0fd4f8^^^^urn:ihe:iti:xdw:2013:workflowInstanceId"
+          },
+          "workflow_instance_id": null
+        }
+      }
+    },
+    {
+      "test_id": "LAB_TC9",
+      "test_name": "LAB - TC9 - addr/city mancante",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC9001_20260226183753230",
+      "workflow_instance_id": null,
+      "pdf_hash": "02e24be501851c5afe8a8b66f729e3dedeb76d76124730617c14bd745469f0e4",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:37:53.206294",
+      "steps": {
+        "validazione": {
+          "http_status": 400,
+          "success": false,
+          "body": {
+            "traceID": "96a34b52ad35b1f2e17548d4846fe01f",
+            "spanID": "b569195ac9d6ac40",
+            "type": "/msg/syntax",
+            "title": "Errore di sintassi.",
+            "detail": "ERROR: -1,-1 cvc-complex-type.2.4.a: Invalid content was found starting with element '{\"urn:hl7-org:v3\":addr}'. One of '{\"urn:hl7-org:v3\":providerOrganization}' is expected.",
+            "status": 400,
+            "instance": "/validation/error",
+            "workflowInstanceId": "2.16.840.1.113883.2.9.2.120.4.4.bca91958642e9381485555f996bfa4d7a88762d1e9f3ebfe6ec9783e1415303d.f6cb0aa608^^^^urn:ihe:iti:xdw:2013:workflowInstanceId"
+          },
+          "workflow_instance_id": null
+        }
+      }
+    },
+    {
+      "test_id": "LAB_TC10",
+      "test_name": "LAB - TC10 - patient/name/given mancante",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC10001_20260226183754639",
+      "workflow_instance_id": null,
+      "pdf_hash": "174395fd28d65346122ccb02048bec89790b82fec5ca6c892e2ba2ef16c1d216",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:37:54.615653",
+      "steps": {
+        "validazione": {
+          "http_status": 422,
+          "success": false,
+          "body": {
+            "traceID": "901839e410e3bfc9245d2874b1fae7f9",
+            "spanID": "7e65df0d378ffd3f",
+            "type": "/msg/semantic",
+            "title": "Errore semantico.",
+            "detail": "[ERRORE-15| L'elemento ClinicalDocument/recordTaget/patientRole/patient/name DEVE riportare gli elementi 'given' e 'family']",
+            "status": 422,
+            "instance": "/validation/error",
+            "workflowInstanceId": "2.16.840.1.113883.2.9.2.120.4.4.bca91958642e9381485555f996bfa4d7a88762d1e9f3ebfe6ec9783e1415303d.d92a0acdc4^^^^urn:ihe:iti:xdw:2013:workflowInstanceId"
+          },
+          "workflow_instance_id": null
+        }
+      }
+    },
+    {
+      "test_id": "LAB_TC11",
+      "test_name": "LAB - TC11 - administrativeGenderCode errato",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC11001_20260226183755969",
+      "workflow_instance_id": null,
+      "pdf_hash": "01d34b323b80e97ea5b707167a4657c28dc60ef12a00724e29810158cf130aa9",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:37:55.946355",
+      "steps": {
+        "validazione": {
+          "http_status": 400,
+          "success": false,
+          "body": {
+            "traceID": "bf51d6d63997e68a2d808e13c7053939",
+            "spanID": "e506ca7c4574e08b",
+            "type": "/msg/vocabulary",
+            "title": "Errore vocabolario.",
+            "detail": "Almeno uno dei seguenti vocaboli non è censito: [CodeSystem: 2.16.840.1.113883.5.1 v2.1.0, Codes: X]",
+            "status": 400,
+            "instance": "/validation/error",
+            "workflowInstanceId": "2.16.840.1.113883.2.9.2.120.4.4.bca91958642e9381485555f996bfa4d7a88762d1e9f3ebfe6ec9783e1415303d.85de4c3378^^^^urn:ihe:iti:xdw:2013:workflowInstanceId"
+          },
+          "workflow_instance_id": null
+        }
+      }
+    },
+    {
+      "test_id": "LAB_TC13",
+      "test_name": "LAB - TC13 - inFulfillmentOf/order/id mancante",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC13001_20260226183757220",
+      "workflow_instance_id": null,
+      "pdf_hash": "daff9eff6dcebaa351a5a4a6a699d274d5dad1b98feffd9acb41899eb760fff5",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:37:57.196946",
+      "steps": {
+        "validazione": {
+          "http_status": 400,
+          "success": false,
+          "body": {
+            "traceID": "b54323677e22b4c3ce5029c770a13b8a",
+            "spanID": "b1eb12abea9cee59",
+            "type": "/msg/syntax",
+            "title": "Errore di sintassi.",
+            "detail": "ERROR: -1,-1 cvc-complex-type.2.4.b: The content of element 'order' is not complete. One of '{\"urn:hl7-org:v3\":realmCode, \"urn:hl7-org:v3\":typeId, \"urn:hl7-org:v3\":templateId, \"urn:hl7-org:v3\":id}' is expected.",
+            "status": 400,
+            "instance": "/validation/error",
+            "workflowInstanceId": "2.16.840.1.113883.2.9.2.120.4.4.bca91958642e9381485555f996bfa4d7a88762d1e9f3ebfe6ec9783e1415303d.a03482323c^^^^urn:ihe:iti:xdw:2013:workflowInstanceId"
+          },
+          "workflow_instance_id": null
+        }
+      }
+    },
+    {
+      "test_id": "LAB_TC14",
+      "test_name": "LAB - TC14 - section/code LOINC non valido",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC14001_20260226183758567",
+      "workflow_instance_id": null,
+      "pdf_hash": "080e3f37276346335f07884b63b17e22edd0aab3d89af21a9336cbffc5615da8",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:37:58.542350",
+      "steps": {
+        "validazione": {
+          "http_status": 422,
+          "success": false,
+          "body": {
+            "traceID": "99d7286aaf4b2ecfb7142b9efb79aa32",
+            "spanID": "ce048faa798c359a",
+            "type": "/msg/semantic",
+            "title": "Errore semantico.",
+            "detail": "[ERRORE-b1| L'elemento code della section DEVE essere valorizzato con uno dei seguenti codici LOINC individuati:\n\t\t\t\t\t\t18717-9 BANCA DEL SANGUE\n\t\t\t\t\t\t18718-7 MARCATORI CELLULARI \n\t\t\t\t\t\t18719-5 CHIMICA\n\t\t\t\t\t\t18720-3\tCOAGULAZIONE\n\t\t\t\t\t\t18721-1 MONITORAGGIO TERAPEUTICO DEI FARMACI\n\t\t\t\t\t\t18722-9 FERTILITÀ\n\t\t\t\t\t\t18723-7 EMATOLOGIA\n\t\t\t\t\t\t18724-5 HLA\n\t\t\t\t\t\t18725-2 MICROBIOLOGIA\n\t\t\t\t\t\t18727-8 SEROLOGIA\n\t\t\t\t\t\t18728-6 TOSSICOLOGIA\n\t\t\t\t\t\t18729-4 ESAMI DELLE URINE\n\t\t\t\t\t\t18767-4 EMOGASANALISI\n\t\t\t\t\t\t18768-2 CONTE CELLULARE+DIFFERENZIALE\n\t\t\t\t\t\t18769-0 SUSCETTIBILITÀ ANTIMICROBICA\n\t\t\t\t\t\t26435-8 PATOLOGIA MOLECOLARE\n\t\t\t\t\t\t26436-6 ESAMI DI LABORATORIO\n\t\t\t\t\t\t26437-4 TEST DI SENSIBILITÀ A SOSTANZE CHIMICHE\n\t\t\t\t\t\t26438-2 CITOLOGIA\n\t\t\t\t\t\t18716-1 ALLERGOLOGIA\n\t\t\t\t\t\t26439-0 PATOLOGIA CHIRURGICA]",
+            "status": 422,
+            "instance": "/validation/error",
+            "workflowInstanceId": "2.16.840.1.113883.2.9.2.120.4.4.bca91958642e9381485555f996bfa4d7a88762d1e9f3ebfe6ec9783e1415303d.27bdaa4598^^^^urn:ihe:iti:xdw:2013:workflowInstanceId"
+          },
+          "workflow_instance_id": null
+        }
+      }
+    },
+    {
+      "test_id": "LAB_TC15",
+      "test_name": "LAB - TC15 - specimenPlayingEntity/code mancante",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC15001_20260226183759822",
+      "workflow_instance_id": null,
+      "pdf_hash": "10a6b73fd07e3ee00cdd2ad37725929b0e21e4bd3ec3994a0c192f9a1b4a8ca8",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:37:59.798192",
+      "steps": {
+        "validazione": {
+          "http_status": 422,
+          "success": false,
+          "body": {
+            "traceID": "4419fa599121b2d45e44c9add6cad697",
+            "spanID": "8444c410d69cf514",
+            "type": "/msg/semantic",
+            "title": "Errore semantico.",
+            "detail": "[ERRORE-b11| L'elemento specimen/specimenRole/specimenPlayingEntity deve contenere l'elemento 'code'],[ERRORE-b11| L'elemento specimen/specimenRole/specimenPlayingEntity deve contenere l'elemento 'code']",
+            "status": 422,
+            "instance": "/validation/error",
+            "workflowInstanceId": "2.16.840.1.113883.2.9.2.120.4.4.bca91958642e9381485555f996bfa4d7a88762d1e9f3ebfe6ec9783e1415303d.4c93ea7dfe^^^^urn:ihe:iti:xdw:2013:workflowInstanceId"
+          },
+          "workflow_instance_id": null
+        }
+      }
+    },
+    {
+      "test_id": "LAB_TC16",
+      "test_name": "LAB - TC16 - organizer BATTERY/code mancante",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC16001_20260226183801065",
+      "workflow_instance_id": null,
+      "pdf_hash": "77773b30a24b5578467303487af1fd5fc8d7758d83d4d83cf7b0e057e8290f5d",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:38:01.039877",
+      "steps": {
+        "validazione": {
+          "http_status": 422,
+          "success": false,
+          "body": {
+            "traceID": "877eac0cb0c42310ffee480dd6a30ced",
+            "spanID": "010bd54172d03367",
+            "type": "/msg/semantic",
+            "title": "Errore semantico.",
+            "detail": "[ERRORE-b19| Lelemento organizer di tipo 'BATTERY' (@classCode='BATTERY') DEVE contenere lelemento organizer/code.\n\t\t\t]",
+            "status": 422,
+            "instance": "/validation/error",
+            "workflowInstanceId": "2.16.840.1.113883.2.9.2.120.4.4.bca91958642e9381485555f996bfa4d7a88762d1e9f3ebfe6ec9783e1415303d.869a8829cd^^^^urn:ihe:iti:xdw:2013:workflowInstanceId"
+          },
+          "workflow_instance_id": null
+        }
+      }
+    },
+    {
+      "test_id": "LAB_TC18",
+      "test_name": "LAB - TC18 - confidentialityCode mancante",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC18001_20260226183802366",
+      "workflow_instance_id": null,
+      "pdf_hash": "8fc279ba8ed6143f50ac8bb6eb0e42dce80cd88ec5a5d42e803802e74ba218b3",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:38:02.354278",
+      "steps": {
+        "validazione": {
+          "http_status": 400,
+          "success": false,
+          "body": {
+            "traceID": "c47bc007f1022aa5e609ddae19f9a169",
+            "spanID": "db5d5d37d17ff30f",
+            "type": "/msg/syntax",
+            "title": "Errore di sintassi.",
+            "detail": "ERROR: -1,-1 cvc-complex-type.2.4.a: Invalid content was found starting with element '{\"urn:hl7-org:v3\":languageCode}'. One of '{\"urn:hl7-org:v3\":confidentialityCode}' is expected.",
+            "status": 400,
+            "instance": "/validation/error",
+            "workflowInstanceId": "2.16.840.1.113883.2.9.2.120.4.4.bca91958642e9381485555f996bfa4d7a88762d1e9f3ebfe6ec9783e1415303d.90d54c3c22^^^^urn:ihe:iti:xdw:2013:workflowInstanceId"
+          },
+          "workflow_instance_id": null
+        }
+      }
+    },
+    {
+      "test_id": "LAB_TC19",
+      "test_name": "LAB - TC19 - priorityCode errato",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC19001_20260226183803671",
+      "workflow_instance_id": null,
+      "pdf_hash": "e0059493fdef542aff6cf81f75ff66c257959d48f169b5457e69a19f6420c45b",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:38:03.659669",
+      "steps": {
+        "validazione": {
+          "http_status": 400,
+          "success": false,
+          "body": {
+            "traceID": "ebc0371cbb48686d971c7e10fb2abae5",
+            "spanID": "6af4f318f6ddbdf8",
+            "type": "/msg/vocabulary",
+            "title": "Errore vocabolario.",
+            "detail": "Almeno uno dei seguenti vocaboli non è censito: [CodeSystem: 2.16.840.1.113883.5.7 v2.1.0, Codes: INVALID_PRIORITY]",
+            "status": 400,
+            "instance": "/validation/error",
+            "workflowInstanceId": "2.16.840.1.113883.2.9.2.120.4.4.bca91958642e9381485555f996bfa4d7a88762d1e9f3ebfe6ec9783e1415303d.69ab10264d^^^^urn:ihe:iti:xdw:2013:workflowInstanceId"
+          },
+          "workflow_instance_id": null
+        }
+      }
+    },
+    {
+      "test_id": "RAD_TC25",
+      "test_name": "RAD - Caso di Test 25 - Versione minimale",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC25001_20260226183805258",
+      "workflow_instance_id": "2.16.840.1.113883.2.9.2.120.4.4.230ffe4d6cdd2160bb19c431b3a4593a3ffd683f64b7405d3e4d4e5f82ec0234.0bb3cf3c31^^^^urn:ihe:iti:xdw:2013:workflowInstanceId",
+      "pdf_hash": "f28da034f19d5558fcbec5e74fc9da495a1cfcaf6343115ea336f7f9809c2e1b",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:38:05.076249",
+      "steps": {
+        "validazione": {
+          "http_status": 201,
+          "success": true,
+          "body": {
+            "traceID": "460ff6c1888c20b10bba793b9398a617",
+            "spanID": "68b8735f6dd0c4fe",
+            "workflowInstanceId": "2.16.840.1.113883.2.9.2.120.4.4.230ffe4d6cdd2160bb19c431b3a4593a3ffd683f64b7405d3e4d4e5f82ec0234.0bb3cf3c31^^^^urn:ihe:iti:xdw:2013:workflowInstanceId",
+            "warning": "[SIGN_WARN - Attenzione il documento risulta firmato in validazione]"
+          },
+          "workflow_instance_id": "2.16.840.1.113883.2.9.2.120.4.4.230ffe4d6cdd2160bb19c431b3a4593a3ffd683f64b7405d3e4d4e5f82ec0234.0bb3cf3c31^^^^urn:ihe:iti:xdw:2013:workflowInstanceId"
+        },
+        "pubblicazione": {
+          "http_status": 202,
+          "success": true,
+          "body": {
+            "traceID": "b28b5c9e008076389f09707fd43cef46",
+            "spanID": "62d3ada5fe90d2b9",
+            "warning": "",
+            "workflowInstanceId": "2.16.840.1.113883.2.9.2.120.4.4.230ffe4d6cdd2160bb19c431b3a4593a3ffd683f64b7405d3e4d4e5f82ec0234.0bb3cf3c31^^^^urn:ihe:iti:xdw:2013:workflowInstanceId"
+          }
+        }
+      }
+    },
+    {
+      "test_id": "RAD_TC26",
+      "test_name": "RAD - Caso di Test 26 - Versione completa",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC26001_20260226183807182",
+      "workflow_instance_id": "2.16.840.1.113883.2.9.2.120.4.4.2346f2c34297d8cdab56fd4b47e8a90f1948d30be64d8293e67dabd0a737b9e6.a9c87a5cd6^^^^urn:ihe:iti:xdw:2013:workflowInstanceId",
+      "pdf_hash": "eeede4e86e0c098f2994e45f83251dc4b4efbaba07c924005e5ed6c6948fb4a3",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:38:06.987904",
+      "steps": {
+        "validazione": {
+          "http_status": 201,
+          "success": true,
+          "body": {
+            "traceID": "3a5d92f200e2ae1bfb0e2f4e8f4593f9",
+            "spanID": "e4177636d9f7a66e",
+            "workflowInstanceId": "2.16.840.1.113883.2.9.2.120.4.4.2346f2c34297d8cdab56fd4b47e8a90f1948d30be64d8293e67dabd0a737b9e6.a9c87a5cd6^^^^urn:ihe:iti:xdw:2013:workflowInstanceId",
+            "warning": "[SIGN_WARN - Attenzione il documento risulta firmato in validazione]"
+          },
+          "workflow_instance_id": "2.16.840.1.113883.2.9.2.120.4.4.2346f2c34297d8cdab56fd4b47e8a90f1948d30be64d8293e67dabd0a737b9e6.a9c87a5cd6^^^^urn:ihe:iti:xdw:2013:workflowInstanceId"
+        },
+        "pubblicazione": {
+          "http_status": 202,
+          "success": true,
+          "body": {
+            "traceID": "7891c43761d518b2f6a015c73aa69d23",
+            "spanID": "7480c007e912166f",
+            "warning": "",
+            "workflowInstanceId": "2.16.840.1.113883.2.9.2.120.4.4.2346f2c34297d8cdab56fd4b47e8a90f1948d30be64d8293e67dabd0a737b9e6.a9c87a5cd6^^^^urn:ihe:iti:xdw:2013:workflowInstanceId"
+          }
+        }
+      }
+    },
+    {
+      "test_id": "RAD_TC6",
+      "test_name": "RAD KO - CF paziente minuscolo",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC6001_20260226183809003",
+      "workflow_instance_id": null,
+      "pdf_hash": "5c34847cad523a81a11cd3e144a971e97e09863f1aa948b3ca92104c8e36640a",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:38:08.995199",
+      "steps": {
+        "validazione": {
+          "http_status": 403,
+          "success": false,
+          "body": {
+            "traceID": "3e819a83016dd3b6019276ee2888d792",
+            "spanID": "b69df6d32ccf4ba6",
+            "type": "/msg/jwt-validation",
+            "title": "Campo token JWT non valido.",
+            "detail": "JWT payload: Person id presente nel JWT differente dal codice fiscale del paziente previsto sul CDA",
+            "status": 403,
+            "instance": "/jwt-person-id",
+            "workflowInstanceId": "2.16.840.1.113883.2.9.2.120.4.4.ea14ba098e0194e3e55227022cb22641378e7754eb8c2dd76a91d41f7fea3b9e.e1a6c0a41b^^^^urn:ihe:iti:xdw:2013:workflowInstanceId"
+          },
+          "workflow_instance_id": null
+        }
+      }
+    },
+    {
+      "test_id": "RAD_TC8",
+      "test_name": "RAD KO - addr/city mancante",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC8001_20260226183810382",
+      "workflow_instance_id": null,
+      "pdf_hash": "1a6993159461c4737ef973c9457b2995d7229c8c1128ef2f386447746b371330",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:38:10.375658",
+      "steps": {
+        "validazione": {
+          "http_status": 400,
+          "success": false,
+          "body": {
+            "traceID": "3e1ae653642bb33859e873994211cdd1",
+            "spanID": "e55d8a7b9a225174",
+            "type": "/msg/syntax",
+            "title": "Errore di sintassi.",
+            "detail": "ERROR: -1,-1 cvc-complex-type.2.4.a: Invalid content was found starting with element '{\"urn:hl7-org:v3\":addr}'. One of '{\"urn:hl7-org:v3\":providerOrganization}' is expected.",
+            "status": 400,
+            "instance": "/validation/error",
+            "workflowInstanceId": "2.16.840.1.113883.2.9.2.120.4.4.76388e42d50d2e40a09aa205b48d619f7e3042d1a68a3753f0f6eac8da7ee467.e52edf9ed4^^^^urn:ihe:iti:xdw:2013:workflowInstanceId"
+          },
+          "workflow_instance_id": null
+        }
+      }
+    },
+    {
+      "test_id": "RAD_TC9",
+      "test_name": "RAD KO - patient/name/given mancante",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC9001_20260226183811769",
+      "workflow_instance_id": null,
+      "pdf_hash": "f5b4eb3477c51be6ce14c91aacfa62ddc1d266af5324d8eb9b13820ca6391f3b",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:38:11.762532",
+      "steps": {
+        "validazione": {
+          "http_status": 422,
+          "success": false,
+          "body": {
+            "traceID": "710becbd19657c9c1c587fa146e84f9c",
+            "spanID": "f0d571d68b95471b",
+            "type": "/msg/semantic",
+            "title": "Errore semantico.",
+            "detail": "[ERRORE-14| L'elemento ClinicalDocument/recordTaget/patientRole/patient/name DEVE riportare gli elementi 'given' e 'family']",
+            "status": 422,
+            "instance": "/validation/error",
+            "workflowInstanceId": "2.16.840.1.113883.2.9.2.120.4.4.e3569ff22cf79a9150d70d439204a1ad50f2b01338697a3ad06dfe9bdc52843a.702c41c177^^^^urn:ihe:iti:xdw:2013:workflowInstanceId"
+          },
+          "workflow_instance_id": null
+        }
+      }
+    },
+    {
+      "test_id": "RAD_TC10",
+      "test_name": "RAD KO - genderCode valore errato (NB)",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC10001_20260226183813065",
+      "workflow_instance_id": null,
+      "pdf_hash": "866c3e4693e924ffcfbc35264ec69de19c5812138c9db8381b11a2ccd720d62e",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:38:13.058361",
+      "steps": {
+        "validazione": {
+          "http_status": 400,
+          "success": false,
+          "body": {
+            "traceID": "9a268af24127d69c3646bf5c869f70db",
+            "spanID": "6fcced89ed5a4cfe",
+            "type": "/msg/vocabulary",
+            "title": "Errore vocabolario.",
+            "detail": "Almeno uno dei seguenti vocaboli non è censito: [CodeSystem: 2.16.840.1.113883.5.1 v2.1.0, Codes: NB]",
+            "status": 400,
+            "instance": "/validation/error",
+            "workflowInstanceId": "2.16.840.1.113883.2.9.2.120.4.4.7c28886e9d7374a4caa00733f99a385665138c427282adc8cfc011c5be745b0c.31fa7af2cf^^^^urn:ihe:iti:xdw:2013:workflowInstanceId"
+          },
+          "workflow_instance_id": null
+        }
+      }
+    },
+    {
+      "test_id": "RAD_TC11",
+      "test_name": "RAD KO - ISCO-08 codice non valido",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC11001_20260226183814386",
+      "workflow_instance_id": null,
+      "pdf_hash": "23c85789904b84879f3b9eb6b85f1ceecebd5765b29c6c95da6486f492092f80",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:38:14.378641",
+      "steps": {
+        "validazione": {
+          "http_status": 400,
+          "success": false,
+          "body": {
+            "traceID": "d80029c381c12df8ee428ab194f642f5",
+            "spanID": "48f72a9658f5b6e8",
+            "type": "/msg/syntax",
+            "title": "Errore di sintassi.",
+            "detail": "ERROR: -1,-1 cvc-complex-type.2.4.d: Invalid content was found starting with element 'participant'. No child element is expected at this point.",
+            "status": 400,
+            "instance": "/validation/error",
+            "workflowInstanceId": "2.16.840.1.113883.2.9.2.120.4.4.7df6ebadd13a618ec3279ff29f38a5620c2b007e05f30bbf9f3886f499a970a1.75c6303042^^^^urn:ihe:iti:xdw:2013:workflowInstanceId"
+          },
+          "workflow_instance_id": null
+        }
+      }
+    },
+    {
+      "test_id": "RAD_TC13",
+      "test_name": "RAD KO - inFulfillmentOf/order/id mancante",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC13001_20260226183815710",
+      "workflow_instance_id": null,
+      "pdf_hash": "2d2df3fe7e324a6fd9b77735417b544f625bda30ab64f2a04d599a14b209be36",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:38:15.702533",
+      "steps": {
+        "validazione": {
+          "http_status": 400,
+          "success": false,
+          "body": {
+            "traceID": "ce65d5fb00c941b816de74377a9455e4",
+            "spanID": "37ee86c8cbcf6c55",
+            "type": "/msg/syntax",
+            "title": "Errore di sintassi.",
+            "detail": "ERROR: -1,-1 cvc-complex-type.2.4.b: The content of element 'order' is not complete. One of '{\"urn:hl7-org:v3\":realmCode, \"urn:hl7-org:v3\":typeId, \"urn:hl7-org:v3\":templateId, \"urn:hl7-org:v3\":id}' is expected.",
+            "status": 400,
+            "instance": "/validation/error",
+            "workflowInstanceId": "2.16.840.1.113883.2.9.2.120.4.4.8243d8f6719687e5ab7a4aea230bae977419f6d1e0c28717305abba98abaf3ce.e092523357^^^^urn:ihe:iti:xdw:2013:workflowInstanceId"
+          },
+          "workflow_instance_id": null
+        }
+      }
+    },
+    {
+      "test_id": "RAD_TC14",
+      "test_name": "RAD KO - Esame_eseguito/act/code mancante",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC14001_20260226183816935",
+      "workflow_instance_id": null,
+      "pdf_hash": "8871583456362f422f29ee038524ea31b664019032da26dd6c98f9b28495e344",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:38:16.925939",
+      "steps": {
+        "validazione": {
+          "http_status": 400,
+          "success": false,
+          "body": {
+            "traceID": "f411a5d509797f0b9ade956cf446a96c",
+            "spanID": "63a70fb484c47a4f",
+            "type": "/msg/syntax",
+            "title": "Errore di sintassi.",
+            "detail": "ERROR: -1,-1 cvc-complex-type.2.4.a: Invalid content was found starting with element '{\"urn:hl7-org:v3\":statusCode}'. One of '{\"urn:hl7-org:v3\":realmCode, \"urn:hl7-org:v3\":typeId, \"urn:hl7-org:v3\":templateId, \"urn:hl7-org:v3\":id, \"urn:hl7-org:v3\":code}' is expected.",
+            "status": 400,
+            "instance": "/validation/error",
+            "workflowInstanceId": "2.16.840.1.113883.2.9.2.120.4.4.6e6bc3733dcdf10c57c1d4adf2d330aff551564f93fb78a376bf8962e4955541.ab138581cf^^^^urn:ihe:iti:xdw:2013:workflowInstanceId"
+          },
+          "workflow_instance_id": null
+        }
+      }
+    },
+    {
+      "test_id": "RAD_TC15",
+      "test_name": "RAD KO - sezione Referto mancante",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC15001_20260226183818171",
+      "workflow_instance_id": null,
+      "pdf_hash": "c477be551f222aeb3a11fc5c5fc33ad6876d7d0490ba4bdae815b4842bd7aa1c",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:38:18.164269",
+      "steps": {
+        "validazione": {
+          "http_status": 422,
+          "success": false,
+          "body": {
+            "traceID": "f1c187758d00a35240cd82e55a989158",
+            "spanID": "bc0f309933ed8b35",
+            "type": "/msg/semantic",
+            "title": "Errore semantico.",
+            "detail": "[ERRORE-b4| Sezione Referto: DEVE essere presente la sezione \"Referto\".],[ERRORE-b5| Sezione Referto: La sezione deve contenere l'elemento 'text'.]",
+            "status": 422,
+            "instance": "/validation/error",
+            "workflowInstanceId": "2.16.840.1.113883.2.9.2.120.4.4.ba95e5c839949970731d9d7fc25d372f6dcd9892ea08396c851538e935610020.754b9b3ecc^^^^urn:ihe:iti:xdw:2013:workflowInstanceId"
+          },
+          "workflow_instance_id": null
+        }
+      }
+    },
+    {
+      "test_id": "RAD_TC16",
+      "test_name": "RAD KO - Precedenti_esami text mancante",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC16001_20260226183819556",
+      "workflow_instance_id": null,
+      "pdf_hash": "e24b0bb6bf313da8919edb0195724372deff538862b355713d9843d39650e812",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:38:19.547600",
+      "steps": {
+        "validazione": {
+          "http_status": 422,
+          "success": false,
+          "body": {
+            "traceID": "b4915a86dc2b9a8abd90b0de2382329b",
+            "spanID": "41139eba595dcd09",
+            "type": "/msg/semantic",
+            "title": "Errore semantico.",
+            "detail": "[ERRORE-b13| Sezione Precedenti Esami Eseguiti: La section deve contenere l'elemento 'text'.]",
+            "status": 422,
+            "instance": "/validation/error",
+            "workflowInstanceId": "2.16.840.1.113883.2.9.2.120.4.4.1582e4d3da50d728b3745e95c5541e4646560e2a77d56af4521691016e3b5707.bbbd91f062^^^^urn:ihe:iti:xdw:2013:workflowInstanceId"
+          },
+          "workflow_instance_id": null
+        }
+      }
+    },
+    {
+      "test_id": "RAD_TC17",
+      "test_name": "RAD KO - DICOM entry mancante",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC17001_20260226183820810",
+      "workflow_instance_id": null,
+      "pdf_hash": "6cf50cf57bbe65baa00b46eb5a7de175a2ef2daf9de01d535065a32024071b1a",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:38:20.802069",
+      "steps": {
+        "validazione": {
+          "http_status": 422,
+          "success": false,
+          "body": {
+            "traceID": "7e7434bfc75aa6bcb4914f5020eae1e2",
+            "spanID": "c6319f4bb274f8f8",
+            "type": "/msg/semantic",
+            "title": "Errore semantico.",
+            "detail": "[ERRORE-b7| Sezione Dicom Object Catalog: La sezione deve avere l'elemento 'entry' di tipo 'act'.]",
+            "status": 422,
+            "instance": "/validation/error",
+            "workflowInstanceId": "2.16.840.1.113883.2.9.2.120.4.4.74a1f8f05dbdcf11890edee3f4c20fbdfe335132a30c756bcbd9df89146fb22b.5016666c34^^^^urn:ihe:iti:xdw:2013:workflowInstanceId"
+          },
+          "workflow_instance_id": null
+        }
+      }
+    },
+    {
+      "test_id": "RAD_TC18",
+      "test_name": "RAD KO - Storia_Clinica effectiveTime/low",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC18001_20260226183822077",
+      "workflow_instance_id": null,
+      "pdf_hash": "0aebae58faddeafe63e339b186f8cbcefde10e47c5d713d19134fd011cfccca5",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:38:22.068362",
+      "steps": {
+        "validazione": {
+          "http_status": 422,
+          "success": false,
+          "body": {
+            "traceID": "cf96b342b299a9a127cc23bff88bcf60",
+            "spanID": "0675765dc8f3866a",
+            "type": "/msg/semantic",
+            "title": "Errore semantico.",
+            "detail": "[ERRORE-b22| Sezione Storia Clinica: L'elemento entry/observation/effectiveTime deve essere presente e deve avere l'elemento 'low' valorizzato.]",
+            "status": 422,
+            "instance": "/validation/error",
+            "workflowInstanceId": "2.16.840.1.113883.2.9.2.120.4.4.d7d5b9a29951eb390440b77925eb9bfc992df0115808f61461d7b780e15ee562.2ede670ade^^^^urn:ihe:iti:xdw:2013:workflowInstanceId"
+          },
+          "workflow_instance_id": null
+        }
+      }
+    },
+    {
+      "test_id": "RAD_TC19",
+      "test_name": "RAD KO - relatedSubject/code mancante",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC19001_20260226183823369",
+      "workflow_instance_id": null,
+      "pdf_hash": "67febbc4d6649dbd8f6178a19746201dc44a1330346877f9317c8e7332885aab",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:38:23.362425",
+      "steps": {
+        "validazione": {
+          "http_status": 422,
+          "success": false,
+          "body": {
+            "traceID": "24c3a497afc58996a1d2446191622c41",
+            "spanID": "3b9ca62cc14c9d23",
+            "type": "/msg/semantic",
+            "title": "Errore semantico.",
+            "detail": "[ERRORE-b26| Sezione Storia Clinica: La entry/organizer deve avere un elemento subject/relatedSubject il quale deve contenere l'elemento 'code'. ]",
+            "status": 422,
+            "instance": "/validation/error",
+            "workflowInstanceId": "2.16.840.1.113883.2.9.2.120.4.4.99492cfff4da413aad813dd7283842da2d68b187541fd27ff1295b59c012c854.cd86476daa^^^^urn:ihe:iti:xdw:2013:workflowInstanceId"
+          },
+          "workflow_instance_id": null
+        }
+      }
+    },
+    {
+      "test_id": "RAD_TC20",
+      "test_name": "RAD KO - Allergie effectiveTime mancante",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC20001_20260226183824682",
+      "workflow_instance_id": null,
+      "pdf_hash": "fa1d591b54a494d917768edcb34f3a7eb2b841cf785ad9092f1b02364bb8501e",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:38:24.675442",
+      "steps": {
+        "validazione": {
+          "http_status": 422,
+          "success": false,
+          "body": {
+            "traceID": "0af677b5cd3551ab7f3b88c4d07da1f4",
+            "spanID": "2c97207741b4f9b0",
+            "type": "/msg/semantic",
+            "title": "Errore semantico.",
+            "detail": "[ERRORE-b53| Sotto sezione Allergie: I'elemento entry/act/entryRelationship/observation/effectiveTime deve avere valorizzato l'elemento 'low'.]",
+            "status": 422,
+            "instance": "/validation/error",
+            "workflowInstanceId": "2.16.840.1.113883.2.9.2.120.4.4.58f5a1311a3a464d152b8d42c234bb3731e355def108e854ecd17f613f88a4ff.d4cab979a7^^^^urn:ihe:iti:xdw:2013:workflowInstanceId"
+          },
+          "workflow_instance_id": null
+        }
+      }
+    },
+    {
+      "test_id": "RAD_TC21",
+      "test_name": "RAD KO - Allergie participant mancante",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC21001_20260226183825923",
+      "workflow_instance_id": null,
+      "pdf_hash": "e80bb2ce30dd8a150db480a1ab0f2fd0f78f4d672264da43809c75a5acb9f9b4",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:38:25.912609",
+      "steps": {
+        "validazione": {
+          "http_status": 422,
+          "success": false,
+          "body": {
+            "traceID": "e1acb2af31574870ea988fbc650c047b",
+            "spanID": "5a781eaee7695579",
+            "type": "/msg/semantic",
+            "title": "Errore semantico.",
+            "detail": "[ERRORE-b57| Sotto sezione Allergie: L'elemento entryRelationship/observation (Descrizione Agente) deve avere almeno un elemento 'participant' che dettaglia l'agente scatenante.]",
+            "status": 422,
+            "instance": "/validation/error",
+            "workflowInstanceId": "2.16.840.1.113883.2.9.2.120.4.4.b274fc9da5cffae1695615d3175e0ae368154bc151c93b518e64701960e6af48.21e443ee67^^^^urn:ihe:iti:xdw:2013:workflowInstanceId"
+          },
+          "workflow_instance_id": null
+        }
+      }
+    },
+    {
+      "test_id": "RAD_TC22",
+      "test_name": "RAD KO - ICD9-CM codice errato",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC22001_20260226183827156",
+      "workflow_instance_id": null,
+      "pdf_hash": "9567fb53f6c4c6f26f55da843640783b50236cd7e1a111ba8c8f8060288c5ff6",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:38:27.147513",
+      "steps": {
+        "validazione": {
+          "http_status": 400,
+          "success": false,
+          "body": {
+            "traceID": "bf286f0592f4583c89e1d0b109abe861",
+            "spanID": "a175c98b321bcb99",
+            "type": "/msg/vocabulary",
+            "title": "Errore vocabolario.",
+            "detail": "Almeno uno dei seguenti vocaboli non è censito: [CodeSystem: 2.16.840.1.113883.6.103, Codes: CODICE_ERRATO_999]",
+            "status": 400,
+            "instance": "/validation/error",
+            "workflowInstanceId": "2.16.840.1.113883.2.9.2.120.4.4.5d698c31f4d534430106b31236ffcb93711e1ae5acb6e7f189623a01ac0abf65.2946d1a08d^^^^urn:ihe:iti:xdw:2013:workflowInstanceId"
+          },
+          "workflow_instance_id": null
+        }
+      }
+    },
+    {
+      "test_id": "RAD_TC23",
+      "test_name": "RAD KO - documentationOf code non valido",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC23001_20260226183828520",
+      "workflow_instance_id": null,
+      "pdf_hash": "cccae950154587a24b358635a4484efb189f56d668691d299700e2822516c49f",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:38:28.511972",
+      "steps": {
+        "validazione": {
+          "http_status": 400,
+          "success": false,
+          "body": {
+            "traceID": "a29494d512e6ebbbd4f1940871b5c4c2",
+            "spanID": "5829b0d3f73ceffa",
+            "type": "/msg/syntax",
+            "title": "Errore di sintassi.",
+            "detail": "ERROR: -1,-1 cvc-complex-type.2.4.d: Invalid content was found starting with element 'documentationOf'. No child element is expected at this point.",
+            "status": 400,
+            "instance": "/validation/error",
+            "workflowInstanceId": "2.16.840.1.113883.2.9.2.120.4.4.9a03a97ac833ddb83eca6797ce8021ae4e2781cd601607af73a33c216cfa31a2.f1e98b149d^^^^urn:ihe:iti:xdw:2013:workflowInstanceId"
+          },
+          "workflow_instance_id": null
+        }
+      }
+    },
+    {
+      "test_id": "RAD_TC24",
+      "test_name": "RAD KO - confidentialityCode mancante",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC24001_20260226183829735",
+      "workflow_instance_id": null,
+      "pdf_hash": "abead108aaedb15f7c25d68974486a477d91a35e5d68d4ff9690851dbc548fee",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:38:29.728089",
+      "steps": {
+        "validazione": {
+          "http_status": 400,
+          "success": false,
+          "body": {
+            "traceID": "89608007be46962e7dee4476021019ac",
+            "spanID": "b436752926f77462",
+            "type": "/msg/syntax",
+            "title": "Errore di sintassi.",
+            "detail": "ERROR: -1,-1 cvc-complex-type.2.4.a: Invalid content was found starting with element '{\"urn:hl7-org:v3\":languageCode}'. One of '{\"urn:hl7-org:v3\":confidentialityCode}' is expected.",
+            "status": 400,
+            "instance": "/validation/error",
+            "workflowInstanceId": "2.16.840.1.113883.2.9.2.120.4.4.71584c703de07f3b50d646b1ae7caf4e359eb549336dead486459ac15456c4fe.319ec7eec0^^^^urn:ihe:iti:xdw:2013:workflowInstanceId"
+          },
+          "workflow_instance_id": null
+        }
+      }
+    },
+    {
+      "test_id": "RAD_TC27",
+      "test_name": "RAD KO - priorityCode valore errato",
+      "doc_id": "2.16.840.1.113883.2.9.2.120.4.4^TC27001_20260226183830992",
+      "workflow_instance_id": null,
+      "pdf_hash": "b831a627ca421a78e0e286954fdddc6c2730eb01156a421af6e6858404afa150",
+      "esito": "OK",
+      "timestamp": "2026-02-26T18:38:30.986341",
+      "steps": {
+        "validazione": {
+          "http_status": 400,
+          "success": false,
+          "body": {
+            "traceID": "6c81b91fd426d78ce5fb8229de210b04",
+            "spanID": "99d87db4b6263bb5",
+            "type": "/msg/vocabulary",
+            "title": "Errore vocabolario.",
+            "detail": "Almeno uno dei seguenti vocaboli non è censito: [CodeSystem: 2.16.840.1.113883.5.7 v2.1.0, Codes: INVALID_PRIORITY]",
+            "status": 400,
+            "instance": "/validation/error",
+            "workflowInstanceId": "2.16.840.1.113883.2.9.2.120.4.4.6ebfdb900a10479d3bbf514e2562c0430c0eb7602656c5ec1dabbcfc08b820a5.0457f4ca1b^^^^urn:ihe:iti:xdw:2013:workflowInstanceId"
+          },
+          "workflow_instance_id": null
+        }
+      }
+    },
+    {
+      "test_id": "LAB_JWT_28",
+      "test_name": "LAB_JWT_28",
+      "doc_id": null,
+      "workflow_instance_id": "UNKNOWN_WORKFLOW_ID",
+      "pdf_hash": "625708e7a851846020fc3ee6c6f67e214c50675591e050f38afdd7da1b356fa3",
+      "esito": "OK",
+      "timestamp": "2026-03-03T09:01:58.885929",
+      "steps": {
+        "validazione": {
+          "http_status": 403,
+          "success": false,
+          "body": {
+            "traceID": "14a167126aa14a042dcb7aec04a4f76a",
+            "spanID": "5ce8928a7e4d98a1",
+            "type": "/msg/jwt-validation",
+            "title": "Campo token JWT non valido.",
+            "detail": "Il campo purpose_of_use non è valorizzato",
+            "status": 403,
+            "instance": "/jwt-mandatory-field-missing",
+            "workflowInstanceId": "UNKNOWN_WORKFLOW_ID"
+          },
+          "workflow_instance_id": "UNKNOWN_WORKFLOW_ID"
+        }
+      }
+    },
+    {
+      "test_id": "LAB_JWT_36",
+      "test_name": "LAB_JWT_36",
+      "doc_id": null,
+      "workflow_instance_id": "UNKNOWN_WORKFLOW_ID",
+      "pdf_hash": "625708e7a851846020fc3ee6c6f67e214c50675591e050f38afdd7da1b356fa3",
+      "esito": "OK",
+      "timestamp": "2026-03-03T09:02:00.283567",
+      "steps": {
+        "validazione": {
+          "http_status": 403,
+          "success": false,
+          "body": {
+            "traceID": "97d09be041188fb796d6c547f0549b1f",
+            "spanID": "582586bc624acef6",
+            "type": "/msg/jwt-validation",
+            "title": "Campo token JWT non valido.",
+            "detail": "Il campo action_id non è corretto",
+            "status": 403,
+            "instance": "/jwt-mandatory-field-malformed",
+            "workflowInstanceId": "UNKNOWN_WORKFLOW_ID"
+          },
+          "workflow_instance_id": "UNKNOWN_WORKFLOW_ID"
+        }
+      }
+    },
+    {
+      "test_id": "RAD_JWT_31",
+      "test_name": "RAD_JWT_31",
+      "doc_id": null,
+      "workflow_instance_id": "UNKNOWN_WORKFLOW_ID",
+      "pdf_hash": "f28da034f19d5558fcbec5e74fc9da495a1cfcaf6343115ea336f7f9809c2e1b",
+      "esito": "OK",
+      "timestamp": "2026-03-03T09:02:01.597586",
+      "steps": {
+        "validazione": {
+          "http_status": 403,
+          "success": false,
+          "body": {
+            "traceID": "31b7c2d66522c545034d205231bd014a",
+            "spanID": "6cc5586aad8b8f0f",
+            "type": "/msg/jwt-validation",
+            "title": "Campo token JWT non valido.",
+            "detail": "Il campo purpose_of_use non è valorizzato",
+            "status": 403,
+            "instance": "/jwt-mandatory-field-missing",
+            "workflowInstanceId": "UNKNOWN_WORKFLOW_ID"
+          },
+          "workflow_instance_id": "UNKNOWN_WORKFLOW_ID"
+        }
+      }
+    },
+    {
+      "test_id": "RAD_JWT_39",
+      "test_name": "RAD_JWT_39",
+      "doc_id": null,
+      "workflow_instance_id": "UNKNOWN_WORKFLOW_ID",
+      "pdf_hash": "f28da034f19d5558fcbec5e74fc9da495a1cfcaf6343115ea336f7f9809c2e1b",
+      "esito": "OK",
+      "timestamp": "2026-03-03T09:02:03.080634",
+      "steps": {
+        "validazione": {
+          "http_status": 403,
+          "success": false,
+          "body": {
+            "traceID": "c1c6ad99a691a319182336f8d8538a12",
+            "spanID": "36150c85d093f546",
+            "type": "/msg/jwt-validation",
+            "title": "Campo token JWT non valido.",
+            "detail": "Il campo action_id non è corretto",
+            "status": 403,
+            "instance": "/jwt-mandatory-field-malformed",
+            "workflowInstanceId": "UNKNOWN_WORKFLOW_ID"
+          },
+          "workflow_instance_id": "UNKNOWN_WORKFLOW_ID"
+        }
+      }
+    }
+  ]
+}
