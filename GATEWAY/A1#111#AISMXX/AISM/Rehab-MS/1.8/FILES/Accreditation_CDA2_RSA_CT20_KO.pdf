@@ -12,8 +12,8 @@ endobj
 
 endobj
 31 0 obj
-<</Type /EmbeddedFile /Subtype /application#2Fxml /Params <</CreationDate <443A32303236303331323132313034382B303127303027> /Size 22224 >>
- /Length 22224 >>
+<</Type /EmbeddedFile /Subtype /application#2Fxml /Params <</CreationDate <443A32303236303331323132333630382B303127303027> /Size 22027 >>
+ /Length 22027 >>
 stream
 <?xml version="1.0" encoding="utf-8"?>
 <ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdtc="urn:hl7-org:sdtc" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" xmlns="urn:hl7-org:v3">
@@ -23,14 +23,14 @@ stream
   <id root="2.16.840.1.113883.2.9.4.1.5" extension="AISM Valle d'Aosta^^^^^&amp;2.16.840.1.113883.2.9.4.1.5&amp;ISO^^^^020801" assigningAuthorityName="AISM Valle d'Aosta" />
   <code code="11488-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Nota di consulto" />
   <title>Referto di Specialistica Ambulatoriale</title>
-  <effectiveTime value="20260312121046+0100" />
+  <effectiveTime value="20260312123606+0100" />
   <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" codeSystemName="HL7 Confidentiality" displayName="Normal" />
   <languageCode code="it-IT" />
   <setId root="2.16.840.1.113883.2.9.4.1.5" extension="AISM Valle d'Aosta^^^^^&amp;2.16.840.1.113883.2.9.4.1.5&amp;ISO^^^^020801" assigningAuthorityName="AISM Valle d'Aosta" />
   <versionNumber value="1" />
   <recordTarget>
     <patientRole>
-      <id root="2.16.840.1.113883.2.9.4.3.2" extension="pznttf80a50d548v" assigningAuthorityName="MEF" />
+      <id root="2.16.840.1.113883.2.9.4.3.2" extension="PZNTTF80A50D548V" assigningAuthorityName="MEF" />
       <addr use="HP">
         <country>100</country>
         <state>020</state>
@@ -62,9 +62,9 @@ stream
     </patientRole>
   </recordTarget>
   <author>
-    <time value="20260312121046+0100" />
+    <time value="20260312123606+0100" />
     <assignedAuthor>
-      <id root="2.16.840.1.113883.2.9.4.3.2" extension="mrrssi87d52s969a" assigningAuthorityName="MEF" />
+      <id root="2.16.840.1.113883.2.9.4.3.2" extension="MRRSSI87D52S969A" assigningAuthorityName="MEF" />
       <addr use="HP">
         <country>100</country>
         <state>020</state>
@@ -100,10 +100,10 @@ stream
     </assignedCustodian>
   </custodian>
   <legalAuthenticator>
-    <time value="20260312121046+0100" />
+    <time value="20260312123606+0100" />
     <signatureCode code="S" />
     <assignedEntity>
-      <id root="2.16.840.1.113883.2.9.4.3.2" extension="mrrssi87d52s969a" assigningAuthorityName="MEF" />
+      <id root="2.16.840.1.113883.2.9.4.3.2" extension="MRRSSI87D52S969A" assigningAuthorityName="MEF" />
       <addr use="HP">
         <country>100</country>
         <state>020</state>
@@ -125,7 +125,7 @@ stream
   </legalAuthenticator>
   <inFulfillmentOf>
     <order moodCode="RQO">
-      <id root="2.16.840.1.113883.2.9.4.3.9" extension="35061" assigningAuthorityName="Ministero delle Finanze" />
+      <id root="2.16.840.1.113883.2.9.4.3.9" extension="75652" assigningAuthorityName="Ministero delle Finanze" />
       <priorityCode code="R" codeSystem="2.16.840.1.113883.5.7" codeSystemName="HL7 ActPriority" displayName="Normale" />
     </order>
   </inFulfillmentOf>
@@ -133,8 +133,8 @@ stream
     <encompassingEncounter>
       <id root="2.16.840.1.113883.2.9.2.120110.4.6" extension="2011008159" assigningAuthorityName="MEF" />
       <effectiveTime nullFlavor="UNK">
-        <low value="20260312121045+0100" />
-        <high value="20260312131045+0100" />
+        <low value="20260312123605+0100" />
+        <high value="20260312133605+0100" />
       </effectiveTime>
       <location>
         <healthCareFacility>
@@ -170,7 +170,7 @@ stream
           <entry>
             <act classCode="ACT" moodCode="EVN">
               <code xsi:type="CE" code="18740-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Speech-language pathology Initial evaluation note" />
-              <effectiveTime value="20260312121046+0100" />
+              <effectiveTime value="20260312123606+0100" />
               <entryRelationship typeCode="COMP">
                 <procedure moodCode="EVN">
                   <code xsi:type="CE" nullFlavor="UNK" />
@@ -198,147 +198,6 @@ stream
               <value xsi:type="CD" code="251.2" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9CM" />
             </observation>
           </entry>
-        </section>
-      </component>
-      <component typeCode="COMP">
-        <section ID="STORIA_CLINICA">
-          <code code="11329-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Storia Generale" />
-          <title>Storia Clinica</title>
-          <text>Descrizione Storia Clinica</text>
-          <entry>
-            <observation moodCode="EVN">
-              <code code="75326-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem" />
-              <statusCode code="completed" />
-              <effectiveTime nullFlavor="UNK">
-                <low nullFlavor="UNK" />
-              </effectiveTime>
-              <value xsi:type="CD">
-                <originalText>
-                  <reference value="Descrizione Storia Clinica" />
-                </originalText>
-              </value>
-              <entryRelationship typeCode="REFR">
-                <observation moodCode="EVN">
-                  <code code="89261-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
-                  <statusCode code="completed" />
-                  <value xsi:type="CD" code="LA18821-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
-                </observation>
-              </entryRelationship>
-            </observation>
-          </entry>
-          <entry>
-            <organizer classCode="CLUSTER" moodCode="EVN">
-              <code code="10157-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Storie di malattie di membri familiari" />
-              <statusCode code="completed" />
-              <subject typeCode="SBJ">
-                <relatedSubject classCode="PRS">
-                  <code code="MTH" codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" displayName="Mother" />
-                  <subject>
-                    <administrativeGenderCode code="F" codeSystem="2.16.840.1.113883.5.1" codeSystemName="HL7 AdministrativeGender" />
-                  </subject>
-                </relatedSubject>
-              </subject>
-              <component>
-                <observation moodCode="EVN">
-                  <code code="52797-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
-                  <text>
-                    <reference value="Descrizione Storia Clinica" />
-                  </text>
-                  <statusCode code="completed" />
-                  <effectiveTime nullFlavor="UNK" />
-                  <value xsi:type="CD" code="575.6" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9-CM" />
-                  <entryRelationship typeCode="SUBJ">
-                    <observation moodCode="EVN">
-                      <code code="35267-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
-                      <value xsi:type="PQ" value="35" unit="a" />
-                    </observation>
-                  </entryRelationship>
-                </observation>
-              </component>
-            </organizer>
-          </entry>
-          <component>
-            <section ID="ALLERGIE">
-              <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergie e/o Reazioni Avverse" />
-              <title>Allergie</title>
-              <text>Descrizioni Allergie</text>
-              <entry>
-                <act classCode="ACT" moodCode="EVN">
-                  <code nullFlavor="NA" />
-                  <statusCode code="completed" />
-                  <effectiveTime nullFlavor="UNK">
-                    <low nullFlavor="UNK" />
-                    <high nullFlavor="UNK" />
-                  </effectiveTime>
-                  <entryRelationship typeCode="SUBJ">
-                    <observation moodCode="EVN">
-                      <code code="52473-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergia o causa della reazione" />
-                      <text>
-                        <reference value="URI che punta alla descrizione dell'allarme, allergia o intolleranza" />
-                      </text>
-                      <statusCode code="completed" />
-                      <effectiveTime nullFlavor="UNK">
-                        <low nullFlavor="UNK" />
-                        <high nullFlavor="UNK" />
-                      </effectiveTime>
-                      <value xsi:type="CD" code="ALG" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ObservationIntoleranceType" />
-                      <participant typeCode="CSM">
-                        <participantRole classCode="MANU">
-                          <playingEntity>
-                            <code nullFlavor="UNK" />
-                          </playingEntity>
-                        </participantRole>
-                      </participant>
-                      <entryRelationship typeCode="MFST">
-                        <observation moodCode="EVN">
-                          <code code="75321-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
-                          <text>
-                            <reference value="Indica un riferimento incrociato alla descrizione nella parte narrativa" />
-                          </text>
-                          <statusCode code="completed" />
-                          <effectiveTime nullFlavor="UNK">
-                            <low nullFlavor="UNK" />
-                            <high nullFlavor="UNK" />
-                          </effectiveTime>
-                          <value xsi:type="CD">
-                            <originalText>
-                              <reference value="Riferimento incrociato alla descrizione della reazione nella parte narrativa" />
-                            </originalText>
-                          </value>
-                        </observation>
-                      </entryRelationship>
-                      <entryRelationship typeCode="SUBJ">
-                        <act classCode="ACT" moodCode="EVN">
-                          <code code="48767-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
-                          <text>
-                            <reference value="Riferimento incrociato alla descrizione dello stato nella parte narrativa" />
-                          </text>
-                        </act>
-                      </entryRelationship>
-                    </observation>
-                  </entryRelationship>
-                </act>
-              </entry>
-            </section>
-          </component>
-          <component>
-            <section ID="TERAPIA_FARMACOLOGICA_IN_ATTO">
-              <code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Uso di farmaci" />
-              <title>Terapia farmacologica in atto</title>
-              <text>Descrizione Terapia Farmacologica</text>
-              <entry>
-                <substanceAdministration classCode="SBADM" moodCode="EVN">
-                  <consumable>
-                    <manufacturedProduct>
-                      <manufacturedMaterial>
-                        <code code="023993013" codeSystem="2.16.840.1.113883.2.9.6.1.5" codeSystemName="LOINC" />
-                      </manufacturedMaterial>
-                    </manufacturedProduct>
-                  </consumable>
-                </substanceAdministration>
-              </entry>
-            </section>
-          </component>
         </section>
       </component>
       <component typeCode="COMP">
@@ -439,7 +298,7 @@ stream
                 </manufacturedProduct>
               </consumable>
               <participant typeCode="REF">
-                <time value="20260312121046+0100" />
+                <time value="20260312123606+0100" />
                 <participantRole>
                   <id root="2.16.840.1.113883.2.9.4.3.2" extension="FCCGDI86H50I470K" assigningAuthorityName="MEF" />
                   <playingEntity>
@@ -471,6 +330,143 @@ stream
           </entry>
         </section>
       </component>
+      <component typeCode="COMP">
+        <section ID="STORIA_CLINICA">
+          <code code="11329-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Storia Generale" />
+          <title>Storia Clinica</title>
+          <text>Descrizione Storia Clinica</text>
+          <entry>
+            <observation moodCode="EVN">
+              <code code="75326-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem" />
+              <statusCode code="completed" />
+              <effectiveTime nullFlavor="UNK">
+                <low nullFlavor="UNK" />
+              </effectiveTime>
+              <value xsi:type="CD">
+                <originalText>
+                  <reference value="Descrizione Storia Clinica" />
+                </originalText>
+              </value>
+              <entryRelationship typeCode="REFR">
+                <observation moodCode="EVN">
+                  <code code="89261-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  <statusCode code="completed" />
+                  <value xsi:type="CD" code="LA18821-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                </observation>
+              </entryRelationship>
+            </observation>
+          </entry>
+          <entry>
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <code code="10157-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Storie di malattie di membri familiari" />
+              <statusCode code="completed" />
+              <subject typeCode="SBJ">
+                <relatedSubject classCode="PRS">
+                  <code code="MTH" codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" displayName="Mother" />
+                  <subject>
+                    <administrativeGenderCode code="F" codeSystem="2.16.840.1.113883.5.1" codeSystemName="HL7 AdministrativeGender" />
+                  </subject>
+                </relatedSubject>
+              </subject>
+              <component>
+                <observation moodCode="EVN">
+                  <code code="52797-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  <text>
+                    <reference value="Descrizione Storia Clinica" />
+                  </text>
+                  <statusCode code="completed" />
+                  <effectiveTime nullFlavor="UNK" />
+                  <value xsi:type="CD" code="575.6" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9-CM" />
+                  <entryRelationship typeCode="SUBJ">
+                    <observation moodCode="EVN">
+                      <code code="35267-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                      <value xsi:type="PQ" value="35" unit="a" />
+                    </observation>
+                  </entryRelationship>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <component>
+            <section ID="ALLERGIE">
+              <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergie e/o Reazioni Avverse" />
+              <title>Allergie</title>
+              <text>Descrizioni Allergie</text>
+              <entry>
+                <act classCode="ACT" moodCode="EVN">
+                  <code nullFlavor="NA" />
+                  <statusCode code="completed" />
+                  <effectiveTime nullFlavor="UNK">
+                    <low nullFlavor="UNK" />
+                    <high nullFlavor="UNK" />
+                  </effectiveTime>
+                  <entryRelationship typeCode="SUBJ">
+                    <observation moodCode="EVN">
+                      <code code="52473-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergia o causa della reazione" />
+                      <text>
+                        <reference value="URI che punta alla descrizione dell'allarme, allergia o intolleranza" />
+                      </text>
+                      <statusCode code="completed" />
+                      <value xsi:type="CD" code="ALG" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ObservationIntoleranceType" />
+                      <participant typeCode="CSM">
+                        <participantRole classCode="MANU">
+                          <playingEntity>
+                            <code nullFlavor="UNK" />
+                          </playingEntity>
+                        </participantRole>
+                      </participant>
+                      <entryRelationship typeCode="MFST">
+                        <observation moodCode="EVN">
+                          <code code="75321-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                          <text>
+                            <reference value="Indica un riferimento incrociato alla descrizione nella parte narrativa" />
+                          </text>
+                          <statusCode code="completed" />
+                          <effectiveTime nullFlavor="UNK">
+                            <low nullFlavor="UNK" />
+                            <high nullFlavor="UNK" />
+                          </effectiveTime>
+                          <value xsi:type="CD">
+                            <originalText>
+                              <reference value="Riferimento incrociato alla descrizione della reazione nella parte narrativa" />
+                            </originalText>
+                          </value>
+                        </observation>
+                      </entryRelationship>
+                      <entryRelationship typeCode="SUBJ">
+                        <act classCode="ACT" moodCode="EVN">
+                          <code code="48767-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                          <text>
+                            <reference value="Riferimento incrociato alla descrizione dello stato nella parte narrativa" />
+                          </text>
+                        </act>
+                      </entryRelationship>
+                    </observation>
+                  </entryRelationship>
+                </act>
+              </entry>
+            </section>
+          </component>
+          <component>
+            <section ID="TERAPIA_FARMACOLOGICA_IN_ATTO">
+              <code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Uso di farmaci" />
+              <title>Terapia farmacologica in atto</title>
+              <text>Descrizione Terapia Farmacologica</text>
+              <entry>
+                <substanceAdministration classCode="SBADM" moodCode="EVN">
+                  <consumable>
+                    <manufacturedProduct>
+                      <manufacturedMaterial>
+                        <code code="023993013" codeSystem="2.16.840.1.113883.2.9.6.1.5" codeSystemName="LOINC" />
+                      </manufacturedMaterial>
+                    </manufacturedProduct>
+                  </consumable>
+                </substanceAdministration>
+              </entry>
+            </section>
+          </component>
+        </section>
+      </component>
     </structuredBody>
   </component>
 </ClinicalDocument>
@@ -479,7 +475,7 @@ endobj
 29 0 obj
 <</Type /Metadata /Subtype /XML /Length 543 >>
 stream
-<?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?><x:xmpmeta xmlns:x="adobe:ns:meta/"><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:about="" xmlns:pdf="http://ns.adobe.com/pdf/1.3/" xmlns:xmp="http://ns.adobe.com/xap/1.0/"><pdf:Producer>jsPDF 4.0.0</pdf:Producer><xmp:CreateDate>2026-03-12T12:10:48+01:00</xmp:CreateDate><xmp:ModifyDate>2026-03-12T12:10:48+01:00</xmp:ModifyDate><xmp:MetadataDate>2026-03-12T12:10:48+01:00</xmp:MetadataDate></rdf:Description></rdf:RDF></x:xmpmeta><?xpacket end="w"?>
+<?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?><x:xmpmeta xmlns:x="adobe:ns:meta/"><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:about="" xmlns:pdf="http://ns.adobe.com/pdf/1.3/" xmlns:xmp="http://ns.adobe.com/xap/1.0/"><pdf:Producer>jsPDF 4.0.0</pdf:Producer><xmp:CreateDate>2026-03-12T12:36:08+01:00</xmp:CreateDate><xmp:ModifyDate>2026-03-12T12:36:08+01:00</xmp:ModifyDate><xmp:MetadataDate>2026-03-12T12:36:08+01:00</xmp:MetadataDate></rdf:Description></rdf:RDF></x:xmpmeta><?xpacket end="w"?>
 endstream
 endobj
 24 0 obj
@@ -6748,7 +6744,7 @@ endobj
 
 endobj
 28 0 obj
-<</Producer <FEFF006A007300500044004600200034002E0030002E0030> /CreationDate <443A32303236303331323132313034382B303127303027> /ModDate <443A32303236303331323132313034382B303127303027> >>
+<</Producer <FEFF006A007300500044004600200034002E0030002E0030> /CreationDate <443A32303236303331323132333630382B303127303027> /ModDate <443A32303236303331323132333630382B303127303027> >>
 
 endobj
 xref
@@ -6776,23 +6772,23 @@ xref
 0000000021 65535 f
 0000000000 65535 f
 0000000017 00000 n
-0000184917 00000 n
-0000023617 00000 n
-0000185151 00000 n
-0000023832 00000 n
-0000024066 00000 n
-0000909544 00000 n
-0000022987 00000 n
+0000184720 00000 n
+0000023420 00000 n
+0000184954 00000 n
+0000023635 00000 n
+0000023869 00000 n
+0000909347 00000 n
+0000022790 00000 n
 0000000194 00000 n
 0000000566 00000 n
-0000909472 00000 n
-0000023967 00000 n
-0000023705 00000 n
-0000185052 00000 n
-0000184790 00000 n
+0000909275 00000 n
+0000023770 00000 n
+0000023508 00000 n
+0000184855 00000 n
+0000184593 00000 n
 trailer
 <</Size 37 /Info 28 0 R /ID [<5A40525849B69D08D29F6981F7CC3873> <5A40525849B69D08D29F6981F7CC3873>] /Root 22 0 R >>
 
 startxref
-909752
+909555
 %%EOF
