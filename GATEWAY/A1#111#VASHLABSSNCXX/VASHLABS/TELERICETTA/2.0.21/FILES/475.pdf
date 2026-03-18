@@ -124,7 +124,7 @@ endobj
 endobj
 15 0 obj
 <<
-/Length 25720
+/Length 25957
 /Type /EmbeddedFile
 /Subtype /application#2Fxml
 /Params 16 0 R
@@ -343,13 +343,13 @@ Terapia in atto: Omeprazolo [A02BC01]; periodo: dal 10/01/2026; stato: attivo
               <value xsi:type="CD" code="401.9" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9-CM" displayName="Ipertensione essenziale"/>
               <entryRelationship typeCode="SUBJ">
                 <observation classCode="OBS" moodCode="EVN">
-                  <code code="35267-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Eta diagnosi patologia"/>
+                  <code code="35267-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Età diagnosi patologia"/>
                   <value xsi:type="PQ" value="50" unit="a"/>
                 </observation>
               </entryRelationship>
               <entryRelationship typeCode="SUBJ">
                 <observation classCode="OBS" moodCode="EVN">
-                  <code code="39016-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Eta_decesso"/>
+                  <code code="39016-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Età_decesso"/>
                   <value xsi:type="PQ" value="80" unit="a"/>
                 </observation>
               </entryRelationship>
@@ -473,7 +473,10 @@ Terapia in atto: Omeprazolo [A02BC01]; periodo: dal 10/01/2026; stato: attivo
       <entry>
         <observation classCode="OBS" moodCode="EVN">
           <code code="88.26" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9-CM" displayName="Radiografia della spalla"/>
-          <effectiveTime value="20251215000000+0100"/>
+          <effectiveTime>
+            <low value="20251215000000+0100"/>
+            <high value="20251215000000+0100"/>
+          </effectiveTime>
         </observation>
       </entry>
     </section>
@@ -593,7 +596,7 @@ Terapia in atto: Omeprazolo [A02BC01]; periodo: dal 10/01/2026; stato: attivo
       <title>Terapia Farmacologica Consigliata</title>
       <text>
         <list>
-<item ID="TFc-1">Ibuprofene [M01AE01]; grammatura: 400; dose: 1; posologia: 1 compressa al bisogno dopo i pasti per massimo 5 giorni; via: Oral route; confezioni: 1 conf.; periodo: dal 14/03/2026; stato: attivo; prescrittore: DIPROVA MEDICO - MDCDRV80A41D969D; richiesta: 14/03/2026 10:05; note: Ibuprofene al bisogno per massimo 5 giorni dopo i pasti.</item>
+<item ID="TFc-1">Ibuprofene [M01AE01]; grammatura: 400; dose: 1; posologia: 1 compressa al bisogno dopo i pasti per massimo 5 giorni; via: Oral route; sito: Left Arm; confezioni: 1 conf.; periodo: dal 14/03/2026; stato: attivo; prescrittore: DIPROVA MEDICO - MDCDRV80A41D969D; richiesta: 14/03/2026 10:05; note: Ibuprofene al bisogno per massimo 5 giorni dopo i pasti.</item>
 </list>
       </text>
       <entry>
@@ -604,6 +607,7 @@ Terapia in atto: Omeprazolo [A02BC01]; periodo: dal 10/01/2026; stato: attivo
             <low value="20260314"/>
           </effectiveTime>
           <routeCode code="PO" codeSystem="2.16.840.1.113883.5.112" codeSystemName="RouteOfAdministration" displayName="Oral route"/>
+          <approachSiteCode code="LA" codeSystem="2.16.840.1.113883.5.1052" codeSystemName="ActSite" displayName="Left Arm"/>
           <doseQuantity>
             <low value="1"/>
             <high value="1"/>
@@ -659,7 +663,7 @@ endstream
 endobj
 16 0 obj
 <<
-/Size 25720
+/Size 25957
 >>
 endobj
 xref
@@ -680,7 +684,7 @@ xref
 0000001528 00000 n
 0000001641 00000 n
 0000001673 00000 n
-0000027512 00000 n
+0000027749 00000 n
 trailer
 <<
 /ID [<1C1D8AF4136953AF74F6124DD7B1116B> <1C1D8AF4136953AF74F6124DD7B1116B>]
@@ -689,5 +693,5 @@ trailer
 /Size 17
 >>
 startxref
-27546
+27783
 %%EOF
