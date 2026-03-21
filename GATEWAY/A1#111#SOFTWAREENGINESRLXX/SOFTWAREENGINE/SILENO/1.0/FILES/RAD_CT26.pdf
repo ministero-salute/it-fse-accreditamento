@@ -100,13 +100,13 @@ endobj
 endobj
 13 0 obj
 <<
-/Length 23996
+/Length 25542
 /Type /EmbeddedFile
 /Subtype /application#2Fxml
 /Params 14 0 R
 >>
 stream
-
+<?xml version='1.0' encoding='UTF-8'?>
 <!--NEW_REFERTO_RADIOLOGIA-->
 <!-- Header Referto Radiologia-->
 <ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:mif="urn:hl7-org:v3/mif" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:lab="urn:oid:1.3.6.1.4.1.19376.1.3.2" xmlns:sdtc="urn:hl7-org:sdtc">
@@ -453,7 +453,7 @@ stream
 								<high value="20220404110000+0200"/>
 							</effectiveTime>
 							<value xsi:type="CD" code="60975-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Resistenza Vascolare"/>	
-						</observation>
+						<entryRelationship typeCode="REFR" inversionInd="false"><observation classCode="OBS" moodCode="EVN"><code code="89261-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Decorso Clinico"/><text><reference value="#[REF_CRON]"/></text><statusCode code="completed"/><value xsi:type="CE" code="LA18821-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Acute"/></observation></entryRelationship><entryRelationship typeCode="REFR" inversionInd="false"><observation classCode="OBS" moodCode="EVN"><code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Stato"/><text><reference value="#[REF_STATO]"/></text><statusCode code="completed"/><value xsi:type="CE" code="LA18632-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Inactive"/></observation></entryRelationship></observation>
 					</entry>
 					<entry>
 						<organizer moodCode="EVN" classCode="CLUSTER">  
@@ -477,7 +477,7 @@ stream
 									<statusCode code="completed"/>
 									<effectiveTime value="20220406121122+0200"/>
 									<value xsi:type="CD" code="575.6" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9-CM" displayName="COLESTEROLOSI DELLA COLECISTI"/>
-								</observation>
+								<entryRelationship typeCode="SUBJ"><observation classCode="OBS" moodCode="EVN"><code code="35267-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Età diagnosi patologia"/><value xsi:type="PQ" value="35" unit="a"/></observation></entryRelationship><entryRelationship typeCode="SUBJ"><observation classCode="OBS" moodCode="EVN"><code code="39016-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Età decesso"/><value xsi:type="PQ" value="60" unit="a"/></observation></entryRelationship></observation>
 							</component>
 						</organizer>
 					</entry>
@@ -491,7 +491,7 @@ stream
 								</paragraph>
 							</text>
 							<entry>
-								<act classCode ="ACT" moodCode="EVN">
+								<act classCode="ACT" moodCode="EVN">
 									<code nullFlavor="NA"/>
 									<statusCode code="active"/>
 									<effectiveTime>
@@ -537,7 +537,7 @@ stream
 													</value>
 												</observation>
 											</entryRelationship>
-										</observation>
+										<entryRelationship typeCode="REFR"><observation classCode="OBS" moodCode="EVN"><code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Stato"/><text><reference value="#[REF_STATO]"/></text><statusCode code="completed"/><value xsi:type="CD" code="LA16666-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Active"/></observation></entryRelationship><entryRelationship typeCode="SUBJ"><act classCode="ACT" moodCode="EVN"><code code="48767-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Annotation Comment"/><text><reference value="#[REF_COMMENTI]"/></text><statusCode code="completed"/></act></entryRelationship></observation>
 									</entryRelationship>															
 								</act>
 							</entry>
@@ -582,7 +582,7 @@ stream
 			</component>
 			<component typeCode="COMP">
 				<section ID="ESAME_ESEGUITO">
-					<code code="55111-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"  displayName="Descrizioni attuale procedure di imaging"/>
+					<code code="55111-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Descrizioni attuale procedure di imaging"/>
 					<title>Esame Eseguito</title>
 					<text>
 						<table>
@@ -695,11 +695,12 @@ stream
 		</structuredBody>
 	</component>
 </ClinicalDocument>
+
 endstream
 endobj
 14 0 obj
 <<
-/Size 23996
+/Size 25542
 >>
 endobj
 xref
@@ -718,7 +719,7 @@ xref
 0000002210 00000 n
 0000002323 00000 n
 0000002355 00000 n
-0000026470 00000 n
+0000028016 00000 n
 trailer
 <<
 /ID [<9447FFDBB329512BEF59D0AA03D42F24> <9447FFDBB329512BEF59D0AA03D42F24>]
@@ -727,5 +728,5 @@ trailer
 /Size 15
 >>
 startxref
-26504
+28050
 %%EOF
