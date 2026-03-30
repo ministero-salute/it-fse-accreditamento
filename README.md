@@ -115,6 +115,9 @@ Si riporta di seguito il changelog delle modifiche introdotte sul file report-ch
 | 8.2.4             | 05/03/2025  	 | RSA, LDO, LAB, VPS, CERT_VAC, SING_VAC, RAD, PSS, RAP | 448, 450, 452, 454, 456, 457, 458                           |
 | 8.2.5             | 28/03/2025  	 | RSA, LDO, LAB, VPS, CERT_VAC, SING_VAC, RAD, PSS, RAP | 448, 450, 452, 454, 456, 457, 458, 471, 444, 417, 418, 460  |
 | 8.2.6             | 14/05/2025  	 | RSA, LAB, RAD 					 | 448, 450, 452, 454, 456, 457, 458, 471, 444, 417, 418, 460  |
+| 8.2.7             | 04/12/2025  	 | PSS 					 | 476  |
+| 8.3.0             | 30/01/2026  	 | TPI, LETT_SCREEN, LETT_VACC, CCE 					 | 479, 491, 506, 521  |
+| 9.0.0             | 19/03/2026  	 | TELEV, REL_CTC 					 | 531, 551 |
 
 ### Pull request
 Per inviare i risultati sarà quindi necessario fare un pull request.  

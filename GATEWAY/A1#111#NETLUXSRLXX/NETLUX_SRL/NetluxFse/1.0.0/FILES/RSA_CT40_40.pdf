@@ -1,0 +1,423 @@
+%PDF-1.7
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R /Names << /EmbeddedFiles 6 0 R >> >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 103 >>
+stream
+BT /F1 14 Tf 50 780 Td (Documento di referto per FSE 2.0) Tj 0 -25 Td (Data: 17/03/2026 10:36:34) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+6 0 obj
+<< /Names [(cda.xml) 7 0 R] >>
+endobj
+7 0 obj
+<< /Type /Filespec /F (cda.xml) /UF (cda.xml) /EF << /F 8 0 R >> /Desc (Documento CDA R2) >>
+endobj
+8 0 obj
+<< /Type /EmbeddedFile /Subtype /application#2Fxml /Length 16580 >>
+stream
+<?xml version="1.0" encoding="utf-8"?>
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:hl7-org:v3">
+  <realmCode code="IT" />
+  <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040" />
+  <templateId root="2.16.840.1.113883.2.9.10.1.9.1" extension="1.3" />
+  <id root="2.16.840.1.113883.2.9.2.999" extension="2.16.840.1.113883.2.9.2.999.1.20260317103634079.2955" assigningAuthorityName="NetluxFse" />
+  <code code="11488-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Nota di consulto" />
+  <title>Referto di Specialistica Ambulatoriale</title>
+  <effectiveTime value="20260317103634" />
+  <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" />
+  <languageCode code="it-IT" />
+  <setId root="2.16.840.1.113883.2.9.2.999" extension="2.16.840.1.113883.2.9.2.999.1.20260317103634079.2955" />
+  <versionNumber value="1" />
+  <recordTarget>
+    <patientRole>
+      <id root="2.16.840.1.113883.2.9.4.3.2" extension="PROVAX00X00X000Y" assigningAuthorityName="Ministero Economia e Finanze" />
+      <addr use="HP">
+        <country>IT</country>
+        <city>Roma</city>
+        <streetAddressLine>Via Roma 1</streetAddressLine>
+      </addr>
+      <patient>
+        <name>
+          <given>PROVA</given>
+          <family>ASSISTITO</family>
+        </name>
+        <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" />
+        <birthTime value="20000101" />
+      </patient>
+    </patientRole>
+  </recordTarget>
+  <author>
+    <time value="20260317103634" />
+    <assignedAuthor>
+      <id root="2.16.840.1.113883.2.9.4.3.2" extension="PROVAX00X00X000Y" />
+      <telecom use="WP" value="tel:0000000000" />
+      <assignedPerson>
+        <name>
+          <given>Test</given>
+          <family>Medico</family>
+        </name>
+      </assignedPerson>
+    </assignedAuthor>
+  </author>
+  <custodian>
+    <assignedCustodian>
+      <representedCustodianOrganization>
+        <id root="2.16.840.1.113883.2.9.4.1" extension="NETLUXSRLXX" />
+        <name>NETLUX SRL</name>
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+  <legalAuthenticator>
+    <time value="20260317103634" />
+    <signatureCode code="S" />
+    <assignedEntity>
+      <id root="2.16.840.1.113883.2.9.4.3.2" extension="PROVAX00X00X000Y" />
+      <assignedPerson>
+        <name>
+          <given>Test</given>
+          <family>Medico</family>
+        </name>
+      </assignedPerson>
+    </assignedEntity>
+  </legalAuthenticator>
+  <inFulfillmentOf>
+    <order>
+      <id root="2.16.840.1.113883.2.9.2.999" extension="PRESC_639093405940794885" />
+    </order>
+  </inFulfillmentOf>
+  <componentOf>
+    <encompassingEncounter>
+      <id root="2.16.840.1.113883.2.9.2.999" extension="ENC_639093405940794885" />
+      <effectiveTime>
+        <low value="20260317103634" />
+        <high value="20260317103634" />
+      </effectiveTime>
+      <responsibleParty>
+        <assignedEntity>
+          <id root="2.16.840.1.113883.2.9.4.1" extension="NETLUXSRLXX" />
+        </assignedEntity>
+      </responsibleParty>
+      <location>
+        <healthCareFacility>
+          <id root="2.16.840.1.113883.2.9.4.1.1" extension="NETLUXSRLXX" />
+        </healthCareFacility>
+      </location>
+    </encompassingEncounter>
+  </componentOf>
+  <component>
+    <structuredBody>
+      <component>
+        <section ID="Prestazioni">
+          <code code="62387-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Interventi" />
+          <title>Prestazioni</title>
+          <text>
+            <paragraph>Visita specialistica ambulatoriale</paragraph>
+          </text>
+          <entry>
+            <act classCode="ACT" moodCode="EVN">
+              <code code="89.7" codeSystem="2.16.840.1.113883.2.9.6.1.3" codeSystemName="ICD9CM" displayName="Visita specialistica" />
+              <effectiveTime value="20260317103634" />
+              <entryRelationship typeCode="COMP">
+                <procedure classCode="PROC" moodCode="EVN">
+                  <code code="89.7" codeSystem="2.16.840.1.113883.2.9.6.1.3" codeSystemName="ICD9CM" displayName="Visita specialistica" />
+                </procedure>
+              </entryRelationship>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section ID="Referto">
+          <code code="47045-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Referto" />
+          <title>Referto</title>
+          <text>
+            <paragraph>Il paziente presenta sindrome dolorosa lombare con limitazione funzionale. Si consiglia ciclo di fisioterapia riabilitativa con tecniche di terapia manuale e rieducazione posturale.</paragraph>
+          </text>
+        </section>
+      </component>
+      <component>
+        <section ID="Quesito_Diagnostico">
+          <code code="29299-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Motivo della visita" />
+          <title>Quesito Diagnostico</title>
+          <text>
+            <paragraph>Sospetta lombalgia cronica con radicolopatia L5-S1.</paragraph>
+          </text>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <code code="29298-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Motivo della visita" />
+              <value xsi:type="CD" code="724.2" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9-CM" displayName="Lombalgia" />
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section ID="Storia_Clinica">
+          <code code="11329-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Storia Generale" />
+          <title>Storia Clinica</title>
+          <text>
+            <paragraph>Anamnesi patologica prossima: lombalgia da 3 mesi. Anamnesi familiare: padre affetto da artrite reumatoide.</paragraph>
+          </text>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <code code="75326-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem" />
+              <statusCode code="completed" />
+              <effectiveTime>
+                <low value="20251201" />
+              </effectiveTime>
+              <value xsi:type="CD" code="724.2" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9-CM" displayName="Lombalgia" />
+            </observation>
+          </entry>
+          <entry>
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <code code="10157-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Storie di malattie di membri familiari" />
+              <statusCode code="completed" />
+              <subject>
+                <relatedSubject classCode="PRS">
+                  <code code="FTH" codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode" displayName="Padre" />
+                  <subject>
+                    <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" codeSystemName="HL7 AdministrativeGender" />
+                  </subject>
+                </relatedSubject>
+              </subject>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <code code="52797-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnosi codice ICD" />
+                  <statusCode code="completed" />
+                  <effectiveTime>
+                    <low value="20200101" />
+                  </effectiveTime>
+                  <value xsi:type="CD" code="714.0" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9-CM" displayName="Artrite reumatoide" />
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <component>
+            <section ID="Allergie">
+              <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergie e/o reazioni avverse" />
+              <title>Allergie</title>
+              <text>
+                <paragraph>Allergia a Penicillina.</paragraph>
+              </text>
+              <entry>
+                <act classCode="ACT" moodCode="EVN">
+                  <code nullFlavor="NA" />
+                  <statusCode code="active" />
+                  <effectiveTime>
+                    <low value="20200101" />
+                  </effectiveTime>
+                  <entryRelationship typeCode="SUBJ">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <code code="52473-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergia o causa della reazione" />
+                      <statusCode code="completed" />
+                      <effectiveTime>
+                        <low value="20200101" />
+                      </effectiveTime>
+                      <value xsi:type="CD" code="DALG" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ObservationIntoleranceType" displayName="Drug allergy" />
+                      <participant typeCode="CSM">
+                        <participantRole classCode="MANU">
+                          <playingEntity classCode="MMAT">
+                            <code code="J01CE01" codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC" displayName="Penicillina" />
+                          </playingEntity>
+                        </participantRole>
+                      </participant>
+                    </observation>
+                  </entryRelationship>
+                </act>
+              </entry>
+            </section>
+          </component>
+          <component>
+            <section ID="Terapia_Farmacologica_in_atto">
+              <code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Uso di farmaci" />
+              <title>Terapia farmacologica in atto</title>
+              <text>
+                <paragraph>Paracetamolo 1000mg al bisogno.</paragraph>
+              </text>
+              <entry>
+                <substanceAdministration classCode="SBADM" moodCode="EVN">
+                  <consumable>
+                    <manufacturedProduct>
+                      <manufacturedMaterial>
+                        <code code="023993013" codeSystem="2.16.840.1.113883.2.9.6.1.5" codeSystemName="AIC" displayName="LASIX*25MG 30 CPR">
+                          <translation code="C03CA01" codeSystem="2.16.840.1.113883.6.73" codeSystemName="WHO ATC" displayName="FUROSEMIDE" />
+                        </code>
+                      </manufacturedMaterial>
+                    </manufacturedProduct>
+                  </consumable>
+                </substanceAdministration>
+              </entry>
+            </section>
+          </component>
+        </section>
+      </component>
+      <component>
+        <section ID="Precedenti_Esami_Eseguiti">
+          <code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Test diagnostici e/o dati di laboratorio rilevanti" />
+          <title>Precedenti Esami Eseguiti</title>
+          <text>
+            <paragraph>RX rachide lombosacrale eseguita in data 01/11/2025: protrusione discale L5-S1.</paragraph>
+          </text>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <code code="90.54" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD-9-CM" displayName="ESAME MICROSCOPICO DI CAMPIONE DI SANGUE - PARASSITOLOGIA" />
+              <effectiveTime>
+                <low value="20220101090000+0200" />
+                <high value="20220101103000+0200" />
+              </effectiveTime>
+              <value xsi:type="ST">[ESITO_ESAME]</value>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section ID="Esame_Obiettivo">
+          <code code="29545-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Osservazioni fisiche" />
+          <title>Esame Obiettivo</title>
+          <text>
+            <paragraph>Paziente vigile, collaborante. Rachide: dolenzia alla palpazione L4-L5, Lasegue positivo a dx a 30 gradi. Forza muscolare conservata.</paragraph>
+          </text>
+        </section>
+      </component>
+      <component>
+        <section ID="Diagnosi">
+          <code code="29548-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnosi" />
+          <title>Diagnosi</title>
+          <text>
+            <paragraph>Lombalgia cronica con radicolopatia L5-S1.</paragraph>
+          </text>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <code code="29308-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnosi" />
+              <value xsi:type="CD" code="724.2" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD9-CM" displayName="Lombalgia" />
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section ID="Conclusioni">
+          <code code="55110-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Conclusioni" />
+          <title>Conclusioni</title>
+          <text>
+            <paragraph>Si conferma la diagnosi di lombalgia cronica con radicolopatia. Indicata fisioterapia riabilitativa.</paragraph>
+          </text>
+        </section>
+      </component>
+      <component>
+        <section ID="Suggerimenti_Medico_Prescrittore">
+          <code code="62385-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Raccomandazioni" />
+          <title>Suggerimenti per il Medico Prescrittore</title>
+          <text>
+            <paragraph>Si suggerisce rivalutazione neurologica se persistenza dei sintomi dopo 6 settimane di trattamento.</paragraph>
+          </text>
+        </section>
+      </component>
+      <component>
+        <section ID="Accertamenti_e_Controlli_Consigliati">
+          <code code="80615-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Follow-up Consigliato" />
+          <title>Accertamenti e Controlli Consigliati</title>
+          <text>
+            <paragraph>Controllo clinico tra 6 settimane. Se peggioramento, RMN rachide lombare.</paragraph>
+          </text>
+          <entry>
+            <act classCode="ACT" moodCode="PRP">
+              <code code="2340-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Glucose [Mass/volume] in Blood by Automated test strip" />
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section ID="Terapia_Farmacologica_Consigliata">
+          <code code="93341-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Farmaci Consigliati" />
+          <title>Terapia Farmacologica Consigliata</title>
+          <text>
+            <paragraph>Ibuprofene 400mg x 2/die per 7 giorni al bisogno. Miorilassante alla sera.</paragraph>
+          </text>
+          <entry>
+            <substanceAdministration classCode="SBADM" moodCode="PRP">
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20260311" />
+              </effectiveTime>
+              <consumable>
+                <manufacturedProduct>
+                  <manufacturedMaterial>
+                    <code code="M01AE01" codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC" displayName="Ibuprofene" />
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+            </substanceAdministration>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section ID="Confronto_con_Precedenti_Esami_Eseguiti">
+          <code code="93126-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Confronto con Precedenti Esami Eseguiti" />
+          <title>Confronto con Precedenti Esami Eseguiti</title>
+          <text>
+            <paragraph>Rispetto ai precedenti esami si rileva stabilita del quadro clinico, senza segni di progressione.</paragraph>
+          </text>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>
+endstream
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000015 00000 n 
+0000000098 00000 n 
+0000000155 00000 n 
+0000000281 00000 n 
+0000000435 00000 n 
+0000000505 00000 n 
+0000000551 00000 n 
+0000000659 00000 n 
+trailer
+<< /Size 9 /Root 1 0 R >>
+startxref
+17340
+%%EOF
+
+9 0 obj
+<</Filter /Adobe#2EPPKMS/SubFilter /ETSI#2ECAdES#2Edetached/Contents <308207DB06092A864886F70D010702A08207CC308207C8020101310F300D06096086480165030402010500300B06092A864886F70D010701A082056F3082056B30820353A0030201020214235AEC8227E06A5854C9CAF79EA646B2D320038A300D06092A864886F70D01010B050030573127302506035504030C1E4341204D696E69737465726F2064656C6C612053616C7574652054657374311F301D060355040A0C164D696E69737465726F2064656C6C612053616C757465310B3009060355040613024954301E170D3236303230353130353230315A170D3239303230353130353230305A306C310B3009060355040613024954311F301D060355040A0C164D696E69737465726F2064656C6C612053616C757465311F301D06035504610C1643463A49542D50524F56415830305830305830303059311B301906035504030C12533123313131234E45544C555853524C585830820122300D06092A864886F70D01010105000382010F003082010A0282010100B4F9E2192E853E20649B34027BB57133D567C10DEF85E3EB9D61A032DE15F234D851B3F1EE69AD0660B4272C727947BFD36E265718DB89665A8CBD19A43B4E8AB68D5F6043FB1E3B007842CA8428DE0DC45118F483906DB0AF35D5AA51AF54936E6F854571E75533D8105274370538E8FD0E44CC1F22B28D7A770069E35D795A4F4C5EAE26C9756E990FFF7C7ACD8426EC9336ADA98052E097FD82F3A652BD06D96F9F5682590E0D855DD640AA5C99A8C21F0C33D59874561C8F1A0EDA62D30C0EF71067964CADC088C00B07AFC32876DF64398DC3349CCF7CED21A7E29CA1EAC20FEF119E33C2A7D8FC8A5EC932CB1CA710A382D2F5283FF84DFAD41EE104190203010001A382011830820114301F0603551D230418301680141639A91A0589B70F2DB235EDC2099AC50383223F30120603551D20040B3009300706052B4C1D010B3081AD0603551D1F0481A53081A230819FA0819CA0819986819668747470733A2F2F6361736F6765697376696C2E736F6765692E69742F656A6263612F7075626C69637765622F776562646973742F63657274646973743F636D643D63726C266973737565723D434E25334443412B4D696E69737465726F2B64656C6C612B53616C7574652B546573742532434F2533444D696E69737465726F2B64656C6C612B53616C757465253243432533444954301D0603551D0E04160414C16D6F016A63FDC033913B7ACF929E0685C2C279300E0603551D0F0101FF040403020640300D06092A864886F70D01010B05000382020100B77AD7F4639222A44D2CB5856F9349F37C69658309F73CC8A5357526443119A5D0F4E4E9885E096FC06FFD6662C399251C5793FCAD6C2B526E50E2AB60991312943D9AD62F044D1FC8D86FB27FEE779C8ECF91681950B079C6B1D096243E9AC24D93CAC79AD9CF337698B4B8ECF3F08474DAC597F8E27EF171F5840B369F6CC0E9FEAD225BCB429DA4376DEA0C7B4BE0498DEFF4F3B91D75CACE2F1575D7FE66A75708293612641AB039B6A65CABDD39D48E672F44F8AE5EB3879C397EF78A8E6239A29EBBA1E05E8C39369E4199F3F7CDB956FA82DFDADAAA8AE9CB1A6429BE433CE247F352D4542D6C37C3F484DF7B1E7372770FAAF3CF825BD4EE200290A3738A51FD5019F6A8A5FE2B8D5378C65ED4F14D9A3B27C5EAF0B75329CA0B52977EB634DE8DC86309B35B9AE70B4B0055D92138A43EBE2B78F9871F49DF3DA54064FB1A900167AC276AF4B30067771D3CC2ED135C5621ADBC8F3FD17F6F58E15482719B2BF5B552CEC1DC0C225FACEC09067FD93CD758F3A09B7229A73E72D03E2C8266474D66CE9E6EF158DEB6E7979A456687726B92B14CC1BD1D829EDDDA813980189132529F2C5EF10EBB93C8F665EA833A7001E4C994EFABA52B52CF5C4BF47DF3FF4BC86C550CA7EA8413DAD804FA33BA0B0230DA3689DDDCA4EBBF9C5174319C48170592384FEED74B98833C01C055F6C840B0F39C561164B2D63ACA5F318202303082022C020101306F30573127302506035504030C1E4341204D696E69737465726F2064656C6C612053616C7574652054657374311F301D060355040A0C164D696E69737465726F2064656C6C612053616C757465310B30090603550406130249540214235AEC8227E06A5854C9CAF79EA646B2D320038A300D06096086480165030402010500A08193301806092A864886F70D010903310B06092A864886F70D010701302F06092A864886F70D0109043122042078CE130DF03B513BF824EE2794AF14662C7DDDFE307E3B6985444CF99AE170283046060B2A864886F70D010910022F3137303530333031300D060960864801650304020105000420959CCD677E4E261B7FCB5DBF95F3ED883C2C8AD5E889045C10041224D0ECDD63300D06092A864886F70D0101010500048201000B06EE412830FBC1158AC5581E4926CB706D047D9E020A235ECBD4A56DD47FD766D0A3B79CCE7365C6712BB24920D3463B530269AEF3E7AC71FE7998ED9002D653EF3925E2B325F00BB8C9EA3F61436F0EEB41520E6FF04B34DF8D4BA6FD893239C6602F7C422C43C3807D75D6E74717C93260BC66848E9EDF30D5468CC93D03BC6521B5C1241543BBA1D77EE6F56B1A69613D49E44347E68A4F796862EAACAB56B10121E0A81C1FEB281047D1325061D9D39E11C629C89206332D56C8BD626A6FFA32805AD56B8CA85BFC5BE069C70DB1B2E5A4F535E28E22C381D9B83DF9CB37B8493EBFEB0D2C4FE7E7B9DFB766DC0AB7B4A0B2F7B6861D21C0A826A884AA0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000>/ByteRange [0 17665 28841 1246 ]               /M <443A32303236303331373130333633342B303127303027>/Name <FEFF0046006900730069006F004D0061006E0061006700650072002000500072006F>/Location <FEFF004900740061006C00690061>/Reason <FEFF004600690072006D00610020007200650066006500720074006F0020007000650072002000460053004500200032002E0030>/ContactInfo <FEFF00500052004F0056004100580030003000580030003000580030003000300059>>>
+endobj
+10 0 obj
+<</Fields [11 0 R ]/SigFlags 3>>
+endobj
+1 0 obj
+<</Type /Catalog/Pages 2 0 R/Names <</EmbeddedFiles 6 0 R>>/AcroForm 10 0 R>>
+endobj
+11 0 obj
+<</P 3 0 R/Type /Annot/Subtype /Widget/Rect [0 0 0 0 ]/F 132/T <FEFF00340064003100610036006100310036002D0036003300630065002D0034003300350034002D0039003500300030002D003400310039003400310035006600360065006400640034>/FT /Sig/V 9 0 R>>
+endobj
+3 0 obj
+<</Type /Page/Parent 2 0 R/MediaBox [0 0 595 842 ]/Contents 4 0 R/Resources <</Font <</F1 5 0 R>>>>/Annots [11 0 R ]>>
+endobj
+xref
+0 2
+0000000000 00000 f
+0000029316 00000 n
+3 1
+0000029663 00000 n
+9 3
+0000017587 00000 n
+0000029264 00000 n
+0000029412 00000 n
+trailer
+<</Size 12/ID [<9D129BA5BF8FBD4CA0C1B1839C290705> <9D129BA5BF8FBD4CA0C1B1839C290705> ]/Root 1 0 R/Prev 17340>>
+startxref
+29800
+%%EOF

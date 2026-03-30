@@ -1,0 +1,728 @@
+%PDF-1.3
+%‚„œ”
+1 0 obj
+<<
+/Producer (pypdf)
+>>
+endobj
+2 0 obj
+<<
+/Type /Pages
+/Count 1
+/Kids [ 4 0 R ]
+>>
+endobj
+3 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+/Names 11 0 R
+>>
+endobj
+4 0 obj
+<<
+/Contents 5 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/Font 6 0 R
+/ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Parent 2 0 R
+>>
+endobj
+5 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ]
+/Length 407
+>>
+stream
+Gas2E:J\h]!6+DSMK`#593Yd+DSh-s@+<h]#;==MUo%pIl\ONKgPq%$Jb7:I[JBL/<sBQIC\B:a-3E!@"60qcYWh;=b`RcXUN<Z<d78lil)[<-8hg`IjL@fe<oqJMLGrqTQ\BTRNUjf&<bLh=iY1<`%mKsM+ZPL+i0c.&!&/'$i.N/hO!')+Sb-q23pKVojci9oh(]k=0LZpZB<oNof%3NZ+m<AW3HNbeAJH!/CQtqsBT&];EZ&agP<4e[GtcM1NJ9OkUH'I35Ks9n?\cE,+2&4U)P^=j;W;KTj!C+!_F?,c>cXuM<Yc#mUOP9BCK4c;b=W\dh:ALX@&],P[ZKQ32roH__n)ZVM,)[PG((M?.2ntHGG,/1aZ>X&/LG0MB(A('L63Mp`'M$)3U$A@eSM`m~>
+endstream
+endobj
+6 0 obj
+<<
+/F1 7 0 R
+/F2 8 0 R
+>>
+endobj
+7 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+8 0 obj
+<<
+/BaseFont /Helvetica-Bold
+/Encoding /WinAnsiEncoding
+/Name /F2
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+9 0 obj
+<<
+/Type /EmbeddedFile
+/Length 30579
+>>
+stream
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    
+    <!-- HEADER -->
+    <realmCode code="IT"/>
+    <typeId root="2.16.840.1.113883.1.3" extension="POCD_MT000040UV02"/>
+    
+    <!-- Template CDA2 Referto Specialistico Ambulatoriale -->
+    <templateId root="2.16.840.1.113883.2.9.10.1.9.1" extension="1.1" assigningAuthorityName="HL7 Italia"/>
+    
+    <!-- ID Documento -->
+    <id root="2.16.840.1.113883.2.9.2.120.4.4" extension="14325df9-f0a1-4c13-b936-4a72e8abdc81"/>
+    
+    <!-- Tipo documento (LOINC) -->
+    <code code="11488-4" 
+          codeSystem="2.16.840.1.113883.6.1" 
+          codeSystemName="LOINC"
+          displayName="Nota di consulto"/>
+    
+    <!-- Titolo -->
+    <title>Referto di Specialistica Ambulatoriale</title>
+    
+    <!-- Data creazione -->
+    <effectiveTime value="20260109141532"/>
+    
+    <!-- Confidenzialit√† -->
+    <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" 
+                         codeSystemName="HL7 Confidentiality" displayName="Normal"/>
+    
+    <!-- Lingua -->
+    <languageCode code="it-IT"/>
+    
+    <!-- Set ID e versione -->
+    <setId root="2.16.840.1.113883.2.9.2.120.4.4" extension="14325df9-f0a1-4c13-b936-4a72e8abdc81"/>
+    <versionNumber value="1"/>
+    
+    <!-- PAZIENTE -->
+    <recordTarget>
+        <patientRole>
+            <!-- CF Paziente -->
+            <id root="2.16.840.1.113883.2.9.4.3.2" extension="BNCLRA85M50F205E" 
+                assigningAuthorityName="MEF"/>
+            
+            <!-- Indirizzo paziente -->
+            <addr>
+                <streetAddressLine>Via Roma 10</streetAddressLine>
+                <city>Milano</city>
+                <state>MI</state>
+                <postalCode>11100</postalCode>
+                <country>IT</country>
+            </addr>
+            
+            <!-- Recapiti -->
+            <telecom value="tel:+393401234567" use="HP"/>
+            
+            <patient>
+                <name>
+                    <given>Laura</given>
+                    <family>Bianchi</family>
+                </name>
+                <administrativeGenderCode code="F" 
+                                         codeSystem="2.16.840.1.113883.5.1"/>
+                <birthTime value="19850810"/>
+                <birthplace>
+                    <place>
+                        <addr>
+                            <city>Milano</city>
+                            <state>MI</state>
+                        </addr>
+                    </place>
+                </birthplace>
+            </patient>
+        </patientRole>
+    </recordTarget>
+    
+    <!-- AUTORE (Medico specialista) -->
+    <author>
+        <time value="20260109141532"/>
+        <assignedAuthor>
+            <!-- CF Medico -->
+            <id root="2.16.840.1.113883.2.9.4.3.2" extension="NREPLA70A01H501Z"
+                assigningAuthorityName="MEF"/>
+            
+            <telecom value="tel:+390165123456" use="WP"/>
+            
+            <assignedPerson>
+                <name>
+                    <given>Paolo</given>
+                    <family>Neri</family>
+                    <prefix>Dott.</prefix>
+                </name>
+            </assignedPerson>
+            
+            <!-- Organizzazione -->
+            <representedOrganization>
+                <id root="2.16.840.1.113883.2.9.4.1.1" extension="12345678903"/>
+                <name>Studio Medico Specialistico</name>
+                <telecom value="tel:+390165123456" use="WP"/>
+                <addr>
+                    <streetAddressLine>Via Milano 25</streetAddressLine>
+                    <city>Aosta</city>
+                    <state>AO</state>
+                    <postalCode>11100</postalCode>
+                </addr>
+            </representedOrganization>
+        </assignedAuthor>
+    </author>
+    
+    <!-- CUSTODE DEL DOCUMENTO -->
+    <custodian>
+        <assignedCustodian>
+            <representedCustodianOrganization>
+                <id root="2.16.840.1.113883.2.9.4.1.1" extension="12345678903"/>
+                <name>Studio Medico Specialistico</name>
+            </representedCustodianOrganization>
+        </assignedCustodian>
+    </custodian>
+    
+    <!-- LEGAL AUTHENTICATOR -->
+    <legalAuthenticator>
+        <time value="20260109141532"/>
+        <signatureCode code="S"/>
+        <assignedEntity>
+            <id root="2.16.840.1.113883.2.9.4.3.2" extension="NREPLA70A01H501Z"/>
+            <assignedPerson>
+                <name>
+                    <given>Paolo</given>
+                    <family>Neri</family>
+                </name>
+            </assignedPerson>
+        </assignedEntity>
+    </legalAuthenticator>
+    
+    <!-- IN FULFILLMENT OF (Richiesta) -->
+    <inFulfillmentOf>
+        <order>
+            <id root="2.16.840.1.113883.2.9.2.120.4.4" extension="877957db-0858-43ff-bbb6-cb7e00c69ffd"/>
+            <priorityCode code="R" codeSystem="2.16.840.1.113883.5.7" 
+                          codeSystemName="HL7 ActPriority" displayName="Normale"/>
+        </order>
+    </inFulfillmentOf>
+    
+    <!-- EVENTO CLINICO (Visita) -->
+    <documentationOf>
+        <serviceEvent>
+            <code code="PROG" codeSystem="2.16.840.1.113883.2.9.5.1.4" 
+                  codeSystemName="ActCode" displayName="Accesso Programmato"/>
+            <effectiveTime value="20260109141532"/>
+        </serviceEvent>
+    </documentationOf>
+    
+    <!-- COMPONENT OF (Incontro) -->
+    <componentOf>
+        <encompassingEncounter>
+            <id root="2.16.840.1.113883.2.9.2.120.4.4" extension="41826995-3146-40d0-9657-f4c0c9cadede"/>
+            <effectiveTime>
+                <low value="20260109141532"/>
+                <high value="20260109141532"/>
+            </effectiveTime>
+            <location>
+                <healthCareFacility>
+                    <id root="2.16.840.1.113883.2.9.4.1.6" extension="2.16.840.1.113883.2.9.4.1.2.020.54321"/>
+                    <location>
+                        <name>Studio Medico Specialistico</name>
+                        <addr>
+                            <streetAddressLine>Via Milano 25</streetAddressLine>
+                            <city>Aosta</city>
+                            <state>AO</state>
+                            <postalCode>11100</postalCode>
+                        </addr>
+                    </location>
+                </healthCareFacility>
+            </location>
+        </encompassingEncounter>
+    </componentOf>
+    
+    <!-- CORPO DEL DOCUMENTO -->
+    <component>
+        <structuredBody>
+            
+            <!-- QUESITO DIAGNOSTICO (obbligatorio) -->
+            
+            <component>
+                <section ID="QUESITO_DIAGNOSTICO">
+                    <code code="29299-5" codeSystem="2.16.840.1.113883.6.1" 
+                          codeSystemName="LOINC" displayName="Motivo della visita"/>
+                    <title>Quesito diagnostico</title>
+                    <text>
+                        <paragraph>Valutazione dermatologica per lesione cutanea</paragraph>
+                    </text>
+                    
+                    <entry>
+                        <observation classCode="OBS" moodCode="EVN">
+                            <code code="29298-7" codeSystem="2.16.840.1.113883.6.1" 
+                                  codeSystemName="LOINC" displayName="Motivo della visita"/>
+                            <value xsi:type="CD" code="709.9" 
+                                   codeSystem="2.16.840.1.113883.6.103" 
+                                   codeSystemName="ICD9-CM" 
+                                   displayName="Valutazione dermatologica per lesione cutanea"/>
+                        </observation>
+                    </entry>
+                </section>
+            </component>
+            
+            <!-- STORIA CLINICA (consigliata) -->
+            
+            <component>
+                <section ID="STORIA_CLINICA">
+                    <code code="11329-0" codeSystem="2.16.840.1.113883.6.1" 
+                          codeSystemName="LOINC" displayName="Storia Generale"/>
+                    <title>Storia Clinica</title>
+                    <text>
+                        
+                        <list ID="storia-clinica-text">
+                            <item>Anamnesi Patologica remota: Nulla di rilevante</item><item>Anamnesi Patologica prossima: Comparsa di lesione cutanea al braccio destro da circa 2 mesi</item><item>Anamnesi Fisiologica: Non fumatrice. Esposizione solare frequente per attivit√† lavorativa</item><item>Anamnesi Familiare: Nonna materna con melanoma</item><item>Allergie: lattice</item>
+                        </list>
+                    </text>
+                    <entry>
+                        <observation classCode="OBS" moodCode="EVN">
+                            <code code="75326-9" codeSystem="2.16.840.1.113883.6.1" 
+                                  codeSystemName="LOINC" displayName="Problem"/>
+                            <statusCode code="completed"/>
+                            <effectiveTime>
+                                <low nullFlavor="UNK"/>
+                            </effectiveTime>
+                            <value xsi:type="CD" nullFlavor="UNK">
+                                <originalText>
+                                    <reference value="#storia-clinica-text"/>
+                                </originalText>
+                            </value>
+                            <entryRelationship typeCode="SUBJ">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" 
+                                          codeSystemName="LOINC" displayName="Stato"/>
+                                    <statusCode code="completed"/>
+                                    <value xsi:type="CD" code="LA16666-2" 
+                                           codeSystem="2.16.840.1.113883.6.1" 
+                                           codeSystemName="LOINC" 
+                                           displayName="Active"/>
+                                </observation>
+                            </entryRelationship>
+                        </observation>
+                    </entry>
+                    
+                    <entry>
+                        <organizer classCode="CLUSTER" moodCode="EVN">
+                            <code code="10157-6" codeSystem="2.16.840.1.113883.6.1" 
+                                  codeSystemName="LOINC" displayName="Storie di malattie di membri familiari"/>
+                            <statusCode code="completed"/>
+                            <subject typeCode="SBJ">
+                                <relatedSubject classCode="PRS">
+                                    <code code="FAMMEMB" codeSystem="2.16.840.1.113883.5.111" 
+                                          codeSystemName="RoleCode" displayName="Familiare"/>
+                                    <subject>
+                                        <administrativeGenderCode code="UN" 
+                                                                  codeSystem="2.16.840.1.113883.5.1" 
+                                                                  codeSystemName="HL7 AdministrativeGender" 
+                                                                  displayName="Undifferentiated"/>
+                                    </subject>
+                                </relatedSubject>
+                            </subject>
+                            <component>
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <code code="75315-2" codeSystem="2.16.840.1.113883.6.1" 
+                                          codeSystemName="LOINC" displayName="Condizione familiare"/>
+                                    <text>
+                                        <reference value="#storia-clinica-text"/>
+                                    </text>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime nullFlavor="UNK"/>
+                                    <value xsi:type="CD" code="V17.3" 
+                                           codeSystem="2.16.840.1.113883.6.103" 
+                                           codeSystemName="ICD9-CM" 
+                                           displayName="Storia familiare di cardiopatia ischemica"/>
+                                    <entryRelationship typeCode="SUBJ">
+                                        <observation classCode="OBS" moodCode="EVN">
+                                            <code code="35267-4" codeSystem="2.16.840.1.113883.6.1" 
+                                                  codeSystemName="LOINC" displayName="Et√† diagnosi patologia"/>
+                                            <statusCode code="completed"/>
+                                            <value xsi:type="PQ" value="65" unit="a"/>
+                                        </observation>
+                                    </entryRelationship>
+                                </observation>
+                            </component>
+                        </organizer>
+                    </entry>
+                    
+                    <component>
+                        <section ID="ALLERGIE">
+                            <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" 
+                                  codeSystemName="LOINC" displayName="Allergie e/o reazioni avverse"/>
+                            <title>Allergie</title>
+                            <text>
+                                <paragraph>lattice</paragraph>
+                            </text>
+                            
+                        <entry>
+                            <act classCode="ACT" moodCode="EVN">
+                                <code nullFlavor="NA"/>
+                                <statusCode code="active"/>
+                                <effectiveTime>
+                                    <low value="20260109141532"/>
+                                </effectiveTime>
+                                <entryRelationship typeCode="SUBJ">
+                                    <observation classCode="OBS" moodCode="EVN">
+                                        <code code="52473-6" codeSystem="2.16.840.1.113883.6.1" 
+                                              codeSystemName="LOINC" displayName="Allergia o causa della reazione"/>
+                                        <statusCode code="completed"/>
+                                        <effectiveTime>
+                                            <low value="20260109141532"/>
+                                        </effectiveTime>
+                                        <value xsi:type="CD" code="ALG" 
+                                               codeSystem="2.16.840.1.113883.5.4" 
+                                               codeSystemName="ObservationIntoleranceType" 
+                                               displayName="Allergy"/>
+                                        <participant typeCode="CSM">
+                                            <participantRole classCode="MANU">
+                                                <playingEntity classCode="MMAT">
+                                                    <code code="111088007" codeSystem="2.16.840.1.113883.2.9.77.22.11.2" codeSystemName="AllergenNoDrugs" displayName="lattice"/>
+                                                </playingEntity>
+                                            </participantRole>
+                                        </participant>
+                                        <entryRelationship typeCode="SUBJ"><observation classCode="OBS" moodCode="EVN"><code code="SEV" displayName="Criticality" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/><statusCode code="completed"/><value xsi:type="CD" code="M" codeSystem="2.16.840.1.113883.5.1063" displayName="Moderate"/></observation></entryRelationship>
+                                        <entryRelationship typeCode="SUBJ">
+                                            <act classCode="ACT" moodCode="EVN">
+                                                <code code="48767-8" codeSystem="2.16.840.1.113883.6.1" 
+                                                      codeSystemName="LOINC" displayName="Annotazioni"/>
+                                                <text>Allergia rilevata</text>
+                                                <statusCode code="completed"/>
+                                            </act>
+                                        </entryRelationship>
+                                    </observation>
+                                </entryRelationship>
+                            </act>
+                        </entry>
+                        </section>
+                    </component>
+                    
+                    <component>
+                        <section ID="TERAPIA_FARMACOLOGICA_IN_ATTO">
+                            <code code="10160-0" codeSystem="2.16.840.1.113883.6.1" 
+                                  codeSystemName="LOINC" displayName="Uso di farmaci"/>
+                            <title>Terapia farmacologica in atto</title>
+                            <text>
+                                <list>
+                                    <item ID="TF-1">LASIX*25MG 30 CPR</item>
+                                </list>
+                            </text>
+                            
+                        <entry>
+                            <substanceAdministration classCode="SBADM" moodCode="EVN">
+                                <consumable>
+                                    <manufacturedProduct>
+                                        <manufacturedMaterial>
+                                            <code code="023993013" 
+                                                  codeSystem="2.16.840.1.113883.2.9.6.1.5" 
+                                                  codeSystemName="AIC" 
+                                                  displayName="LASIX*25MG 30 CPR">
+                                                <translation code="C03CA01" codeSystem="2.16.840.1.113883.6.73" codeSystemName="WHO ATC"/>
+                                            </code>
+                                        </manufacturedMaterial>
+                                    </manufacturedProduct>
+                                </consumable>
+                            </substanceAdministration>
+                        </entry>
+                        </section>
+                    </component>
+                </section>
+            </component>
+            
+            <!-- PRECEDENTI ESAMI ESEGUITI (obbligatorio per alcuni casi test) -->
+            
+            <component>
+                <section ID="Precedenti_Esami_Eseguiti">
+                    <code code="30954-2" codeSystem="2.16.840.1.113883.6.1" 
+                          codeSystemName="LOINC" displayName="Test diagnostici e/o dati di laboratorio rilevanti"/>
+                    <title>Precedenti Esami Eseguiti</title>
+                    <text>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Precedente Esame Eseguito</th>
+                                    <th>Data Esame</th>
+                                    <th>Esito</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                                <tr ID="PE-1">
+                                    <td>Esame istologico pregresso</td>
+                                    <td>15/06/2024</td>
+                                    <td>Nevo benigno</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </text>
+                    
+                    <entry>
+                        <observation classCode="OBS" moodCode="EVN">
+                            <code code="30954-2" 
+                                  codeSystem="2.16.840.1.113883.6.1" 
+                                  codeSystemName="LOINC" 
+                                  displayName="Esame istologico pregresso"/>
+                            <text>
+                                <reference value="#PE-1"/>
+                            </text>
+                            <statusCode code="completed"/>
+                            <effectiveTime value="20240615000000"/>
+                            <value xsi:type="ST">Nevo benigno</value>
+                        </observation>
+                    </entry>
+                </section>
+            </component>
+            
+            <!-- ESAME OBIETTIVO (consigliato) -->
+            
+            <component>
+                <section ID="ESAME_OBIETTIVO">
+                    <code code="29545-1" codeSystem="2.16.840.1.113883.6.1" 
+                          codeSystemName="LOINC" displayName="Osservazioni fisiche"/>
+                    <title>Esame Obiettivo</title>
+                    <text>
+                        <paragraph>Lesione pigmentata irregolare di circa 8mm di diametro localizzata sulla superficie laterale del braccio destro. Margini irregolari, colore variegato</paragraph>
+                    </text>
+                </section>
+            </component>
+            
+            <!-- PRESTAZIONI (opzionale) -->
+            
+            <component>
+                <section ID="Prestazioni">
+                    <code code="62387-6" codeSystem="2.16.840.1.113883.6.1" 
+                          codeSystemName="LOINC" displayName="Interventi"/>
+                    <title>Prestazioni</title>
+                    <text>
+                        <list>
+                            
+                        <item ID="Prestazione-1">
+                            <paragraph>Dermoscopia digitale</paragraph>
+                            <paragraph>Data: 20260109141532</paragraph>
+                        </item>
+                        </list>
+                    </text>
+                    
+                    <entry>
+                        <act classCode="ACT" moodCode="EVN">
+                            <code code="67727-8" 
+                                  codeSystem="2.16.840.1.113883.6.1" 
+                                  codeSystemName="LOINC" 
+                                  displayName="Dermoscopia digitale"/>
+                            <text>
+                                <reference value="#Prestazione-1"/>
+                            </text>
+                            <statusCode code="completed"/>
+                            <effectiveTime value="20260109141532"/>
+                            <entryRelationship typeCode="COMP">
+                                <procedure classCode="PROC" moodCode="EVN">
+                                    <code code="67727-8" 
+                                          codeSystem="2.16.840.1.113883.6.1" 
+                                          codeSystemName="LOINC" 
+                                          displayName="Dermoscopia digitale"/>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="20260109141532"/>
+                                </procedure>
+                            </entryRelationship>
+                        </act>
+                    </entry>
+                </section>
+            </component>
+            
+            <!-- CONFRONTO CON PRECEDENTI ESAMI (opzionale) -->
+            
+            <component>
+                <section ID="Confronto_con_Precedenti_Esami_Eseguiti">
+                    <code code="93126-1" codeSystem="2.16.840.1.113883.6.1" 
+                          codeSystemName="LOINC" displayName="Confronto con precedenti esami eseguiti"/>
+                    <title>Confronto con Precedenti Esami Eseguiti</title>
+                    <text>
+                        <paragraph>Rispetto all'esame istologico del giugno 2024, la lesione attuale presenta caratteristiche morfologiche diverse e merita approfondimento</paragraph>
+                    </text>
+                </section>
+            </component>
+            
+            <!-- REFERTO (obbligatorio) -->
+            
+            <component>
+                <section ID="REFERTO">
+                    <code code="47045-0" codeSystem="2.16.840.1.113883.6.1" 
+                          codeSystemName="LOINC" displayName="Referto"/>
+                    <title>Referto</title>
+                    <text>
+                        <paragraph>All'esame dermoscopico la lesione presenta pattern atipico con asimmetria di colori e strutture, rete pigmentaria irregolare con interruzioni. Indice di sospetto elevato</paragraph>
+                    </text>
+                </section>
+            </component>
+            
+            <!-- DIAGNOSI (obbligatoria) -->
+            
+            <component>
+                <section ID="DIAGNOSI">
+                    <code code="29548-5" codeSystem="2.16.840.1.113883.6.1" 
+                          codeSystemName="LOINC" displayName="Diagnosi"/>
+                    <title>Diagnosi</title>
+                    <text>
+                        <list>
+                            <item ID="DIAG1">Lesione pigmentata sospetta - indicazione all'escissione chirurgica</item>
+                        </list>
+                    </text>
+                    
+                    <entry>
+                        <observation classCode="OBS" moodCode="EVN">
+                            <code code="29308-4" codeSystem="2.16.840.1.113883.6.1" 
+                                  codeSystemName="LOINC" displayName="Diagnosi"/>
+                            <value xsi:type="CD" code="216.5" 
+                                   codeSystem="2.16.840.1.113883.6.103" 
+                                   codeSystemName="ICD9CM" 
+                                   displayName="Lesione pigmentata sospetta - indicazione all'escissione chirurgica"/>
+                        </observation>
+                    </entry>
+                </section>
+            </component>
+            
+            <!-- CONCLUSIONI (consigliata) -->
+            
+            <component>
+                <section ID="CONCLUSIONI">
+                    <code code="55110-1" codeSystem="2.16.840.1.113883.6.1" 
+                          codeSystemName="LOINC" displayName="Conclusioni"/>
+                    <title>Conclusioni</title>
+                    <text>
+                        <paragraph>La lesione richiede escissione chirurgica con esame istologico per caratterizzazione definitiva. Si consiglia intervento in tempi brevi</paragraph>
+                    </text>
+                </section>
+            </component>
+            
+            <!-- SUGGERIMENTI PER IL MEDICO PRESCRITTORE (opzionale) -->
+            
+            <component>
+                <section ID="SUGGERIMENTI_MEDICO_PRESCRITTORE">
+                    <code code="62385-0" codeSystem="2.16.840.1.113883.6.1" 
+                          codeSystemName="LOINC" displayName="Raccomandazioni"/>
+                    <title>Suggerimenti per il Medico Prescrittore</title>
+                    <text>
+                        <paragraph>Si raccomanda escissione chirurgica della lesione con margini adeguati ed esame istologico. Follow-up dermatologico semestrale per controllo altre lesioni</paragraph>
+                    </text>
+                </section>
+            </component>
+            
+            <!-- ACCERTAMENTI E CONTROLLI CONSIGLIATI (opzionale) -->
+            
+            <component>
+                <section ID="Accertamenti_e_Controlli_Consigliati">
+                    <code code="80615-8" codeSystem="2.16.840.1.113883.6.1" 
+                          codeSystemName="LOINC" displayName="Follow-up consigliato"/>
+                    <title>Accertamenti e Controlli Consigliati</title>
+                    <text>
+                        <list>
+                            <item ID="AC-1">Escissione chirurgica con esame istologico. Mappatura nevi totale corporea tra 6 mesi</item>
+                        </list>
+                    </text>
+                    <entry>
+                        <act classCode="ACT" moodCode="PRP">
+                            <code nullFlavor="NA"/>
+                            <text>
+                                <reference value="#AC-1"/>
+                            </text>
+                            <statusCode code="active"/>
+                        </act>
+                    </entry>
+                </section>
+            </component>
+            
+            <!-- TERAPIA FARMACOLOGICA CONSIGLIATA (opzionale) -->
+            
+            <component>
+                <section ID="Terapia_Farmacologica_Consigliata">
+                    <code code="93341-6" codeSystem="2.16.840.1.113883.6.1" 
+                          codeSystemName="LOINC" displayName="Farmaci consigliati"/>
+                    <title>Terapia Farmacologica Consigliata</title>
+                    <text>
+                        <paragraph ID="TC-1">Paracetamolo 500mg - 1 compressa ogni 6-8 ore se dolore</paragraph>
+                    </text>
+                    
+                    <entry>
+                        <substanceAdministration classCode="SBADM" moodCode="PRP">
+                            <text>
+                                <reference value="#TC-1"/>
+                            </text>
+                            <effectiveTime xsi:type="IVL_TS">
+                                <low value="20260109141532"/>
+                            </effectiveTime>
+                            <routeCode code="PO" codeSystem="2.16.840.1.113883.5.112" codeSystemName="HL7 RouteOfAdministration"/>
+                            <consumable>
+                                <manufacturedProduct>
+                                    <manufacturedMaterial>
+                                        <code code="N02BE01" codeSystem="2.16.840.1.113883.6.73" codeSystemName="ATC" displayName="Paracetamolo 500mg"></code>
+                                    </manufacturedMaterial>
+                                </manufacturedProduct>
+                            </consumable>
+                        </substanceAdministration>
+                    </entry>
+                </section>
+            </component>
+            
+        </structuredBody>
+    </component>
+    
+</ClinicalDocument>
+endstream
+endobj
+10 0 obj
+<<
+/Type /Filespec
+/F (cda\056xml)
+/EF <<
+/F 9 0 R
+>>
+>>
+endobj
+11 0 obj
+<<
+/EmbeddedFiles 12 0 R
+>>
+endobj
+12 0 obj
+<<
+/Names [ (cda\056xml) 10 0 R ]
+>>
+endobj
+xref
+0 13
+0000000000 65535 f 
+0000000015 00000 n 
+0000000054 00000 n 
+0000000113 00000 n 
+0000000176 00000 n 
+0000000375 00000 n 
+0000000873 00000 n 
+0000000914 00000 n 
+0000001021 00000 n 
+0000001133 00000 n 
+0000031785 00000 n 
+0000031858 00000 n 
+0000031902 00000 n 
+trailer
+<<
+/Size 13
+/Root 3 0 R
+/Info 1 0 R
+>>
+startxref
+31955
+%%EOF
