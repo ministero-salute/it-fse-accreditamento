@@ -1,0 +1,442 @@
+%PDF-1.3
+%‚„œ”
+1 0 obj
+<<
+/Producer (pypdf)
+>>
+endobj
+2 0 obj
+<<
+/Type /Pages
+/Count 1
+/Kids [ 4 0 R ]
+>>
+endobj
+3 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+/Names 11 0 R
+>>
+endobj
+4 0 obj
+<<
+/Contents 5 0 R
+/MediaBox [ 0 0 595.2756 841.8898 ]
+/Resources <<
+/Font 6 0 R
+/ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Parent 2 0 R
+>>
+endobj
+5 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ]
+/Length 407
+>>
+stream
+Gas2E:J\h]!6+DSMK`#593Yd+DSh-s@+<h]#;==MUo%pIl\ONKgPq%$Jb7:I[JBL/<sBQIC\B:a-3E!@"60qcYWh;=b`RcXUN<Z<d78lil)[<-8hg`IjL@fe<oqJMLGrqTQ\BTRNUjf&<bLh=iY1<`%mKsM+ZPL+i0c.&!&/'$i.N/hO!')+Sb-q23pKVojci9oh(e5f0LZpZB<oNof%3NZ+m<AW3HNbeAJH!/CQtqsBT&];EZ&agP<4e[GtcM1NJ9OkUH'I35Ks9n?\cE,+2&4U)P^=j;W;KTj!C+!_F?,c>cXuM<Yc#mUOP9BCK4c;b=W\dh:ALX@&],P[ZKQ32roH__n)ZVM,)[PG((M?.2ntHGG,/1aZ>X&/LG0MB(A('L63Mp`'M$)3U$A@e$HP[~>
+endstream
+endobj
+6 0 obj
+<<
+/F1 7 0 R
+/F2 8 0 R
+>>
+endobj
+7 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+8 0 obj
+<<
+/BaseFont /Helvetica-Bold
+/Encoding /WinAnsiEncoding
+/Name /F2
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+9 0 obj
+<<
+/Type /EmbeddedFile
+/Length 17276
+>>
+stream
+<?xml version="1.0" encoding="UTF-8"?>
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:lab="urn:oid:1.3.6.1.4.1.19376.1.3.2">
+    
+    <!-- HEADER -->
+    <realmCode code="IT"/>
+    <typeId root="2.16.840.1.113883.1.3" extension="POCD_MT000040UV02"/>
+    
+    <!-- Template CDA2 Referto di Laboratorio -->
+    <templateId root="2.16.840.1.113883.2.9.10.1.1" extension="1.3" assigningAuthorityName="HL7 Italia"/>
+    
+    <!-- ID Documento -->
+    <id root="2.16.840.1.113883.2.9.2.120.4.4" extension="112338b9-99c8-4057-a138-74f9013158be" assigningAuthorityName="Regione"/>
+    
+    <!-- Tipo documento (LOINC) -->
+    <code code="11502-2" 
+          codeSystem="2.16.840.1.113883.6.1" 
+          codeSystemName="LOINC"
+          displayName="Referto di laboratorio"/>
+    
+    <!-- Titolo -->
+    <title>REFERTO DI LABORATORIO</title>
+    
+    <!-- Data creazione -->
+    <effectiveTime value="20260109141432+0100"/>
+    
+    <!-- Confidenzialit√† -->
+    <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" 
+                         codeSystemName="HL7 Confidentiality" displayName="Normal"/>
+    
+    <!-- Lingua -->
+    <languageCode code="it-IT"/>
+    
+    <!-- Set ID e versione -->
+    <setId root="2.16.840.1.113883.2.9.2.120.4.4" extension="112338b9-99c8-4057-a138-74f9013158be" assigningAuthorityName="Regione"/>
+    <versionNumber value="1"/>
+    
+    <!-- PAZIENTE -->
+    <recordTarget typeCode="RCT" contextControlCode="OP">
+        <patientRole classCode="PAT">
+            <id root="2.16.840.1.113883.2.9.4.3.2" extension="RSSMRA85M01H501Q" 
+                assigningAuthorityName="MEF"/>
+            <addr use="H">
+                <country>IT</country>
+                <state>RM</state>
+                <city>Roma</city>
+                <postalCode>00100</postalCode>
+                <streetAddressLine>Via Test 123</streetAddressLine>
+            </addr>
+            <telecom use="HP" value="tel:0612345678"/>
+            <patient>
+                <name>
+                    <family>Rossi</family>
+                    <given>Maria</given>
+                </name>
+                <administrativeGenderCode code="F" 
+                    codeSystem="2.16.840.1.113883.5.1" 
+                    codeSystemName="HL7 AdministrativeGender"/>
+                <birthTime value="19850801"/>
+            </patient>
+        </patientRole>
+    </recordTarget>
+    
+    <!-- AUTORE -->
+    <author>
+        <time value="20260109141432+0100"/>
+        <assignedAuthor classCode="ASSIGNED">
+            <id root="2.16.840.1.113883.2.9.4.3.2" extension="NREPLA70A01H501Z" 
+                assigningAuthorityName="MEF"/>
+            <telecom use="WP" value="tel:0165123456"/>
+            <assignedPerson>
+                <name>
+                    <family>Neri</family>
+                    <given>Paolo</given>
+                </name>
+            </assignedPerson>
+        </assignedAuthor>
+    </author>
+    
+    <!-- CUSTODE -->
+    <custodian>
+        <assignedCustodian>
+            <representedCustodianOrganization>
+                <id root="2.16.840.1.113883.2.9.4.1.1" extension="12345678903" 
+                    assigningAuthorityName="Ministero della Salute"/>
+                <name>Laboratorio Analisi Cliniche</name>
+                <addr>
+                    <country>IT</country>
+                    <state>AO</state>
+                    <city>Aosta</city>
+                    <postalCode>11100</postalCode>
+                    <streetAddressLine>Via Laboratorio 1</streetAddressLine>
+                </addr>
+            </representedCustodianOrganization>
+        </assignedCustodian>
+    </custodian>
+    
+    <!-- LEGAL AUTHENTICATOR -->
+    <legalAuthenticator>
+        <time value="20260109141432+0100"/>
+        <signatureCode code="S"/>
+        <assignedEntity>
+            <id root="2.16.840.1.113883.2.9.4.3.2" extension="NREPLA70A01H501Z" 
+                assigningAuthorityName="MEF"/>
+            <assignedPerson>
+                <name>
+                    <family>Neri</family>
+                    <given>Paolo</given>
+                </name>
+            </assignedPerson>
+        </assignedEntity>
+    </legalAuthenticator>
+    
+    <!-- IN FULFILLMENT OF (Richiesta/Ordine) -->
+    <inFulfillmentOf>
+        <order>
+            <id root="2.16.840.1.113883.2.9.2.120.4.4" extension="ORD-20260109141432" 
+                assigningAuthorityName="Sistema Ordini"/>
+        </order>
+    </inFulfillmentOf>
+    
+    <!-- CORPO DOCUMENTO -->
+    <component>
+        <structuredBody>
+            
+            <component typeCode="COMP">
+                <section classCode="DOCSECT" moodCode="EVN">
+                    <code code="26436-6" codeSystem="2.16.840.1.113883.6.1" 
+                          codeSystemName="LOINC" displayName="ESAMI DI LABORATORIO"/>
+                    <title>ESAMI DI LABORATORIO</title>
+                    <component>
+                        <section ID="TC452_7118f25b">
+                            <code code="18719-5" 
+                                  codeSystem="2.16.840.1.113883.6.1" 
+                                  codeSystemName="LOINC" 
+                                  displayName="CHIMICA CLINICA"/>
+                            <title>CHIMICA CLINICA</title>
+                            <text>
+                                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Esame</th>
+                            <th>Valore</th>
+                            <th>Range di riferimento</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    <tr>
+                        <td>Glucosio</td>
+                        <td>95 mg/dL</td>
+                        <td>70-110 mg/dL</td>
+                    </tr>
+                    <tr>
+                        <td>Creatinina</td>
+                        <td>0.9 mg/dL</td>
+                        <td>0.6-1.1 mg/dL</td>
+                    </tr>
+                    <tr>
+                        <td>Colesterolo totale</td>
+                        <td>210 ‚Üë mg/dL</td>
+                        <td>0-200 mg/dL</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <content ID="TC452_7118f25b_NOTE">Campione prelevato a digiuno. Paziente collaborante.</content>
+                            </text>
+                            
+                    <entry typeCode="DRIV">
+                        <act classCode="ACT" moodCode="EVN">
+                            <id root="2.16.840.1.113883.2.9.2.120.4.4" extension="1c5d3606-c518-401c-94c8-78f0caaa6a03"/>
+                            <code code="18719-5" 
+                                  codeSystem="2.16.840.1.113883.6.1" 
+                                  codeSystemName="LOINC" 
+                                  displayName="CHIMICA CLINICA"/>
+                            <statusCode code="completed"/>
+                            
+                            <specimen typeCode="SPC">
+                                <specimenRole classCode="SPEC">
+                                    <specimenPlayingEntity>
+                                        <code code="SER" 
+                                              codeSystem="2.16.840.1.113883.5.129" 
+                                              codeSystemName="SpecimenType" 
+                                              displayName="Serum"/>
+                                    </specimenPlayingEntity>
+                                </specimenRole>
+                            </specimen>
+                            
+                            <entryRelationship typeCode="COMP">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <code code="2345-7" 
+                                          codeSystem="2.16.840.1.113883.6.1" 
+                                          codeSystemName="LOINC" 
+                                          displayName="Glucosio"/>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="20260109141432+0100"/>
+                                    <value xsi:type="PQ" value="95" unit="mg/dL"/>
+                                    
+                                    <interpretationCode code="N" 
+                                                       codeSystem="2.16.840.1.113883.5.83" 
+                                                       codeSystemName="ObservationInterpretation"/>
+                                    
+                                    <referenceRange>
+                                        <observationRange>
+                                            <value xsi:type="IVL_PQ">
+                                                <low value="70" unit="mg/dL"/>
+                                                <high value="110" unit="mg/dL"/>
+                                            </value>
+                                            <interpretationCode code="N" 
+                                                               codeSystem="2.16.840.1.113883.5.83" 
+                                                               codeSystemName="ObservationInterpretation"/>
+                                            <lab:precondition>
+                                                <lab:criterion>
+                                                    <lab:code code="F" 
+                                                          codeSystem="2.16.840.1.113883.5.1" 
+                                                          codeSystemName="HL7 AdministrativeGender"/>
+                                                    <lab:value xsi:type="ST">Femmina</lab:value>
+                                                </lab:criterion>
+                                            </lab:precondition>
+                                        </observationRange>
+                                    </referenceRange>
+                                </observation>
+                            </entryRelationship>
+                            <entryRelationship typeCode="COMP">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <code code="2160-0" 
+                                          codeSystem="2.16.840.1.113883.6.1" 
+                                          codeSystemName="LOINC" 
+                                          displayName="Creatinina"/>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="20260109141432+0100"/>
+                                    <value xsi:type="PQ" value="0.9" unit="mg/dL"/>
+                                    
+                                    <interpretationCode code="N" 
+                                                       codeSystem="2.16.840.1.113883.5.83" 
+                                                       codeSystemName="ObservationInterpretation"/>
+                                    
+                                    <referenceRange>
+                                        <observationRange>
+                                            <value xsi:type="IVL_PQ">
+                                                <low value="0.6" unit="mg/dL"/>
+                                                <high value="1.1" unit="mg/dL"/>
+                                            </value>
+                                            <interpretationCode code="N" 
+                                                               codeSystem="2.16.840.1.113883.5.83" 
+                                                               codeSystemName="ObservationInterpretation"/>
+                                            <lab:precondition>
+                                                <lab:criterion>
+                                                    <lab:code code="F" 
+                                                          codeSystem="2.16.840.1.113883.5.1" 
+                                                          codeSystemName="HL7 AdministrativeGender"/>
+                                                    <lab:value xsi:type="ST">Femmina</lab:value>
+                                                </lab:criterion>
+                                            </lab:precondition>
+                                        </observationRange>
+                                    </referenceRange>
+                                </observation>
+                            </entryRelationship>
+                            <entryRelationship typeCode="COMP">
+                                <observation classCode="OBS" moodCode="EVN">
+                                    <code code="2093-3" 
+                                          codeSystem="2.16.840.1.113883.6.1" 
+                                          codeSystemName="LOINC" 
+                                          displayName="Colesterolo totale"/>
+                                    <statusCode code="completed"/>
+                                    <effectiveTime value="20260109141432+0100"/>
+                                    <value xsi:type="PQ" value="210" unit="mg/dL"/>
+                                    
+                                    <interpretationCode code="H" 
+                                                       codeSystem="2.16.840.1.113883.5.83" 
+                                                       codeSystemName="ObservationInterpretation"/>
+                                    
+                                    <referenceRange>
+                                        <observationRange>
+                                            <value xsi:type="IVL_PQ">
+                                                <low value="0" unit="mg/dL"/>
+                                                <high value="200" unit="mg/dL"/>
+                                            </value>
+                                            <interpretationCode code="N" 
+                                                               codeSystem="2.16.840.1.113883.5.83" 
+                                                               codeSystemName="ObservationInterpretation"/>
+                                        </observationRange>
+                                    </referenceRange>
+                                </observation>
+                            </entryRelationship>
+                            
+                            <entryRelationship typeCode="COMP">
+                                <procedure classCode="PROC" moodCode="EVN">
+                                    <targetSiteCode code="368209003" 
+                                                    codeSystem="2.16.840.1.113883.6.96" 
+                                                    codeSystemName="SNOMED CT" 
+                                                    displayName="Left upper arm structure"/>
+                                </procedure>
+                            </entryRelationship>
+                            
+                            <entryRelationship typeCode="COMP">
+                                <observationMedia classCode="OBS" moodCode="EVN">
+                                    <value xsi:type="ED" mediaType="application/pdf" representation="B64">JVBERi0xLjQKJeLjz9MKMyAwIG9iago8PC9UeXBlL1hPYmplY3QvU3VidHlwZS9JbWFnZS9XaWR0aCAxL0hlaWdodCAxL0NvbG9yU3BhY2UvRGV2aWNlR3JheS9CaXRzUGVyQ29tcG9uZW50IDgvRmlsdGVyL0ZsYXRlRGVjb2RlL0xlbmd0aCA5Pj5zdHJlYW0KeJxjYGAAAAADAQABCmVuZHN0cmVhbQplbmRvYmoKMiAwIG9iago8PC9UeXBlL1BhZ2UvUGFyZW50IDEgMCBSL01lZGlhQm94WzAgMCA2MTIgNzkyXS9SZXNvdXJjZXM8PC9YT2JqZWN0PDwvaW1nIDMgMCBSPj4+Pj4+CmVuZG9iago0IDAgb2JqCjw8L1R5cGUvQ2F0YWxvZy9QYWdlcyAxIDAgUj4+CmVuZG9iago1IDAgb2JqCjw8L1Byb2R1Y2VyKFBERiBDcmVhdG9yKT4+CmVuZG9iagoxIDAgb2JqCjw8L1R5cGUvUGFnZXMvS2lkc1syIDAgUl0vQ291bnQgMT4+CmVuZG9iagp4cmVmCjAgNgowMDAwMDAwMDAwIDY1NTM1IGYgCjAwMDAwMDAzNzQgMDAwMDAgbiAKMDAwMDAwMDE1NSAwMDAwMCBuIAowMDAwMDAwMDE1IDAwMDAwIG4gCjAwMDAwMDAyODcgMDAwMDAgbiAKMDAwMDAwMDMzNCAwMDAwMCBuIAp0cmFpbGVyCjw8L1NpemUgNi9Sb290IDQgMCBSL0luZm8gNSAwIFI+PgpzdGFydHhyZWYKNDIzCiUlRU9GCg==</value>
+                                </observationMedia>
+                            </entryRelationship>
+                            
+                            <entryRelationship typeCode="SUBJ">
+                                <act classCode="ACT" moodCode="EVN">
+                                    <code code="48767-8" 
+                                          codeSystem="2.16.840.1.113883.6.1" 
+                                          codeSystemName="LOINC" 
+                                          displayName="Annotazioni e commenti"/>
+                                    <text>
+                                        <reference value="#TC452_7118f25b_NOTE"/>
+                                    </text>
+                                </act>
+                            </entryRelationship>
+                        </act>
+                    </entry>
+                        </section>
+                    </component>
+                </section>
+            </component>
+        </structuredBody>
+    </component>
+    
+</ClinicalDocument>
+endstream
+endobj
+10 0 obj
+<<
+/Type /Filespec
+/F (cda\056xml)
+/EF <<
+/F 9 0 R
+>>
+>>
+endobj
+11 0 obj
+<<
+/EmbeddedFiles 12 0 R
+>>
+endobj
+12 0 obj
+<<
+/Names [ (cda\056xml) 10 0 R ]
+>>
+endobj
+xref
+0 13
+0000000000 65535 f 
+0000000015 00000 n 
+0000000054 00000 n 
+0000000113 00000 n 
+0000000176 00000 n 
+0000000375 00000 n 
+0000000873 00000 n 
+0000000914 00000 n 
+0000001021 00000 n 
+0000001133 00000 n 
+0000018482 00000 n 
+0000018555 00000 n 
+0000018599 00000 n 
+trailer
+<<
+/Size 13
+/Root 3 0 R
+/Info 1 0 R
+>>
+startxref
+18652
+%%EOF
