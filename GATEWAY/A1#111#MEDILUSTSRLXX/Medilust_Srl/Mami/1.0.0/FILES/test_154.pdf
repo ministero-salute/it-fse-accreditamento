@@ -26,7 +26,7 @@ BT /F1 10 Tf 50 702 Td () Tj ET
 BT /F1 10 Tf 50 688 Td (Medico: Dr. Matteo Test) Tj ET
 BT /F1 10 Tf 50 674 Td (Albo: RM99999) Tj ET
 BT /F1 10 Tf 50 660 Td () Tj ET
-BT /F1 10 Tf 50 646 Td (Data prestazione: 2026-03-31 10:32:58.049813Z) Tj ET
+BT /F1 10 Tf 50 646 Td (Data prestazione: 2026-04-01 05:34:02.861595Z) Tj ET
 BT /F1 10 Tf 50 632 Td () Tj ET
 BT /F1 10 Tf 50 618 Td (--- Motivo della visita ---) Tj ET
 BT /F1 10 Tf 50 604 Td (Ipoglicemia) Tj ET
@@ -46,17 +46,17 @@ BT /F1 10 Tf 50 422 Td () Tj ET
 endstream
 endobj
 6 0 obj
-<< /Type /EmbeddedFile /Subtype /text#2Fxml /Length 20699 /Params << /Size 20699 /ModDate (D:20260331103258+00'00') >> >>
+<< /Type /EmbeddedFile /Subtype /text#2Fxml /Length 21191 /Params << /Size 21191 /ModDate (D:20260401053402+00'00') >> >>
 stream
 <?xml version="1.0" encoding="UTF-8"?><ClinicalDocument xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdtc="urn:hl7-org:sdtc">
 	<realmCode code="IT"/>
 	<typeId root="2.16.840.1.113883.1.3" extension="POCD_MT000040UV02"/>
 	<templateId root="2.16.840.1.113883.2.9.10.1.9.1" extension="1.1" assigningAuthorityName="HL7 Italia"/>
-	<id root="2.16.840.1.113883.2.9.2.120.4.4" extension="ACC-154-99" assigningAuthorityName="Regione Lazio"/>
+	<id root="2.16.840.1.113883.2.9.2.120.4.4" extension="ACC-154-8038" assigningAuthorityName="Regione Lazio"/>
 	<code code="11488-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Nota di consulto"/>
 	<title>Referto di Specialistica Ambulatoriale</title>
 	<sdtc:statusCode code="active"/>
-	<effectiveTime value="20260331103258+0100"/>
+	<effectiveTime value="20260401053402+0100"/>
 	<confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" codeSystemName="HL7 Confidentiality" displayName="Normal"/>
 	<languageCode code="it-IT"/>
 	<setId root="2.16.840.1.113883.2.9.2.120.4.4" extension="030702.LCNLDE90L47H501Q.20220420112426.DW322E34" assigningAuthorityName="Regione Lazio"/>
@@ -97,7 +97,7 @@ stream
 		</patientRole>
 	</recordTarget>
 	<author>
-		<time value="20260331103258+0100"/>
+		<time value="20260401053402+0100"/>
 		<assignedAuthor classCode="ASSIGNED">
 			<id root="2.16.840.1.113883.2.9.4.3.2" extension="PROVAX00X00X000Y" assigningAuthorityName="MEF"/>
 			<addr use="WP">
@@ -121,7 +121,7 @@ stream
 		</assignedAuthor>
 	</author>
 	<dataEnterer typeCode="ENT">
-		<time value="20260331103258+0100"/>
+		<time value="20260401053402+0100"/>
 		<assignedEntity>
 			<id root="2.16.840.1.113883.2.9.4.3.2" extension="PROVAX00X00X000Y" assigningAuthorityName="MEF"/>
 			<addr use="WP">
@@ -159,7 +159,7 @@ stream
 		</assignedCustodian>
 	</custodian>
 	<legalAuthenticator>
-		<time value="20260331103258+0100"/>
+		<time value="20260401053402+0100"/>
 		<signatureCode code="S"/>
 		<assignedEntity>
 			<id root="2.16.840.1.113883.2.9.4.3.2" extension="PROVAX00X00X000Y" assigningAuthorityName="MEF"/>
@@ -213,7 +213,7 @@ stream
 	<documentationOf>
 		<serviceEvent>
 			<code code="PROG" codeSystem="2.16.840.1.113883.2.9.5.1.4" codeSystemName="ActCode" displayName="Accesso Programmato"/>
-			<effectiveTime value="20260331103258+0100"/>
+			<effectiveTime value="20260401053402+0100"/>
 		</serviceEvent>
 	</documentationOf>
 	<relatedDocument typeCode="RPLC">
@@ -227,8 +227,8 @@ stream
 		<encompassingEncounter>
 			<id root="2.16.840.1.113883.2.9.2.120.4.6" extension="2011008159" assigningAuthorityName="Regione Lazio"/>
 			<effectiveTime>
-				<low value="20260331103258+0100"/>
-				<high value="20260331103258+0100"/>
+				<low value="20260401053402+0100"/>
+				<high value="20260401053402+0100"/>
 			</effectiveTime>
 			<location>
 				<healthCareFacility>
@@ -396,10 +396,20 @@ stream
 			<component typeCode="COMP">
 				<section ID="PRECEDENTI_ESAMI_ESEGUITI">
 					<code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Test diagnostici e/o dati di laboratorio rilevanti"/>
-					<title>Precedenti esami eseguiti</title>
+					<title>Precedenti Esami Eseguiti</title>
 					<text>
 						<paragraph>Esame microscopico di campione di sangue - parassitologia</paragraph>
 					</text>
+					<entry>
+						<observation moodCode="EVN" classCode="OBS">
+							<code code="90.54" codeSystem="2.16.840.1.113883.6.103" codeSystemName="ICD-9-CM" displayName="ESAME MICROSCOPICO DI CAMPIONE DI SANGUE - PARASSITOLOGIA"/>
+							<effectiveTime>
+								<low value="20220101090000+0200"/>
+								<high value="20220101103000+0200"/>
+							</effectiveTime>
+							<value xsi:type="ST">Esame microscopico di campione di sangue - parassitologia</value>
+						</observation>
+					</entry>
 				</section>
 			</component>
 			<component typeCode="COMP">
@@ -433,11 +443,11 @@ stream
 									<reference value="#PREST"/>
 								</originalText>
 							</code>
-							<effectiveTime value="20260331103258+0100"/>
+							<effectiveTime value="20260401053402+0100"/>
 							<entryRelationship typeCode="COMP">
 								<procedure classCode="PROC" moodCode="EVN">
 									<code code="55122-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Surgical operation note implants"/>
-									<effectiveTime value="20260331103258+0100"/>
+									<effectiveTime value="20260401053402+0100"/>
 								</procedure>
 							</entryRelationship>
 						</act>
@@ -569,10 +579,10 @@ xref
 0000000301 00000 n 
 0000000371 00000 n 
 0000001828 00000 n 
-0000022682 00000 n 
-0000022787 00000 n 
+0000023174 00000 n 
+0000023279 00000 n 
 trailer
 << /Size 9 /Root 1 0 R >>
 startxref
-22854
+23346
 %%EOF
