@@ -41,7 +41,7 @@ endobj
 /Length 216
 >>
 stream
-GarWqb79+X&;B)V:N;\86=gK2>NE)!L#&5U`F'$1M!o7\]O51qR8!V!2[&"J\QsEp?=6\CLdO"lOG+5lEj9SSgZ&'i`SXED,3"Df+/6ZY;N2SaK2S<!Th;Vc81@e0>TqZ?cFtIB"cWKE[M,!qqU);!K!fLn[PgrcNT4F%m@cN#i6;5ok>!]kBpN^/XjojD95<5dFgnNjq>F`6@.=@<In+J~>
+GarWq:CDb>&;T5VTAk'r5hfEn]paFGSo!k(2MSKJ@GCMe<[r_S_skN*6P'eO2qn?m-u;NX8Z3+5"VF^f6@#_,:uqI:8A9L9-H$O:,+o.AC@6>P#$#`!O#kN].\gYdFbACq3!,6&_Ee+`Fu,JSp,VVU%9hSKI;?WeXdtF*I?_bR1(_5"dKsP6b>X6eCVD^XT[C8Fr8>sX0(0;Y"5XD(In+J~>
 endstream
 endobj
 6 0 obj
@@ -73,9 +73,9 @@ endobj
 /Type /EmbeddedFile
 /Subtype (text\057xml)
 /Params <<
-/Size 13797
+/Size 13545
 >>
-/Length 13797
+/Length 13545
 >>
 stream
 <?xml version='1.0' encoding='UTF-8'?>
@@ -86,7 +86,7 @@ stream
   <id root="2.16.840.1.113883.2.9.2.120.4.4" extension="TC14001"/>
   <code code="68604-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Referto Radiologico"/>
   <title>Referto di Radiologia</title>
-  <effectiveTime value="20260226183816+0200"/>
+  <effectiveTime value="20260324131835+0200"/>
   <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>
   <languageCode code="it-IT"/>
   <setId root="2.16.840.1.113883.2.9.2.120.4.4" extension="TC14001"/>
@@ -106,7 +106,7 @@ stream
     </patientRole>
   </recordTarget>
   <author>
-    <time value="20260226183816+0200"/>
+    <time value="20260324131835+0200"/>
     <assignedAuthor>
       <id root="2.16.840.1.113883.2.9.4.3.2" extension="FNTGMR54T20H501F"/>
       <telecom use="WP" value="tel:+390600000000"/>
@@ -127,7 +127,7 @@ stream
     </assignedCustodian>
   </custodian>
   <legalAuthenticator>
-    <time value="20260226183816+0200"/>
+    <time value="20260324131835+0200"/>
     <signatureCode code="S"/>
     <assignedEntity>
       <id root="2.16.840.1.113883.2.9.4.3.2" extension="FNTGMR54T20H501F"/>
@@ -147,7 +147,7 @@ stream
   <componentOf>
     <encompassingEncounter>
       <id root="2.16.840.1.113883.2.9.2.120.4.4" extension="RADENC001"/>
-      <effectiveTime value="20260226183816+0200"/>
+      <effectiveTime value="20260324131835+0200"/>
     </encompassingEncounter>
   </componentOf>
   <component>
@@ -213,6 +213,7 @@ stream
           </entry>
           <entry>
             <organizer classCode="CLUSTER" moodCode="EVN">
+              <code code="10157-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
               <statusCode code="completed"/>
               <subject>
                 <relatedSubject classCode="PRS">
@@ -226,7 +227,7 @@ stream
                 <observation classCode="OBS" moodCode="EVN">
                   <code code="75326-9" codeSystem="2.16.840.1.113883.6.1"/>
                   <statusCode code="completed"/>
-                  <effectiveTime nullFlavor="UNK"/>
+                  <effectiveTime value="20260324131835+0200"/>
                   <value xsi:type="CD" code="401.9" codeSystem="2.16.840.1.113883.6.103"/>
                   <entryRelationship typeCode="SUBJ">
                     <observation classCode="OBS" moodCode="EVN">
@@ -267,17 +268,10 @@ stream
                       <participant typeCode="CSM">
                         <participantRole classCode="MANU">
                           <playingEntity>
-                            <code nullFlavor="UNK"/>
+                            <code code="J01CA04" codeSystem="2.16.840.1.113883.6.73"/>
                           </playingEntity>
                         </participantRole>
                       </participant>
-                      <entryRelationship typeCode="SUBJ">
-                        <observation classCode="OBS" moodCode="EVN">
-                          <code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" displayName="Criticality"/>
-                          <statusCode code="completed"/>
-                          <value xsi:type="CD" code="CRITH" codeSystem="2.16.840.1.113883.5.1063"/>
-                        </observation>
-                      </entryRelationship>
                       <entryRelationship typeCode="REFR">
                         <observation classCode="OBS" moodCode="EVN">
                           <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Stato"/>
@@ -324,7 +318,7 @@ stream
           <entry>
             <act classCode="ACT" moodCode="EVN">
               <statusCode code="completed"/>
-              <effectiveTime value="20260226183816+0200"/>
+              <effectiveTime value="20260324131835+0200"/>
             </act>
           </entry>
         </section>
@@ -359,7 +353,10 @@ stream
             <observation classCode="OBS" moodCode="EVN">
               <code code="75326-9" codeSystem="2.16.840.1.113883.6.1" displayName="Problem"/>
               <statusCode code="completed"/>
-              <effectiveTime value="20260226183816+0200"/>
+              <effectiveTime>
+                <low value="20250101000000+0100"/>
+                <high value="20250101120000+0100"/>
+              </effectiveTime>
               <value xsi:type="CD" nullFlavor="NA"/>
             </observation>
           </entry>
@@ -409,8 +406,8 @@ xref
 0000000738 00000 n 
 0000000845 00000 n 
 0000000957 00000 n 
-0000014876 00000 n 
-0000014993 00000 n 
+0000014624 00000 n 
+0000014741 00000 n 
 trailer
 <<
 /Size 12
@@ -418,5 +415,5 @@ trailer
 /Info 1 0 R
 >>
 startxref
-15067
+14815
 %%EOF
