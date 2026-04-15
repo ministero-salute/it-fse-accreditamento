@@ -1,0 +1,192 @@
+{
+  "appVendor": "Simone Alessandrini",
+  "appID": "MEDICHUB",
+  "appVersion": "1.0.1",
+  "_note": "id = colonna A tab TestCases in accreditamento-checklist_V9.0.0.xlsx. V-03/D-01/R-01/U-01 gestiti in checklist secondo applicabilita e disponibilita evidenze. Copertura corrente: 22 test tecnici + ID 48 TIMEOUT documentale. Aggiornato 2026-04-07.",
+  "results": [
+    {
+      "id": 448,
+      "description": "VALIDAZIONE_CDA2_RSA_CT24 — VERIFICA CDA2 RSA valido, esito positivo (HTTP 200)",
+      "ts": "2026-04-02T00:00:00+02:00",
+      "traceId": "1a1c3da6534bd495d39230badfa54be1",
+      "workflowInstanceId": "2.16.840.1.113883.2.9.2.120.4.4.1f15a69b7247e47058a39c0f5150bc285fbe7f06c3947f4af8790b4c108c7f94.6e72d66f88^^^^urn:ihe:iti:xdw:2013:workflowInstanceId",
+      "files": [
+        "RSA_TestValidazione_448.pdf"
+      ]
+    },
+    {
+      "id": 449,
+      "description": "VALIDAZIONE_CDA2_RSA_CT25 — INVIA RSA (VALIDATION + PUBLICATION), esito positivo (HTTP 202)",
+      "ts": "2026-04-02T15:36:14+02:00",
+      "traceId": "07842e038074a781092811a6dbf54084",
+      "workflowInstanceId": "2.16.840.1.113883.2.9.2.120.4.4.38933801d4a749158df6a4f1c0a0e46bf2fecef4bb15a1882391b6a583ceae5a.7df3efe778^^^^urn:ihe:iti:xdw:2013:workflowInstanceId",
+      "files": [
+        "RSA_TestValidazione_449.pdf"
+      ]
+    },
+    {
+      "id": 32,
+      "description": "VALIDAZIONE_TOKEN_JWT_RSA_KO — VERIFICA con JWT privo dei claim obbligatori, gateway rifiuta HTTP 403",
+      "ts": "2026-04-07T00:00:00+02:00",
+      "traceId": "17d17733-324d-11f1-8715-005056ae7395",
+      "workflowInstanceId": null,
+      "files": [
+        "JWT_32_RSA_KO.pdf"
+      ]
+    },
+    {
+      "id": 40,
+      "description": "VALIDAZIONE_TOKEN_JWT_CAMPO_RSA_KO — VERIFICA con JWT contenente valori non validi (CF malformato, action_id errato, token scaduto), gateway rifiuta HTTP 400",
+      "ts": "2026-04-07T00:00:00+02:00",
+      "traceId": "50bb5183-324d-11f1-8715-005056ae7395",
+      "workflowInstanceId": null,
+      "files": [
+        "JWT_40_RSA_KO.pdf"
+      ]
+    },
+    {
+      "id": 152,
+      "description": "VALIDAZIONE_CDA2_RSA_CT6_KO — VERIFICA KO semantico (codice LOINC non valido), HTTP 403",
+      "ts": "2026-04-02T00:00:00+02:00",
+      "traceId": "269af786c586a74a1584c9845ed953dc",
+      "workflowInstanceId": null,
+      "files": []
+    },
+    {
+      "id": 154,
+      "description": "VALIDAZIONE_CDA2_RSA_CT8_KO — VERIFICA KO semantico (effectiveTime nullFlavor, schematron RSA), HTTP 403",
+      "ts": "2026-04-03T00:00:00+02:00",
+      "traceId": "c29cb538796cf3182a08b5f120668d67",
+      "workflowInstanceId": null,
+      "files": []
+    },
+    {
+      "id": 155,
+      "description": "VALIDAZIONE_CDA2_RSA_CT9_KO — VERIFICA KO semantico (languageCode xx-XX non valido), HTTP 403",
+      "ts": "2026-04-03T00:00:00+02:00",
+      "traceId": "e4ca309c4191a9f87e2ec5b8b8570f10",
+      "workflowInstanceId": null,
+      "files": []
+    },
+    {
+      "id": 156,
+      "description": "VALIDAZIONE_CDA2_RSA_CT10_KO — VERIFICA KO terminologico (code sezione QUESITO non valido), HTTP 403",
+      "ts": "2026-04-03T00:00:00+02:00",
+      "traceId": "1221a67019128539ed40fea5ff601aea",
+      "workflowInstanceId": null,
+      "files": []
+    },
+    {
+      "id": 159,
+      "description": "VALIDAZIONE_CDA2_RSA_CT13_KO — VERIFICA KO sintattico (tag radice non chiuso), HTTP 400",
+      "ts": "2026-04-02T00:00:00+02:00",
+      "traceId": "ab4a6d72757dfb6a0849631c0d7ba377",
+      "workflowInstanceId": null,
+      "files": []
+    },
+    {
+      "id": 160,
+      "description": "VALIDAZIONE_CDA2_RSA_CT14_KO — VERIFICA KO sintattico (tag apertura non chiusa nel body), HTTP 403",
+      "ts": "2026-04-03T00:00:00+02:00",
+      "traceId": "5c7b43b2867aa9324cd82389fbdc8274",
+      "workflowInstanceId": null,
+      "files": []
+    },
+    {
+      "id": 161,
+      "description": "VALIDAZIONE_CDA2_RSA_CT15_KO — VERIFICA KO semantico (legalAuthenticator rimosso), HTTP 403",
+      "ts": "2026-04-03T00:00:00+02:00",
+      "traceId": "13af1611fea34fff053b64379d5e8459",
+      "workflowInstanceId": null,
+      "files": []
+    },
+    {
+      "id": 162,
+      "description": "VALIDAZIONE_CDA2_RSA_CT16_KO — VERIFICA KO semantico (dataEnterer rimosso), HTTP 403",
+      "ts": "2026-04-03T00:00:00+02:00",
+      "traceId": "0740ac1bd66b6e438dbc0ef69a3829c2",
+      "workflowInstanceId": null,
+      "files": []
+    },
+    {
+      "id": 163,
+      "description": "VALIDAZIONE_CDA2_RSA_CT17_KO — VERIFICA KO semantico (custodian rimosso), HTTP 403",
+      "ts": "2026-04-03T00:00:00+02:00",
+      "traceId": "9107105290f5ba7773ff5f50609f1d14",
+      "workflowInstanceId": null,
+      "files": []
+    },
+    {
+      "id": 164,
+      "description": "VALIDAZIONE_CDA2_RSA_CT18_KO — VERIFICA KO semantico (birthTime paziente 99999999), HTTP 403",
+      "ts": "2026-04-03T00:00:00+02:00",
+      "traceId": "1955270e0a9e92644c59f348c141a285",
+      "workflowInstanceId": null,
+      "files": []
+    },
+    {
+      "id": 165,
+      "description": "VALIDAZIONE_CDA2_RSA_CT19_KO — VERIFICA KO semantico (realmCode ZZ invece di IT), HTTP 403",
+      "ts": "2026-04-03T00:00:00+02:00",
+      "traceId": "b879aefd7f446c1a6d268ab8d6c11748",
+      "workflowInstanceId": null,
+      "files": []
+    },
+    {
+      "id": 166,
+      "description": "VALIDAZIONE_CDA2_RSA_CT20_KO — VERIFICA KO semantico (typeId root OID non valido), HTTP 403",
+      "ts": "2026-04-03T00:00:00+02:00",
+      "traceId": "871dd329b681a888a8ecf07095d4b7ef",
+      "workflowInstanceId": null,
+      "files": []
+    },
+    {
+      "id": 167,
+      "description": "VALIDAZIONE_CDA2_RSA_CT21_KO — VERIFICA KO semantico (title vuoto), HTTP 403",
+      "ts": "2026-04-03T00:00:00+02:00",
+      "traceId": "8564fe72c0efcea68e9641bce5e92e2f",
+      "workflowInstanceId": null,
+      "files": []
+    },
+    {
+      "id": 168,
+      "description": "VALIDAZIONE_CDA2_RSA_CT22_KO — VERIFICA KO terminologico (code sezione DIAGNOSI non valido), HTTP 403",
+      "ts": "2026-04-03T00:00:00+02:00",
+      "traceId": "fa1763844e81e6aae4061fdec9db5ddb",
+      "workflowInstanceId": null,
+      "files": []
+    },
+    {
+      "id": 169,
+      "description": "VALIDAZIONE_CDA2_RSA_CT23_KO — VERIFICA KO semantico (componentOf rimosso), HTTP 403",
+      "ts": "2026-04-03T00:00:00+02:00",
+      "traceId": "5f2cb7e22a28938c81df4d5ab65126b4",
+      "workflowInstanceId": null,
+      "files": []
+    },
+    {
+      "id": 461,
+      "description": "VALIDAZIONE_CDA2_RSA_CT26_KO — VERIFICA KO terminologico (code sezione PRESTAZIONI non valido), HTTP 403",
+      "ts": "2026-04-03T00:00:00+02:00",
+      "traceId": "dba5498548f4cf5ea08b390c568880c1",
+      "workflowInstanceId": null,
+      "files": []
+    },
+    {
+      "id": 468,
+      "description": "VALIDAZIONE_CDA2_RSA_CT27_KO — VERIFICA KO sintattico (attributo duplicato nel root element), HTTP 403",
+      "ts": "2026-04-03T00:00:00+02:00",
+      "traceId": "e53d241373ed5d507aeb0f16b1070eb9",
+      "workflowInstanceId": null,
+      "files": []
+    },
+    {
+      "id": 475,
+      "description": "VALIDAZIONE_CDA2_RSA_CT28_KO — VERIFICA KO terminologico (code sezione REFERTO non valido), HTTP 403",
+      "ts": "2026-04-03T00:00:00+02:00",
+      "traceId": "dc62a4f4a66a9af72501c41d2797b12d",
+      "workflowInstanceId": null,
+      "files": []
+    }
+  ]
+}
