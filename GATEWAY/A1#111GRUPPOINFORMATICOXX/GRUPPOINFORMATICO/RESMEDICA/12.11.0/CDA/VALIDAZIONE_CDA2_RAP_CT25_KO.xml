@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" moodCode="EVN" xmlns="urn:hl7-org:v3">
+  <realmCode code="IT" />
+  <typeId root="2.16.840.1.113883.1.3" extension="POCD_MT000040UV02" />
+  <templateId root="2.16.840.1.113883.2.9.10.1.8.1" extension="1.3" assigningAuthorityName="HL7 Italia" />
+  <id root="2.16.840.1.113883.2.9.2.120.4.4" extension="030702.PRVPRV00A15C665W.20260505110117.Q123E456" assigningAuthorityName="Regione Lazio" />
+  <code code="11526-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Pathology study" />
+  <title>Referto di anatomia patologica</title>
+  <statusCode code="active" xmlns="urn:hl7-org:sdtc" />
+  <effectiveTime value="20260505110117+0200" />
+  <languageCode code="it-IT" />
+  <setId root="2.16.840.1.113883.2.9.2.120.4.4" extension="030702.PRVPRV00A15C665W.20260505110117.Q123E456" assigningAuthorityName="Regione Lazio" />
+  <versionNumber value="1" />
+  <recordTarget typeCode="RCT" contextControlCode="OP">
+    <patientRole classCode="PAT">
+      <id root="2.16.840.1.113883.2.9.4.3.2" extension="PRVPRV00A15C665W" assigningAuthorityName="MEF" />
+      <addr use="H">
+        <county>100</county>
+        <country>TO</country>
+        <city>VOLPIANO</city>
+        <censusTract>001314</censusTract>
+        <postalCode>10088</postalCode>
+        <streetAddressLine>VIA PROVA</streetAddressLine>
+      </addr>
+      <telecom value="tel:3333333333" use="MC" />
+      <telecom value="tel:3333333333" use="MC" />
+      <telecom value="tel:3333333333" use="MC" />
+      <telecom value="mailto:prova.prov@gmail.com" use="HP" />
+      <patient classCode="PSN" determinerCode="INSTANCE">
+        <name>
+          <family>PROVA</family>
+          <given>PROVA</given>
+        </name>
+        <administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" codeSystemName="HL7 AdministrativeGender" displayName="MASCHIO" />
+        <birthTime value="20000115" />
+        <birthplace classCode="BIRTHPL">
+          <place determinerCode="INSTANCE">
+            <addr>
+              <county>100</county>
+              <censusTract>001082</censusTract>
+            </addr>
+          </place>
+        </birthplace>
+      </patient>
+    </patientRole>
+  </recordTarget>
+  <author typeCode="AUT" contextControlCode="OP">
+    <time value="20260505110117+0200" />
+    <assignedAuthor classCode="ASSIGNED">
+      <id root="2.16.840.1.113883.2.9.4.3.2" extension="PROVAX00X00X000Y" assigningAuthorityName="MEF" />
+      <addr use="HP">
+        <country>100</country>
+        <streetAddressLine>VIA DELLE PROVE 13</streetAddressLine>
+        <city>CHIVASSO</city>
+      </addr>
+      <telecom value="tel:3333333333" use="MC" />
+      <telecom value="mailto:prova.filippo@gmail.com" use="HP" />
+      <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+        <name>
+          <family>PROVA</family>
+          <given>FILIPPO</given>
+        </name>
+      </assignedPerson>
+    </assignedAuthor>
+  </author>
+  <custodian typeCode="CST">
+    <assignedCustodian classCode="ASSIGNED">
+      <representedCustodianOrganization classCode="ORG" determinerCode="INSTANCE">
+        <id root="2.16.840.1.113883.2.9.4.1.1" extension="MALP" assigningAuthorityName="Malpighi" />
+        <name>Malpighi</name>
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+  <legalAuthenticator typeCode="LA" contextControlCode="OP">
+    <time value="20260505110117+0200" />
+    <signatureCode code="S" />
+    <assignedEntity classCode="ASSIGNED">
+      <id root="2.16.840.1.113883.2.9.4.3.2" extension="PROVAX00X00X000Y" assigningAuthorityName="MEF" />
+      <addr use="HP">
+        <country>100</country>
+        <streetAddressLine>VIA DELLE PROVE 13</streetAddressLine>
+        <city>CHIVASSO</city>
+      </addr>
+      <telecom value="tel:3333333333" use="MC" />
+      <telecom value="mailto:prova.filippo@gmail.com" use="HP" />
+      <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+        <name>
+          <family>PROVA</family>
+          <given>FILIPPO</given>
+        </name>
+      </assignedPerson>
+    </assignedEntity>
+  </legalAuthenticator>
+  <inFulfillmentOf>
+    <order moodCode="RQO">
+      <id root="1.2.840.114350" extension="20263740" assigningAuthorityName="MEF" />
+    </order>
+  </inFulfillmentOf>
+  <documentationOf typeCode="DOC">
+    <serviceEvent moodCode="EVN">
+      <code code="PROG" codeSystem="2.16.840.1.113883.2.9.5.1.4" codeSystemName="ActCode" displayName="Accesso Programmato" />
+      <effectiveTime value="20260505110117+0200" />
+    </serviceEvent>
+  </documentationOf>
+  <relatedDocument typeCode="XFRM">
+    <parentDocument moodCode="EVN">
+      <id root="2.16.840.1.113883.2.9.2.120.4.4" extension="030702.TSTSMN63A01F205H.20220325112426.OQlvTq1J2" assigningAuthorityName="HL7 Italia" />
+      <setId root="2.16.840.1.113883.2.9.2.120.4.4" extension="030702.TSTSMN63A01F205H.20220325112426.OQlvTq1J2" assigningAuthorityName="Regione Lazio" />
+      <versionNumber value="1" />
+    </parentDocument>
+  </relatedDocument>
+  <componentOf>
+    <encompassingEncounter classCode="ENC" moodCode="EVN">
+      <effectiveTime value="20260505110117+0200" />
+      <location>
+        <healthCareFacility>
+          <serviceProviderOrganization classCode="ORG" determinerCode="INSTANCE">
+            <id root="2.16.840.1.113883.2.9.4.1.6" extension="XXX" assigningAuthorityName="Ministero della Salute" />
+            <asOrganizationPartOf classCode="PART">
+              <id root="2.16.840.1.113883.2.9.4.1.1" extension="CodMalp" assigningAuthorityName="Ministero della Salute" />
+            </asOrganizationPartOf>
+          </serviceProviderOrganization>
+        </healthCareFacility>
+      </location>
+    </encompassingEncounter>
+  </componentOf>
+  <component>
+    <structuredBody classCode="DOCBODY" moodCode="EVN">
+      <component>
+        <section ID="Notizie_Cliniche" classCode="DOCSECT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.3.1937.777.63.10.132" />
+          <code code="22636-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Referto patologico anamnesi rilevante" />
+          <title>Notizie Cliniche</title>
+          <text mediaType="text/x-hl7-text+xml">
+            <paragraph>Notizie Cliniche</paragraph>
+          </text>
+          <component>
+            <section ID="Anamnesi" classCode="DOCSECT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.1937.777.63.10.282" />
+              <code code="11329-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Anamnesi" />
+              <text mediaType="text/x-hl7-text+xml">
+                <paragraph>Anamnesi</paragraph>
+              </text>
+              <entry>
+                <organizer classCode="CLUSTER" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.3.1937.777.63.10.138" />
+                  <code code="10157-6" codeSystem="2.16.840.1.113883.6.1" />
+                  <statusCode code="completed" />
+                  <subject contextControlCode="OP">
+                    <relatedSubject>
+                      <code code="CODICE" codeSystem="OID" />
+                    </relatedSubject>
+                  </subject>
+                  <component>
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.3.1937.777.63.10.144" />
+                      <code nullFlavor="NI" />
+                      <text>testo</text>
+                      <statusCode code="completed" />
+                      <effectiveTime nullFlavor="UNK" />
+                      <value xsi:type="CD" code="250.00" codeSystem="2.16.840.1.113883.6.103" />
+                    </observation>
+                  </component>
+                </organizer>
+              </entry>
+              <entry>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.3.1937.777.63.10.135" />
+                  <code code="75326-9" codeSystem="2.16.840.1.113883.6.1" />
+                  <statusCode code="completed" />
+                  <effectiveTime nullFlavor="UNK" />
+                  <value xsi:type="CD" code="250.00" codeSystem="2.16.840.1.113883.6.103" />
+                </observation>
+              </entry>
+            </section>
+          </component>
+          <component>
+            <section ID="Precedenti_Esami_Eseguiti" classCode="DOCSECT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.1937.777.63.10.167" />
+              <code code="67803-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Precedenti esami eseguiti" />
+              <text mediaType="text/x-hl7-text+xml">
+                <paragraph>Precedenti Esami Eseguiti</paragraph>
+              </text>
+              <entry>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.3.1937.777.63.10.168" />
+                  <code code="33732-9" codeSystem="2.16.840.1.113883.6.1" />
+                </observation>
+              </entry>
+            </section>
+          </component>
+          <component>
+            <section ID="Allergie" classCode="DOCSECT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.1937.777.63.10.155" />
+              <code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergie" />
+              <text mediaType="text/x-hl7-text+xml">
+                <paragraph>Allergie</paragraph>
+              </text>
+              <entry>
+                <act classCode="ACT" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.3.1937.777.63.10.156" />
+                  <code nullFlavor="NI" />
+                  <statusCode code="completed" />
+                  <effectiveTime nullFlavor="UNK" />
+                  <entryRelationship typeCode="SUBJ">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.3.1937.777.63.10.157" />
+                      <code code="52473-6" codeSystem="2.16.840.1.113883.6.1" />
+                      <statusCode code="completed" />
+                      <effectiveTime value="20260505110117+0200" />
+                      <value xsi:type="CD" nullFlavor="NI" />
+                      <participant typeCode="CSM" contextControlCode="OP">
+                        <participantRole>
+                          <playingEntity determinerCode="INSTANCE">
+                            <code nullFlavor="UNK" />
+                          </playingEntity>
+                        </participantRole>
+                      </participant>
+                    </observation>
+                  </entryRelationship>
+                </act>
+              </entry>
+            </section>
+          </component>
+        </section>
+      </component>
+      <component>
+        <section ID="Procedura" classCode="DOCSECT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.3.1937.777.63.10.142" />
+          <code code="29300-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Procedure" />
+          <title>Procedura</title>
+          <text mediaType="text/x-hl7-text+xml">
+            <paragraph>Biopsia</paragraph>
+          </text>
+          <entry>
+            <procedure classCode="PROC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.1937.777.63.10.143" />
+              <code nullFlavor="NI" displayName="PRELIEVO DI SANGUE VENOSO" />
+              <effectiveTime value="20260427143131+0200" />
+              <methodCode nullFlavor="NI" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED" />
+              <specimen typeCode="SPC">
+                <specimenRole>
+                  <templateId root="2.16.840.1.113883.3.1937.777.63.10.259" />
+                  <id root="2.16.840.1.113883.2.9.99" extension="9999999" />
+                </specimenRole>
+              </specimen>
+              <entryRelationship typeCode="XCRPT">
+                <supply classCode="SPLY" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.3.1937.777.63.10.251" />
+                  <id root="2.16.840.1.113883.2.9.99" extension="9999999" />
+                  <code code="74384-9" codeSystem="2.16.840.1.113883.6.1" />
+                  <statusCode code="completed" />
+                </supply>
+              </entryRelationship>
+            </procedure>
+          </entry>
+          <entry>
+            <procedure classCode="PROC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.1937.777.63.10.143" />
+              <code nullFlavor="NI" displayName="17 CHETOSTEROIDI [dU]" />
+              <effectiveTime value="20260427143131+0200" />
+              <methodCode nullFlavor="NI" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED" />
+              <specimen typeCode="SPC">
+                <specimenRole>
+                  <templateId root="2.16.840.1.113883.3.1937.777.63.10.259" />
+                  <id root="2.16.840.1.113883.2.9.99" extension="9999999" />
+                </specimenRole>
+              </specimen>
+              <entryRelationship typeCode="XCRPT">
+                <supply classCode="SPLY" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.3.1937.777.63.10.251" />
+                  <id root="2.16.840.1.113883.2.9.99" extension="9999999" />
+                  <code code="74384-9" codeSystem="2.16.840.1.113883.6.1" />
+                  <statusCode code="completed" />
+                </supply>
+              </entryRelationship>
+            </procedure>
+          </entry>
+          <entry>
+            <procedure classCode="PROC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.1937.777.63.10.143" />
+              <code nullFlavor="NI" displayName="BILIRUBINA FRAZIONATA" />
+              <effectiveTime value="20260427143131+0200" />
+              <methodCode nullFlavor="NI" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED" />
+              <specimen typeCode="SPC">
+                <specimenRole>
+                  <templateId root="2.16.840.1.113883.3.1937.777.63.10.259" />
+                  <id root="2.16.840.1.113883.2.9.99" extension="9999999" />
+                </specimenRole>
+              </specimen>
+              <entryRelationship typeCode="XCRPT">
+                <supply classCode="SPLY" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.3.1937.777.63.10.251" />
+                  <id root="2.16.840.1.113883.2.9.99" extension="9999999" />
+                  <code code="74384-9" codeSystem="2.16.840.1.113883.6.1" />
+                  <statusCode code="completed" />
+                </supply>
+              </entryRelationship>
+            </procedure>
+          </entry>
+          <entry>
+            <procedure classCode="PROC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.1937.777.63.10.143" />
+              <code nullFlavor="NI" displayName="BILIRUBINA FRAZIONATA" />
+              <effectiveTime value="20260427143131+0200" />
+              <methodCode nullFlavor="NI" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED" />
+              <specimen typeCode="SPC">
+                <specimenRole>
+                  <templateId root="2.16.840.1.113883.3.1937.777.63.10.259" />
+                  <id root="2.16.840.1.113883.2.9.99" extension="9999999" />
+                </specimenRole>
+              </specimen>
+              <entryRelationship typeCode="XCRPT">
+                <supply classCode="SPLY" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.3.1937.777.63.10.251" />
+                  <id root="2.16.840.1.113883.2.9.99" extension="9999999" />
+                  <code code="74384-9" codeSystem="2.16.840.1.113883.6.1" />
+                  <statusCode code="completed" />
+                </supply>
+              </entryRelationship>
+            </procedure>
+          </entry>
+          <entry>
+            <procedure classCode="PROC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.1937.777.63.10.143" />
+              <code nullFlavor="NI" displayName="BILIRUBINA FRAZIONATA" />
+              <effectiveTime value="20260427143131+0200" />
+              <methodCode nullFlavor="NI" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED" />
+              <specimen typeCode="SPC">
+                <specimenRole>
+                  <templateId root="2.16.840.1.113883.3.1937.777.63.10.259" />
+                  <id root="2.16.840.1.113883.2.9.99" extension="9999999" />
+                </specimenRole>
+              </specimen>
+              <entryRelationship typeCode="XCRPT">
+                <supply classCode="SPLY" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.3.1937.777.63.10.251" />
+                  <id root="2.16.840.1.113883.2.9.99" extension="9999999" />
+                  <code code="74384-9" codeSystem="2.16.840.1.113883.6.1" />
+                  <statusCode code="completed" />
+                </supply>
+              </entryRelationship>
+            </procedure>
+          </entry>
+          <entry>
+            <procedure classCode="PROC" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.3.1937.777.63.10.143" />
+              <code nullFlavor="NI" displayName="BILIRUBINA FRAZIONATA" />
+              <effectiveTime value="20260427143131+0200" />
+              <methodCode nullFlavor="NI" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED" />
+              <specimen typeCode="SPC">
+                <specimenRole>
+                  <templateId root="2.16.840.1.113883.3.1937.777.63.10.259" />
+                  <id root="2.16.840.1.113883.2.9.99" extension="9999999" />
+                </specimenRole>
+              </specimen>
+              <entryRelationship typeCode="XCRPT">
+                <supply classCode="SPLY" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.3.1937.777.63.10.251" />
+                  <id root="2.16.840.1.113883.2.9.99" extension="9999999" />
+                  <code code="74384-9" codeSystem="2.16.840.1.113883.6.1" />
+                  <statusCode code="completed" />
+                </supply>
+              </entryRelationship>
+            </procedure>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section ID="Diagnosi" classCode="DOCSECT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.3.1937.777.63.10.176" />
+          <code code="22637-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Referto patologico.diagnosi finale" />
+          <title>Diagnosi</title>
+          <text mediaType="text/x-hl7-text+xml">
+            <paragraph>Diagnosi</paragraph>
+          </text>
+          <entry>
+            <organizer classCode="BATTERY" moodCode="EVN">
+              <code code="29308-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diagnosi" />
+              <statusCode code="completed" />
+              <component typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.3.1937.777.63.10.150" />
+                  <code code="33732-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Istologia" />
+                  <statusCode code="completed" />
+                  <value xsi:type="CD" code="250.00" codeSystem="2.16.840.1.113883.6.103" />
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section ID="Osservazione_Microscopica" classCode="DOCSECT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.3.1937.777.63.10.193" />
+          <code code="22635-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Osservazione microscopica" />
+          <text mediaType="text/x-hl7-text+xml">
+            <paragraph>Osservazione Microscopica</paragraph>
+          </text>
+          <entry>
+            <organizer classCode="BATTERY" moodCode="EVN">
+              <code code="102034-6" codeSystem="2.16.840.1.113883.6.1" />
+              <statusCode code="completed" />
+              <component typeCode="COMP">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.3.1937.777.63.10.150" />
+                  <code code="33732-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Istologia" />
+                  <statusCode code="completed" />
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section ID="Epicrisi" classCode="DOCSECT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.3.1937.777.63.10.211" />
+          <code code="85691-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Epicrisi" />
+          <text mediaType="text/x-hl7-text+xml">
+            <paragraph>Epicrisi</paragraph>
+          </text>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>
